@@ -23,6 +23,7 @@ fields to collect, and when it counts as done. To automate the source search, ru
 | `13_stakeholder_notes/` | D25 |
 | `_templates/` | `SOURCE.md` provenance card |
 | `_scripts/` | Small, re-runnable fetch / extract scripts referenced from SOURCE cards |
+| `deep_research/` | Deep-research agent reports (leads only) and their verification notes |
 
 ## Rules
 1. Every source gets a `SOURCE.md` (copy from `_templates/`) **before** you process it. When a folder holds
@@ -39,7 +40,7 @@ fields to collect, and when it counts as done. To automate the source search, ru
 | Card | Dataset | Status | Licence | In git |
 |---|---|---|---|---|
 | [`00_admin_boundaries/SOURCE_datta07_indian_shapefiles.md`](00_admin_boundaries/SOURCE_datta07_indian_shapefiles.md) | D00 | Downloaded | MIT | Attribute CSVs (no geometry) |
-| [`01_agro_climate/zones/SOURCE_fao_gaez_aer_india.md`](01_agro_climate/zones/SOURCE_fao_gaez_aer_india.md) | D01 | Downloaded (20 AERs, not 60 AESRs) | ICAR, unstated | No |
+| [`01_agro_climate/zones/SOURCE_fao_gaez_aer_india.md`](01_agro_climate/zones/SOURCE_fao_gaez_aer_india.md) | D01 | Downloaded (20 AERs, not 60 AESRs); superseded | No licence (restricted) | No |
 | [`01_agro_climate/rainfall/SOURCE_worldbank_cckp_era5.md`](01_agro_climate/rainfall/SOURCE_worldbank_cckp_era5.md) | D02 | Downloaded (state level) | Likely CC BY 4.0, to confirm | State climatology CSV |
 | [`01_agro_climate/temperature/SOURCE_worldbank_cckp_era5.md`](01_agro_climate/temperature/SOURCE_worldbank_cckp_era5.md) | D03 | Downloaded (state level) | Likely CC BY 4.0, to confirm | State climatology CSV |
 | [`01_agro_climate/SOURCE_niti_iced_climate.md`](01_agro_climate/SOURCE_niti_iced_climate.md) | D02/D03 | Reviewed, not used | Unstated | No |
@@ -49,7 +50,9 @@ fields to collect, and when it counts as done. To automate the source search, ru
 | [`08_solar_weather/SOURCE_copernicus_cds.md`](08_solar_weather/SOURCE_copernicus_cds.md) | D14/D02/D03/D15 | **Needs your CDS account** | Copernicus licence (open) | No |
 | [`11_finance_policy/lending_tax/SOURCE_global_macro_database.md`](11_finance_policy/lending_tax/SOURCE_global_macro_database.md) | D21 | Downloaded (India extract) | Research-only, no products | No |
 | [`00_admin_boundaries/SOURCE_lgd_directory.md`](00_admin_boundaries/SOURCE_lgd_directory.md) | D00 | Downloaded (snapshot 2026-11-01) | Govt public directory (GODL) | `lgd_states.csv`, `lgd_districts.csv` |
-| [`01_agro_climate/zones/SOURCE_indiawris_aer_shapefile.md`](01_agro_climate/zones/SOURCE_indiawris_aer_shapefile.md) | D01 | Uploaded by owner (20 AERs with codes) | ICAR, unstated | Shapefile (uploaded) |
+| [`01_agro_climate/zones/SOURCE_indiawris_aer_shapefile.md`](01_agro_climate/zones/SOURCE_indiawris_aer_shapefile.md) | D01 | Uploaded by owner (20 AERs with codes) | GODL-India (via data.gov.in) | Shapefile (uploaded) |
+| [`01_agro_climate/zones/SOURCE_bharatlas_agro_zones.md`](01_agro_climate/zones/SOURCE_bharatlas_agro_zones.md) | D01 | Downloaded; district × zone crosswalk built (15 ACZ, 20 AER) | GODL-India | `district_zone_shares.csv`, `district_zone_primary.csv` |
+| [`00_admin_boundaries/SOURCE_bharatlas_lgd_districts.md`](00_admin_boundaries/SOURCE_bharatlas_lgd_districts.md) | D00 | Downloaded (785 LGD-coded polygons) | CC BY 4.0 / CC0 | No (geometry in `raw/`) |
 | [`04_land_cover/SOURCE_nrsc_lclu_250k.md`](04_land_cover/SOURCE_nrsc_lclu_250k.md) | D06 | Uploaded by owner (document + map image; raster still needed) | Unrestricted document; Bhuvan terms for data | PDFs (uploaded) |
 | [`05_groundwater_irrigation/cgwb_assessment/SOURCE_cgwb_dgwr_2024.md`](05_groundwater_irrigation/cgwb_assessment/SOURCE_cgwb_dgwr_2024.md) | D07 | Downloaded, district table extracted (715) | Public Govt report, likely GODL | `cgwb_dgwr_2024_district.csv` |
 | [`06_crops/area_production_yield/SOURCE_des_horizontal_crop_report.md`](06_crops/area_production_yield/SOURCE_des_horizontal_crop_report.md) | D10 | Uploaded by owner (incl. horticulture, 26 states) | Govt data, licence to confirm | Report (uploaded) |

@@ -11,8 +11,8 @@
 | Spatial coverage | All-India |
 | Spatial unit or resolution | 20 polygons, one per agro-ecological region. NBSS&LUP adjusted the boundaries to district boundaries |
 | Temporal resolution | One-off |
-| Licence | Not stated. Access information reads only "As per ICAR, New Delhi" |
-| OK for a public open-source app? | **Unknown.** Do not redistribute the geometry until ICAR / NBSS&LUP terms are confirmed. A derived district-to-AER lookup is lower risk but still needs confirmation |
+| Licence | None given: the ArcGIS item's `licenseInfo` is empty, and access information reads only "As per ICAR, New Delhi". A deep-research review (Gemini, Nov 2026) reports the GAEZ national-zone layers as "No License Provided. Request permission to use."; this is consistent with the empty `licenseInfo` we saw |
+| OK for a public open-source app? | **Restricted.** Do not ship this copy. Use the identical GODL-India layer from data.gov.in / Bharatlas (`SOURCE_bharatlas_agro_zones.md`) instead |
 | Required attribution text | "Agro-ecological regions: ICAR-NBSS&LUP (1996), via FAO GAEZ v4 data portal" |
 | Citation | Sehgal, J., Mandal, D. K., Mandal, C. & Vadivelu, S. (1992). Agro-Ecological Regions of India. NBSS&LUP Publ. 24, ICAR, Nagpur. Accessed via the FAO GAEZ v4 data portal |
 | Files in this folder | Git-ignored: `raw/fao_gaez_aesr_india.geojson` (11.2 MB, EPSG:4326), `raw/fao_gaez_item.json` (ArcGIS item metadata incl. description) |

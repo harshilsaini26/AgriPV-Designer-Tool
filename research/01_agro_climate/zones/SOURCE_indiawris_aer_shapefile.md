@@ -11,8 +11,8 @@
 | Spatial coverage | All-India |
 | Spatial unit or resolution | 20 polygons (one per region) |
 | Temporal resolution | One-off |
-| Licence | Not stated. Metadata credit reads "As per ICAR, New Delhi". India-WRIS data is generally free to view and download for non-commercial use; check the portal's terms |
-| OK for a public open-source app? | **Unknown.** The files are already public in this repo (web upload). Before shipping the geometry in the app, confirm India-WRIS / ICAR terms; a derived district→region lookup is the safer option |
+| Licence | **GODL-India.** The identical layer (same fields, same `area_sqkm` values) is published on data.gov.in as "Boundaries of Agro-Ecological regions" by the Ministry of Jal Shakti, DoWR, RD & GR (published 28/09/2022, updated 13/09/2026, 3.3 MB zip; checked 2026-11-06), and data.gov.in resources fall under GODL-India. The shapefile's own metadata credit reads "As per ICAR, New Delhi" |
+| OK for a public open-source app? | **OK** with GODL attribution (see `SOURCE_bharatlas_agro_zones.md`) |
 | Required attribution text | "Agro-ecological regions: ICAR-NBSS&LUP; GIS layer: India-WRIS (NWIC, Ministry of Jal Shakti)" |
 | Citation | Sehgal, J. et al. (1992). Agro-Ecological Regions of India. NBSS&LUP Publ. 24. GIS layer: India-WRIS, National Water Informatics Centre |
 | Files in this folder | `Agro-Ecological Regions/Agro_Ecological_regions.{shp,shx,dbf,prj,cpg,sbn,sbx,shp.xml}` (5.0 MB .shp; committed). `Agro-Ecological Regions/To Be Deleted`: a placeholder file from the upload; safe to delete |
