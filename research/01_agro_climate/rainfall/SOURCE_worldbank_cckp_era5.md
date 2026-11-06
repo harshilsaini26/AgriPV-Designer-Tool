@@ -11,8 +11,8 @@
 | Spatial coverage | All-India plus 36 states/UTs (pre-2019 set; no Ladakh) |
 | Spatial unit or resolution | State/UT means of a 0.25° grid. **Not district level** |
 | Temporal resolution | Monthly climatology |
-| Licence | Not stated on the CCKP pages checked. World Bank data is generally CC BY 4.0; ERA5 falls under the Copernicus licence. **To confirm** |
-| OK for a public open-source app? | Likely OK with attribution, but unconfirmed until the licence is checked |
+| Licence | **CC BY 4.0** (World Bank Data Catalog id 0065626, DOI 10.57966/128g-6s70, checked 2026-11-06). Underlying ERA5 is under the Copernicus licence |
+| OK for a public open-source app? | OK with attribution |
 | Required attribution text | "Climate data: World Bank Climate Change Knowledge Portal (ERA5, Copernicus Climate Change Service / ECMWF)" |
 | Citation | World Bank Group (2026). Climate Change Knowledge Portal, India: ERA5 0.25° monthly climatology 1991–2020. https://climateknowledgeportal.worldbank.org/ |
 | Files in this folder | Committed: `cckp_era5_state_climatology_1991-2020.csv` (432 rows). Git-ignored: `raw/cckp_era5_1991-2020_pr.json` |

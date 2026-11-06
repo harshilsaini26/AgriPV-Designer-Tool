@@ -40,6 +40,9 @@ fields to collect, and when it counts as done.
 | [`01_agro_climate/zones/SOURCE_fao_gaez_aer_india.md`](01_agro_climate/zones/SOURCE_fao_gaez_aer_india.md) | D01 | Downloaded (20 AERs, not 60 AESRs); superseded | No licence (restricted) | No |
 | [`01_agro_climate/rainfall/SOURCE_worldbank_cckp_era5.md`](01_agro_climate/rainfall/SOURCE_worldbank_cckp_era5.md) | D02 | Downloaded (state level) | Likely CC BY 4.0, to confirm | State climatology CSV |
 | [`01_agro_climate/temperature/SOURCE_worldbank_cckp_era5.md`](01_agro_climate/temperature/SOURCE_worldbank_cckp_era5.md) | D03 | Downloaded (state level) | Likely CC BY 4.0, to confirm | State climatology CSV |
+| [`01_agro_climate/rainfall/SOURCE_chirps_v3.md`](01_agro_climate/rainfall/SOURCE_chirps_v3.md) | D02 | Downloaded; district normals and CV 1991–2020 (primary rainfall source) | Public domain / CC BY 4.0 | `chirps_v3_district_rainfall_normals_1991-2020.csv` |
+| [`01_agro_climate/rainfall/SOURCE_imd_rainfall.md`](01_agro_climate/rainfall/SOURCE_imd_rainfall.md) | D02 | District normals 1971–2020 saved locally for QA only | Restricted (IMD) | No |
+| [`01_agro_climate/CLIMATE_INDICATOR_METHODS.md`](01_agro_climate/CLIMATE_INDICATOR_METHODS.md) | D02/D03 | Method spec: sources, cropland weighting, indicator definitions | n/a | Yes |
 | [`01_agro_climate/SOURCE_niti_iced_climate.md`](01_agro_climate/SOURCE_niti_iced_climate.md) | D02/D03 | Reviewed, not used | Unstated | No |
 | [`02_soil/SOURCE_kaggle_lockhal_soil_environment.md`](02_soil/SOURCE_kaggle_lockhal_soil_environment.md) | D04 | Downloaded | CC BY 4.0 (compiler); ICAR upstream unclear | No |
 | [`06_crops/SOURCE_kaggle_aartithube_district_crops_soil_health.md`](06_crops/SOURCE_kaggle_aartithube_district_crops_soil_health.md) | D10/D04 | Downloaded | Non-commercial only | No |

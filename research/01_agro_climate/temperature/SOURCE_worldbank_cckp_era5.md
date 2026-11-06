@@ -11,8 +11,8 @@
 | Spatial coverage | All-India plus 36 states/UTs as CCKP defines them. This is the pre-2019 set: it has "Jammu and Kashmir", separate "Dadra and Nagar Haveli" and "Daman and Diu", and **no Ladakh** |
 | Spatial unit or resolution | State/UT means of a 0.25° grid. **Not district level** |
 | Temporal resolution | Monthly climatology (12 values per state) |
-| Licence | Not stated on the CCKP pages checked (country page, About). World Bank data is generally CC BY 4.0, and ERA5 falls under the Copernicus licence (free, attribution required). **To confirm** |
-| OK for a public open-source app? | Likely OK with attribution, but unconfirmed until the licence is checked |
+| Licence | **CC BY 4.0**: the World Bank Data Catalog entry for "Climate Change Knowledge Portal: Observed Climate Data, ERA5 0.25-Degree" (DOI 10.57966/128g-6s70, catalog id 0065626) states "This dataset is licensed under Creative Commons Attribution 4.0" (checked 2026-11-06). Underlying ERA5 is under the Copernicus licence |
+| OK for a public open-source app? | OK with attribution |
 | Required attribution text | "Climate data: World Bank Climate Change Knowledge Portal (ERA5, Copernicus Climate Change Service / ECMWF)" |
 | Citation | World Bank Group (2026). Climate Change Knowledge Portal, India: ERA5 0.25° monthly climatology 1991–2020. https://climateknowledgeportal.worldbank.org/ ; Hersbach, H. et al. (2020). The ERA5 global reanalysis. QJRMS 146, 1999–2049 |
 | Files in this folder | Committed: `cckp_era5_state_climatology_1991-2020.csv` (432 rows = 36 states + India × 12 months). Git-ignored: `raw/cckp_era5_1991-2020_{tas,tasmax,tasmin,hd35,hd40}.json` (API responses as received) |
