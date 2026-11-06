@@ -1,0 +1,22 @@
+name: apv_core
+
+on:
+  push:
+    paths: ["apv_core/**", ".github/workflows/apv_core.yml"]
+  pull_request:
+    paths: ["apv_core/**", ".github/workflows/apv_core.yml"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -e "apv_core[dev]"
+      - run: ruff check apv_core
+      - run: pytest apv_core
