@@ -1,5 +1,6 @@
 """Crop economics and farm income per acre (spec §12.4)."""
 
+import math
 from collections.abc import Sequence
 from dataclasses import dataclass
 
@@ -17,8 +18,9 @@ class CropEconomics:
     user_entered: bool = False
 
     def __post_init__(self) -> None:
-        if self.yield_q_per_acre < 0 or self.price_per_q < 0 or self.cost_per_acre < 0:
-            raise ValueError("crop yield, price and cost must be >= 0")
+        values = (self.yield_q_per_acre, self.price_per_q, self.cost_per_acre)
+        if not all(math.isfinite(v) and v >= 0 for v in values):
+            raise ValueError("crop yield, price and cost must be finite and >= 0")
 
 
 @dataclass(frozen=True)

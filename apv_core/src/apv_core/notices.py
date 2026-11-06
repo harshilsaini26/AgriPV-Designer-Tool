@@ -18,4 +18,5 @@ class NoticeCode(StrEnum):
 class Notice:
     code: NoticeCode
     message: str
-    gcr: float | None = None
+    gcr: float | None = None  # first affected GCR
+    gcrs: tuple[float, ...] = ()  # every affected GCR

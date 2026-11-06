@@ -1,5 +1,6 @@
 """GCR sweep: every metric at every GCR for the pessimistic, central and optimistic cases (spec §12.7)."""
 
+import math
 from dataclasses import dataclass
 from enum import StrEnum
 
@@ -40,6 +41,7 @@ METRIC_KEYS: tuple[str, ...] = (
     "ler",
     "energy_term",
     "economic_ratio",
+    "npv",
     "kwp_per_acre",
     "energy_kwh_per_acre",
     "payback_years",
@@ -70,10 +72,10 @@ class SweepInputs:
             raise ValueError(f"policy_limit must be within [{POLICY_LIMIT_MIN}, {POLICY_LIMIT_MAX}]")
         if not 0 <= self.range_spread < 0.5:
             raise ValueError("range_spread must be in [0, 0.5)")
-        if self.apv_cost_premium < 0:
-            raise ValueError("apv_cost_premium must be >= 0")
-        if self.land_acres is not None and self.land_acres <= 0:
-            raise ValueError("land_acres must be > 0 when given")
+        if not (math.isfinite(self.apv_cost_premium) and self.apv_cost_premium >= 0):
+            raise ValueError("apv_cost_premium must be finite and >= 0")
+        if self.land_acres is not None and not (math.isfinite(self.land_acres) and self.land_acres > 0):
+            raise ValueError("land_acres must be finite and > 0 when given")
 
 
 @dataclass(frozen=True)
@@ -120,6 +122,7 @@ def _run_case(inputs: SweepInputs, case: Case) -> tuple[dict[str, list], dict[Se
         out["ler"].append(float(ler_values[i]))
         out["energy_term"].append(float(e_term[i]))
         out["economic_ratio"].append(economic_ratio(float(farm[i]), energy_income, baseline))
+        out["npv"].append(kusum.npv)
         out["kwp_per_acre"].append(float(kwp[i]))
         out["energy_kwh_per_acre"].append(float(kwp[i] * kwh_yr1[i] * f.availability))
         out["payback_years"].append(kusum.payback_years)
@@ -158,6 +161,7 @@ def _notices(
                 NoticeCode.OUTSIDE_POLICY_LIMIT,
                 f"GCR {g:.2f} and above drop yield below the proposed {limit:.0%} limit (draft).",
                 g,
+                tuple(x for x, out in zip(GCR_GRID, flags, strict=True) if out),
             )
         )
     if allowed_central is None:
@@ -170,29 +174,35 @@ def _notices(
             )
         )
     if inputs.business_model is BusinessModel.KUSUM_A and inputs.land_acres is not None:
-        for i, g in enumerate(GCR_GRID[1:], start=1):
-            mw = central["kwp_per_acre"][i] * inputs.land_acres / 1000.0
-            if not KUSUM_A_MIN_MW <= mw <= KUSUM_A_MAX_MW:
-                notices.append(
-                    Notice(
-                        NoticeCode.KUSUM_SIZE_OUT_OF_RANGE,
-                        f"At GCR {g:.2f} the plant would be {mw:.2f} MW, outside PM-KUSUM A's "
-                        f"{KUSUM_A_MIN_MW}-{KUSUM_A_MAX_MW} MW range.",
-                        g,
-                    )
+        sizes = {g: central["kwp_per_acre"][i] * inputs.land_acres / 1000.0 for i, g in enumerate(GCR_GRID) if i > 0}
+        bad = tuple(g for g, mw in sizes.items() if not KUSUM_A_MIN_MW <= mw <= KUSUM_A_MAX_MW)
+        if bad:
+            listed = ", ".join(f"{g:.2f} ({sizes[g]:.2f} MW)" for g in bad)
+            notices.append(
+                Notice(
+                    NoticeCode.KUSUM_SIZE_OUT_OF_RANGE,
+                    f"Plant size is outside PM-KUSUM A's {KUSUM_A_MIN_MW}-{KUSUM_A_MAX_MW} MW range at GCR {listed}.",
+                    bad[0],
+                    bad,
                 )
-                break
-    for i, g in enumerate(GCR_GRID[1:], start=1):
-        if central["project_irr"][i] is None:
-            notices.append(Notice(NoticeCode.IRR_UNDEFINED, f"At GCR {g:.2f}: {irr_reasons[i]}.", g))
-            break
+            )
+    bad = tuple(g for i, g in enumerate(GCR_GRID) if i > 0 and central["project_irr"][i] is None)
+    if bad:
+        reason = irr_reasons[GCR_GRID.index(bad[0])]
+        notices.append(
+            Notice(NoticeCode.IRR_UNDEFINED, f"{reason} at GCR {', '.join(f'{g:.2f}' for g in bad)}.", bad[0], bad)
+        )
     if inputs.business_model is BusinessModel.LEASE:
-        for i, g in enumerate(GCR_GRID[1:], start=1):
-            if central["max_affordable_lease"][i] is None:
-                notices.append(
-                    Notice(NoticeCode.LEASE_NOT_VIABLE, f"At GCR {g:.2f}: not viable at target IRR.", g)
+        bad = tuple(g for i, g in enumerate(GCR_GRID) if i > 0 and central["max_affordable_lease"][i] is None)
+        if bad:
+            notices.append(
+                Notice(
+                    NoticeCode.LEASE_NOT_VIABLE,
+                    f"Not viable at target IRR at GCR {', '.join(f'{g:.2f}' for g in bad)}.",
+                    bad[0],
+                    bad,
                 )
-                break
+            )
     return notices
 
 

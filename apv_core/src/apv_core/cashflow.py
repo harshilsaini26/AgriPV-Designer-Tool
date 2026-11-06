@@ -19,26 +19,45 @@ def npv(rate: float, flows: Sequence[float]) -> float:
     return float(np.sum(f / (1.0 + rate) ** np.arange(len(f))))
 
 
-def irr(flows: Sequence[float]) -> IrrResult:
-    f = np.asarray(flows, dtype=float)
-    if not (np.any(f > 0) and np.any(f < 0)):
-        return IrrResult(None, "IRR undefined: cash flows never change sign")
-    lo, hi = _IRR_LO, _IRR_HI
-    f_lo, f_hi = npv(lo, f), npv(hi, f)
-    if f_lo == 0:
-        return IrrResult(lo, None)
-    if np.sign(f_lo) == np.sign(f_hi):
-        return IrrResult(None, "IRR undefined: no solution between -99% and 1000%")
+_IRR_GRID = np.concatenate([np.linspace(_IRR_LO, 1.0, 400, endpoint=False), np.linspace(1.0, _IRR_HI, 91)])
+
+
+def _bisect(f: np.ndarray, lo: float, hi: float) -> float:
+    f_lo = npv(lo, f)
     while hi - lo > _IRR_TOL:
         mid = (lo + hi) / 2.0
         f_mid = npv(mid, f)
         if f_mid == 0:
-            return IrrResult(mid, None)
+            return mid
         if np.sign(f_mid) == np.sign(f_lo):
             lo, f_lo = mid, f_mid
         else:
             hi = mid
-    return IrrResult((lo + hi) / 2.0, None)
+    return (lo + hi) / 2.0
+
+
+def irr(flows: Sequence[float]) -> IrrResult:
+    """Internal rate of return.
+
+    Scans NPV over a rate grid and bisects every sign change, so late negative flows (e.g. fast
+    O&M escalation) can't hide a real root. With several roots, returns the economically
+    meaningful one for an investment: the highest rate where NPV crosses from positive to negative.
+    """
+    f = np.asarray(flows, dtype=float)
+    if not (np.any(f > 0) and np.any(f < 0)):
+        return IrrResult(None, "IRR undefined: cash flows never change sign")
+    values = ((1.0 + _IRR_GRID)[:, None] ** -np.arange(len(f))[None, :]) @ f  # NPV at every grid rate
+    roots: list[tuple[float, bool]] = []  # (rate, crosses + to -)
+    for j in range(len(_IRR_GRID) - 1):
+        a, b = values[j], values[j + 1]
+        if a == 0:
+            roots.append((float(_IRR_GRID[j]), b < 0))
+        elif np.sign(a) != np.sign(b) and b != 0:
+            roots.append((_bisect(f, float(_IRR_GRID[j]), float(_IRR_GRID[j + 1])), a > 0))
+    if not roots:
+        return IrrResult(None, "IRR undefined: no solution between -99% and 1000%")
+    investing = [r for r, down in roots if down]
+    return IrrResult(max(investing) if investing else roots[-1][0], None)
 
 
 def simple_payback(flows: Sequence[float]) -> float | None:

@@ -35,6 +35,8 @@ class PhysicsTable:
         light = np.array(self.light_fraction, dtype=float)
         if energy.shape != _SHAPE or light.shape != _SHAPE:
             raise ValueError(f"physics arrays must have shape {_SHAPE}")
+        if not (np.all(np.isfinite(energy)) and np.all(np.isfinite(light)) and np.isfinite(self.ref_energy_kwh_per_acre)):
+            raise ValueError("physics values must be finite")
         if np.any(light < 0.0) or np.any(light > 1.0):
             raise ValueError("light_fraction must be within [0, 1]")
         if not np.all(light[0] == 1.0):

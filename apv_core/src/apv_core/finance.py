@@ -4,6 +4,7 @@ All money is ₹ per acre (or per kWp where named). Year 0 is construction; year
 """
 
 import dataclasses
+import math
 from dataclasses import dataclass
 
 import numpy as np
@@ -34,6 +35,9 @@ class FinanceInputs:
     years: int = ANALYSIS_YEARS
 
     def __post_init__(self) -> None:
+        for field in dataclasses.fields(self):
+            if not math.isfinite(getattr(self, field.name)):
+                raise ValueError(f"{field.name} must be a finite number")
         checks = [
             (self.capex_per_kwp > 0, "capex_per_kwp must be > 0"),
             (self.tariff_per_kwh > 0, "tariff_per_kwh must be > 0"),
@@ -115,13 +119,14 @@ def max_affordable_lease(flows: np.ndarray, f: FinanceInputs) -> tuple[float | N
 
 def lease_per_acre(kwp: float, kwh_per_kwp_year1: float, farm_income_year1: float, f: FinanceInputs) -> LeaseResult:
     flows = project_flows(kwp, kwh_per_kwp_year1, f)
+    lease_year1 = f.lease_per_acre_year if kwp > 0 else 0.0  # no plant, no lease
     t = np.arange(1, f.years + 1)
     developer = flows.copy()
-    developer[1:] -= f.lease_per_acre_year * (1 + f.lease_escalation) ** (t - 1)
+    developer[1:] -= lease_year1 * (1 + f.lease_escalation) ** (t - 1)
     lease_max, reason = max_affordable_lease(flows, f)
     return LeaseResult(
         developer_irr=irr(developer),
-        farmer_income_year1=f.lease_per_acre_year + farm_income_year1,
+        farmer_income_year1=lease_year1 + farm_income_year1,
         max_affordable_lease=lease_max,
         max_lease_reason=reason,
     )
