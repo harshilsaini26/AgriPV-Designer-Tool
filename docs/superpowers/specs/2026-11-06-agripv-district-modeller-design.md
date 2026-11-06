@@ -1,5 +1,7 @@
 # AgriPV District Modeller — Design Spec
 
+> **Superseded** by [`2026-11-06-agripv-lab-product-spec.md`](2026-11-06-agripv-lab-product-spec.md). The main changes: it's now a knowledge tool with range outputs; GCR runs 0.00–0.50; the draft policy limit is ≥ 80% retention as an editable reference line; crop parameters carry evidence grades; bank-grade metrics move to Advanced. Kept for history.
+
 - **Date:** 2026-11-06
 - **Status:** Approved in brainstorming; awaiting written-spec review
 - **Working name:** AgriPV Lab (placeholder; final name open)
