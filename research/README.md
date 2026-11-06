@@ -2,7 +2,8 @@
 
 All raw data, literature and research notes for AgriPV Lab live here. **Start with
 [`DATA_REQUIREMENTS.md`](DATA_REQUIREMENTS.md)**: it lists every dataset (D00 to D25), why it is needed, the exact
-fields to collect, and when it counts as done.
+fields to collect, and when it counts as done. To automate the source search, run the prompts in
+[`DEEP_RESEARCH_PROMPTS.md`](DEEP_RESEARCH_PROMPTS.md) with a deep-research agent.
 
 | Folder | Datasets |
 |---|---|
@@ -21,10 +22,29 @@ fields to collect, and when it counts as done.
 | `12_structures_technology/` | D24 |
 | `13_stakeholder_notes/` | D25 |
 | `_templates/` | `SOURCE.md` provenance card |
+| `_scripts/` | Small, re-runnable fetch / extract scripts referenced from SOURCE cards |
 
 ## Rules
-1. Every source gets a `SOURCE.md` (copy from `_templates/`) **before** you process it.
+1. Every source gets a `SOURCE.md` (copy from `_templates/`) **before** you process it. When a folder holds
+   more than one source, name the cards `SOURCE_<publisher>_<dataset>.md`.
 2. Large downloads go in the folder's `raw/`, which is git-ignored. Small CSVs and notes are committed.
 3. Join on **LGD codes**, never on district names.
 4. Paper PDFs stay local (git-ignored). Commit citations and extracted numbers only.
 5. No personal data anywhere in the repo.
+6. Commit data files (outside `raw/`) only when the card's "OK for a public open-source app?" field says OK.
+   Restricted or unknown licences stay in `raw/`.
+
+## Source register
+
+| Card | Dataset | Status | Licence | In git |
+|---|---|---|---|---|
+| [`00_admin_boundaries/SOURCE_datta07_indian_shapefiles.md`](00_admin_boundaries/SOURCE_datta07_indian_shapefiles.md) | D00 | Downloaded | MIT | Attribute CSVs (no geometry) |
+| [`01_agro_climate/zones/SOURCE_fao_gaez_aer_india.md`](01_agro_climate/zones/SOURCE_fao_gaez_aer_india.md) | D01 | Downloaded (20 AERs, not 60 AESRs) | ICAR, unstated | No |
+| [`01_agro_climate/rainfall/SOURCE_worldbank_cckp_era5.md`](01_agro_climate/rainfall/SOURCE_worldbank_cckp_era5.md) | D02 | Downloaded (state level) | Likely CC BY 4.0, to confirm | State climatology CSV |
+| [`01_agro_climate/temperature/SOURCE_worldbank_cckp_era5.md`](01_agro_climate/temperature/SOURCE_worldbank_cckp_era5.md) | D03 | Downloaded (state level) | Likely CC BY 4.0, to confirm | State climatology CSV |
+| [`01_agro_climate/SOURCE_niti_iced_climate.md`](01_agro_climate/SOURCE_niti_iced_climate.md) | D02/D03 | Reviewed, not used | Unstated | No |
+| [`02_soil/SOURCE_kaggle_lockhal_soil_environment.md`](02_soil/SOURCE_kaggle_lockhal_soil_environment.md) | D04 | Downloaded | CC BY 4.0 (compiler); ICAR upstream unclear | No |
+| [`06_crops/SOURCE_kaggle_aartithube_district_crops_soil_health.md`](06_crops/SOURCE_kaggle_aartithube_district_crops_soil_health.md) | D10/D04 | Downloaded | Non-commercial only | No |
+| [`06_crops/area_production_yield/SOURCE_upag_des_district_apy.md`](06_crops/area_production_yield/SOURCE_upag_des_district_apy.md) | D10 | Downloaded 2013-14 to 2024-25 | Permission needed (UPAg copyright policy) | No |
+| [`08_solar_weather/SOURCE_copernicus_cds.md`](08_solar_weather/SOURCE_copernicus_cds.md) | D14/D02/D03/D15 | **Needs your CDS account** | Copernicus licence (open) | No |
+| [`11_finance_policy/lending_tax/SOURCE_global_macro_database.md`](11_finance_policy/lending_tax/SOURCE_global_macro_database.md) | D21 | Downloaded (India extract) | Research-only, no products | No |
