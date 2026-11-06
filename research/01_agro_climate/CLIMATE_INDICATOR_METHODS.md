@@ -7,7 +7,7 @@ How AgriPV Lab turns gridded daily or monthly climate data into one row per LGD 
 
 | Variable | Primary | Cross-checks | Why |
 |---|---|---|---|
-| Rainfall | **CHIRPS v3.0** (0.05°, monthly / daily, 1981–present; public domain / CC BY 4.0) | IMD district normals 1971–2020 (local only, licence restricted); NASA POWER; CCKP ERA5 (state) | Open licence plus the finest grid (≈ 5.5 km); IMD 0.25° gridded rainfall has no open licence on its download pages |
+| Rainfall | **CHIRPS v3.0** (0.05°, monthly / daily, 1981–present; public domain / CC BY 4.0), **used as-is with no bias scaling** | IMD district normals 1971–2020 (local only, licence restricted); NASA POWER; CCKP ERA5 (state) | Open licence plus the finest grid (≈ 5.5 km); IMD 0.25° gridded rainfall has no open licence on its download pages. CHIRPS runs about 13% wetter than IMD gauge normals (median of 552 districts); disclose this on the methodology page |
 | Temperature (Tmax / Tmin / Tmean) | **ERA5-Land** daily statistics (0.1°, 1950–present; Copernicus licence) via CDS, **blocked on your CDS account** | NASA POWER (0.5°, MERRA-2); CCKP ERA5 (state) | ERA5-Land applies a lapse-rate correction at 9 km. IMD gridded temperature is 1° and its station count drops to about 180 from 2008 |
 | Solar | Global Solar Atlas (PVOUT, GHI) | NASA POWER | Already in `08_solar_weather/solar_atlas/` |
 
