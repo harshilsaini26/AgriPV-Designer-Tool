@@ -2,8 +2,11 @@
 
 import numpy as np
 
-from apv_core.constants import GCR_GRID
+from apv_core.constants import GCR_GRID, Season
+from apv_core.crops import CropParams, EvidenceGrade
+from apv_core.farm import CropEconomics, SeasonCrop
 from apv_core.physics import PhysicsTable, Structure
+from apv_core.ranges import Range
 
 
 def synthetic_physics() -> PhysicsTable:
@@ -20,3 +23,29 @@ def synthetic_physics() -> PhysicsTable:
 
 def elevated_structure() -> Structure:
     return Structure("elevated-3m-bifacial", a_farm=0.95, module_efficiency=0.215)
+
+
+def soybean_kharif() -> SeasonCrop:
+    crop = CropParams(
+        id="soybean",
+        name="Soybean",
+        seasons=frozenset({Season.KHARIF}),
+        tolerance="neutral",
+        l_t=Range(0.80, 0.70, 0.60),
+        k=Range(1.2, 1.0, 0.8),
+        grade=EvidenceGrade.B,
+    )
+    return SeasonCrop(Season.KHARIF, crop, CropEconomics(4.0, 4600.0, 13000.0))
+
+
+def onion_rabi() -> SeasonCrop:
+    crop = CropParams(
+        id="onion",
+        name="Onion",
+        seasons=frozenset({Season.RABI}),
+        tolerance="tolerant",
+        l_t=Range(0.65, 0.55, 0.45),
+        k=Range(1.0, 0.8, 0.6),
+        grade=EvidenceGrade.C,
+    )
+    return SeasonCrop(Season.RABI, crop, CropEconomics(80.0, 1500.0, 60000.0))
