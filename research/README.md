@@ -48,3 +48,17 @@ fields to collect, and when it counts as done. To automate the source search, ru
 | [`06_crops/area_production_yield/SOURCE_upag_des_district_apy.md`](06_crops/area_production_yield/SOURCE_upag_des_district_apy.md) | D10 | Downloaded 2013-14 to 2024-25 | Permission needed (UPAg copyright policy) | No |
 | [`08_solar_weather/SOURCE_copernicus_cds.md`](08_solar_weather/SOURCE_copernicus_cds.md) | D14/D02/D03/D15 | **Needs your CDS account** | Copernicus licence (open) | No |
 | [`11_finance_policy/lending_tax/SOURCE_global_macro_database.md`](11_finance_policy/lending_tax/SOURCE_global_macro_database.md) | D21 | Downloaded (India extract) | Research-only, no products | No |
+| [`00_admin_boundaries/SOURCE_lgd_directory.md`](00_admin_boundaries/SOURCE_lgd_directory.md) | D00 | Downloaded (snapshot 2026-11-01) | Govt public directory (GODL) | `lgd_states.csv`, `lgd_districts.csv` |
+| [`01_agro_climate/zones/SOURCE_indiawris_aer_shapefile.md`](01_agro_climate/zones/SOURCE_indiawris_aer_shapefile.md) | D01 | Uploaded by owner (20 AERs with codes) | ICAR, unstated | Shapefile (uploaded) |
+| [`04_land_cover/SOURCE_nrsc_lclu_250k.md`](04_land_cover/SOURCE_nrsc_lclu_250k.md) | D06 | Uploaded by owner (document + map image; raster still needed) | Unrestricted document; Bhuvan terms for data | PDFs (uploaded) |
+| [`05_groundwater_irrigation/cgwb_assessment/SOURCE_cgwb_dgwr_2024.md`](05_groundwater_irrigation/cgwb_assessment/SOURCE_cgwb_dgwr_2024.md) | D07 | Downloaded, district table extracted (715) | Public Govt report, likely GODL | `cgwb_dgwr_2024_district.csv` |
+| [`06_crops/area_production_yield/SOURCE_des_horizontal_crop_report.md`](06_crops/area_production_yield/SOURCE_des_horizontal_crop_report.md) | D10 | Uploaded by owner (incl. horticulture, 26 states) | Govt data, licence to confirm | Report (uploaded) |
+| [`07_crop_economics/cost_of_cultivation/SOURCE_idp_des_cost_of_cultivation.md`](07_crop_economics/cost_of_cultivation/SOURCE_idp_des_cost_of_cultivation.md) | D12 | Downloaded (state × crop, 1996–2022) | ODC-By | Yes |
+| [`07_crop_economics/prices/SOURCE_pib_msp.md`](07_crop_economics/prices/SOURCE_pib_msp.md) | D13 | Transcribed (KMS 2026-27, RMS 2027-28) | Govt press release | Yes |
+| [`07_crop_economics/prices/SOURCE_des_farm_harvest_prices.md`](07_crop_economics/prices/SOURCE_des_farm_harvest_prices.md) | D13 | Downloaded (2022-23); state summary extracted | Govt publication, likely OK | `fhp_state_major_crops_2019-2023.csv` |
+| [`08_solar_weather/solar_atlas/SOURCE_global_solar_atlas.md`](08_solar_weather/solar_atlas/SOURCE_global_solar_atlas.md) | D14/D18 | Downloaded, sampled per district | CC BY 4.0 | `gsa_district_centroid_stats.csv` |
+| [`08_solar_weather/solar_atlas/SOURCE_nasa_power.md`](08_solar_weather/solar_atlas/SOURCE_nasa_power.md) | D02/D03/D14 | Downloaded per district (2001–2020 climatology) | Public, no restrictions | `nasa_power_district_climatology_2001-2020.csv` |
+| [`11_finance_policy/kusum/SOURCE_mnre_pm_kusum.md`](11_finance_policy/kusum/SOURCE_mnre_pm_kusum.md) | D19 | Downloaded (11 MNRE documents) | Govt documents | `kusum_component_a_rules.md` |
+
+Sources found but not yet downloaded (account needed, large, or licence unclear) are listed in
+[`SOURCE_CANDIDATES.md`](SOURCE_CANDIDATES.md).

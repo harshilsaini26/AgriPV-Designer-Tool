@@ -1,0 +1,37 @@
+state_lgd,state,state_or_ut,state_census_2011_code,state_census_2001_code,state_version
+1,Jammu And Kashmir,U,1,1,3
+2,Himachal Pradesh,S,2,2,1
+3,Punjab,S,3,3,1
+4,Chandigarh,U,4,4,1
+5,Uttarakhand,S,5,5,1
+6,Haryana,S,6,6,1
+7,Delhi,U,7,7,1
+8,Rajasthan,S,8,8,1
+9,Uttar Pradesh,S,9,9,1
+10,Bihar,S,10,10,1
+11,Sikkim,S,11,11,1
+12,Arunachal Pradesh,S,12,12,1
+13,Nagaland,S,13,13,1
+14,Manipur,S,14,14,1
+15,Mizoram,S,15,15,1
+16,Tripura,S,16,16,1
+17,Meghalaya,S,17,17,1
+18,Assam,S,18,18,1
+19,West Bengal,S,19,19,1
+20,Jharkhand,S,20,20,1
+21,Odisha,S,21,21,1
+22,Chhattisgarh,S,22,22,1
+23,Madhya Pradesh,S,23,23,1
+24,Gujarat,S,24,24,1
+27,Maharashtra,S,27,27,1
+28,Andhra Pradesh,S,28,28,2
+29,Karnataka,S,29,29,1
+30,Goa,S,30,30,1
+31,Lakshadweep,U,31,31,1
+32,Kerala,S,32,32,1
+33,Tamil Nadu,S,33,33,1
+34,Puducherry,U,34,34,1
+35,Andaman And Nicobar Islands,U,35,35,1
+36,Telangana,S,0,0,1
+37,Ladakh,U,0,0,1
+38,The Dadra And Nagar Haveli And Daman And Diu,U,0,0,1

@@ -1,0 +1,251 @@
+crop,state,year,fhp_inr_per_qtl,pdf_page
+Paddy,Andhra Pradesh,2019-20,1732,10
+Paddy,Andhra Pradesh,2020-21,1765,10
+Paddy,Andhra Pradesh,2021-22,1815,10
+Paddy,Andhra Pradesh,2022-23,1997,10
+Paddy,Assam,2019-20,1253,10
+Paddy,Assam,2020-21,1310,10
+Paddy,Assam,2021-22,1345,10
+Paddy,Assam,2022-23,1372,10
+Paddy,Bihar,2019-20,1303,10
+Paddy,Bihar,2020-21,1386,10
+Paddy,Bihar,2021-22,1425,10
+Paddy,Bihar,2022-23,1571,10
+Paddy,Chhattisgarh,2019-20,1908,10
+Paddy,Chhattisgarh,2020-21,2018,10
+Paddy,Chhattisgarh,2021-22,1973,10
+Paddy,Chhattisgarh,2022-23,2099,10
+Paddy,Gujarat,2019-20,1523,10
+Paddy,Gujarat,2020-21,1562,10
+Paddy,Gujarat,2021-22,1681,10
+Paddy,Gujarat,2022-23,1740,10
+Paddy,Jharkhand,2019-20,1487,10
+Paddy,Jharkhand,2020-21,1485,10
+Paddy,Jharkhand,2021-22,1480,10
+Paddy,Jharkhand,2022-23,1635,10
+Paddy,Karnataka,2019-20,1710,10
+Paddy,Karnataka,2020-21,1805,10
+Paddy,Karnataka,2021-22,1855,10
+Paddy,Karnataka,2022-23,2091,10
+Paddy,Madhya Pradesh,2019-20,1837,10
+Paddy,Madhya Pradesh,2020-21,2037,10
+Paddy,Madhya Pradesh,2021-22,1868,10
+Paddy,Madhya Pradesh,2022-23,2166,10
+Paddy,Maharashtra,2019-20,1932,10
+Paddy,Maharashtra,2020-21,2098,10
+Paddy,Maharashtra,2021-22,2133,10
+Paddy,Maharashtra,2022-23,2250,10
+Paddy,Odisha,2019-20,1658,10
+Paddy,Odisha,2020-21,1605,10
+Paddy,Odisha,2021-22,1544,10
+Paddy,Odisha,2022-23,1554,10
+Paddy,Tamil Nadu,2019-20,1700,10
+Paddy,Tamil Nadu,2020-21,1615,10
+Paddy,Tamil Nadu,2021-22,1870,10
+Paddy,Tamil Nadu,2022-23,1995,10
+Paddy,Telangana,2019-20,1804,10
+Paddy,Telangana,2020-21,1833,10
+Paddy,Telangana,2021-22,1916,10
+Paddy,Telangana,2022-23,1958,10
+Paddy,Uttar Pradesh,2019-20,1569,10
+Paddy,Uttar Pradesh,2020-21,1609,10
+Paddy,Uttar Pradesh,2021-22,1796,10
+Paddy,Uttar Pradesh,2022-23,1919,10
+Paddy,West Bengal,2019-20,1676,10
+Paddy,West Bengal,2020-21,1677,10
+Paddy,West Bengal,2021-22,1844,10
+Paddy,West Bengal,2022-23,,10
+Wheat,Bihar,2019-20,1474,11
+Wheat,Bihar,2020-21,1712,11
+Wheat,Bihar,2021-22,1830,11
+Wheat,Bihar,2022-23,2086,11
+Wheat,Gujarat,2019-20,1868,11
+Wheat,Gujarat,2020-21,1775,11
+Wheat,Gujarat,2021-22,1994,11
+Wheat,Gujarat,2022-23,2378,11
+Wheat,Haryana,2019-20,1975,11
+Wheat,Haryana,2020-21,1840,11
+Wheat,Haryana,2021-22,2015,11
+Wheat,Haryana,2022-23,2173,11
+Wheat,Madhya Pradesh,2019-20,1901,11
+Wheat,Madhya Pradesh,2020-21,1889,11
+Wheat,Madhya Pradesh,2021-22,2147,11
+Wheat,Madhya Pradesh,2022-23,2207,11
+Wheat,Maharashtra,2019-20,1996,11
+Wheat,Maharashtra,2020-21,1781,11
+Wheat,Maharashtra,2021-22,2134,11
+Wheat,Maharashtra,2022-23,,11
+Wheat,Punjab,2019-20,1851,11
+Wheat,Punjab,2020-21,1921,11
+Wheat,Punjab,2021-22,1791,11
+Wheat,Punjab,2022-23,2025,11
+Wheat,Rajasthan,2019-20,1886,11
+Wheat,Rajasthan,2020-21,1852,11
+Wheat,Rajasthan,2021-22,2145,11
+Wheat,Rajasthan,2022-23,2262,11
+Wheat,Uttar Pradesh,2019-20,1815,11
+Wheat,Uttar Pradesh,2020-21,1774,11
+Wheat,Uttar Pradesh,2021-22,1952,11
+Wheat,Uttar Pradesh,2022-23,2044,11
+Maize,Andhra Pradesh,2019-20,1721,12
+Bajra,Andhra Pradesh,2019-20,1890,13
+Bajra,Andhra Pradesh,2020-21,1687,13
+Bajra,Andhra Pradesh,2021-22,1694,13
+Bajra,Andhra Pradesh,2022-23,2030,13
+Bajra,Gujarat,2019-20,1726,13
+Bajra,Gujarat,2020-21,1540,13
+Bajra,Gujarat,2021-22,1718,13
+Bajra,Gujarat,2022-23,2090,13
+Bajra,Haryana,2019-20,1937,13
+Bajra,Haryana,2020-21,1905,13
+Bajra,Haryana,2021-22,2100,13
+Bajra,Haryana,2022-23,2100,13
+Bajra,Karnataka,2019-20,1725,13
+Bajra,Karnataka,2020-21,1510,13
+Bajra,Karnataka,2021-22,1588,13
+Bajra,Karnataka,2022-23,1889,13
+Bajra,Madhya Pradesh,2019-20,1917,13
+Bajra,Madhya Pradesh,2020-21,1717,13
+Bajra,Madhya Pradesh,2021-22,1813,13
+Bajra,Madhya Pradesh,2022-23,1997,13
+Bajra,Maharashtra,2019-20,1664,13
+Bajra,Maharashtra,2020-21,1429,13
+Bajra,Maharashtra,2021-22,2066,13
+Bajra,Maharashtra,2022-23,2383,13
+Bajra,Rajasthan,2019-20,1828,13
+Bajra,Rajasthan,2020-21,1467,13
+Bajra,Rajasthan,2021-22,1682,13
+Bajra,Rajasthan,2022-23,1994,13
+Bajra,Uttar Pradesh,2019-20,1630,13
+Bajra,Uttar Pradesh,2020-21,1367,13
+Bajra,Uttar Pradesh,2021-22,1689,13
+Bajra,Uttar Pradesh,2022-23,1926,13
+Gram,Bihar,2019-20,4217,14
+Gram,Bihar,2020-21,4224,14
+Gram,Bihar,2021-22,4391,14
+Gram,Bihar,2022-23,4798,14
+Gram,Chhattisgarh,2019-20,5614,14
+Gram,Chhattisgarh,2020-21,5670,14
+Gram,Chhattisgarh,2021-22,6094,14
+Gram,Chhattisgarh,2022-23,6239,14
+Gram,Gujarat,2019-20,3926,14
+Gram,Gujarat,2020-21,4241,14
+Gram,Gujarat,2021-22,4457,14
+Gram,Gujarat,2022-23,4372,14
+Gram,Jharkhand,2019-20,5269,14
+Gram,Jharkhand,2020-21,5691,14
+Gram,Jharkhand,2021-22,5747,14
+Gram,Jharkhand,2022-23,5840,14
+Gram,Madhya Pradesh,2019-20,4474,14
+Gram,Madhya Pradesh,2020-21,5027,14
+Gram,Madhya Pradesh,2021-22,5021,14
+Gram,Madhya Pradesh,2022-23,5052,14
+Gram,Maharashtra,2019-20,3923,14
+Gram,Maharashtra,2020-21,4563,14
+Gram,Maharashtra,2021-22,4445,14
+Gram,Maharashtra,2022-23,4596,14
+Gram,Rajasthan,2019-20,4002,14
+Gram,Rajasthan,2020-21,4738,14
+Gram,Rajasthan,2021-22,4720,14
+Gram,Rajasthan,2022-23,4725,14
+Gram,Telangana,2019-20,4419,14
+Gram,Telangana,2020-21,4720,14
+Gram,Telangana,2021-22,4944,14
+Gram,Telangana,2022-23,5249,14
+Gram,Uttar Pradesh,2019-20,4381,14
+Gram,Uttar Pradesh,2020-21,4929,14
+Gram,Uttar Pradesh,2021-22,4364,14
+Gram,Uttar Pradesh,2022-23,4979,14
+Tur/Arhar,Andhra Pradesh,2019-20,5064,15
+Tur/Arhar,Andhra Pradesh,2020-21,5844,15
+Tur/Arhar,Andhra Pradesh,2021-22,5878,15
+Tur/Arhar,Andhra Pradesh,2022-23,6865,15
+Tur/Arhar,Bihar,2019-20,4763,15
+Tur/Arhar,Bihar,2020-21,5006,15
+Tur/Arhar,Bihar,2021-22,5546,15
+Tur/Arhar,Bihar,2022-23,6275,15
+Tur/Arhar,Chhattisgarh,2019-20,5950,15
+Tur/Arhar,Chhattisgarh,2020-21,7320,15
+Tur/Arhar,Chhattisgarh,2021-22,7090,15
+Tur/Arhar,Chhattisgarh,2022-23,8266,15
+Tur/Arhar,Gujarat,2019-20,4860,15
+Tur/Arhar,Gujarat,2020-21,5337,15
+Tur/Arhar,Gujarat,2021-22,5818,15
+Tur/Arhar,Gujarat,2022-23,5929,15
+Tur/Arhar,Jharkhand,2019-20,6552,15
+Tur/Arhar,Jharkhand,2020-21,6418,15
+Tur/Arhar,Jharkhand,2021-22,6636,15
+Tur/Arhar,Jharkhand,2022-23,6849,15
+Tur/Arhar,Karnataka,2019-20,4829,15
+Tur/Arhar,Karnataka,2020-21,4859,15
+Tur/Arhar,Karnataka,2021-22,4377,15
+Tur/Arhar,Karnataka,2022-23,6904,15
+Tur/Arhar,Madhya Pradesh,2019-20,5576,15
+Tur/Arhar,Madhya Pradesh,2020-21,6096,15
+Tur/Arhar,Madhya Pradesh,2021-22,5999,15
+Tur/Arhar,Madhya Pradesh,2022-23,6940,15
+Tur/Arhar,Maharashtra,2019-20,4920,15
+Tur/Arhar,Maharashtra,2020-21,5940,15
+Tur/Arhar,Maharashtra,2021-22,5903,15
+Tur/Arhar,Maharashtra,2022-23,7244,15
+Groundnut,Andhra Pradesh,2019-20,5335,16
+Mustard,Assam,2019-20,2996,17
+Mustard,Assam,2020-21,3220,17
+Mustard,Assam,2021-22,3335,17
+Mustard,Assam,2022-23,3414,17
+Mustard,Bihar,2019-20,3535,17
+Mustard,Bihar,2020-21,4336,17
+Mustard,Bihar,2021-22,4782,17
+Mustard,Bihar,2022-23,5653,17
+Mustard,Gujarat,2019-20,3526,17
+Mustard,Gujarat,2020-21,4061,17
+Mustard,Gujarat,2021-22,5463,17
+Mustard,Gujarat,2022-23,4956,17
+Mustard,Madhya Pradesh,2019-20,4037,17
+Mustard,Madhya Pradesh,2020-21,4985,17
+Mustard,Madhya Pradesh,2021-22,5872,17
+Mustard,Madhya Pradesh,2022-23,5169,17
+Mustard,Rajasthan,2019-20,3928,17
+Mustard,Rajasthan,2020-21,5637,17
+Mustard,Rajasthan,2021-22,6431,17
+Mustard,Rajasthan,2022-23,5213,17
+Mustard,Uttar Pradesh,2019-20,3739,17
+Mustard,Uttar Pradesh,2020-21,5308,17
+Mustard,Uttar Pradesh,2021-22,6320,17
+Mustard,Uttar Pradesh,2022-23,5823,17
+Mustard,West Bengal,2019-20,3945,17
+Mustard,West Bengal,2020-21,4671,17
+Mustard,West Bengal,2021-22,5407,17
+Mustard,West Bengal,2022-23,,17
+Sesamum,Assam,2019-20,6315,18
+Sesamum,Assam,2020-21,6865,18
+Sesamum,Assam,2021-22,7003,18
+Sesamum,Assam,2022-23,7011,18
+Sesamum,Gujarat,2019-20,9107,18
+Sesamum,Gujarat,2020-21,7830,18
+Sesamum,Gujarat,2021-22,8616,18
+Sesamum,Gujarat,2022-23,11214,18
+Sesamum,Karnataka,2019-20,9021,18
+Sesamum,Karnataka,2020-21,7309,18
+Sesamum,Karnataka,2021-22,7955,18
+Sesamum,Karnataka,2022-23,10188,18
+Sesamum,Madhya Pradesh,2019-20,11764,18
+Sesamum,Madhya Pradesh,2020-21,9336,18
+Sesamum,Madhya Pradesh,2021-22,9700,18
+Sesamum,Madhya Pradesh,2022-23,10810,18
+Sesamum,Maharashtra,2019-20,9624,18
+Sesamum,Maharashtra,2020-21,8259,18
+Sesamum,Maharashtra,2021-22,9995,18
+Sesamum,Maharashtra,2022-23,12471,18
+Sesamum,Odisha,2019-20,6247,18
+Sesamum,Odisha,2020-21,6743,18
+Sesamum,Odisha,2021-22,7704,18
+Sesamum,Odisha,2022-23,8239,18
+Sesamum,Rajasthan,2019-20,9439,18
+Sesamum,Rajasthan,2020-21,8748,18
+Sesamum,Rajasthan,2021-22,9341,18
+Sesamum,Rajasthan,2022-23,11554,18
+Sesamum,Uttar Pradesh,2019-20,8335,18
+Sesamum,Uttar Pradesh,2020-21,7970,18
+Sesamum,Uttar Pradesh,2021-22,8198,18
+Sesamum,Uttar Pradesh,2022-23,8046,18
