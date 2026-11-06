@@ -2,8 +2,7 @@
 
 All raw data, literature and research notes for AgriPV Lab live here. **Start with
 [`DATA_REQUIREMENTS.md`](DATA_REQUIREMENTS.md)**: it lists every dataset (D00 to D25), why it is needed, the exact
-fields to collect, and when it counts as done. To automate the source search, run the prompts in
-[`DEEP_RESEARCH_PROMPTS.md`](DEEP_RESEARCH_PROMPTS.md) with a deep-research agent.
+fields to collect, and when it counts as done.
 
 | Folder | Datasets |
 |---|---|
@@ -23,8 +22,6 @@ fields to collect, and when it counts as done. To automate the source search, ru
 | `13_stakeholder_notes/` | D25 |
 | `_templates/` | `SOURCE.md` provenance card |
 | `_scripts/` | Small, re-runnable fetch / extract scripts referenced from SOURCE cards |
-| `deep_research/` | Deep-research agent reports (leads only) and their verification notes |
-
 ## Rules
 1. Every source gets a `SOURCE.md` (copy from `_templates/`) **before** you process it. When a folder holds
    more than one source, name the cards `SOURCE_<publisher>_<dataset>.md`.

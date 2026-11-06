@@ -8,3 +8,7 @@ __pycache__/
 # research: large raw downloads and copyrighted papers stay local
 research/**/raw/
 research/**/*.pdf
+# research: deep-research prompts and agent reports stay local (leads only, not sources)
+research/DEEP_RESEARCH_PROMPTS.md
+research/deep_research/
+research/**/deep_research_*.md
