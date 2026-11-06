@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Toposheet sketch</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--sheet:#F3F3EE;--brown:#8A5A2B;--blue:#2B6CB0;--green:#5E8C3A;--red:#C0392B;--ink:#151515;--mute:#5A5A55;--line:#CFCFC6}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1440px;height:900px;overflow:hidden;background:var(--sheet);color:var(--ink);font-family:Barlow,system-ui,sans-serif;font-variant-numeric:tabular-nums;display:grid;grid-template-rows:56px 1fr}
+.bar{display:flex;align-items:center;gap:28px;padding:0 28px;border-bottom:1px solid var(--ink);background:#fff}
+.bar b{font-family:'Barlow Condensed';font-size:24px;letter-spacing:.02em}
+.bar nav{display:flex;gap:20px;font-size:14px}
+.bar nav span.on{border-bottom:2px solid var(--red);padding-bottom:16px;margin-bottom:-18px;font-weight:600}
+.bar .s{margin-left:auto;border:1px solid var(--line);padding:9px 14px;font-size:13px;width:280px;color:var(--mute)}
+.wrap{display:grid;grid-template-columns:1fr 340px;gap:0;min-height:0}
+.sheet{position:relative;margin:22px;border:2px solid var(--ink);background:#F7F7F2}
+.ticks{position:absolute;inset:0;pointer-events:none}
+.title{position:absolute;left:24px;top:18px}
+.title h1{font-family:'Barlow Condensed';font-size:52px;line-height:.95;font-weight:700;letter-spacing:.01em}
+.title p{font-size:13px;color:var(--mute)}
+.chart{position:absolute;left:24px;right:24px;bottom:18px;height:250px;border-top:1px solid var(--ink);background:#F7F7F2;padding:12px 14px 0}
+.chart h2{font-family:'Barlow Condensed';font-size:24px;font-weight:600}
+.side{border-left:1px solid var(--ink);background:#fff;padding:22px;display:flex;flex-direction:column;gap:16px;overflow:hidden}
+.side h3{font-family:'Barlow Condensed';font-size:22px;font-weight:600;border-bottom:1px solid var(--ink);padding-bottom:10px}
+.sign{display:flex;align-items:center;gap:10px;font-size:13px;padding:4px 0}
+.sign i{width:26px;height:10px;display:inline-block}
+.kv{display:flex;justify-content:space-between;font-size:14px;padding:9px 0;border-bottom:1px dotted var(--line)}
+.kv b{font-weight:600}
+.btn{background:var(--ink);color:#fff;text-align:center;padding:11px;font-size:14px;font-weight:600;margin-top:auto}
+</style></head>
+<body>
+<header class="bar"><b>AGRIPV LAB</b>
+  <nav><span>Map</span><span class="on">Nashik</span><span>Compare</span><span>Report</span><span>Method</span></nav>
+  <div class="s">Search district or LGD code</div></header>
+<div class="wrap">
+  <section class="sheet">
+    <svg class="ticks" viewBox="0 0 1056 800" preserveAspectRatio="none">
+      <g stroke="#151515" stroke-width="1"><line x1="0" x2="12" y1="100" y2="100"/><line x1="0" x2="12" y1="200" y2="200"/><line x1="0" x2="12" y1="300" y2="300"/><line x1="0" x2="12" y1="400" y2="400"/><line x1="200" x2="200" y1="0" y2="12"/><line x1="400" x2="400" y1="0" y2="12"/><line x1="600" x2="600" y1="0" y2="12"/><line x1="800" x2="800" y1="0" y2="12"/></g>
+      <g fill="none" stroke="#8A5A2B" stroke-width="1.2" opacity=".8">
+        <path d="M330 120 C470 70 700 90 820 170 C900 230 880 380 760 440 C620 500 420 470 330 400 C250 330 240 170 330 120Z" stroke="#151515" stroke-width="2.2"/>
+        <path d="M380 170 C500 130 660 150 760 210 C820 260 800 360 700 400 C590 440 450 420 390 360 C330 300 320 200 380 170Z"/>
+        <path d="M440 220 C540 190 640 210 700 250 C740 290 720 340 650 360 C570 380 480 370 440 320 C410 280 410 240 440 220Z"/>
+        <path d="M500 260 C560 245 620 260 640 285 C650 310 620 330 580 335 C530 340 495 320 490 300Z"/>
+      </g>
+      <path d="M300 300 C420 330 520 300 640 340 C720 370 820 360 900 330" fill="none" stroke="#2B6CB0" stroke-width="2.5"/>
+      <g fill="#5E8C3A" opacity=".35"><circle cx="420" cy="180" r="28"/><circle cx="700" cy="420" r="34"/></g>
+      <path d="M260 450 L520 250 L860 210" fill="none" stroke="#C0392B" stroke-width="2"/>
+    </svg>
+    <div class="title"><h1>NASHIK</h1><p>Maharashtra · LGD 516 · Western Plateau &amp; Hills · synthetic data</p></div>
+    <div class="chart"><h2>LER across GCR · elevated fixed-tilt 3.0 m</h2>
+      <svg viewBox="0 0 1000 190" width="100%" height="190">
+        <g stroke="#CFCFC6"><line x1="40" x2="980" y1="170" y2="170"/><line x1="40" x2="980" y1="90" y2="90"/></g>
+        <polyline fill="none" stroke="#5E8C3A" stroke-width="2.5" points="40,80 134,84 228,90 322,96 416,103 510,111 604,120 698,129 792,138 886,146 980,153"/>
+        <polyline fill="none" stroke="#2B6CB0" stroke-width="2.5" points="40,154 134,146 228,138 322,130 416,122 510,115 604,107 698,99 792,91 886,83 980,75"/>
+        <polyline fill="none" stroke="#151515" stroke-width="3" points="40,64 134,57 228,51 322,45 416,41 510,38 604,36 698,34 792,32 886,29 980,25"/>
+        <line x1="510" x2="510" y1="10" y2="170" stroke="#C0392B" stroke-width="2"/>
+      </svg></div>
+  </section>
+  <aside class="side">
+    <h3>Conventional signs</h3>
+    <div class="sign"><i style="background:#8A5A2B;height:2px"></i>Slope · 78% of cropland under 5°</div>
+    <div class="sign"><i style="background:#2B6CB0;height:3px"></i>Groundwater · 41% blocks over-exploited</div>
+    <div class="sign"><i style="background:#5E8C3A;opacity:.5"></i>Cropland mask</div>
+    <h3>At GCR 0.35</h3>
+    <div class="kv"><span>LER</span><b>1.45</b></div>
+    <div class="kv"><span>Farm retention</span><b>67%</b></div>
+    <div class="kv"><span>Farm income / acre</span><b>₹51,000</b></div>
+    <div class="kv"><span>Equity IRR</span><b>14.8%</b></div>
+    <div class="kv"><span>Min DSCR</span><b>1.31</b></div>
+    <div class="btn">Export report</div>
+  </aside>
+</div>
+</body></html>
