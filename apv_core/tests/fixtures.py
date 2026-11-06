@@ -5,6 +5,7 @@ import numpy as np
 from apv_core.constants import GCR_GRID, Season
 from apv_core.crops import CropParams, EvidenceGrade
 from apv_core.farm import CropEconomics, SeasonCrop
+from apv_core.finance import FinanceInputs
 from apv_core.physics import PhysicsTable, Structure
 from apv_core.ranges import Range
 
@@ -49,3 +50,22 @@ def onion_rabi() -> SeasonCrop:
         grade=EvidenceGrade.C,
     )
     return SeasonCrop(Season.RABI, crop, CropEconomics(80.0, 1500.0, 60000.0))
+
+
+def finance_defaults() -> FinanceInputs:
+    return FinanceInputs(
+        capex_per_kwp=35000.0,
+        om_per_kwp_year=600.0,
+        om_escalation=0.03,
+        tariff_per_kwh=3.50,
+        degradation=0.005,
+        availability=0.98,
+        debt_share=0.7,
+        interest_rate=0.09,
+        loan_years=10,
+        discount_rate=0.10,
+        crop_inflation=0.04,
+        lease_per_acre_year=40000.0,
+        lease_escalation=0.03,
+        target_irr=0.08,
+    )
