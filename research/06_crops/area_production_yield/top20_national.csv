@@ -1,35 +1,41 @@
-rank,crop,area_lakh_ha,kharif_pct,rabi_pct,summer_pct,yield_kg_ha,top20_status,note
-1,Rice,493.96,85.0,8.6,6.4,2896,firm,
-2,Wheat,323.0,0.0,100.0,0.0,3577,firm,
-3,Soybean,130.99,100.0,0.0,0.0,1081,firm,
-4,Cotton,118.57,100.0,0.0,0.0,,firm,yield blank: production in bales
-5,Maize,116.31,72.0,21.3,6.7,3475,firm,
-6,Gram,92.92,0.0,100.0,0.0,1186,firm,
-7,Rapeseed & Mustard,85.53,0.0,100.0,0.0,1428,firm,
-8,Bajra,73.46,93.9,0.0,6.1,1488,firm,
-9,Sugarcane,55.92,100.0,0.0,0.0,81145,firm,
-10,Moong,54.31,60.6,2.3,37.1,669,firm,
-11,Groundnut,51.78,87.2,6.6,6.2,2104,firm,
-12,Tur,41.56,100.0,0.0,0.0,826,firm,
-13,Jowar,40.18,33.7,65.4,0.9,1203,firm,
-14,Urad,32.16,74.5,18.8,6.8,691,firm,
-15,Guarseed,30.35,100.0,0.0,0.0,595,firm,
-16,Lentil,17.03,0.0,100.0,0.0,1005,contested,
-17,Sesamum,15.0,68.2,2.9,28.9,564,contested,
-18,Ragi,12.31,100.0,0.0,0.0,1481,contested,
-19,Castorseed,9.95,100.0,0.0,0.0,1876,contested,
-20,Barley,5.79,0.0,100.0,0.0,3122,contested,
-21,Jute,5.69,100.0,0.0,0.0,,no,yield blank: production in bales
-22,Tobacco,5.12,87.2,12.8,0.0,2145,no,
-23,Linseed,1.65,0.0,100.0,0.0,660,no,
-24,Sunflower,1.5,47.7,43.7,8.6,1173,no,
-25,Nigerseed,0.66,100.0,0.0,0.0,303,no,
-26,Safflower,0.64,0.0,100.0,0.0,721,no,
-27,Mesta,0.29,100.0,0.0,0.0,,no,yield blank: production in bales
-28,Sannhemp,0.03,100.0,0.0,0.0,,no,yield blank: production in bales
-,Potato,,,,,,contested,horticulture: not in UPAg; national area to confirm from DA&FW horticulture estimates
-,Onion,,,,,,contested,horticulture: not in UPAg; national area to confirm from DA&FW horticulture estimates
-,Tomato,,,,,,contested,horticulture: not in UPAg; national area to confirm from DA&FW horticulture estimates
-,Mango,,,,,,contested,horticulture: not in UPAg; national area to confirm from DA&FW horticulture estimates
-,Banana,,,,,,contested,horticulture: not in UPAg; national area to confirm from DA&FW horticulture estimates
-,Coconut,,,,,,contested,horticulture: not in UPAg; national area to confirm from DA&FW horticulture estimates
+rank,crop,group,area_lakh_ha,kharif_pct,rabi_pct,summer_pct,yield,yield_unit,in_top20,source
+1,Rice,field crop,493.96,85.0,8.6,6.4,2896,kg/ha,True,"UPAg (DES district APY, summed)"
+2,Wheat,field crop,323.0,0.0,100.0,0.0,3577,kg/ha,True,"UPAg (DES district APY, summed)"
+3,Soybean,field crop,130.99,100.0,0.0,0.0,1081,kg/ha,True,"UPAg (DES district APY, summed)"
+4,Cotton,field crop,118.57,100.0,0.0,0.0,,production in bales,True,"UPAg (DES district APY, summed)"
+5,Maize,field crop,116.31,72.0,21.3,6.7,3475,kg/ha,True,"UPAg (DES district APY, summed)"
+6,Gram,field crop,92.92,0.0,100.0,0.0,1186,kg/ha,True,"UPAg (DES district APY, summed)"
+7,Rapeseed & Mustard,field crop,85.53,0.0,100.0,0.0,1428,kg/ha,True,"UPAg (DES district APY, summed)"
+8,Bajra,field crop,73.46,93.9,0.0,6.1,1488,kg/ha,True,"UPAg (DES district APY, summed)"
+9,Sugarcane,field crop,55.92,100.0,0.0,0.0,81145,kg/ha,True,"UPAg (DES district APY, summed)"
+10,Moong,field crop,54.31,60.6,2.3,37.1,669,kg/ha,True,"UPAg (DES district APY, summed)"
+11,Groundnut,field crop,51.78,87.2,6.6,6.2,2104,kg/ha,True,"UPAg (DES district APY, summed)"
+12,Tur,field crop,41.56,100.0,0.0,0.0,826,kg/ha,True,"UPAg (DES district APY, summed)"
+13,Jowar,field crop,40.18,33.7,65.4,0.9,1203,kg/ha,True,"UPAg (DES district APY, summed)"
+14,Urad,field crop,32.16,74.5,18.8,6.8,691,kg/ha,True,"UPAg (DES district APY, summed)"
+15,Guarseed,field crop,30.35,100.0,0.0,0.0,595,kg/ha,True,"UPAg (DES district APY, summed)"
+16,Mango,fruit (perennial),24.07,,,,9460,kg/ha,True,DA&FW horticulture final estimates
+17,Potato,vegetable,23.46,,,,24647,kg/ha,True,DA&FW horticulture final estimates
+18,Coconut,plantation (perennial),21.8,,,,6577,kg/ha (nut weight),True,DA&FW horticulture final estimates
+19,Onion,vegetable,17.54,,,,15685,kg/ha,True,DA&FW horticulture final estimates
+20,Lentil,field crop,17.03,0.0,100.0,0.0,1005,kg/ha,True,"UPAg (DES district APY, summed)"
+21,Sesamum,field crop,15.0,68.2,2.9,28.9,564,kg/ha,False,"UPAg (DES district APY, summed)"
+22,Cumin,spice,14.32,,,,719,kg/ha,False,DA&FW horticulture final estimates
+23,Ragi,field crop,12.31,100.0,0.0,0.0,1481,kg/ha,False,"UPAg (DES district APY, summed)"
+24,Cashewnut,plantation (perennial),12.02,,,,664,kg/ha,False,DA&FW horticulture final estimates
+25,Castorseed,field crop,9.95,100.0,0.0,0.0,1876,kg/ha,False,"UPAg (DES district APY, summed)"
+26,Arecanut,plantation (perennial),9.95,,,,1459,kg/ha,False,DA&FW horticulture final estimates
+27,Banana,fruit (perennial),9.25,,,,41047,kg/ha,False,DA&FW horticulture final estimates
+28,Red Chillies (Dried),spice,8.77,,,,3194,kg/ha,False,DA&FW horticulture final estimates
+29,Tomato,vegetable,8.32,,,,25196,kg/ha,False,DA&FW horticulture final estimates
+30,Brinjal,vegetable,6.86,,,,19045,kg/ha,False,DA&FW horticulture final estimates
+31,Peas,vegetable,6.16,,,,11115,kg/ha,False,DA&FW horticulture final estimates
+32,Coriander,spice,6.07,,,,1384,kg/ha,False,DA&FW horticulture final estimates
+33,Barley,field crop,5.79,0.0,100.0,0.0,3122,kg/ha,False,"UPAg (DES district APY, summed)"
+34,Jute,field crop,5.69,100.0,0.0,0.0,,production in bales,False,"UPAg (DES district APY, summed)"
+35,Okra/Ladyfinger,vegetable,5.6,,,,13397,kg/ha,False,DA&FW horticulture final estimates
+36,Tobacco,field crop,5.12,87.2,12.8,0.0,2145,kg/ha,False,"UPAg (DES district APY, summed)"
+37,Cauliflower,vegetable,5.07,,,,19867,kg/ha,False,DA&FW horticulture final estimates
+38,Mandarin,fruit (perennial),4.88,,,,13125,kg/ha,False,DA&FW horticulture final estimates
+39,Chillies (Green),vegetable,4.6,,,,11319,kg/ha,False,DA&FW horticulture final estimates
+40,Cabbage,vegetable,4.45,,,,23697,kg/ha,False,DA&FW horticulture final estimates
