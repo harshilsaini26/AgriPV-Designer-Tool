@@ -18,7 +18,7 @@ import geopandas as gpd
 import numpy as np
 import rasterio
 from exactextract import exact_extract
-from rasterio.warp import transform_bounds
+from rasterio.warp import Resampling, reproject, transform_bounds
 from rasterio.windows import from_bounds
 
 BASE = "/vsicurl/https://files.isric.org/soilgrids/latest/data_aggregated/1000m/{p}/{p}_{d}_mean_1000.tif"
@@ -86,6 +86,29 @@ def topsoil(raw: Path, prop: str, factor: float) -> Path:
     return out
 
 
+def cropland_weights(research: Path, raw: Path, template: Path) -> Path:
+    """WorldCover cropland fraction (0.01°, EPSG:4326) averaged onto the 1 km soil grid."""
+    out = raw / "cropland_frac_on_soil_grid.tif"
+    if out.exists():
+        return out
+    src_path = research / "04_land_cover" / "raw" / "worldcover_2021" / "india_cropland_frac_0.01deg.tif"
+    with rasterio.open(template) as t, rasterio.open(src_path) as s:
+        dst = np.zeros((t.height, t.width), dtype="float32")
+        reproject(
+            np.nan_to_num(s.read(1), nan=0.0),
+            dst,
+            src_transform=s.transform,
+            src_crs=s.crs,
+            dst_transform=t.transform,
+            dst_crs=t.crs,
+            resampling=Resampling.average,
+        )
+        prof = t.profile | {"dtype": "float32", "nodata": None}
+    with rasterio.open(out, "w", **prof) as w:
+        w.write(dst, 1)
+    return out
+
+
 def main(research: Path) -> None:
     soil = research / "02_soil"
     raw = soil / "raw" / "soilgrids_v2_1km"
@@ -94,13 +117,32 @@ def main(research: Path) -> None:
     d = (d.set_crs(4326) if d.crs is None else d).reset_index(drop=True)
     d["row_id"] = d.index  # dist_lgd is not unique (two PoK polygons share code 0)
     result = d[["row_id", "dist_lgd", "dtname", "state_lgd", "stname"]].copy()
+    cropland = "--cropland" in sys.argv
+    wts = None
     for prop, (factor, col, _unit) in PROPS.items():
         path = topsoil(raw, prop, factor)
         with rasterio.open(path) as r:
             dd = d.to_crs(r.crs)
-        stats = exact_extract(
-            str(path), dd[["row_id", "geometry"]], ["mean", "count"], include_cols=["row_id"], output="pandas"
-        )
+        if cropland:
+            wts = wts or cropland_weights(research, raw, path)
+            stats = exact_extract(
+                str(path),
+                dd[["row_id", "geometry"]],
+                ["mean", "weighted_mean", "count", "weighted_sum"],
+                weights=str(wts),
+                include_cols=["row_id"],
+                output="pandas",
+            )
+            fallback = ~np.isfinite(stats["weighted_mean"]) | (stats["weighted_sum"].abs() <= 0)
+            stats["mean"] = np.where(fallback, stats["mean"], stats["weighted_mean"])
+            if "cropland_fallback" not in result:
+                result = result.merge(
+                    stats[["row_id"]].assign(cropland_fallback=fallback.values), on="row_id", how="left"
+                )
+        else:
+            stats = exact_extract(
+                str(path), dd[["row_id", "geometry"]], ["mean", "count"], include_cols=["row_id"], output="pandas"
+            )
         stats = stats.rename(columns={"mean": col, "count": f"{prop}_cells"})
         result = result.merge(stats[["row_id", col, f"{prop}_cells"]], on="row_id", how="left")
         print("district means", prop, flush=True)
@@ -110,8 +152,9 @@ def main(research: Path) -> None:
     for _, (_, col, _) in PROPS.items():
         result[col] = result[col].round(3 if "density" in col else 2)
     result["texture_sum_pct"] = (result["clay_pct"] + result["silt_pct"] + result["sand_pct"]).round(1)
-    result["weighting"] = "area"
-    result.sort_values(["state_lgd", "dist_lgd"]).to_csv(soil / "soilgrids_v2_district_topsoil_0-30cm.csv", index=False)
+    result["weighting"] = "cropland" if cropland else "area"
+    name = "soilgrids_v2_district_topsoil_0-30cm" + ("_cropland" if cropland else "") + ".csv"
+    result.sort_values(["state_lgd", "dist_lgd"]).to_csv(soil / name, index=False)
     print(len(result), "districts; missing clay:", int(result["clay_pct"].isna().sum()))
 
 

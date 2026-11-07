@@ -17,9 +17,10 @@ How AgriPV Lab turns gridded daily or monthly climate data into one row per LGD 
    fraction of the cell inside the district polygon (LGD-coded polygons, rasterised at 1/5 of the cell size),
    `cos(lat)` corrects cell area, and `c_i` is the cell's **cropland fraction**.
 2. **Cropland fraction** `c_i`: ESA WorldCover 10 m (v200 2021, CC BY 4.0), class 40 (Cropland), averaged onto the
-   climate grid. **Until that mask is processed, `c_i = 1` (area weighting) and output rows carry
-   `weighting = "area"`.** If a district's cropland sum is about 0 (urban or high-alpine), fall back to area weights and
-   set `cropland_fallback = true`.
+   climate grid. **Done (2026-11-07):** the 0.01° cropland fraction is in
+   `04_land_cover/raw/worldcover_2021/`; tables come in two versions, `weighting = "area"` and
+   `weighting = "cropland"` (`*_cropland.csv`, the default for the model). If a district has no cropland cell with
+   data, it falls back to area weights and sets `cropland_fallback = true`.
 3. **Order of operations.** Linear indicators (seasonal totals and means, GDD, PET) can be averaged in any order.
    **Non-linear indicators (CV, threshold-day counts, rainy days) are computed per cell first, then weighted.**
    Averaging rain across a district before applying a 2.5 mm threshold inflates rainy days and suppresses variance.

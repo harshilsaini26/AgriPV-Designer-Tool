@@ -9,6 +9,8 @@ Usage: uv run --no-project --with rasterio --with geopandas --with pyarrow --wit
    25 sub-cells per cell) times cos(latitude). Area-weighted only: cropland weighting comes later.
 3. Computes per-cell indicators first (needed for CV), then the weighted district mean.
 Writes 01_agro_climate/rainfall/chirps_v3_district_rainfall_normals_1991-2020.csv.
+With --cropland, cell weights are also multiplied by the WorldCover cropland fraction (falling back to area
+weights where a district has no cropland) and the output gets a _cropland suffix.
 """
 
 import sys
@@ -78,6 +80,20 @@ def weights(districts: gpd.GeoDataFrame, shape: tuple[int, int]) -> tuple[np.nda
     return wmat, coslat
 
 
+def cropland_fraction(research: Path, shape: tuple[int, int]) -> np.ndarray:
+    """WorldCover cropland fraction (0.01°) averaged to the CHIRPS 0.05° window; NaN (sea) counts as 0."""
+    path = research / "04_land_cover" / "raw" / "worldcover_2021" / "india_cropland_frac_0.01deg.tif"
+    with rasterio.open(path) as r:
+        a = np.nan_to_num(r.read(1), nan=0.0)
+        r0 = round((r.bounds.top - N) / 0.01)
+        c0 = round((W - r.bounds.left) / 0.01)
+    rows, cols = shape
+    pad = np.zeros((rows * SUB, cols * SUB), dtype="float32")
+    sub = a[r0 : r0 + rows * SUB, c0 : c0 + cols * SUB]
+    pad[: sub.shape[0], : sub.shape[1]] = sub
+    return pad.reshape(rows, SUB, cols, SUB).mean(axis=(1, 3))
+
+
 def main(research: Path) -> None:
     folder = research / "01_agro_climate" / "rainfall"
     rain = fetch(folder / "raw" / "chirps_v3")
@@ -85,6 +101,8 @@ def main(research: Path) -> None:
     d = gpd.read_parquet(research / "00_admin_boundaries" / "raw" / "bharatlas" / "LGD_Districts.parquet")
     d = d.to_crs(4326) if d.crs else d.set_crs(4326)
     wmat, _ = weights(d, (rows, cols))
+    cropland = "--cropland" in sys.argv
+    cf = cropland_fraction(research, (rows, cols)) if cropland else None
 
     annual = rain.sum(axis=1)  # (year, row, col)
     per_cell = {f"m{m:02d}_mm": np.nanmean(rain[:, m - 1], axis=0) for m in range(1, 13)}
@@ -100,6 +118,10 @@ def main(research: Path) -> None:
     for k, row in enumerate(d.itertuples()):
         w = wmat[k]
         rec = {"dist_lgd": row.dist_lgd, "district": row.dtname, "state_lgd": row.state_lgd, "state": row.stname}
+        if cropland:
+            wc = w * cf
+            rec["cropland_fallback"] = bool(wc[np.isfinite(per_cell["annual_mm"])].sum() <= 0)
+            w = w if rec["cropland_fallback"] else wc
         valid = np.isfinite(per_cell["annual_mm"]) & (w > 0)
         rec["n_cells"] = int((w > 0).sum())
         rec["coverage_frac"] = round(float(w[valid].sum() / w.sum()), 3) if w.sum() > 0 else 0.0
@@ -108,8 +130,9 @@ def main(research: Path) -> None:
             rec[key] = round(float((grid[ok] * w[ok]).sum() / w[ok].sum()), 1) if ok.any() else None
         records.append(rec)
     out = pd.DataFrame(records).sort_values(["state_lgd", "dist_lgd"])
-    out["weighting"] = "area"
-    out.to_csv(folder / "chirps_v3_district_rainfall_normals_1991-2020.csv", index=False)
+    out["weighting"] = "cropland" if cropland else "area"
+    name = "chirps_v3_district_rainfall_normals_1991-2020" + ("_cropland" if cropland else "") + ".csv"
+    out.to_csv(folder / name, index=False)
     print(len(out), "districts written; missing:", int(out["annual_mm"].isna().sum()))
 
 
