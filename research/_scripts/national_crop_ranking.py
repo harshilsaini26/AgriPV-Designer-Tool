@@ -128,15 +128,17 @@ def main(research: Path) -> None:
     rows = sorted(field_crops(apy) + horticulture(apy), key=lambda d: -d["area_lakh_ha"])
     path = apy / "top20_national.csv"
     cols = ["rank", "crop", "group", "area_lakh_ha", "kharif_pct", "rabi_pct", "summer_pct", "yield", "yield_unit"]
+    # Research list (owner decision 2026-11-07): the 20 largest *annual* crops. Perennial tree crops (mango,
+    # coconut, ...) are skipped because panels cannot be built over a mature orchard or plantation.
+    research_list = [d["crop"] for d in rows if "perennial" not in d["group"]][:20]
     with path.open("w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh, lineterminator="\n")
-        w.writerow([*cols, "in_top20", "source"])
+        w.writerow([*cols, "top20_by_area", "research_list", "source"])
         for i, d in enumerate(rows[:40], 1):
             d["area_lakh_ha"] = round(d["area_lakh_ha"], 2)
-            w.writerow([i, *[d[c] for c in cols[1:]], i <= 20, d["source"]])
+            w.writerow([i, *[d[c] for c in cols[1:]], i <= 20, d["crop"] in research_list, d["source"]])
     print(len(rows), "crops; top 40 ->", path)
-    for i, d in enumerate(rows[:25], 1):
-        print(f"{i:2d} {d['crop']:22s} {d['area_lakh_ha']:7.2f}  {d['group']}")
+    print("research list:", ", ".join(research_list))
 
 
 if __name__ == "__main__":

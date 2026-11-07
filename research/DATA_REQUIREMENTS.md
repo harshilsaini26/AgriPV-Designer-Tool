@@ -319,13 +319,13 @@ Then derive a **5-year average** and the **top crops by area per season**.
 ### D16 — Crop shade-response literature
 **Why:** this decides how much yield each crop loses as GCR rises: the curve parameters **L_t** (the light threshold) and **k** (the slope), at low/central/high, plus an **evidence grade A–D** (spec §13). Every headline result depends on it.
 
-**Scope:** the **top 20 crops by national cropped area**, covering every season they're grown in. Confirm the list from D10 first (open question Q-04). A likely starting list:
-- rice, wheat, maize, jowar, bajra, ragi
-- chickpea, pigeon pea, moong, urad, lentil
-- soybean, groundnut, mustard
-- cotton, sugarcane
-- potato, onion, tomato
-- plus leafy vegetables or spices (e.g. turmeric, ginger), which are often good shade candidates
+**Scope:** the **20 largest annual crops by national cropped area**, covering every season they're grown in. Confirmed from D10 on 2026-11-07 (Q-04; `06_crops/area_production_yield/top20_national.csv`, column `research_list`). Perennial tree crops (mango, coconut) are excluded because panels cannot go over a mature orchard or plantation:
+- cereals: rice, wheat, maize, bajra, jowar
+- pulses: gram (chickpea), tur (pigeon pea), moong, urad, lentil
+- oilseeds: soybean, mustard, groundnut, sesame
+- fibre, sugar and gum: cotton, sugarcane, guar
+- horticulture: potato, onion, cumin
+- optional extras outside the 20, often good shade candidates: tomato (29th by area), ragi, leafy vegetables, turmeric, ginger
 
 **Kinds of study to include, in order of value:**
 1. Agrivoltaic field trials in India (e.g. ICAR-CAZRI Jodhpur and other Indian APV pilots).

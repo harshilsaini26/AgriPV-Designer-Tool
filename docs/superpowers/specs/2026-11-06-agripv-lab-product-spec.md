@@ -144,7 +144,7 @@ Analytics must be privacy-friendly: no personal data, no cookies beyond the esse
 
 | Target | Threshold |
 |---|---|
-| Crop coverage | Shade-response parameters for the **top 20 crops by national cropped area**, covering every season they're grown in |
+| Crop coverage | Shade-response parameters for the **20 largest annual crops by national cropped area** (perennial tree crops excluded; list in Q-04), covering every season they're grown in |
 | Evidence grade | Top 10 crops at **grade B or better**; the other 10 at **grade C or better** (grades defined in §13.3) |
 | Yield validation | Across all published Indian APV / shade-trial data points collected, predicted relative yield is within **±15 percentage points** of observed for **≥ 80%** of points |
 | Energy validation | pvlib annual energy within **±3%** of PySAM for 10 sample districts, and within **±7%** of Global Solar Atlas PV output |
@@ -644,7 +644,7 @@ Errors: 422 with field-level details; 404 for an unknown district or configurati
 | Q-01 | What will the final yield-retention limit be, and when will it be decided? | Stakeholder (policymakers) | No — editable, default 80% |
 | Q-02 | Is retention measured per acre of land (`a_farm × Y_rel`) or per cropped area (`Y_rel`)? | Stakeholder + data | **Yes for `apv_core`** — default to per acre of land until answered |
 | Q-03 | Does the limit apply to each season's crop separately, or to the whole year's rotation? | Stakeholder | **Yes for `apv_core`** — default to per season |
-| Q-04 | Which crops make up the top 20 for parameter research? Confirm from DES national area data. **Answered by area (2026-11-07):** `research/06_crops/area_production_yield/top20_national.csv` (2023-24/2024-25 means, field and horticulture crops together): rice, wheat, soybean, cotton, maize, gram, mustard, bajra, sugarcane, moong, groundnut, tur, jowar, urad, guar, **mango, potato, coconut, onion**, lentil. Next: sesame, cumin, ragi, cashew, castor; tomato is 29th (8.3 lakh ha). Still to decide: whether mango and coconut (perennial tree crops) stay in the research list | Data | Yes for research phase |
+| Q-04 | ~~Which crops make up the top 20 for parameter research? Confirm from DES national area data.~~ **Answered (2026-11-07):** the 20 largest *annual* crops by national area (2023-24/2024-25 means, field and horticulture crops together; `research_list` in `research/06_crops/area_production_yield/top20_national.csv`): rice, wheat, soybean, cotton, maize, gram, mustard, bajra, sugarcane, moong, groundnut, tur, jowar, urad, guar, potato, onion, lentil, sesame, cumin. Mango (16th) and coconut (18th) were dropped by owner decision because panels cannot go over mature orchards or plantations; tomato is 29th (8.3 lakh ha) | Data | No (answered) |
 | Q-05 | Do IMD gridded data and Agmarknet licences allow public, attributed use in an open-source app? | Legal / data | Yes for pipeline |
 | Q-06 | Where are the official state-wise KUSUM-A tariffs published? | Data | No — national fallback |
 | Q-07 | Product name and domain | Stakeholder | No |
