@@ -26,7 +26,7 @@ COLS = [
     "extraction_industrial_ham",
     "extraction_domestic_ham",
     "extraction_total_ham",
-    "allocation_domestic_2025_ham",
+    "allocation_domestic_future_ham",  # horizon year differs by edition (2025 in the 2024 report, 2030 in 2025)
     "net_availability_future_ham",
     "stage_of_extraction_pct",
 ]

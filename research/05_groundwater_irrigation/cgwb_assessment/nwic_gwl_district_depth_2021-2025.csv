@@ -1,0 +1,553 @@
+dist_lgd,district,state_lgd,state,n_wells_pre,pre_monsoon_depth_m,n_wells_post,post_monsoon_depth_m,seasonal_rise_m,pre_monsoon_band
+3,BARAMULA,1,Jammu & Kashmir,5,1.22,0,,,very shallow (0-2 m)
+5,JAMMU,1,Jammu & Kashmir,16,3.7,98,3.36,0.34,shallow (2-5 m)
+7,KATHUA,1,Jammu & Kashmir,6,5.21,48,3.55,1.66,moderate (5-10 m)
+8,KUPWARA,1,Jammu & Kashmir,10,2.38,0,,,shallow (2-5 m)
+11,PULWAMA,1,Jammu & Kashmir,1,14.75,0,,,moderately deep (10-20 m)
+12,RAJAURI,1,Jammu & Kashmir,0,,33,2.02,,
+13,SRINAGAR,1,Jammu & Kashmir,1,2.12,0,,,shallow (2-5 m)
+14,UDHAMPUR,1,Jammu & Kashmir,21,3.65,20,1.64,2.01,shallow (2-5 m)
+627,Reasi,1,Jammu & Kashmir,0,,5,1.7,,
+17,HAMIRPUR,2,Himachal Pradesh,0,,3,2.3,,
+18,KANGRA,2,Himachal Pradesh,25,4.08,27,3.06,1.02,shallow (2-5 m)
+20,KULLU,2,Himachal Pradesh,2,4.31,1,6.46,-2.15,shallow (2-5 m)
+22,MANDI,2,Himachal Pradesh,3,3.71,8,3.17,0.54,shallow (2-5 m)
+24,SIRMAUR,2,Himachal Pradesh,7,10.57,13,10.14,0.43,moderately deep (10-20 m)
+25,SOLAN,2,Himachal Pradesh,7,18.55,11,12.38,6.17,moderately deep (10-20 m)
+26,UNA,2,Himachal Pradesh,24,5.46,31,3.95,1.51,moderate (5-10 m)
+27,AMRITSAR,3,Punjab,2,13.84,6,14.28,-0.44,moderately deep (10-20 m)
+28,BATHINDA,3,Punjab,18,17.67,24,15.55,2.12,moderately deep (10-20 m)
+29,FARIDKOT,3,Punjab,17,10.0,18,10.05,-0.05,moderate (5-10 m)
+30,FATEHGARH SAHIB,3,Punjab,8,21.71,12,22.27,-0.56,deep (20-40 m)
+31,FEROZEPUR,3,Punjab,3,12.43,4,9.7,2.73,moderately deep (10-20 m)
+32,GURDASPUR,3,Punjab,10,9.86,18,7.78,2.08,moderate (5-10 m)
+33,HOSHIARPUR,3,Punjab,15,11.42,27,8.92,2.5,moderately deep (10-20 m)
+34,JALANDHAR,3,Punjab,16,23.59,25,26.26,-2.67,deep (20-40 m)
+35,KAPURTHALA,3,Punjab,9,17.17,14,21.16,-3.99,moderately deep (10-20 m)
+36,LUDHIANA,3,Punjab,13,15.32,12,15.26,0.06,moderately deep (10-20 m)
+37,MANSA,3,Punjab,8,16.65,6,13.46,3.19,moderately deep (10-20 m)
+38,MOGA,3,Punjab,0,,4,34.61,,
+39,MUKATSAR,3,Punjab,8,3.44,9,2.24,1.2,shallow (2-5 m)
+40,SBS NAGAR,3,Punjab,2,24.72,5,25.68,-0.96,deep (20-40 m)
+41,PATIALA,3,Punjab,14,29.99,12,33.44,-3.45,deep (20-40 m)
+42,ROPAR,3,Punjab,6,6.55,8,4.65,1.9,moderate (5-10 m)
+43,SANGRUR,3,Punjab,9,40.16,10,40.77,-0.61,very deep (>40 m)
+605,BARNALA,3,Punjab,2,44.3,5,44.97,-0.67,very deep (>40 m)
+608,SAS NAGAR,3,Punjab,0,,7,3.56,,
+609,TARN TARAN,3,Punjab,6,20.61,7,20.28,0.33,deep (20-40 m)
+651,FAZILKA,3,Punjab,11,2.21,11,3.01,-0.8,shallow (2-5 m)
+662,PATHANKOT,3,Punjab,11,5.34,12,4.03,1.31,moderate (5-10 m)
+44,CHANDIGARH,4,Chandigarh,9,7.8,15,18.81,-11.01,moderate (5-10 m)
+48,Champawat,5,Uttarakhand,1,39.31,2,19.23,20.08,deep (20-40 m)
+49,Dehradun,5,Uttarakhand,12,12.12,14,8.84,3.28,moderately deep (10-20 m)
+51,Nainital,5,Uttarakhand,10,28.06,10,24.86,3.2,deep (20-40 m)
+56,UDHAM SINGH NAGAR,5,Uttarakhand,20,4.88,25,3.52,1.36,shallow (2-5 m)
+58,AMBALA,6,Haryana,12,6.26,14,5.5,0.76,moderate (5-10 m)
+59,BHIWANI,6,Haryana,19,8.11,23,10.18,-2.07,moderate (5-10 m)
+60,FARIDABAD,6,Haryana,1,20.13,3,20.4,-0.27,deep (20-40 m)
+61,FATEHABAD,6,Haryana,10,7.38,11,11.67,-4.29,moderate (5-10 m)
+62,GURUGRAM,6,Haryana,0,,8,25.29,,
+63,HISAR,6,Haryana,24,7.02,26,4.49,2.53,moderate (5-10 m)
+64,JHAJJAR,6,Haryana,0,,4,1.88,,
+65,JIND,6,Haryana,0,,22,17.22,,
+66,KAITHAL,6,Haryana,12,32.52,15,34.0,-1.48,deep (20-40 m)
+67,KARNAL,6,Haryana,0,,31,18.66,,
+68,KURUKSHETRA,6,Haryana,0,,10,40.8,,
+69,MAHENDRAGARH,6,Haryana,0,,1,3.37,,
+70,PANCHKULA,6,Haryana,16,9.06,14,7.01,2.05,moderate (5-10 m)
+71,PANIPAT,6,Haryana,0,,17,16.26,,
+72,REWARI,6,Haryana,1,75.75,3,21.0,54.75,very deep (>40 m)
+73,ROHTAK,6,Haryana,0,,8,2.6,,
+74,SIRSA,6,Haryana,20,11.0,24,12.1,-1.1,moderately deep (10-20 m)
+75,SONIPAT,6,Haryana,0,,26,6.09,,
+76,YAMUNANAGAR,6,Haryana,19,11.55,22,9.5,2.05,moderately deep (10-20 m)
+604,Nuh,6,Haryana,0,,3,3.3,,
+619,Palwal,6,Haryana,5,10.23,6,7.57,2.66,moderately deep (10-20 m)
+701,Charkhi Dadri,6,Haryana,4,2.83,4,3.59,-0.76,shallow (2-5 m)
+77,CENTRAL,7,Delhi,1,2.06,1,1.62,0.44,shallow (2-5 m)
+78,EAST,7,Delhi,2,5.68,7,9.29,-3.61,moderate (5-10 m)
+79,NEW DELHI,7,Delhi,0,,5,6.89,,
+82,NORTH WEST,7,Delhi,0,,22,5.0,,
+83,SOUTH,7,Delhi,0,,11,25.34,,
+84,SOUTH WEST,7,Delhi,1,10.84,13,13.22,-2.38,moderately deep (10-20 m)
+85,WEST,7,Delhi,0,,6,4.39,,
+86,AJMER,8,Rajasthan,18,10.82,23,7.1,3.72,moderately deep (10-20 m)
+87,ALWAR,8,Rajasthan,11,31.63,18,34.61,-2.98,deep (20-40 m)
+88,BANSWARA,8,Rajasthan,21,6.92,25,3.9,3.02,moderate (5-10 m)
+89,BARAN,8,Rajasthan,9,6.34,11,4.23,2.11,moderate (5-10 m)
+90,BARMER,8,Rajasthan,25,20.44,17,20.9,-0.46,deep (20-40 m)
+91,BHARATPUR,8,Rajasthan,9,10.7,13,10.21,0.49,moderately deep (10-20 m)
+92,BHILWARA,8,Rajasthan,20,10.58,26,5.29,5.29,moderately deep (10-20 m)
+93,BIKANER,8,Rajasthan,22,24.77,29,24.39,0.38,deep (20-40 m)
+94,BUNDI,8,Rajasthan,8,3.06,9,2.66,0.4,shallow (2-5 m)
+95,CHITTORGARH,8,Rajasthan,11,10.23,18,7.59,2.64,moderately deep (10-20 m)
+96,CHURU,8,Rajasthan,12,34.82,15,29.63,5.19,deep (20-40 m)
+97,DAUSA,8,Rajasthan,4,16.13,10,14.71,1.42,moderately deep (10-20 m)
+98,DHOLPUR,8,Rajasthan,4,13.27,5,3.25,10.02,moderately deep (10-20 m)
+99,DUNGARPUR,8,Rajasthan,8,7.86,9,3.93,3.93,moderate (5-10 m)
+100,GANGANAGAR,8,Rajasthan,29,10.42,35,11.31,-0.89,moderately deep (10-20 m)
+101,HANUMANGARH,8,Rajasthan,18,23.9,21,22.35,1.55,deep (20-40 m)
+102,JAIPUR,8,Rajasthan,60,29.97,71,31.95,-1.98,deep (20-40 m)
+103,JAISALMER,8,Rajasthan,40,29.29,47,30.9,-1.61,deep (20-40 m)
+104,JALORE,8,Rajasthan,9,48.7,11,37.14,11.56,very deep (>40 m)
+105,JHALAWAR,8,Rajasthan,13,9.43,15,5.83,3.6,moderate (5-10 m)
+106,JHUNJHUNU,8,Rajasthan,3,41.82,8,58.52,-16.7,very deep (>40 m)
+107,JODHPUR,8,Rajasthan,21,13.37,32,13.11,0.26,moderately deep (10-20 m)
+108,KARAULI,8,Rajasthan,10,10.56,12,11.19,-0.63,moderately deep (10-20 m)
+109,KOTA,8,Rajasthan,11,5.93,13,4.42,1.51,moderate (5-10 m)
+110,NAGAUR,8,Rajasthan,8,27.37,13,29.37,-2.0,deep (20-40 m)
+111,PALI,8,Rajasthan,11,10.5,13,8.87,1.63,moderately deep (10-20 m)
+112,RAJSAMAND,8,Rajasthan,9,11.32,15,5.29,6.03,moderately deep (10-20 m)
+113,SAWAI MADHOPUR,8,Rajasthan,7,8.43,9,4.35,4.08,moderate (5-10 m)
+114,SIKAR,8,Rajasthan,12,43.28,21,44.59,-1.31,very deep (>40 m)
+115,SIROHI,8,Rajasthan,7,14.13,8,9.44,4.69,moderately deep (10-20 m)
+116,TONK,8,Rajasthan,12,7.55,14,3.65,3.9,moderate (5-10 m)
+117,UDAIPUR,8,Rajasthan,22,9.39,29,4.34,5.05,moderate (5-10 m)
+629,PRATAPGARH,8,Rajasthan,6,6.53,7,4.2,2.33,moderate (5-10 m)
+118,AGRA,9,Uttar Pradesh,0,,7,5.87,,
+119,ALIGARH,9,Uttar Pradesh,0,,7,4.5,,
+120,PRAYGRAJ,9,Uttar Pradesh,0,,29,2.92,,
+121,AMBEDKAR NAGAR,9,Uttar Pradesh,0,,7,2.55,,
+122,AURAIYA,9,Uttar Pradesh,0,,6,3.76,,
+123,AZAMGARH,9,Uttar Pradesh,0,,13,2.52,,
+125,BAHRAICH,9,Uttar Pradesh,0,,12,2.03,,
+126,BALLIA,9,Uttar Pradesh,0,,15,1.85,,
+127,BALRAMPUR,9,Uttar Pradesh,0,,16,2.17,,
+128,BANDA,9,Uttar Pradesh,0,,8,3.04,,
+129,BARABANKI,9,Uttar Pradesh,0,,22,2.51,,
+130,BAREILLY,9,Uttar Pradesh,0,,8,4.3,,
+131,BASTI,9,Uttar Pradesh,0,,8,1.87,,
+132,BIJNOR,9,Uttar Pradesh,0,,6,6.83,,
+133,BUDAUN,9,Uttar Pradesh,0,,3,17.24,,
+134,Buland Shahar,9,Uttar Pradesh,0,,1,7.33,,
+135,CHANDAULI,9,Uttar Pradesh,0,,8,4.0,,
+136,CHITRAKOOT,9,Uttar Pradesh,0,,8,7.24,,
+137,DEORIA,9,Uttar Pradesh,0,,8,2.12,,
+138,ETAH,9,Uttar Pradesh,0,,6,8.4,,
+139,ETAWAH,9,Uttar Pradesh,0,,6,5.19,,
+140,Ayodhya,9,Uttar Pradesh,0,,10,3.23,,
+141,FARRUKHABAD,9,Uttar Pradesh,0,,2,9.52,,
+142,FATEHPUR,9,Uttar Pradesh,0,,8,4.62,,
+143,FIROZABAD,9,Uttar Pradesh,0,,6,11.04,,
+144,G.B. Nagar,9,Uttar Pradesh,0,,3,39.69,,
+145,GHAZIABAD,9,Uttar Pradesh,0,,2,20.23,,
+146,GHAZIPUR,9,Uttar Pradesh,0,,12,1.55,,
+147,GONDA,9,Uttar Pradesh,0,,9,2.05,,
+148,GORAKHPUR,9,Uttar Pradesh,0,,4,3.12,,
+149,HAMIRPUR,9,Uttar Pradesh,0,,6,2.64,,
+150,HARDOI,9,Uttar Pradesh,0,,15,3.42,,
+151,JALAUN,9,Uttar Pradesh,0,,22,3.7,,
+152,JAUNPUR,9,Uttar Pradesh,0,,20,2.47,,
+153,JHANSI,9,Uttar Pradesh,0,,16,5.17,,
+154,JYOTIBA PHULE NAGAR,9,Uttar Pradesh,0,,5,15.01,,
+155,KANNAUJ,9,Uttar Pradesh,0,,2,24.27,,
+156,KANPUR DEHAT,9,Uttar Pradesh,0,,5,3.64,,
+157,KANPUR NAGAR,9,Uttar Pradesh,0,,11,3.38,,
+158,KAUSHAMBI,9,Uttar Pradesh,0,,6,12.15,,
+159,KHERI,9,Uttar Pradesh,0,,7,2.09,,
+160,KUSHINAGAR,9,Uttar Pradesh,0,,4,2.07,,
+161,LALITPUR,9,Uttar Pradesh,0,,13,2.98,,
+162,LUCKNOW,9,Uttar Pradesh,0,,15,10.93,,
+163,HATHRAS,9,Uttar Pradesh,0,,3,2.8,,
+164,Maharajganj,9,Uttar Pradesh,0,,5,2.1,,
+165,MAHOBA,9,Uttar Pradesh,0,,9,4.81,,
+166,MAINPURI,9,Uttar Pradesh,0,,14,4.32,,
+167,MATHURA,9,Uttar Pradesh,0,,5,1.83,,
+168,MAU,9,Uttar Pradesh,0,,5,2.98,,
+169,MEERUT,9,Uttar Pradesh,0,,8,10.59,,
+170,MIRZAPUR,9,Uttar Pradesh,0,,8,3.77,,
+171,MORADABAD,9,Uttar Pradesh,0,,6,8.4,,
+172,MUZAFFARNAGAR,9,Uttar Pradesh,0,,4,8.37,,
+173,PILIBHIT,9,Uttar Pradesh,0,,10,2.63,,
+174,PRATAPGARH,9,Uttar Pradesh,0,,24,3.29,,
+175,Raibareli,9,Uttar Pradesh,0,,25,2.01,,
+176,RAMPUR,9,Uttar Pradesh,0,,2,6.82,,
+177,SAHARANPUR,9,Uttar Pradesh,0,,11,6.93,,
+178,SANT KABIR NAGAR,9,Uttar Pradesh,0,,4,1.5,,
+179,Bhadohi,9,Uttar Pradesh,0,,4,4.58,,
+180,Shahjhanpur,9,Uttar Pradesh,0,,1,5.24,,
+181,SHRAWASTI,9,Uttar Pradesh,0,,12,1.49,,
+182,SIDDHARTHNAGAR,9,Uttar Pradesh,0,,11,1.87,,
+183,SITAPUR,9,Uttar Pradesh,0,,17,2.83,,
+184,SONBHADRA,9,Uttar Pradesh,0,,14,5.14,,
+185,SULTANPUR,9,Uttar Pradesh,0,,31,2.95,,
+186,UNNAO,9,Uttar Pradesh,0,,12,2.33,,
+187,VARANASI,9,Uttar Pradesh,0,,5,6.63,,
+188,ARARIA,10,Bihar,0,,8,2.43,,
+189,AURANGABAD,10,Bihar,6,6.11,8,3.34,2.77,moderate (5-10 m)
+190,BANKA,10,Bihar,7,4.7,12,2.62,2.08,shallow (2-5 m)
+191,BEGUSARAI,10,Bihar,0,,25,3.86,,
+192,BHAGALPUR,10,Bihar,0,,13,2.68,,
+193,BHOJPUR,10,Bihar,24,5.56,25,4.07,1.49,moderate (5-10 m)
+194,BUXAR,10,Bihar,12,4.45,11,3.19,1.26,shallow (2-5 m)
+195,DARBHANGA,10,Bihar,0,,9,2.48,,
+196,GAYA,10,Bihar,9,5.73,15,3.33,2.4,moderate (5-10 m)
+197,GOPALGANJ,10,Bihar,4,4.31,18,2.48,1.83,shallow (2-5 m)
+198,JAMUI,10,Bihar,7,5.74,11,3.6,2.14,moderate (5-10 m)
+199,JEHANABAD,10,Bihar,9,5.24,19,3.05,2.19,moderate (5-10 m)
+200,KAIMUR,10,Bihar,9,8.16,3,6.33,1.83,moderate (5-10 m)
+201,KATIHAR,10,Bihar,0,,14,3.16,,
+202,KHAGARIA,10,Bihar,0,,14,3.31,,
+203,KISHANGANJ,10,Bihar,0,,8,2.24,,
+204,LAKHISARAI,10,Bihar,7,7.49,9,3.01,4.48,moderate (5-10 m)
+205,MADHEPURA,10,Bihar,0,,16,3.28,,
+206,MADHUBANI,10,Bihar,0,,20,2.14,,
+207,MUNGER,10,Bihar,4,5.87,7,3.75,2.12,moderate (5-10 m)
+208,MUZAFFARPUR,10,Bihar,16,4.87,27,2.8,2.07,shallow (2-5 m)
+209,NALANDA,10,Bihar,23,4.03,27,3.05,0.98,shallow (2-5 m)
+210,NAWADA,10,Bihar,8,5.57,9,3.52,2.05,moderate (5-10 m)
+211,PASHCHIM CHAMPARAN,10,Bihar,10,4.02,10,2.67,1.35,shallow (2-5 m)
+212,PATNA,10,Bihar,17,5.09,26,3.73,1.36,moderate (5-10 m)
+213,PURBA CHAMPARAN,10,Bihar,19,4.08,26,2.37,1.71,shallow (2-5 m)
+214,PURNIA,10,Bihar,0,,15,2.88,,
+215,ROHTAS,10,Bihar,12,7.0,11,3.1,3.9,moderate (5-10 m)
+216,SAHARSA,10,Bihar,0,,16,2.6,,
+217,SAMASTIPUR,10,Bihar,1,4.5,19,2.96,1.54,shallow (2-5 m)
+218,SARAN,10,Bihar,15,3.82,14,2.33,1.49,shallow (2-5 m)
+219,SHEIKHPURA,10,Bihar,5,4.56,7,3.87,0.69,shallow (2-5 m)
+220,SHEOHAR,10,Bihar,0,,4,2.7,,
+221,SITAMARHI,10,Bihar,0,,16,1.64,,
+222,SIWAN,10,Bihar,8,4.64,15,2.49,2.15,shallow (2-5 m)
+223,SUPAUL,10,Bihar,0,,21,2.34,,
+224,VAISHALI,10,Bihar,26,5.33,22,2.86,2.47,moderate (5-10 m)
+229,CHANGLANG,12,Arunachal Pradesh,0,,4,4.65,,
+232,EAST SIANG,12,Arunachal Pradesh,0,,1,6.89,,
+234,LOHIT,12,Arunachal Pradesh,0,,1,4.54,,
+239,TIRAP,12,Arunachal Pradesh,0,,3,4.97,,
+244,DIMAPUR,13,Nagaland,0,,2,4.25,,
+269,DHALAI,16,Tripura,0,,4,3.38,,
+270,NORTH TRIPURA,16,Tripura,0,,7,3.08,,
+271,SOUTH TRIPURA,16,Tripura,0,,5,3.1,,
+272,WEST TRIPURA,16,Tripura,0,,8,5.6,,
+273,East Garo Hills,17,Meghalaya,0,,8,2.82,,
+274,East Khasi Hills,17,Meghalaya,0,,2,1.32,,
+276,RI BHOI,17,Meghalaya,0,,2,2.54,,
+278,west Garo Hills,17,Meghalaya,0,,9,2.14,,
+279,West Khasi Hills,17,Meghalaya,0,,1,0.71,,
+657,East Jaintia Hills,17,Meghalaya,0,,2,0.57,,
+280,BARPETA,18,Assam,0,,3,1.36,,
+281,BONGAIGAON,18,Assam,0,,7,2.33,,
+282,CACHAR,18,Assam,0,,9,1.31,,
+283,DARRANG,18,Assam,0,,11,2.56,,
+284,DHEMAJI,18,Assam,0,,7,1.49,,
+285,DHUBRI,18,Assam,0,,5,3.75,,
+286,DIBRUGARH,18,Assam,0,,4,4.04,,
+287,GOALPARA,18,Assam,0,,5,1.92,,
+288,GOLAGHAT,18,Assam,0,,2,4.66,,
+289,HAILAKANDI,18,Assam,0,,2,1.39,,
+290,JORHAT,18,Assam,0,,3,1.56,,
+291,KAMRUP,18,Assam,0,,12,2.5,,
+292,KARBI ANGLONG,18,Assam,0,,14,4.04,,
+293,KARIMGANJ,18,Assam,0,,2,0.96,,
+294,KOKRAJHAR,18,Assam,0,,5,3.33,,
+295,LAKHIMPUR,18,Assam,0,,8,1.52,,
+296,MARIGAON,18,Assam,0,,4,2.92,,
+297,NAGAON,18,Assam,0,,16,2.63,,
+298,NALBARI,18,Assam,0,,2,1.72,,
+300,SIVSAGAR,18,Assam,0,,3,2.62,,
+301,SONITPUR,18,Assam,0,,11,2.66,,
+302,TINSUKIA,18,Assam,0,,8,2.68,,
+303,NORTH 24 PARGANAS,19,West Bengal,23,5.77,42,4.26,1.51,moderate (5-10 m)
+304,SOUTH 24 PARGANAS,19,West Bengal,42,9.54,57,8.3,1.24,moderate (5-10 m)
+305,BANKURA,19,West Bengal,39,5.75,62,2.58,3.17,moderate (5-10 m)
+306,PURBA BARDHAMAN,19,West Bengal,19,8.82,46,7.19,1.63,moderate (5-10 m)
+307,BIRBHUM,19,West Bengal,40,5.65,61,3.5,2.15,moderate (5-10 m)
+308,COOCH BEHAR,19,West Bengal,13,3.49,19,2.58,0.91,shallow (2-5 m)
+309,DARJILING,19,West Bengal,12,3.25,18,2.35,0.9,shallow (2-5 m)
+310,DAKSHIN DINAJPUR,19,West Bengal,0,,20,4.25,,
+311,NORTH DINAJPUR,19,West Bengal,1,3.06,10,2.8,0.26,shallow (2-5 m)
+312,HUGLI,19,West Bengal,10,9.21,24,10.03,-0.82,moderate (5-10 m)
+313,HOWRAH,19,West Bengal,18,3.06,21,1.43,1.63,shallow (2-5 m)
+314,JALPAIGURI,19,West Bengal,15,4.1,31,2.6,1.5,shallow (2-5 m)
+316,MALDAH,19,West Bengal,16,5.98,31,3.85,2.13,moderate (5-10 m)
+317,East Medinipur,19,West Bengal,7,19.58,17,11.23,8.35,moderately deep (10-20 m)
+318,West Medinipur,19,West Bengal,23,9.2,40,7.28,1.92,moderate (5-10 m)
+319,MURSHIDABAD,19,West Bengal,22,11.6,43,4.37,7.23,moderately deep (10-20 m)
+320,NADIA,19,West Bengal,26,5.83,45,4.17,1.66,moderate (5-10 m)
+321,PURULIYA,19,West Bengal,35,5.56,50,2.61,2.95,moderate (5-10 m)
+703,JHARGRAM,19,West Bengal,2,10.59,7,5.0,5.59,moderately deep (10-20 m)
+704,PASCHIM BARDHAMAN,19,West Bengal,24,2.95,35,2.02,0.93,shallow (2-5 m)
+322,BOKARO,20,Jharkhand,12,6.33,15,2.53,3.8,moderate (5-10 m)
+323,CHATRA,20,Jharkhand,6,7.81,11,5.18,2.63,moderate (5-10 m)
+324,DEOGHAR,20,Jharkhand,6,7.68,9,4.82,2.86,moderate (5-10 m)
+325,DHANBAD,20,Jharkhand,14,6.08,16,3.39,2.69,moderate (5-10 m)
+326,DUMKA,20,Jharkhand,20,7.22,28,4.06,3.16,moderate (5-10 m)
+327,EAST  SINGHBHUM (Jamshedpur),20,Jharkhand,20,4.65,26,2.9,1.75,shallow (2-5 m)
+328,GARHWA,20,Jharkhand,9,6.55,11,4.1,2.45,moderate (5-10 m)
+329,GIRIDIH,20,Jharkhand,7,7.72,13,3.16,4.56,moderate (5-10 m)
+330,GODDA,20,Jharkhand,9,7.12,13,4.29,2.83,moderate (5-10 m)
+331,GUMLA,20,Jharkhand,28,5.88,30,2.6,3.28,moderate (5-10 m)
+332,HAZARIBAG,20,Jharkhand,30,7.32,34,4.07,3.25,moderate (5-10 m)
+333,JAMTARA,20,Jharkhand,1,7.59,1,9.77,-2.18,moderate (5-10 m)
+334,KODARMA,20,Jharkhand,5,7.3,7,3.58,3.72,moderate (5-10 m)
+335,Latehar,20,Jharkhand,1,7.31,1,4.29,3.02,moderate (5-10 m)
+336,LOHARDAGA,20,Jharkhand,10,8.07,11,4.7,3.37,moderate (5-10 m)
+337,Pakur,20,Jharkhand,10,6.82,8,4.6,2.22,moderate (5-10 m)
+338,PALAMAU,20,Jharkhand,13,7.7,23,4.35,3.35,moderate (5-10 m)
+339,RANCHI,20,Jharkhand,54,7.08,62,3.39,3.69,moderate (5-10 m)
+340,Sahebganj,20,Jharkhand,15,5.67,20,4.59,1.08,moderate (5-10 m)
+341,Saraikela,20,Jharkhand,4,3.23,4,1.02,2.21,shallow (2-5 m)
+343,WEST SINGHBHUM (Chaibasa),20,Jharkhand,16,7.39,22,3.15,4.24,moderate (5-10 m)
+606,Khunti,20,Jharkhand,5,6.25,0,,,moderate (5-10 m)
+607,RAMGARH,20,Jharkhand,3,7.62,7,4.38,3.24,moderate (5-10 m)
+344,ANUGUL,21,Odisha,58,5.91,58,3.05,2.86,moderate (5-10 m)
+345,BALANGIR,21,Odisha,62,4.98,67,2.66,2.32,shallow (2-5 m)
+346,Baleshwar,21,Odisha,24,4.91,25,2.66,2.25,shallow (2-5 m)
+347,BARGARH,21,Odisha,60,2.7,55,1.99,0.71,shallow (2-5 m)
+348,BHADRAK,21,Odisha,12,2.86,14,1.27,1.59,shallow (2-5 m)
+349,BAUDH,21,Odisha,42,5.44,51,2.83,2.61,moderate (5-10 m)
+350,CUTTACK,21,Odisha,46,3.5,55,1.85,1.65,shallow (2-5 m)
+351,DEBAGARH,21,Odisha,10,5.33,8,2.25,3.08,moderate (5-10 m)
+352,DHENKANAL,21,Odisha,36,5.74,42,2.88,2.86,moderate (5-10 m)
+353,GAJAPATI,21,Odisha,31,4.84,35,2.73,2.11,shallow (2-5 m)
+354,GANJAM,21,Odisha,87,3.65,89,2.15,1.5,shallow (2-5 m)
+355,JAGATSINGHAPUR,21,Odisha,4,2.18,9,0.8,1.38,shallow (2-5 m)
+356,JAJAPUR,21,Odisha,21,4.08,44,2.88,1.2,shallow (2-5 m)
+357,JHARSUGUDA,21,Odisha,14,4.93,12,2.66,2.27,shallow (2-5 m)
+358,KALAHANDI,21,Odisha,31,5.29,28,3.0,2.29,moderate (5-10 m)
+359,KANDHAMAL,21,Odisha,17,7.38,25,5.49,1.89,moderate (5-10 m)
+360,KENDRAPARA,21,Odisha,16,3.08,25,1.43,1.65,shallow (2-5 m)
+361,KENDUJHAR,21,Odisha,48,5.49,69,2.35,3.14,moderate (5-10 m)
+362,KHORDHA,21,Odisha,53,4.72,65,2.95,1.77,shallow (2-5 m)
+363,KORAPUT,21,Odisha,58,5.97,57,3.22,2.75,moderate (5-10 m)
+364,MALKANGIRI,21,Odisha,18,3.53,20,0.81,2.72,shallow (2-5 m)
+365,MAYURBHANJ,21,Odisha,62,5.04,71,2.53,2.51,moderate (5-10 m)
+366,Nabarangapur,21,Odisha,22,5.49,18,2.96,2.53,moderate (5-10 m)
+367,NAYAGARH,21,Odisha,35,4.76,38,2.2,2.56,shallow (2-5 m)
+368,NUAPADA,21,Odisha,18,4.58,18,2.93,1.65,shallow (2-5 m)
+369,PURI,21,Odisha,63,2.86,78,1.62,1.24,shallow (2-5 m)
+370,RAYAGADA,21,Odisha,21,4.86,19,2.42,2.44,shallow (2-5 m)
+371,SAMBALPUR,21,Odisha,74,4.58,71,2.54,2.04,shallow (2-5 m)
+372,SONAPUR,21,Odisha,46,4.06,51,2.15,1.91,shallow (2-5 m)
+373,SUNDARGARH,21,Odisha,76,4.53,73,2.72,1.81,shallow (2-5 m)
+374,BASTAR,22,Chhattisgarh,18,6.88,11,3.21,3.67,moderate (5-10 m)
+375,BILASPUR,22,Chhattisgarh,0,,61,3.6,,
+377,DHAMTARI,22,Chhattisgarh,0,,38,3.24,,
+378,DURG,22,Chhattisgarh,84,5.34,92,2.9,2.44,moderate (5-10 m)
+379,JANJGIR - CHAMPA,22,Chhattisgarh,0,,42,3.77,,
+380,JASHPUR,22,Chhattisgarh,52,7.21,62,3.25,3.96,moderate (5-10 m)
+381,KANKER,22,Chhattisgarh,7,5.77,6,3.82,1.95,moderate (5-10 m)
+382,Kabirdham,22,Chhattisgarh,10,7.68,12,5.08,2.6,moderate (5-10 m)
+383,KORBA,22,Chhattisgarh,2,5.64,57,3.84,1.8,moderate (5-10 m)
+384,KORIYA,22,Chhattisgarh,38,5.83,48,3.5,2.33,moderate (5-10 m)
+385,MAHASAMUND,22,Chhattisgarh,2,4.58,39,6.26,-1.68,shallow (2-5 m)
+386,RAIGARH,22,Chhattisgarh,68,6.73,91,3.02,3.71,moderate (5-10 m)
+387,RAIPUR,22,Chhattisgarh,0,,85,3.03,,
+388,RAJNANDGAON,22,Chhattisgarh,41,7.0,37,2.5,4.5,moderate (5-10 m)
+389,SURGUJA,22,Chhattisgarh,72,7.61,84,4.48,3.13,moderate (5-10 m)
+648,SURAJPUR,22,Chhattisgarh,2,7.34,3,6.82,0.52,moderate (5-10 m)
+734,Gaurella Pendra Marwahi,22,Chhattisgarh,0,,17,3.45,,
+390,ANUPPUR,23,Madhya Pradesh,15,7.46,19,3.36,4.1,moderate (5-10 m)
+391,ASHOK NAGAR,23,Madhya Pradesh,16,7.97,21,4.16,3.81,moderate (5-10 m)
+392,BALAGHAT,23,Madhya Pradesh,29,6.13,40,3.39,2.74,moderate (5-10 m)
+393,BARWANI,23,Madhya Pradesh,6,9.8,11,7.08,2.72,moderate (5-10 m)
+394,BETUL,23,Madhya Pradesh,28,7.0,26,3.21,3.79,moderate (5-10 m)
+395,BHIND,23,Madhya Pradesh,8,6.52,13,6.05,0.47,moderate (5-10 m)
+396,BHOPAL,23,Madhya Pradesh,11,9.15,13,5.56,3.59,moderate (5-10 m)
+397,BURHANPUR,23,Madhya Pradesh,9,10.2,9,6.16,4.04,moderately deep (10-20 m)
+398,CHHATARPUR,23,Madhya Pradesh,30,8.1,34,4.8,3.3,moderate (5-10 m)
+399,CHHINDWARA,23,Madhya Pradesh,30,9.05,39,5.41,3.64,moderate (5-10 m)
+400,DAMOH,23,Madhya Pradesh,19,4.44,24,2.95,1.49,shallow (2-5 m)
+401,DATIA,23,Madhya Pradesh,5,8.9,12,7.16,1.74,moderate (5-10 m)
+402,DEWAS,23,Madhya Pradesh,22,11.65,34,4.96,6.69,moderately deep (10-20 m)
+403,DHAR,23,Madhya Pradesh,23,10.92,28,5.57,5.35,moderately deep (10-20 m)
+404,DINDORI,23,Madhya Pradesh,14,4.81,16,2.76,2.05,shallow (2-5 m)
+405,EAST NIMAR,23,Madhya Pradesh,0,,29,3.51,,
+406,GUNA,23,Madhya Pradesh,18,8.8,24,5.36,3.44,moderate (5-10 m)
+407,GWALIOR,23,Madhya Pradesh,13,6.73,19,5.56,1.17,moderate (5-10 m)
+408,HARDA,23,Madhya Pradesh,12,8.54,13,4.32,4.22,moderate (5-10 m)
+409,HOSHANGABAD,23,Madhya Pradesh,11,6.37,16,5.93,0.44,moderate (5-10 m)
+410,INDORE,23,Madhya Pradesh,30,11.05,41,4.33,6.72,moderately deep (10-20 m)
+411,JABALPUR,23,Madhya Pradesh,30,5.9,35,4.09,1.81,moderate (5-10 m)
+412,JHABUA,23,Madhya Pradesh,7,6.19,13,3.15,3.04,moderate (5-10 m)
+413,KATNI,23,Madhya Pradesh,10,9.66,15,6.43,3.23,moderate (5-10 m)
+414,WEST NIMAR,23,Madhya Pradesh,0,,25,5.18,,
+415,MANDLA,23,Madhya Pradesh,13,4.14,30,2.46,1.68,shallow (2-5 m)
+416,MANDSAUR,23,Madhya Pradesh,33,11.06,45,4.03,7.03,moderately deep (10-20 m)
+417,MORENA,23,Madhya Pradesh,7,12.12,9,3.25,8.87,moderately deep (10-20 m)
+418,NARSIMHAPUR,23,Madhya Pradesh,10,7.38,16,4.87,2.51,moderate (5-10 m)
+419,NEEMUCH,23,Madhya Pradesh,27,8.95,36,3.28,5.67,moderate (5-10 m)
+420,PANNA,23,Madhya Pradesh,22,9.29,28,4.76,4.53,moderate (5-10 m)
+421,RAISEN,23,Madhya Pradesh,19,7.28,29,4.5,2.78,moderate (5-10 m)
+422,RAJGARH,23,Madhya Pradesh,28,9.3,29,3.62,5.68,moderate (5-10 m)
+423,RATLAM,23,Madhya Pradesh,32,14.04,48,5.94,8.1,moderately deep (10-20 m)
+424,REWA,23,Madhya Pradesh,18,8.84,30,5.45,3.39,moderate (5-10 m)
+425,SAGAR,23,Madhya Pradesh,39,8.75,51,4.55,4.2,moderate (5-10 m)
+426,SATNA,23,Madhya Pradesh,35,8.71,44,3.64,5.07,moderate (5-10 m)
+427,SEHORE,23,Madhya Pradesh,25,10.0,25,5.4,4.6,moderate (5-10 m)
+428,SEONI,23,Madhya Pradesh,31,5.87,42,3.1,2.77,moderate (5-10 m)
+429,SHAHDOL,23,Madhya Pradesh,23,6.41,27,3.74,2.67,moderate (5-10 m)
+430,SHAJAPUR,23,Madhya Pradesh,13,9.3,19,2.7,6.6,moderate (5-10 m)
+431,SHEOPUR,23,Madhya Pradesh,13,9.32,19,3.77,5.55,moderate (5-10 m)
+432,SHIVPURI,23,Madhya Pradesh,29,8.1,36,3.99,4.11,moderate (5-10 m)
+433,SIDHI,23,Madhya Pradesh,25,8.75,28,5.62,3.13,moderate (5-10 m)
+434,TIKAMGARH,23,Madhya Pradesh,22,6.36,23,3.99,2.37,moderate (5-10 m)
+435,UJJAIN,23,Madhya Pradesh,37,8.42,47,3.54,4.88,moderate (5-10 m)
+436,UMARIA,23,Madhya Pradesh,11,8.71,13,5.88,2.83,moderate (5-10 m)
+437,VIDISHA,23,Madhya Pradesh,23,7.79,26,3.7,4.09,moderate (5-10 m)
+638,SINGRAULI,23,Madhya Pradesh,18,8.1,18,5.37,2.73,moderate (5-10 m)
+639,ALIRAJPUR,23,Madhya Pradesh,3,4.65,14,5.89,-1.24,shallow (2-5 m)
+667,AGAR MALWA,23,Madhya Pradesh,15,9.47,10,5.28,4.19,moderate (5-10 m)
+438,Ahmedabad,24,Gujarat,16,6.38,19,3.99,2.39,moderate (5-10 m)
+439,Amreli,24,Gujarat,30,11.16,34,5.66,5.5,moderately deep (10-20 m)
+440,Anand,24,Gujarat,22,9.13,19,3.36,5.77,moderate (5-10 m)
+441,DAMAN,24,Gujarat,15,9.85,26,16.9,-7.05,moderate (5-10 m)
+442,Bharuch,24,Gujarat,27,5.7,29,3.8,1.9,moderate (5-10 m)
+443,Bhavnagar,24,Gujarat,23,8.21,27,4.73,3.48,moderate (5-10 m)
+444,Dang,24,Gujarat,20,6.63,21,1.75,4.88,moderate (5-10 m)
+445,Dohad,24,Gujarat,17,7.95,25,4.58,3.37,moderate (5-10 m)
+446,Gandhinagar,24,Gujarat,19,105.53,21,94.37,11.16,very deep (>40 m)
+447,Jamnagar,24,Gujarat,39,6.99,44,3.12,3.87,moderate (5-10 m)
+448,Junagadh,24,Gujarat,45,11.41,42,5.33,6.08,moderately deep (10-20 m)
+449,Kachchh,24,Gujarat,39,8.06,44,6.85,1.21,moderate (5-10 m)
+450,Kheda,24,Gujarat,12,5.34,19,6.38,-1.04,moderate (5-10 m)
+451,Mahesana,24,Gujarat,19,7.37,36,11.34,-3.97,moderate (5-10 m)
+452,Narmada,24,Gujarat,11,6.48,19,6.04,0.44,moderate (5-10 m)
+453,Navsari,24,Gujarat,11,4.38,17,2.75,1.63,shallow (2-5 m)
+454,Panchmahals,24,Gujarat,25,8.77,33,5.6,3.17,moderate (5-10 m)
+455,Patan,24,Gujarat,14,54.74,11,17.19,37.55,very deep (>40 m)
+456,Porbandar,24,Gujarat,30,8.92,30,3.07,5.85,moderate (5-10 m)
+457,Rajkot,24,Gujarat,40,7.2,40,4.09,3.11,moderate (5-10 m)
+458,Sabarkantha,24,Gujarat,36,15.07,32,6.7,8.37,moderately deep (10-20 m)
+459,Surat,24,Gujarat,16,4.79,31,4.0,0.79,shallow (2-5 m)
+460,Surendranagar,24,Gujarat,19,4.35,27,3.69,0.66,shallow (2-5 m)
+461,Vadodara,24,Gujarat,19,7.19,37,6.59,0.6,moderate (5-10 m)
+462,Valsad,24,Gujarat,10,6.68,12,3.26,3.42,moderate (5-10 m)
+464,DIU,24,Gujarat,0,,3,5.96,,
+468,Amravati,27,Maharashtra,72,7.07,84,4.03,3.04,moderate (5-10 m)
+469,Aurangabad,27,Maharashtra,33,7.5,36,3.74,3.76,moderate (5-10 m)
+470,Beed,27,Maharashtra,31,7.73,47,2.65,5.08,moderate (5-10 m)
+471,Bhandara,27,Maharashtra,27,5.4,33,3.1,2.3,moderate (5-10 m)
+472,Buldana,27,Maharashtra,50,7.67,55,2.75,4.92,moderate (5-10 m)
+473,Chandrapur,27,Maharashtra,56,5.93,66,2.75,3.18,moderate (5-10 m)
+474,Dhule,27,Maharashtra,30,7.08,38,4.31,2.77,moderate (5-10 m)
+475,Gadchiroli,27,Maharashtra,35,7.17,37,3.05,4.12,moderate (5-10 m)
+476,Gondia,27,Maharashtra,19,6.22,22,2.75,3.47,moderate (5-10 m)
+477,Hingoli,27,Maharashtra,22,8.38,29,3.55,4.83,moderate (5-10 m)
+478,Jalgaon,27,Maharashtra,32,5.7,31,3.62,2.08,moderate (5-10 m)
+479,Jalna,27,Maharashtra,39,7.6,38,2.84,4.76,moderate (5-10 m)
+480,Kolhapur,27,Maharashtra,33,5.0,34,3.33,1.67,shallow (2-5 m)
+481,Latur,27,Maharashtra,35,7.82,35,3.29,4.53,moderate (5-10 m)
+483,Mumbai Suburban,27,Maharashtra,21,3.24,22,2.81,0.43,shallow (2-5 m)
+484,Nagpur,27,Maharashtra,60,7.51,74,3.42,4.09,moderate (5-10 m)
+485,Nanded,27,Maharashtra,39,7.22,47,3.46,3.76,moderate (5-10 m)
+486,Nandurbar,27,Maharashtra,19,9.35,24,5.78,3.57,moderate (5-10 m)
+487,Nashik,27,Maharashtra,35,5.97,72,2.99,2.98,moderate (5-10 m)
+488,Osmanabad,27,Maharashtra,28,7.74,35,2.72,5.02,moderate (5-10 m)
+489,Parbhani,27,Maharashtra,27,8.22,32,4.2,4.02,moderate (5-10 m)
+490,Pune,27,Maharashtra,34,6.06,37,3.15,2.91,moderate (5-10 m)
+491,Raigad,27,Maharashtra,22,3.71,24,1.48,2.23,shallow (2-5 m)
+492,Ratnagiri,27,Maharashtra,40,6.1,58,4.12,1.98,moderate (5-10 m)
+493,Sangli,27,Maharashtra,36,5.23,40,2.93,2.3,moderate (5-10 m)
+494,Satara,27,Maharashtra,34,6.17,35,4.5,1.67,moderate (5-10 m)
+495,Sindudurg,27,Maharashtra,46,5.96,50,4.3,1.66,moderate (5-10 m)
+496,Solapur,27,Maharashtra,32,7.88,51,3.15,4.73,moderate (5-10 m)
+497,Thane,27,Maharashtra,23,4.19,29,2.35,1.84,shallow (2-5 m)
+498,Wardha,27,Maharashtra,23,7.05,62,3.41,3.64,moderate (5-10 m)
+499,Washim,27,Maharashtra,1,10.6,43,3.21,7.39,moderately deep (10-20 m)
+500,Yavatmal,27,Maharashtra,80,5.84,89,3.13,2.71,moderate (5-10 m)
+665,Palghar,27,Maharashtra,0,,15,2.27,,
+502,ANANTAPUR,28,Andhra Pradesh,43,5.8,80,4.8,1.0,moderate (5-10 m)
+503,CHITTOOR,28,Andhra Pradesh,44,4.7,48,2.91,1.79,shallow (2-5 m)
+504,Kadapa,28,Andhra Pradesh,38,6.0,70,4.25,1.75,moderate (5-10 m)
+505,EAST GODAVARI,28,Andhra Pradesh,55,2.98,72,1.4,1.58,shallow (2-5 m)
+506,GUNTUR,28,Andhra Pradesh,59,3.75,76,1.84,1.91,shallow (2-5 m)
+510,KRISHNA,28,Andhra Pradesh,28,2.91,59,1.56,1.35,shallow (2-5 m)
+511,KURNOOL,28,Andhra Pradesh,28,4.69,47,2.9,1.79,shallow (2-5 m)
+515,NELLORE,28,Andhra Pradesh,28,3.5,51,2.37,1.13,shallow (2-5 m)
+517,PRAKASAM,28,Andhra Pradesh,66,5.33,73,3.99,1.34,moderate (5-10 m)
+519,SRIKAKULAM,28,Andhra Pradesh,12,4.81,44,1.6,3.21,shallow (2-5 m)
+520,VISAKHAPATNAM,28,Andhra Pradesh,19,6.62,52,1.89,4.73,moderate (5-10 m)
+521,VIZIANAGARAM,28,Andhra Pradesh,8,4.37,40,1.37,3.0,shallow (2-5 m)
+523,WEST GODAVARI,28,Andhra Pradesh,37,2.8,47,1.52,1.28,shallow (2-5 m)
+524,Bagalkote,29,Karnataka,24,5.1,27,3.65,1.45,moderate (5-10 m)
+525,Bangalore Urban,29,Karnataka,30,4.75,39,3.85,0.9,shallow (2-5 m)
+526,Bangalore Rural,29,Karnataka,41,4.21,51,2.7,1.51,shallow (2-5 m)
+527,Belgaum,29,Karnataka,83,6.0,96,3.54,2.46,moderate (5-10 m)
+528,Bellary,29,Karnataka,32,4.98,40,3.6,1.38,shallow (2-5 m)
+529,Bidar,29,Karnataka,34,7.4,39,3.1,4.3,moderate (5-10 m)
+530,Bijapur,29,Karnataka,62,5.09,66,3.46,1.63,moderate (5-10 m)
+531,Chamarajanagara,29,Karnataka,24,4.27,25,3.15,1.12,shallow (2-5 m)
+532,Chikkamagaluru,29,Karnataka,59,6.41,78,3.46,2.95,moderate (5-10 m)
+533,Chitradurga,29,Karnataka,25,4.15,39,3.37,0.78,shallow (2-5 m)
+534,Dakshin Kannada,29,Karnataka,92,7.5,98,5.97,1.53,moderate (5-10 m)
+535,Davanagere,29,Karnataka,50,3.04,58,1.88,1.16,shallow (2-5 m)
+536,Dharwad,29,Karnataka,23,6.03,25,4.0,2.03,moderate (5-10 m)
+537,Gadag,29,Karnataka,19,5.02,22,4.14,0.88,moderate (5-10 m)
+538,Kalaburagi,29,Karnataka,79,5.75,92,2.73,3.02,moderate (5-10 m)
+539,Hassan,29,Karnataka,60,5.67,76,3.83,1.84,moderate (5-10 m)
+540,Haveri,29,Karnataka,19,5.75,26,2.08,3.67,moderate (5-10 m)
+541,Kodagu,29,Karnataka,60,8.71,71,5.79,2.92,moderate (5-10 m)
+542,Kolar,29,Karnataka,47,2.97,51,1.78,1.19,shallow (2-5 m)
+543,Koppal,29,Karnataka,21,4.12,32,3.58,0.54,shallow (2-5 m)
+544,Mandya,29,Karnataka,30,2.72,49,2.18,0.54,shallow (2-5 m)
+545,Mysore,29,Karnataka,45,3.66,62,2.94,0.72,shallow (2-5 m)
+546,Raichur,29,Karnataka,44,3.58,53,2.3,1.28,shallow (2-5 m)
+547,Shivamogga,29,Karnataka,76,7.63,81,5.45,2.18,moderate (5-10 m)
+548,Tumkur,29,Karnataka,56,3.09,65,2.79,0.3,shallow (2-5 m)
+549,Udupi,29,Karnataka,57,8.07,61,6.45,1.62,moderate (5-10 m)
+550,Uttara Kannada,29,Karnataka,84,6.7,83,4.84,1.86,moderate (5-10 m)
+551,NORTH GOA,30,Goa,29,5.04,35,3.65,1.39,moderate (5-10 m)
+552,SOUTH GOA,30,Goa,24,6.03,33,5.15,0.88,moderate (5-10 m)
+554,Alappuzha,32,Kerala,43,1.9,1,2.62,-0.72,very shallow (0-2 m)
+555,ERNAKULAM,32,Kerala,98,4.96,56,3.99,0.97,shallow (2-5 m)
+556,IDUKKI,32,Kerala,62,3.42,8,3.7,-0.28,shallow (2-5 m)
+557,KANNUR,32,Kerala,104,7.57,94,5.74,1.83,moderate (5-10 m)
+558,KASARAGOD,32,Kerala,107,10.0,112,8.25,1.75,moderate (5-10 m)
+559,Kollam,32,Kerala,88,7.3,1,6.08,1.22,moderate (5-10 m)
+560,KOTTAYAM,32,Kerala,88,3.92,0,,,shallow (2-5 m)
+561,KOZHIKODE,32,Kerala,91,4.65,86,3.41,1.24,shallow (2-5 m)
+562,MALAPPURAM,32,Kerala,126,7.53,117,6.33,1.2,moderate (5-10 m)
+563,PALAKKAD,32,Kerala,127,5.63,119,3.5,2.13,moderate (5-10 m)
+564,PATHANAMTHITTA,32,Kerala,64,5.17,0,,,moderate (5-10 m)
+565,THIRUVANANTHAPURAM,32,Kerala,97,8.43,0,,,moderate (5-10 m)
+566,THRISSUR,32,Kerala,19,4.5,103,6.09,-1.59,shallow (2-5 m)
+567,WAYANAD,32,Kerala,77,6.66,72,4.2,2.46,moderate (5-10 m)
+568,Chennai,33,Tamil Nadu,13,3.33,10,2.28,1.05,shallow (2-5 m)
+569,Coimbatore,33,Tamil Nadu,62,9.48,41,8.9,0.58,moderate (5-10 m)
+570,Cuddalore,33,Tamil Nadu,70,21.19,28,6.13,15.06,deep (20-40 m)
+571,Dharmapuri,33,Tamil Nadu,29,6.9,12,5.5,1.4,moderate (5-10 m)
+572,Dindigul,33,Tamil Nadu,37,5.22,28,3.98,1.24,moderate (5-10 m)
+573,Erode,33,Tamil Nadu,60,5.6,67,4.9,0.7,moderate (5-10 m)
+574,Kancheepuram,33,Tamil Nadu,44,4.9,26,1.94,2.96,shallow (2-5 m)
+575,Kanyakumari,33,Tamil Nadu,18,6.14,11,2.77,3.37,moderate (5-10 m)
+576,Karur,33,Tamil Nadu,24,5.39,7,6.12,-0.73,moderate (5-10 m)
+577,Krishnagiri,33,Tamil Nadu,28,6.29,15,5.01,1.28,moderate (5-10 m)
+578,Madurai,33,Tamil Nadu,41,5.74,36,3.1,2.64,moderate (5-10 m)
+579,Nagapattinam,33,Tamil Nadu,19,3.34,13,3.21,0.13,shallow (2-5 m)
+580,Namakkal,33,Tamil Nadu,54,5.12,23,3.82,1.3,moderate (5-10 m)
+581,Perambalur,33,Tamil Nadu,19,3.98,12,3.14,0.84,shallow (2-5 m)
+582,Pudukkottai,33,Tamil Nadu,31,5.06,27,3.46,1.6,moderate (5-10 m)
+583,Ramanathapuram,33,Tamil Nadu,21,2.6,25,2.75,-0.15,shallow (2-5 m)
+584,Salem,33,Tamil Nadu,43,5.32,25,3.43,1.89,moderate (5-10 m)
+585,Sivaganga,33,Tamil Nadu,13,5.67,14,3.4,2.27,moderate (5-10 m)
+586,Thanjavur,33,Tamil Nadu,13,4.13,13,2.38,1.75,shallow (2-5 m)
+587,Nilgiris,33,Tamil Nadu,10,3.5,9,2.46,1.04,shallow (2-5 m)
+588,Theni,33,Tamil Nadu,40,6.6,34,5.91,0.69,moderate (5-10 m)
+589,Tiruvallur,33,Tamil Nadu,32,4.58,14,1.69,2.89,shallow (2-5 m)
+590,Tiruvarur,33,Tamil Nadu,8,3.64,7,1.79,1.85,shallow (2-5 m)
+591,Tiruchirappalli,33,Tamil Nadu,51,4.9,26,2.91,1.99,shallow (2-5 m)
+592,Tirunelveli,33,Tamil Nadu,46,4.08,40,4.53,-0.45,shallow (2-5 m)
+593,Tiruvannamalai,33,Tamil Nadu,29,5.55,17,3.2,2.35,moderate (5-10 m)
+594,Tuticorin,33,Tamil Nadu,34,4.22,26,3.22,1.0,shallow (2-5 m)
+595,Vellore,33,Tamil Nadu,44,4.58,29,3.02,1.56,shallow (2-5 m)
+596,Viluppuram,33,Tamil Nadu,48,3.75,31,2.12,1.63,shallow (2-5 m)
+597,Virudhunagar,33,Tamil Nadu,20,3.17,15,4.53,-1.36,shallow (2-5 m)
+610,Ariyalur,33,Tamil Nadu,20,39.72,6,1.54,38.18,deep (20-40 m)
+634,Tiruppur,33,Tamil Nadu,23,4.5,15,2.25,2.25,shallow (2-5 m)
+598,Karaikal,34,Puducherry,4,2.21,2,1.85,0.36,shallow (2-5 m)
+600,Puducherry,34,Puducherry,10,13.39,9,19.64,-6.25,moderately deep (10-20 m)
+9999,Yanam,34,Puducherry,21,17.47,1,2.26,15.21,moderately deep (10-20 m)
+602,South Andaman,35,Andaman And Nicobar Islands,4,1.65,56,1.07,0.58,very shallow (0-2 m)
+632,North Middle Andaman,35,Andaman And Nicobar Islands,0,,32,0.72,,
+501,ADILABAD,36,Telangana,56,8.3,58,2.85,5.45,moderate (5-10 m)
+507,HYDERABAD,36,Telangana,15,6.51,16,4.0,2.51,moderate (5-10 m)
+508,KARIMNAGAR,36,Telangana,65,6.76,65,3.17,3.59,moderate (5-10 m)
+509,KHAMMAM,36,Telangana,56,5.49,37,2.21,3.28,moderate (5-10 m)
+512,MAHBUBNAGAR,36,Telangana,31,7.88,101,4.54,3.34,moderate (5-10 m)
+513,MEDAK,36,Telangana,65,11.78,65,5.44,6.34,moderately deep (10-20 m)
+514,NALGONDA,36,Telangana,83,4.84,96,2.56,2.28,shallow (2-5 m)
+516,NIZAMABAD,36,Telangana,34,8.99,42,2.77,6.22,moderate (5-10 m)
+518,RANGA REDDY,36,Telangana,42,8.18,74,4.11,4.07,moderate (5-10 m)
+522,WARANGAL RURAL,36,Telangana,68,4.79,59,2.08,2.71,shallow (2-5 m)
+686,WARANGAL URBAN,36,Telangana,4,6.89,5,2.37,4.52,moderate (5-10 m)
