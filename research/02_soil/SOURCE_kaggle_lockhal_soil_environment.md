@@ -12,7 +12,7 @@
 | Spatial unit or resolution | Points sampled from co-registered rasters: 105,506 points on a grid of roughly 2 km |
 | Temporal resolution | One-off |
 | Licence | Kaggle page states **CC BY 4.0** (as declared by the uploader). The upstream NBSS&LUP maps carry no stated open licence |
-| OK for a public open-source app? | **Restricted until upstream terms are confirmed.** The CC BY label covers the compilation only, and the underlying ICAR data may not be redistributable. Use for research; ask NBSS&LUP before shipping derived layers |
+| OK for a public open-source app? | **Restricted; superseded.** The CC BY label covers only the compilation; the underlying NBSS&LUP maps are paywalled (digital layers "on payment basis"). It has only qualitative classes, so it is replaced by ISRIC SoilGrids 2.0 (`SOURCE_isric_soilgrids_v2.md`) for all soil properties. Keep it local as a cross-check only |
 | Required attribution text | "Soil depth, erosion, texture, slope and productivity classes: ICAR-NBSS&LUP, compiled by Lockhal (Kaggle, CC BY 4.0)" |
 | Citation | Lockhal (2026). India Soil Environment: Integrated Analysis [dataset]. Kaggle. https://www.kaggle.com/datasets/lockhal/india-soil-environment-integrated-analysis |
 | Files in this folder | Git-ignored: `raw/kaggle_lockhal/final_soil_environment_dataset_part.csv` (15.0 MB) |

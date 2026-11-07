@@ -31,6 +31,9 @@ fields to collect, and when it counts as done.
 5. No personal data anywhere in the repo.
 6. Commit data files (outside `raw/`) only when the card's "OK for a public open-source app?" field says OK.
    Restricted or unknown licences stay in `raw/`.
+7. The MIT licence covers the code only. Each committed data table keeps its source's licence (CC BY 4.0, GODL-India,
+   ODC-By, ODbL, Copernicus). The app's data-sources page must carry every card's attribution text, including the
+   Copernicus DEM liability disclaimer.
 
 ## Source register
 
@@ -45,6 +48,8 @@ fields to collect, and when it counts as done.
 | [`01_agro_climate/CLIMATE_INDICATOR_METHODS.md`](01_agro_climate/CLIMATE_INDICATOR_METHODS.md) | D02/D03 | Method spec: sources, cropland weighting, indicator definitions | n/a | Yes |
 | [`01_agro_climate/SOURCE_niti_iced_climate.md`](01_agro_climate/SOURCE_niti_iced_climate.md) | D02/D03 | Reviewed, not used | Unstated | No |
 | [`02_soil/SOURCE_kaggle_lockhal_soil_environment.md`](02_soil/SOURCE_kaggle_lockhal_soil_environment.md) | D04 | Downloaded | CC BY 4.0 (compiler); ICAR upstream unclear | No |
+| [`02_soil/SOURCE_isric_soilgrids_v2.md`](02_soil/SOURCE_isric_soilgrids_v2.md) | D04 | Downloaded; district 0–30 cm topsoil (clay, silt, sand, pH, SOC, bulk density, CEC) | CC BY 4.0 | `soilgrids_v2_district_topsoil_0-30cm.csv` |
+| [`03_elevation/SOURCE_copernicus_dem_glo90.md`](03_elevation/SOURCE_copernicus_dem_glo90.md) | D05 | Downloaded; district elevation and slope-class shares | Copernicus DEM (free, attribution + disclaimer) | `copdem_glo90_district_terrain.csv` |
 | [`06_crops/SOURCE_kaggle_aartithube_district_crops_soil_health.md`](06_crops/SOURCE_kaggle_aartithube_district_crops_soil_health.md) | D10/D04 | Downloaded | Non-commercial only | No |
 | [`06_crops/area_production_yield/SOURCE_upag_des_district_apy.md`](06_crops/area_production_yield/SOURCE_upag_des_district_apy.md) | D10 | Downloaded 2013-14 to 2024-25 | Permission needed (UPAg copyright policy) | No |
 | [`08_solar_weather/SOURCE_copernicus_cds.md`](08_solar_weather/SOURCE_copernicus_cds.md) | D14/D02/D03/D15 | **Needs your CDS account** | Copernicus licence (open) | No |

@@ -1,12 +1,8 @@
 dist_lgd,dtname,state_lgd,stname,scheme,zone_code,zone_name,area_km2,area_share,rank,is_primary,is_sliver
-0,Muzaffarabad,1,JAMMU & KASHMIR,acz15_planning_commission,1,Western Himalayan Region,8396.8,2.3168,1,True,False
-0,Mirpur,1,JAMMU & KASHMIR,acz15_planning_commission,1,Western Himalayan Region,8396.8,2.3168,2,False,False
-0,Muzaffarabad,1,JAMMU & KASHMIR,acz15_planning_commission,1,Western Himalayan Region,8396.8,1.7486,3,False,False
-0,Mirpur,1,JAMMU & KASHMIR,acz15_planning_commission,1,Western Himalayan Region,8396.8,1.7486,4,False,False
-0,Muzaffarabad,1,JAMMU & KASHMIR,aer20_nbsslup_1992,14,WESTERN HIMALAYA WARM SUBHUMID (TO HUMID WITH INCLUSION OF PERHUMID) ECO-REGION,8396.8,2.3168,1,True,False
-0,Mirpur,1,JAMMU & KASHMIR,aer20_nbsslup_1992,14,WESTERN HIMALAYA WARM SUBHUMID (TO HUMID WITH INCLUSION OF PERHUMID) ECO-REGION,8396.8,2.3168,2,False,False
-0,Muzaffarabad,1,JAMMU & KASHMIR,aer20_nbsslup_1992,14,WESTERN HIMALAYA WARM SUBHUMID (TO HUMID WITH INCLUSION OF PERHUMID) ECO-REGION,8396.8,1.7486,3,False,False
-0,Mirpur,1,JAMMU & KASHMIR,aer20_nbsslup_1992,14,WESTERN HIMALAYA WARM SUBHUMID (TO HUMID WITH INCLUSION OF PERHUMID) ECO-REGION,8396.8,1.7486,4,False,False
+0,Muzaffarabad,1,JAMMU & KASHMIR,acz15_planning_commission,1,Western Himalayan Region,4787.4,0.997,1,True,False
+0,Muzaffarabad,1,JAMMU & KASHMIR,aer20_nbsslup_1992,14,WESTERN HIMALAYA WARM SUBHUMID (TO HUMID WITH INCLUSION OF PERHUMID) ECO-REGION,4787.4,0.997,1,True,False
+0,Mirpur,1,JAMMU & KASHMIR,acz15_planning_commission,1,Western Himalayan Region,3609.4,0.9959,1,True,False
+0,Mirpur,1,JAMMU & KASHMIR,aer20_nbsslup_1992,14,WESTERN HIMALAYA WARM SUBHUMID (TO HUMID WITH INCLUSION OF PERHUMID) ECO-REGION,3609.4,0.9959,1,True,False
 1,Anantnag,1,JAMMU & KASHMIR,acz15_planning_commission,1,Western Himalayan Region,2729.2,1.0,1,True,False
 1,Anantnag,1,JAMMU & KASHMIR,aer20_nbsslup_1992,14,WESTERN HIMALAYA WARM SUBHUMID (TO HUMID WITH INCLUSION OF PERHUMID) ECO-REGION,2729.2,1.0,1,True,False
 2,Budgam,1,JAMMU & KASHMIR,acz15_planning_commission,1,Western Himalayan Region,1250.5,1.0,1,True,False
