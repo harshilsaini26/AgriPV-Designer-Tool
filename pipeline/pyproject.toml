@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pipeline"
+version = "0.1.0"
+description = "Offline data pipeline for AgriPV Lab: weather packs and physics validation"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = ["numpy>=1.26", "pandas>=2", "pvlib==0.16.1", "apv_physics"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+validation = ["nrel-pysam>=5"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore:DatetimeIndex.dayofyear is deprecated"]  # raised inside pvlib 0.16.1
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"

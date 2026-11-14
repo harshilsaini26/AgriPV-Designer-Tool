@@ -1,0 +1,786 @@
+dist_lgd,district,file,gsa_opt_tilt_deg,opt_tilt_source
+0,Muzaffarabad,0_muzaffarabad,30.4,gsa
+0,Mirpur,0_mirpur,29.8,gsa
+1,Anantnag,1_anantnag,30.8,gsa
+2,Budgam,2_budgam,31.0,gsa
+3,Baramulla,3_baramulla,31.0,gsa
+4,Doda,4_doda,31.0,gsa
+5,Jammu,5_jammu,29.0,gsa
+7,Kathua,7_kathua,29.0,gsa
+8,Kupwara,8_kupwara,30.8,gsa
+10,Poonch,10_poonch,30.9,gsa
+11,Pulwama,11_pulwama,30.7,gsa
+12,Rajouri,12_rajouri,30.7,gsa
+13,Srinagar,13_srinagar,30.1,gsa
+14,Udhampur,14_udhampur,30.4,gsa
+620,Kishtwar,620_kishtwar,31.4,gsa
+621,Ramban,621_ramban,30.6,gsa
+622,Kulgam,622_kulgam,31.0,gsa
+623,Bandipora,623_bandipora,30.0,gsa
+624,Samba,624_samba,29.0,gsa
+625,Shopian,625_shopian,31.0,gsa
+626,Ganderbal,626_ganderbal,30.1,gsa
+627,Reasi,627_reasi,30.3,gsa
+15,Bilaspur,15_bilaspur,29.7,gsa
+16,Chamba,16_chamba,31.4,gsa
+17,Hamirpur,17_hamirpur,30.3,gsa
+18,Kangra,18_kangra,29.2,gsa
+19,Kinnaur,19_kinnaur,32.3,gsa
+20,Kullu,20_kullu,32.6,gsa
+21,Lahul And Spiti,21_lahul_and_spiti,32.7,gsa
+22,Mandi,22_mandi,31.0,gsa
+23,Shimla,23_shimla,32.0,gsa
+24,Sirmaur,24_sirmaur,30.1,gsa
+25,Solan,25_solan,29.4,gsa
+26,Una,26_una,29.2,gsa
+27,Amritsar,27_amritsar,28.0,gsa
+28,Bathinda,28_bathinda,28.0,gsa
+29,Faridkot,29_faridkot,28.0,gsa
+30,Fatehgarh Sahib,30_fatehgarh_sahib,28.0,gsa
+31,Ferozepur,31_ferozepur,28.0,gsa
+32,Gurdaspur,32_gurdaspur,28.0,gsa
+33,Hoshiarpur,33_hoshiarpur,28.3,gsa
+34,Jalandhar,34_jalandhar,28.0,gsa
+35,Kapurthala,35_kapurthala,28.0,gsa
+36,Ludhiana,36_ludhiana,28.0,gsa
+37,Mansa,37_mansa,28.0,gsa
+38,Moga,38_moga,28.0,gsa
+39,Sri Muktsar Sahib,39_sri_muktsar_sahib,28.0,gsa
+40,Shahid Bhagat Singh Nagar,40_shahid_bhagat_singh_nagar,28.1,gsa
+41,Patiala,41_patiala,28.0,gsa
+42,Rupnagar,42_rupnagar,28.0,gsa
+43,Sangrur,43_sangrur,28.0,gsa
+605,Barnala,605_barnala,28.0,gsa
+608,S.A.S Nagar,608_s_a_s_nagar,28.7,gsa
+609,Tarn Taran,609_tarn_taran,28.0,gsa
+651,Fazilka,651_fazilka,28.0,gsa
+662,Pathankot,662_pathankot,29.0,gsa
+737,Malerkotla,737_malerkotla,28.0,gsa
+44,Chandigarh,44_chandigarh,28.3,gsa
+45,Almora,45_almora,31.0,gsa
+46,Bageshwar,46_bageshwar,32.0,gsa
+47,Chamoli,47_chamoli,32.8,gsa
+48,Champawat,48_champawat,30.7,gsa
+49,Dehradun,49_dehradun,30.3,gsa
+50,Haridwar,50_haridwar,28.0,gsa
+51,Nainital,51_nainital,28.4,gsa
+52,Pauri Garhwal,52_pauri_garhwal,31.0,gsa
+53,Pithoragarh,53_pithoragarh,31.6,gsa
+54,Rudra Prayag,54_rudra_prayag,32.3,gsa
+55,Tehri Garhwal,55_tehri_garhwal,31.8,gsa
+56,Udam Singh Nagar,56_udam_singh_nagar,27.0,gsa
+57,Uttar Kashi,57_uttar_kashi,32.1,gsa
+58,Ambala,58_ambala,28.0,gsa
+59,Bhiwani,59_bhiwani,28.7,gsa
+60,Faridabad,60_faridabad,27.0,gsa
+61,Fatehabad,61_fatehabad,28.0,gsa
+62,Gurugram,62_gurugram,27.8,gsa
+63,Hisar,63_hisar,28.0,gsa
+64,Jhajjar,64_jhajjar,27.6,gsa
+65,Jind,65_jind,28.0,gsa
+66,Kaithal,66_kaithal,28.0,gsa
+67,Karnal,67_karnal,28.0,gsa
+68,Kurukshetra,68_kurukshetra,28.0,gsa
+69,Mahendragarh,69_mahendragarh,28.3,gsa
+70,Panchkula,70_panchkula,29.0,gsa
+71,Panipat,71_panipat,27.7,gsa
+72,Rewari,72_rewari,28.0,gsa
+73,Rohtak,73_rohtak,27.2,gsa
+74,Sirsa,74_sirsa,28.1,gsa
+75,Sonipat,75_sonipat,28.0,gsa
+76,Yamunanagar,76_yamunanagar,28.0,gsa
+604,Nuh,604_nuh,27.1,gsa
+619,Palwal,619_palwal,27.0,gsa
+701,Charki Dadri,701_charki_dadri,28.0,gsa
+77,Central,77_central,26.7,gsa
+78,East,78_east,26.6,gsa
+79,New Delhi,79_new_delhi,26.7,gsa
+80,North,80_north,27.0,gsa
+81,North East,81_north_east,26.9,gsa
+82,North West,82_north_west,27.0,gsa
+83,South,83_south,26.8,gsa
+84,South West,84_south_west,27.0,gsa
+85,West,85_west,26.8,gsa
+670,South East,670_south_east,26.2,gsa
+671,Shahdara,671_shahdara,26.7,gsa
+86,Ajmer,86_ajmer,29.0,gsa
+87,Alwar,87_alwar,28.0,gsa
+88,Banswara,88_banswara,27.0,gsa
+89,Baran,89_baran,27.0,gsa
+90,Barmer,90_barmer,28.8,gsa
+91,Bharatpur,91_bharatpur,27.0,gsa
+92,Bhilwara,92_bhilwara,28.0,gsa
+93,Bikaner,93_bikaner,30.9,gsa
+94,Bundi,94_bundi,27.4,gsa
+95,Chittorgarh,95_chittorgarh,28.0,gsa
+96,Churu,96_churu,30.0,gsa
+97,Dausa,97_dausa,29.0,gsa
+98,Dholpur,98_dholpur,27.0,gsa
+99,Dungarpur,99_dungarpur,27.8,gsa
+100,Ganganagar,100_ganganagar,29.0,gsa
+101,Hanumangarh,101_hanumangarh,29.1,gsa
+102,Jaipur,102_jaipur,29.0,gsa
+103,Jaisalmer,103_jaisalmer,29.4,gsa
+104,Jalore,104_jalore,29.0,gsa
+105,Jhalawar,105_jhalawar,26.0,gsa
+106,Jhunjhunu,106_jhunjhunu,29.0,gsa
+107,Jodhpur,107_jodhpur,29.9,gsa
+108,Karauli,108_karauli,27.9,gsa
+109,Kota,109_kota,27.0,gsa
+110,Nagaur,110_nagaur,30.0,gsa
+111,Pali,111_pali,29.0,gsa
+112,Rajsamand,112_rajsamand,29.0,gsa
+113,Sawai Madhopur,113_sawai_madhopur,28.0,gsa
+114,Sikar,114_sikar,29.8,gsa
+115,Sirohi,115_sirohi,29.0,gsa
+116,Tonk,116_tonk,28.3,gsa
+117,Udaipur,117_udaipur,28.0,gsa
+629,Pratapgarh,629_pratapgarh,27.0,gsa
+767,Deeg,767_deeg,27.7,gsa
+768,Didwana Kuchaman,768_didwana_kuchaman,30.0,gsa
+769,Dudu,769_dudu,29.0,gsa
+770,Khairthal-Tijara,770_khairthal_tijara,28.0,gsa
+771,Gangapurcity,771_gangapurcity,28.0,gsa
+772,Phalodi,772_phalodi,30.0,gsa
+773,Neem Ka Thana,773_neem_ka_thana,29.6,gsa
+774,Beawar,774_beawar,29.3,gsa
+775,Balotra,775_balotra,29.6,gsa
+776,Anoopgarh,776_anoopgarh,29.4,gsa
+777,Salumbar,777_salumbar,28.0,gsa
+778,Jodhpur Gramin,778_jodhpur_gramin,30.0,gsa
+779,Sanchor,779_sanchor,29.0,gsa
+780,Shahpura,780_shahpura,28.0,gsa
+781,Kekri,781_kekri,28.7,gsa
+782,Kotputli-Behror,782_kotputli_behror,29.0,gsa
+783,Jaipur Gramin,783_jaipur_gramin,29.0,gsa
+118,Agra,118_agra,26.1,gsa
+119,Aligarh,119_aligarh,26.1,gsa
+120,Prayagraj,120_prayagraj,24.6,gsa
+121,Ambedkar Nagar,121_ambedkar_nagar,24.4,gsa
+122,Auraiya,122_auraiya,25.6,gsa
+123,Azamgarh,123_azamgarh,24.0,gsa
+124,Baghpat,124_baghpat,27.0,gsa
+125,Bahraich,125_bahraich,25.0,gsa
+126,Ballia,126_ballia,24.0,gsa
+127,Balrampur,127_balrampur,25.0,gsa
+128,Banda,128_banda,25.0,gsa
+129,Barabanki,129_barabanki,25.0,gsa
+130,Bareilly,130_bareilly,26.0,gsa
+131,Basti,131_basti,24.7,gsa
+132,Bijnor,132_bijnor,27.8,gsa
+133,Budaun,133_budaun,26.0,gsa
+134,Bulandshahr,134_bulandshahr,27.0,gsa
+135,Chandauli,135_chandauli,24.0,gsa
+136,Chitrakoot,136_chitrakoot,25.0,gsa
+137,Deoria,137_deoria,24.0,gsa
+138,Etah,138_etah,26.0,gsa
+139,Etawah,139_etawah,26.0,gsa
+140,Ayodhya,140_ayodhya,25.0,gsa
+141,Farrukhabad,141_farrukhabad,26.0,gsa
+142,Fatehpur,142_fatehpur,25.0,gsa
+143,Firozabad,143_firozabad,26.0,gsa
+144,Gautam Buddha Nagar,144_gautam_buddha_nagar,27.0,gsa
+145,Ghaziabad,145_ghaziabad,27.0,gsa
+146,Ghazipur,146_ghazipur,23.9,gsa
+147,Gonda,147_gonda,25.0,gsa
+148,Gorakhpur,148_gorakhpur,24.0,gsa
+149,Hamirpur,149_hamirpur,25.1,gsa
+150,Hardoi,150_hardoi,25.2,gsa
+151,Jalaun,151_jalaun,25.3,gsa
+152,Jaunpur,152_jaunpur,24.0,gsa
+153,Jhansi,153_jhansi,26.0,gsa
+154,Amroha,154_amroha,27.0,gsa
+155,Kannauj,155_kannauj,26.0,gsa
+156,Kanpur Dehat,156_kanpur_dehat,25.7,gsa
+157,Kanpur Nagar,157_kanpur_nagar,25.0,gsa
+158,Kaushambi,158_kaushambi,25.0,gsa
+159,Kheri,159_kheri,26.0,gsa
+160,Kushi Nagar,160_kushi_nagar,24.0,gsa
+161,Lalitpur,161_lalitpur,27.0,gsa
+162,Lucknow,162_lucknow,24.3,gsa
+163,Hathras,163_hathras,26.2,gsa
+164,Maharajganj,164_maharajganj,24.6,gsa
+165,Mahoba,165_mahoba,25.9,gsa
+166,Mainpuri,166_mainpuri,26.0,gsa
+167,Mathura,167_mathura,27.0,gsa
+168,Mau,168_mau,24.0,gsa
+169,Meerut,169_meerut,27.0,gsa
+170,Mirzapur,170_mirzapur,25.0,gsa
+171,Moradabad,171_moradabad,26.9,gsa
+172,Muzaffarnagar,172_muzaffarnagar,27.0,gsa
+173,Pilibhit,173_pilibhit,26.0,gsa
+174,Pratapgarh,174_pratapgarh,24.8,gsa
+175,Rae Bareli,175_rae_bareli,25.0,gsa
+176,Rampur,176_rampur,26.8,gsa
+177,Saharanpur,177_saharanpur,28.0,gsa
+178,Sant Kabeer Nagar,178_sant_kabeer_nagar,24.6,gsa
+179,Bhadohi,179_bhadohi,24.0,gsa
+180,Shahjahanpur,180_shahjahanpur,26.0,gsa
+181,Shravasti,181_shravasti,25.4,gsa
+182,Siddharth Nagar,182_siddharth_nagar,25.0,gsa
+183,Sitapur,183_sitapur,25.0,gsa
+184,Sonbhadra,184_sonbhadra,25.0,gsa
+185,Sultanpur,185_sultanpur,24.7,gsa
+186,Unnao,186_unnao,25.0,gsa
+187,Varanasi,187_varanasi,24.0,gsa
+633,Kasganj,633_kasganj,26.0,gsa
+640,Amethi,640_amethi,25.0,gsa
+659,Sambhal,659_sambhal,27.0,gsa
+660,Shamli,660_shamli,27.1,gsa
+661,Hapur,661_hapur,27.0,gsa
+188,Araria,188_araria,24.0,gsa
+189,Aurangabad,189_aurangabad,24.0,gsa
+190,Banka,190_banka,24.0,gsa
+191,Begusarai,191_begusarai,23.0,gsa
+192,Bhagalpur,192_bhagalpur,23.6,gsa
+193,Bhojpur,193_bhojpur,24.0,gsa
+194,Buxar,194_buxar,24.0,gsa
+195,Darbhanga,195_darbhanga,23.0,gsa
+196,Gaya,196_gaya,24.0,gsa
+197,Gopalganj,197_gopalganj,24.0,gsa
+198,Jamui,198_jamui,24.8,gsa
+199,Jehanabad,199_jehanabad,24.0,gsa
+200,Kaimur (Bhabua),200_kaimur_bhabua,24.0,gsa
+201,Katihar,201_katihar,24.0,gsa
+202,Khagaria,202_khagaria,23.0,gsa
+203,Kishanganj,203_kishanganj,24.0,gsa
+204,Lakhisarai,204_lakhisarai,24.0,gsa
+205,Madhepura,205_madhepura,24.0,gsa
+206,Madhubani,206_madhubani,23.0,gsa
+207,Munger,207_munger,24.0,gsa
+208,Muzaffarpur,208_muzaffarpur,23.0,gsa
+209,Nalanda,209_nalanda,23.8,gsa
+210,Nawada,210_nawada,24.1,gsa
+211,Pashchim Champaran,211_pashchim_champaran,24.0,gsa
+212,Patna,212_patna,23.0,gsa
+213,Purbi Champaran,213_purbi_champaran,23.0,gsa
+214,Purnia,214_purnia,24.0,gsa
+215,Rohtas,215_rohtas,24.0,gsa
+216,Saharsa,216_saharsa,23.7,gsa
+217,Samastipur,217_samastipur,23.0,gsa
+218,Saran,218_saran,23.0,gsa
+219,Sheikhpura,219_sheikhpura,23.8,gsa
+220,Sheohar,220_sheohar,23.0,gsa
+221,Sitamarhi,221_sitamarhi,23.0,gsa
+222,Siwan,222_siwan,23.8,gsa
+223,Supaul,223_supaul,23.7,gsa
+224,Vaishali,224_vaishali,23.0,gsa
+611,Arwal,611_arwal,24.0,gsa
+225,Gangtok,225_gangtok,26.4,gsa
+226,Mangan,226_mangan,26.2,gsa
+227,Namchi,227_namchi,26.8,gsa
+228,Gyalshing,228_gyalshing,25.7,gsa
+741,Pakyong,741_pakyong,27.0,gsa
+742,Soreng,742_soreng,25.9,gsa
+229,Changlang,229_changlang,29.7,gsa
+230,Dibang Valley,230_dibang_valley,29.9,gsa
+231,East Kameng,231_east_kameng,27.3,gsa
+232,East Siang,232_east_siang,29.4,gsa
+233,Kurung Kumey,233_kurung_kumey,27.4,gsa
+234,Lohit,234_lohit,29.3,gsa
+235,Lower Dibang Valley,235_lower_dibang_valley,30.0,gsa
+236,Lower Subansiri,236_lower_subansiri,28.1,gsa
+237,Papum Pare,237_papum_pare,28.0,gsa
+238,Tawang,238_tawang,29.8,gsa
+239,Tirap,239_tirap,29.0,gsa
+240,Upper Siang,240_upper_siang,29.4,gsa
+241,Upper Subansiri,241_upper_subansiri,28.1,gsa
+242,West Kameng,242_west_kameng,27.1,gsa
+243,West Siang,243_west_siang,28.0,gsa
+628,Anjaw,628_anjaw,30.3,gsa
+666,Longding,666_longding,28.9,gsa
+677,Kra Daadi,677_kra_daadi,27.9,gsa
+678,Namsai,678_namsai,29.2,gsa
+679,Siang,679_siang,28.7,gsa
+718,Kamle,718_kamle,28.8,gsa
+719,Lower Siang,719_lower_siang,29.4,gsa
+723,Pakke Kessang,723_pakke_kessang,28.1,gsa
+724,Leparada,724_leparada,29.1,gsa
+725,Shi Yomi,725_shi_yomi,28.2,gsa
+766,Itanagar capital complex,766_itanagar_capital_complex,28.0,gsa
+244,Dimapur,244_dimapur,27.6,gsa
+245,Kohima,245_kohima,29.0,gsa
+246,Mokokchung,246_mokokchung,28.0,gsa
+247,Mon,247_mon,29.0,gsa
+248,Phek,248_phek,28.6,gsa
+249,Tuensang,249_tuensang,28.7,gsa
+250,Wokha,250_wokha,27.9,gsa
+251,Zunheboto,251_zunheboto,29.6,gsa
+613,Peren,613_peren,28.0,gsa
+614,Kiphire,614_kiphire,28.2,gsa
+615,Longleng,615_longleng,28.6,gsa
+736,Noklak,736_noklak,29.8,gsa
+757,Tseminyu,757_tseminyu,28.9,gsa
+758,Chumoukedima,758_chumoukedima,28.0,gsa
+764,Niuland,764_niuland,28.1,gsa
+765,Shamator,765_shamator,29.3,gsa
+252,Bishnupur,252_bishnupur,26.7,gsa
+253,Chandel,253_chandel,28.0,gsa
+254,Churachandpur,254_churachandpur,28.0,gsa
+255,Imphal East,255_imphal_east,29.0,gsa
+256,Imphal West,256_imphal_west,28.4,gsa
+257,Senapati,257_senapati,29.3,gsa
+258,Tamenglong,258_tamenglong,29.1,gsa
+259,Thoubal,259_thoubal,27.2,gsa
+260,Ukhrul,260_ukhrul,29.9,gsa
+711,Kakching,711_kakching,26.9,gsa
+712,Kangpokpi,712_kangpokpi,29.0,gsa
+713,Jiribam,713_jiribam,27.7,gsa
+714,Noney,714_noney,28.6,gsa
+715,Pherzawl,715_pherzawl,27.9,gsa
+716,Tengnoupal,716_tengnoupal,28.0,gsa
+717,Kamjong,717_kamjong,28.8,gsa
+261,Aizawl,261_aizawl,27.0,gsa
+262,Champhai,262_champhai,28.2,gsa
+263,Kolasib,263_kolasib,26.8,gsa
+264,Lawngtlai,264_lawngtlai,26.4,gsa
+265,Lunglei,265_lunglei,26.0,gsa
+266,Mamit,266_mamit,26.7,gsa
+267,Saiha,267_saiha,27.3,gsa
+268,Serchhip,268_serchhip,27.0,gsa
+726,Hnahthial,726_hnahthial,27.2,gsa
+727,Saitual,727_saitual,28.1,gsa
+728,Khawzawl,728_khawzawl,28.1,gsa
+269,Dhalai,269_dhalai,25.6,gsa
+270,North Tripura,270_north_tripura,26.0,gsa
+271,South Tripura,271_south_tripura,25.0,gsa
+272,West Tripura,272_west_tripura,24.9,gsa
+652,Khowai,652_khowai,25.0,gsa
+653,Sepahijala,653_sepahijala,24.6,gsa
+654,Gomati,654_gomati,25.0,gsa
+655,Unakoti,655_unakoti,25.7,gsa
+273,East Garo Hills,273_east_garo_hills,26.9,gsa
+274,East Khasi Hills,274_east_khasi_hills,28.2,gsa
+275,West Jaintia Hills,275_west_jaintia_hills,27.0,gsa
+276,Ri Bhoi,276_ri_bhoi,27.1,gsa
+277,South Garo Hills,277_south_garo_hills,26.0,gsa
+278,West Garo Hills,278_west_garo_hills,26.3,gsa
+279,West Khasi Hills,279_west_khasi_hills,27.6,gsa
+656,North Garo Hills,656_north_garo_hills,27.0,gsa
+657,East Jaintia Hills,657_east_jaintia_hills,28.0,gsa
+658,South West Khasi Hills,658_south_west_khasi_hills,28.2,gsa
+663,South West Garo Hills,663_south_west_garo_hills,26.0,gsa
+740,Eastern West Khasi Hills,740_eastern_west_khasi_hills,27.7,gsa
+280,Barpeta,280_barpeta,26.0,gsa
+281,Bongaigaon,281_bongaigaon,26.7,gsa
+282,Cachar,282_cachar,27.0,gsa
+283,Darrang,283_darrang,26.0,gsa
+284,Dhemaji,284_dhemaji,29.0,gsa
+285,Dhubri,285_dhubri,26.0,gsa
+286,Dibrugarh,286_dibrugarh,28.6,gsa
+287,Goalpara,287_goalpara,26.9,gsa
+288,Golaghat,288_golaghat,28.0,gsa
+289,Hailakandi,289_hailakandi,26.4,gsa
+290,Jorhat,290_jorhat,27.3,gsa
+291,Kamrup,291_kamrup,25.8,gsa
+292,Karbi Anglong,292_karbi_anglong,27.7,gsa
+293,Karimganj,293_karimganj,26.0,gsa
+294,Kokrajhar,294_kokrajhar,27.0,gsa
+295,Lakhimpur,295_lakhimpur,28.0,gsa
+296,Marigaon,296_marigaon,26.3,gsa
+297,Nagaon,297_nagaon,26.8,gsa
+298,Nalbari,298_nalbari,26.0,gsa
+299,Dima Hasao,299_dima_hasao,27.0,gsa
+300,Sivasagar,300_sivasagar,28.0,gsa
+301,Sonitpur,301_sonitpur,27.0,gsa
+302,Tinsukia,302_tinsukia,29.0,gsa
+612,Chirang,612_chirang,27.0,gsa
+616,Baksa,616_baksa,27.0,gsa
+617,Udalguri,617_udalguri,27.0,gsa
+618,Kamrup Metro,618_kamrup_metro,26.8,gsa
+705,Biswanath,705_biswanath,28.0,gsa
+706,Majuli,706_majuli,28.0,gsa
+707,South Salmara Mancachar,707_south_salmara_mancachar,26.0,gsa
+708,Charaideo,708_charaideo,28.0,gsa
+709,Hojai,709_hojai,27.0,gsa
+710,West Karbi Anglong,710_west_karbi_anglong,27.1,gsa
+739,Bajali,739_bajali,26.4,gsa
+756,Tamulpur,756_tamulpur,26.9,gsa
+303,24 Paraganas North,303_24_paraganas_north,22.8,gsa
+304,24 Paraganas South,304_24_paraganas_south,22.9,gsa
+305,Bankura,305_bankura,24.0,gsa
+306,Purba Bardhaman,306_purba_bardhaman,23.2,gsa
+307,Birbhum,307_birbhum,24.0,gsa
+308,Coochbehar,308_coochbehar,26.0,gsa
+309,Darjeeling,309_darjeeling,25.0,gsa
+310,Dinajpur Dakshin,310_dinajpur_dakshin,24.9,gsa
+311,Dinajpur Uttar,311_dinajpur_uttar,24.0,gsa
+312,Hooghly,312_hooghly,23.0,gsa
+313,Howrah,313_howrah,22.6,gsa
+314,Jalpaiguri,314_jalpaiguri,25.0,gsa
+315,Kolkata,315_kolkata,22.0,gsa
+316,Maldah,316_maldah,24.1,gsa
+317,Medinipur East,317_medinipur_east,23.0,gsa
+318,Medinipur West,318_medinipur_west,23.0,gsa
+319,Murshidabad,319_murshidabad,23.7,gsa
+320,Nadia,320_nadia,23.0,gsa
+321,Purulia,321_purulia,24.8,gsa
+664,Alipurduar,664_alipurduar,26.0,gsa
+702,Kalimpong,702_kalimpong,26.0,gsa
+703,Jhargram,703_jhargram,23.3,gsa
+704,Paschim Bardhaman,704_paschim_bardhaman,23.9,gsa
+322,Bokaro,322_bokaro,24.7,gsa
+323,Chatra,323_chatra,25.2,gsa
+324,Deoghar,324_deoghar,25.0,gsa
+325,Dhanbad,325_dhanbad,24.6,gsa
+326,Dumka,326_dumka,24.2,gsa
+327,East Singhbum,327_east_singhbum,24.0,gsa
+328,Garhwa,328_garhwa,25.0,gsa
+329,Giridih,329_giridih,25.0,gsa
+330,Godda,330_godda,24.0,gsa
+331,Gumla,331_gumla,26.8,gsa
+332,Hazaribagh,332_hazaribagh,25.9,gsa
+333,Jamtara,333_jamtara,25.0,gsa
+334,Koderma,334_koderma,25.0,gsa
+335,Latehar,335_latehar,26.0,gsa
+336,Lohardaga,336_lohardaga,27.0,gsa
+337,Pakur,337_pakur,24.2,gsa
+338,Palamu,338_palamu,25.0,gsa
+339,Ranchi,339_ranchi,26.0,gsa
+340,Sahebganj,340_sahebganj,24.3,gsa
+341,Saraikela Kharsawan,341_saraikela_kharsawan,24.0,gsa
+342,Simdega,342_simdega,26.0,gsa
+343,West Singhbhum,343_west_singhbhum,25.0,gsa
+606,Khunti,606_khunti,26.0,gsa
+607,Ramgarh,607_ramgarh,25.2,gsa
+344,Anugul,344_anugul,24.0,gsa
+345,Balangir,345_balangir,24.0,gsa
+346,Baleshwar,346_baleshwar,23.0,gsa
+347,Bargarh,347_bargarh,24.9,gsa
+348,Bhadrak,348_bhadrak,22.7,gsa
+349,Boudh,349_boudh,24.0,gsa
+350,Cuttack,350_cuttack,22.4,gsa
+351,Deogarh,351_deogarh,24.2,gsa
+352,Dhenkanal,352_dhenkanal,23.1,gsa
+353,Gajapati,353_gajapati,22.9,gsa
+354,Ganjam,354_ganjam,22.3,gsa
+355,Jagatsinghapur,355_jagatsinghapur,22.0,gsa
+356,Jajapur,356_jajapur,23.0,gsa
+357,Jharsuguda,357_jharsuguda,24.6,gsa
+358,Kalahandi,358_kalahandi,24.0,gsa
+359,Kandhamal,359_kandhamal,24.0,gsa
+360,Kendrapara,360_kendrapara,22.0,gsa
+361,Kendujhar,361_kendujhar,24.2,gsa
+362,Khordha,362_khordha,22.0,gsa
+363,Koraput,363_koraput,24.0,gsa
+364,Malkangiri,364_malkangiri,23.2,gsa
+365,Mayurbhanj,365_mayurbhanj,24.1,gsa
+366,Nabarangpur,366_nabarangpur,25.0,gsa
+367,Nayagarh,367_nayagarh,23.0,gsa
+368,Nuapada,368_nuapada,25.0,gsa
+369,Puri,369_puri,21.9,gsa
+370,Rayagada,370_rayagada,24.0,gsa
+371,Sambalpur,371_sambalpur,24.1,gsa
+372,Sonepur,372_sonepur,24.0,gsa
+373,Sundargarh,373_sundargarh,25.0,gsa
+374,Bastar,374_bastar,24.9,gsa
+375,Bilaspur,375_bilaspur,25.0,gsa
+376,Dantewada,376_dantewada,24.0,gsa
+377,Dhamtari,377_dhamtari,24.7,gsa
+378,Durg,378_durg,24.1,gsa
+379,Janjgir-Champa,379_janjgir_champa,25.0,gsa
+380,Jashpur,380_jashpur,26.1,gsa
+381,Kanker,381_kanker,24.8,gsa
+382,Kabirdham,382_kabirdham,26.0,gsa
+383,Korba,383_korba,26.0,gsa
+384,Korea,384_korea,26.8,gsa
+385,Mahasamund,385_mahasamund,24.8,gsa
+386,Raigarh,386_raigarh,25.1,gsa
+387,Raipur,387_raipur,25.0,gsa
+388,Rajnandgaon,388_rajnandgaon,25.0,gsa
+389,Surguja,389_surguja,26.6,gsa
+636,Bijapur,636_bijapur,23.9,gsa
+637,Narayanpur,637_narayanpur,24.6,gsa
+642,Sukma,642_sukma,23.0,gsa
+643,Kondagaon,643_kondagaon,25.0,gsa
+644,Baloda Bazar,644_baloda_bazar,25.0,gsa
+645,Gariyaband,645_gariyaband,24.3,gsa
+646,Balod,646_balod,25.0,gsa
+647,Mungeli,647_mungeli,26.0,gsa
+648,Surajpur,648_surajpur,27.0,gsa
+649,Balrampur,649_balrampur,26.2,gsa
+650,Bemetara,650_bemetara,25.0,gsa
+734,Gaurella Pendra Marwahi,734_gaurella_pendra_marwahi,26.7,gsa
+759,Khairgarh Chhuikhadan Gandai,759_khairgarh_chhuikhadan_gandai,25.0,gsa
+760,Manendragarh Chirimiri Bharatpur,760_manendragarh_chirimiri_bharatpur,26.1,gsa
+761,Mohla Manpur Ambagarh Chouki,761_mohla_manpur_ambagarh_chouki,24.9,gsa
+762,Sakti,762_sakti,25.0,gsa
+763,Sarangarh Bilaigarh,763_sarangarh_bilaigarh,25.0,gsa
+390,Anuppur,390_anuppur,26.0,gsa
+391,Ashoknagar,391_ashoknagar,27.0,gsa
+392,Balaghat,392_balaghat,25.4,gsa
+393,Barwani,393_barwani,25.0,gsa
+394,Betul,394_betul,25.2,gsa
+395,Bhind,395_bhind,26.0,gsa
+396,Bhopal,396_bhopal,26.0,gsa
+397,Burhanpur,397_burhanpur,25.0,gsa
+398,Chhatarpur,398_chhatarpur,26.0,gsa
+399,Chhindwara,399_chhindwara,26.0,gsa
+400,Damoh,400_damoh,26.3,gsa
+401,Datia,401_datia,26.0,gsa
+402,Dewas,402_dewas,26.0,gsa
+403,Dhar,403_dhar,26.0,gsa
+404,Dindori,404_dindori,27.0,gsa
+405,East Nimar,405_east_nimar,25.0,gsa
+406,Guna,406_guna,26.9,gsa
+407,Gwalior,407_gwalior,26.9,gsa
+408,Harda,408_harda,25.0,gsa
+409,Narmadapuram,409_narmadapuram,26.0,gsa
+410,Indore,410_indore,26.0,gsa
+411,Jabalpur,411_jabalpur,26.0,gsa
+412,Jhabua,412_jhabua,26.0,gsa
+413,Katni,413_katni,26.3,gsa
+414,Khargone,414_khargone,25.0,gsa
+415,Mandla,415_mandla,26.0,gsa
+416,Mandsaur,416_mandsaur,26.7,gsa
+417,Morena,417_morena,27.0,gsa
+418,Narsinghpur,418_narsinghpur,26.0,gsa
+419,Neemuch,419_neemuch,27.1,gsa
+420,Panna,420_panna,26.0,gsa
+421,Raisen,421_raisen,26.0,gsa
+422,Rajgarh,422_rajgarh,26.0,gsa
+423,Ratlam,423_ratlam,26.3,gsa
+424,Rewa,424_rewa,26.0,gsa
+425,Sagar,425_sagar,26.9,gsa
+426,Satna,426_satna,26.0,gsa
+427,Sehore,427_sehore,26.0,gsa
+428,Seoni,428_seoni,25.9,gsa
+429,Shahdol,429_shahdol,26.4,gsa
+430,Shajapur,430_shajapur,26.0,gsa
+431,Sheopur,431_sheopur,27.6,gsa
+432,Shivpuri,432_shivpuri,27.0,gsa
+433,Sidhi,433_sidhi,26.0,gsa
+434,Tikamgarh,434_tikamgarh,27.0,gsa
+435,Ujjain,435_ujjain,26.0,gsa
+436,Umaria,436_umaria,26.0,gsa
+437,Vidisha,437_vidisha,26.2,gsa
+638,Singrauli,638_singrauli,25.7,gsa
+639,Alirajpur,639_alirajpur,26.0,gsa
+667,Agar Malwa,667_agar_malwa,26.0,gsa
+722,Niwari,722_niwari,26.9,gsa
+438,Ahmadabad,438_ahmadabad,27.0,gsa
+439,Amreli,439_amreli,25.0,gsa
+440,Anand,440_anand,26.0,gsa
+441,Banas Kantha,441_banas_kantha,28.9,gsa
+442,Bharuch,442_bharuch,25.0,gsa
+443,Bhavnagar,443_bhavnagar,25.0,gsa
+444,Dang,444_dang,25.0,gsa
+445,Dohad,445_dohad,26.4,gsa
+446,Gandhinagar,446_gandhinagar,27.0,gsa
+447,Jamnagar,447_jamnagar,26.0,gsa
+448,Junagadh,448_junagadh,25.8,gsa
+449,Kachchh,449_kachchh,27.0,gsa
+450,Kheda,450_kheda,26.7,gsa
+451,Mahesana,451_mahesana,28.0,gsa
+452,Narmada,452_narmada,25.8,gsa
+453,Navsari,453_navsari,24.0,gsa
+454,Panch Mahals,454_panch_mahals,26.4,gsa
+455,Patan,455_patan,28.0,gsa
+456,Porbandar,456_porbandar,25.9,gsa
+457,Rajkot,457_rajkot,26.0,gsa
+458,Sabar Kantha,458_sabar_kantha,27.9,gsa
+459,Surat,459_surat,24.7,gsa
+460,Surendranagar,460_surendranagar,26.4,gsa
+461,Vadodara,461_vadodara,26.0,gsa
+462,Valsad,462_valsad,24.0,gsa
+641,Tapi,641_tapi,23.3,gsa
+668,Chhotaudepur,668_chhotaudepur,26.0,gsa
+669,Mahisagar,669_mahisagar,27.0,gsa
+672,Arvalli,672_arvalli,27.8,gsa
+673,Morbi,673_morbi,26.2,gsa
+674,Devbhumi Dwarka,674_devbhumi_dwarka,26.0,gsa
+675,Gir Somnath,675_gir_somnath,25.0,gsa
+676,Botad,676_botad,26.0,gsa
+466,Ahmednagar,466_ahmednagar,23.0,gsa
+467,Akola,467_akola,24.0,gsa
+468,Amravati,468_amravati,24.0,gsa
+469,Aurangabad,469_aurangabad,23.6,gsa
+470,Beed,470_beed,22.0,gsa
+471,Bhandara,471_bhandara,25.0,gsa
+472,Buldhana,472_buldhana,23.1,gsa
+473,Chandrapur,473_chandrapur,24.0,gsa
+474,Dhule,474_dhule,24.0,gsa
+475,Gadchiroli,475_gadchiroli,24.0,gsa
+476,Gondia,476_gondia,25.0,gsa
+477,Hingoli,477_hingoli,23.0,gsa
+478,Jalgaon,478_jalgaon,24.0,gsa
+479,Jalna,479_jalna,23.0,gsa
+480,Kolhapur,480_kolhapur,21.0,gsa
+481,Latur,481_latur,22.0,gsa
+482,Mumbai,482_mumbai,22.0,gsa
+483,Mumbai Suburban,483_mumbai_suburban,22.9,gsa
+484,Nagpur,484_nagpur,24.0,gsa
+485,Nanded,485_nanded,22.1,gsa
+486,Nandurbar,486_nandurbar,24.0,gsa
+487,Nashik,487_nashik,24.0,gsa
+488,Osmanabad,488_osmanabad,22.0,gsa
+489,Parbhani,489_parbhani,22.3,gsa
+490,Pune,490_pune,22.0,gsa
+491,Raigad,491_raigad,23.0,gsa
+492,Ratnagiri,492_ratnagiri,22.0,gsa
+493,Sangli,493_sangli,21.0,gsa
+494,Satara,494_satara,22.0,gsa
+495,Sindhudurg,495_sindhudurg,21.0,gsa
+496,Solapur,496_solapur,21.0,gsa
+497,Thane,497_thane,23.2,gsa
+498,Wardha,498_wardha,24.0,gsa
+499,Washim,499_washim,23.0,gsa
+500,Yavatmal,500_yavatmal,23.3,gsa
+665,Palghar,665_palghar,24.0,gsa
+502,Anantapur,502_anantapur,19.0,gsa
+503,Chittoor,503_chittoor,16.0,gsa
+504,Y.S.R.,504_y_s_r,18.0,gsa
+505,East Godavari,505_east_godavari,19.6,gsa
+506,Guntur,506_guntur,18.3,gsa
+510,Krishna,510_krishna,18.4,gsa
+511,Kurnool,511_kurnool,20.0,gsa
+515,Spsr Nellore,515_spsr_nellore,16.0,gsa
+517,Prakasam,517_prakasam,18.0,gsa
+519,Srikakulam,519_srikakulam,21.0,gsa
+520,Visakhapatanam,520_visakhapatanam,21.0,gsa
+521,Vizianagaram,521_vizianagaram,21.9,gsa
+523,West Godavari,523_west_godavari,19.0,gsa
+743,Parvathipuram Manyam,743_parvathipuram_manyam,22.7,gsa
+744,Anakapalli,744_anakapalli,20.8,gsa
+745,Alluri Sitharama Raju,745_alluri_sitharama_raju,23.0,gsa
+746,Kakinada,746_kakinada,20.0,gsa
+747,Konaseema,747_konaseema,18.8,gsa
+748,Eluru,748_eluru,19.8,gsa
+749,Ntr,749_ntr,19.7,gsa
+750,Bapatla,750_bapatla,18.0,gsa
+751,Palnadu,751_palnadu,18.9,gsa
+752,Tirupati,752_tirupati,15.7,gsa
+753,Annamayya,753_annamayya,17.0,gsa
+754,Sri Sathya Sai,754_sri_sathya_sai,18.8,gsa
+755,Nandyal,755_nandyal,19.0,gsa
+524,Bagalkote,524_bagalkote,20.2,gsa
+525,Bengaluru Urban,525_bengaluru_urban,17.0,gsa
+526,Bengaluru Rural,526_bengaluru_rural,17.8,gsa
+527,Belagavi,527_belagavi,20.2,gsa
+528,Ballari,528_ballari,19.3,gsa
+529,Bidar,529_bidar,22.0,gsa
+530,Vijayapura,530_vijayapura,21.0,gsa
+531,Chamarajanagara,531_chamarajanagara,16.4,gsa
+532,Chikkamagaluru,532_chikkamagaluru,19.0,gsa
+533,Chitradurga,533_chitradurga,19.1,gsa
+534,Dakshina Kannada,534_dakshina_kannada,19.0,gsa
+535,Davangere,535_davangere,20.0,gsa
+536,Dharwad,536_dharwad,20.0,gsa
+537,Gadag,537_gadag,20.0,gsa
+538,Kalaburagi,538_kalaburagi,21.0,gsa
+539,Hassan,539_hassan,18.0,gsa
+540,Haveri,540_haveri,20.0,gsa
+541,Kodagu,541_kodagu,17.0,gsa
+542,Kolar,542_kolar,16.2,gsa
+543,Koppal,543_koppal,21.0,gsa
+544,Mandya,544_mandya,17.2,gsa
+545,Mysuru,545_mysuru,17.0,gsa
+546,Raichur,546_raichur,20.8,gsa
+547,Shivamogga,547_shivamogga,20.0,gsa
+548,Tumakuru,548_tumakuru,18.7,gsa
+549,Udupi,549_udupi,19.0,gsa
+550,Uttara Kannada,550_uttara_kannada,20.9,gsa
+630,Chikkaballapura,630_chikkaballapura,18.0,gsa
+631,Ramanagara,631_ramanagara,17.0,gsa
+635,Yadgir,635_yadgir,21.0,gsa
+738,Vijayanagar,738_vijayanagar,20.0,gsa
+551,North Goa,551_north_goa,20.1,gsa
+552,South Goa,552_south_goa,20.0,gsa
+553,Lakshadweep District,553_lakshadweep_district,13.6,gsa
+554,Alappuzha,554_alappuzha,13.0,gsa
+555,Ernakulam,555_ernakulam,14.7,gsa
+556,Idukki,556_idukki,15.1,gsa
+557,Kannur,557_kannur,16.9,gsa
+558,Kasaragod,558_kasaragod,16.9,gsa
+559,Kollam,559_kollam,12.6,gsa
+560,Kottayam,560_kottayam,14.0,gsa
+561,Kozhikode,561_kozhikode,16.0,gsa
+562,Malappuram,562_malappuram,15.0,gsa
+563,Palakkad,563_palakkad,16.0,gsa
+564,Pathanamthitta,564_pathanamthitta,13.0,gsa
+565,Thiruvananthapuram,565_thiruvananthapuram,11.9,gsa
+566,Thrissur,566_thrissur,15.0,gsa
+567,Wayanad,567_wayanad,16.7,gsa
+568,Chennai,568_chennai,14.0,gsa
+569,Coimbatore,569_coimbatore,13.0,gsa
+570,Cuddalore,570_cuddalore,12.0,gsa
+571,Dharmapuri,571_dharmapuri,14.9,gsa
+572,Dindigul,572_dindigul,12.0,gsa
+573,Erode,573_erode,14.2,gsa
+574,Kanchipuram,574_kanchipuram,14.0,gsa
+575,Kanniyakumari,575_kanniyakumari,11.0,gsa
+576,Karur,576_karur,12.0,gsa
+577,Krishnagiri,577_krishnagiri,15.1,gsa
+578,Madurai,578_madurai,11.9,gsa
+579,Nagapattinam,579_nagapattinam,11.0,gsa
+580,Namakkal,580_namakkal,13.0,gsa
+581,Perambalur,581_perambalur,12.0,gsa
+582,Pudukkottai,582_pudukkottai,11.0,gsa
+583,Ramanathapuram,583_ramanathapuram,10.0,gsa
+584,Salem,584_salem,13.9,gsa
+585,Sivaganga,585_sivaganga,10.1,gsa
+586,Thanjavur,586_thanjavur,11.0,gsa
+587,The Nilgiris,587_the_nilgiris,16.1,gsa
+588,Theni,588_theni,12.1,gsa
+589,Thiruvallur,589_thiruvallur,15.0,gsa
+590,Thiruvarur,590_thiruvarur,11.0,gsa
+591,Tiruchirappalli,591_tiruchirappalli,11.9,gsa
+592,Tirunelveli,592_tirunelveli,9.0,gsa
+593,Tiruvannamalai,593_tiruvannamalai,14.0,gsa
+594,Tuticorin,594_tuticorin,9.0,gsa
+595,Vellore,595_vellore,15.0,gsa
+596,Villupuram,596_villupuram,13.0,gsa
+597,Virudhunagar,597_virudhunagar,11.0,gsa
+610,Ariyalur,610_ariyalur,12.0,gsa
+634,Tiruppur,634_tiruppur,12.0,gsa
+729,Kallakurichi,729_kallakurichi,13.0,gsa
+730,Chengalpattu,730_chengalpattu,14.0,gsa
+731,Ranipet,731_ranipet,14.9,gsa
+732,Tirupathur,732_tirupathur,15.1,gsa
+733,Tenkasi,733_tenkasi,10.0,gsa
+735,Mayiladuthurai,735_mayiladuthurai,11.8,gsa
+598,Karaikal,598_karaikal,11.3,gsa
+599,Mahe,599_mahe,15.9,gsa
+600,Pondicherry,600_pondicherry,12.9,gsa
+601,Yanam,601_yanam,18.3,gsa
+602,South Andamans,602_south_andamans,14.0,gsa
+603,Nicobars,603_nicobars,8.3,gsa
+632,North And Middle Andaman,632_north_and_middle_andaman,16.7,gsa
+501,Adilabad,501_adilabad,23.1,gsa
+507,Hyderabad,507_hyderabad,21.0,gsa
+508,Karimnagar,508_karimnagar,22.7,gsa
+509,Khammam,509_khammam,20.0,gsa
+512,Mahabubnagar,512_mahabubnagar,21.0,gsa
+513,Medak,513_medak,22.0,gsa
+514,Nalgonda,514_nalgonda,20.0,gsa
+516,Nizamabad,516_nizamabad,22.8,gsa
+518,Ranga Reddy,518_ranga_reddy,21.0,gsa
+522,Warangal,522_warangal,22.0,gsa
+680,Nirmal,680_nirmal,22.9,gsa
+681,Jagitial,681_jagitial,23.0,gsa
+682,Peddapalli,682_peddapalli,22.9,gsa
+683,Rajanna Sircilla,683_rajanna_sircilla,23.0,gsa
+684,Mancherial,684_mancherial,23.3,gsa
+685,Kamareddy,685_kamareddy,22.0,gsa
+686,Hanumakonda,686_hanumakonda,21.9,gsa
+687,Jayashankar Bhupalapally,687_jayashankar_bhupalapally,22.8,gsa
+688,Mahabubabad,688_mahabubabad,21.0,gsa
+689,Jangoan,689_jangoan,21.8,gsa
+690,Bhadradri Kothagudem,690_bhadradri_kothagudem,21.4,gsa
+691,Sangareddy,691_sangareddy,21.6,gsa
+692,Siddipet,692_siddipet,22.0,gsa
+693,Wanaparthy,693_wanaparthy,20.3,gsa
+694,Nagarkurnool,694_nagarkurnool,21.0,gsa
+695,Jogulamba Gadwal,695_jogulamba_gadwal,20.0,gsa
+696,Suryapet,696_suryapet,20.0,gsa
+697,Yadadri Bhuvanagiri,697_yadadri_bhuvanagiri,21.0,gsa
+698,Vikarabad,698_vikarabad,21.3,gsa
+699,Kumuram Bheem Asifabad,699_kumuram_bheem_asifabad,24.0,gsa
+700,Medchal Malkajgiri,700_medchal_malkajgiri,21.4,gsa
+720,Mulugu,720_mulugu,22.0,gsa
+721,Narayanpet,721_narayanpet,21.0,gsa
+6,Kargil,6_kargil,32.0,gsa
+9,Leh Ladakh,9_leh_ladakh,34.3,gsa
+463,Daman,463_daman,23.6,gsa
+464,Diu,464_diu,23.8,gsa
+465,Dadra And Nagar Haveli,465_dadra_and_nagar_haveli,23.8,gsa
