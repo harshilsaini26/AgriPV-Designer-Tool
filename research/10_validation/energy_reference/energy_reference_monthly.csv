@@ -1,0 +1,121 @@
+ref_id,district,month,gsa_pvout_kwh_per_kwp
+D01,Jodhpur,1,154.3
+D01,Jodhpur,2,150.6
+D01,Jodhpur,3,171.0
+D01,Jodhpur,4,158.0
+D01,Jodhpur,5,151.6
+D01,Jodhpur,6,131.7
+D01,Jodhpur,7,112.0
+D01,Jodhpur,8,117.2
+D01,Jodhpur,9,143.4
+D01,Jodhpur,10,166.0
+D01,Jodhpur,11,146.5
+D01,Jodhpur,12,150.2
+D02,Kachchh,1,160.3
+D02,Kachchh,2,154.1
+D02,Kachchh,3,173.7
+D02,Kachchh,4,164.2
+D02,Kachchh,5,158.6
+D02,Kachchh,6,127.0
+D02,Kachchh,7,96.4
+D02,Kachchh,8,102.4
+D02,Kachchh,9,133.6
+D02,Kachchh,10,161.5
+D02,Kachchh,11,145.6
+D02,Kachchh,12,152.1
+D03,Anantapur,1,161.6
+D03,Anantapur,2,154.9
+D03,Anantapur,3,168.7
+D03,Anantapur,4,153.0
+D03,Anantapur,5,140.4
+D03,Anantapur,6,110.5
+D03,Anantapur,7,97.5
+D03,Anantapur,8,106.5
+D03,Anantapur,9,119.4
+D03,Anantapur,10,133.8
+D03,Anantapur,11,132.5
+D03,Anantapur,12,146.6
+D04,Tumakuru,1,165.8
+D04,Tumakuru,2,156.1
+D04,Tumakuru,3,169.6
+D04,Tumakuru,4,150.3
+D04,Tumakuru,5,138.8
+D04,Tumakuru,6,106.5
+D04,Tumakuru,7,93.1
+D04,Tumakuru,8,99.9
+D04,Tumakuru,9,118.4
+D04,Tumakuru,10,132.1
+D04,Tumakuru,11,131.5
+D04,Tumakuru,12,151.4
+D05,Ludhiana,1,95.1
+D05,Ludhiana,2,116.2
+D05,Ludhiana,3,151.0
+D05,Ludhiana,4,146.8
+D05,Ludhiana,5,146.2
+D05,Ludhiana,6,122.5
+D05,Ludhiana,7,112.1
+D05,Ludhiana,8,122.7
+D05,Ludhiana,9,133.0
+D05,Ludhiana,10,135.2
+D05,Ludhiana,11,110.8
+D05,Ludhiana,12,102.6
+D06,Lucknow,1,97.9
+D06,Lucknow,2,121.7
+D06,Lucknow,3,156.4
+D06,Lucknow,4,148.5
+D06,Lucknow,5,143.3
+D06,Lucknow,6,118.1
+D06,Lucknow,7,103.5
+D06,Lucknow,8,109.7
+D06,Lucknow,9,117.7
+D06,Lucknow,10,128.8
+D06,Lucknow,11,106.6
+D06,Lucknow,12,99.1
+D07,Ernakulam,1,155.9
+D07,Ernakulam,2,145.7
+D07,Ernakulam,3,155.9
+D07,Ernakulam,4,130.5
+D07,Ernakulam,5,119.4
+D07,Ernakulam,6,93.9
+D07,Ernakulam,7,97.6
+D07,Ernakulam,8,109.0
+D07,Ernakulam,9,122.5
+D07,Ernakulam,10,122.8
+D07,Ernakulam,11,122.8
+D07,Ernakulam,12,142.0
+D08,Kamrup,1,113.7
+D08,Kamrup,2,116.5
+D08,Kamrup,3,133.9
+D08,Kamrup,4,121.0
+D08,Kamrup,5,118.1
+D08,Kamrup,6,100.1
+D08,Kamrup,7,106.2
+D08,Kamrup,8,113.0
+D08,Kamrup,9,110.8
+D08,Kamrup,10,128.4
+D08,Kamrup,11,126.4
+D08,Kamrup,12,121.8
+D09,Rewa,1,130.8
+D09,Rewa,2,139.0
+D09,Rewa,3,166.8
+D09,Rewa,4,156.3
+D09,Rewa,5,145.5
+D09,Rewa,6,112.5
+D09,Rewa,7,98.2
+D09,Rewa,8,105.4
+D09,Rewa,9,120.3
+D09,Rewa,10,141.7
+D09,Rewa,11,129.4
+D09,Rewa,12,128.3
+D10,Leh Ladakh,1,125.8
+D10,Leh Ladakh,2,125.2
+D10,Leh Ladakh,3,166.0
+D10,Leh Ladakh,4,152.8
+D10,Leh Ladakh,5,158.0
+D10,Leh Ladakh,6,146.1
+D10,Leh Ladakh,7,148.1
+D10,Leh Ladakh,8,150.4
+D10,Leh Ladakh,9,162.1
+D10,Leh Ladakh,10,181.0
+D10,Leh Ladakh,11,155.9
+D10,Leh Ladakh,12,141.0

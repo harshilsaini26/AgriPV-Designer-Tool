@@ -5,6 +5,8 @@ Full requirements: [`DATA_REQUIREMENTS.md` (D18)](../../DATA_REQUIREMENTS.md).
 **Put here:**
 - energy_reference.csv (district_lgd, source, kwh_per_kwp_year, plant_type, year)
 
+**Status (2026-11-14):** built. See [`SOURCE_energy_reference.md`](SOURCE_energy_reference.md): 10 districts with GSA PV output (annual and monthly) and 4 measured plants (Pavagada, GIPCL, CAZRI, CIAL).
+
 **Before processing anything:** copy `research/_templates/SOURCE.md` here (one per source) and fill it in.
 
 `raw/` is git-ignored: paste large downloads there. Small CSVs, notes and `SOURCE.md` are committed.
