@@ -182,6 +182,7 @@ The model is a cross-section across the rows, with rows repeating without end in
   minus `unfarmed_strip_m` centred under the row.
 - `light_fraction[density, month]` = light summed over the farmed strips and the month's hours, divided by
   open-field light (GHI) over the same strips and hours.
+  Open-field light is computed with the same direct and sky split, so it equals GHI up to rounding.
 - `light_darkest_tenth[density, month]` = the same ratio, taken over the tenth of farmed strips with the
   least light that month.
 
@@ -209,11 +210,13 @@ depend only on density, tilt and direction. Panel height and row width do not ch
 apv_physics/
   pyproject.toml
   README.md
+  NOTICE            pvlib licence notice for the ported code
   src/apv_physics/
     __init__.py       public names: Weather, Module, Layout, Losses, PhysicsResult, simulate, load_weather
     inputs.py         Weather, Module, Layout, Losses; limits and validation
     weather_io.py     load_weather(file) -> Weather
     tracking.py       tracker angle with backtracking
+    viewfactors.py    2-D view factors, ported from pvlib (BSD 3-Clause; see NOTICE)
     irradiance.py     front and back light on the panel, reflection loss
     power.py          panel temperature, DC and AC power, losses
     ground.py         ground light: strip profile, mean and darkest tenth
