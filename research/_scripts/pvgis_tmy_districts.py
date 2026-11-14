@@ -4,7 +4,7 @@ Usage: uv run --no-project --with numpy python -I pvgis_tmy_districts.py <resear
 
 1. Points: the WorldCover cropland centroid of each LGD district polygon
    (04_land_cover/worldcover_2021_district_cropland.csv; districts without cropland use the polygon's
-   representative point, as recorded there).
+   representative point, as recorded there). POINT_OVERRIDES replaces a centroid that misses the farmland (Leh).
 2. Fetch: PVGIS 5.3 TMY API (https://re.jrc.ec.europa.eu/api/v5_3/tmy, radiation PVGIS-ERA5 and meteorology ERA5,
    2005-2023, horizon shading from the PVGIS DEM). The API response is kept as one gzipped JSON per district in
    08_solar_weather/tmy/raw/pvgis_tmy/ (resumable; failures are listed, not fatal).
@@ -33,6 +33,10 @@ from sample_gsa_districts import ZIP, sample
 
 API = "https://re.jrc.ec.europa.eu/api/v5_3/tmy?lat={lat}&lon={lon}&outputformat=json"
 UA = {"User-Agent": "agripv-lab-research/0.1 (+https://github.com/harshilsaini26/AgriPV-Designer-Tool)"}
+# Points chosen by hand where the cropland centroid misrepresents the district's farmland.
+# Leh: the official polygon includes Gilgit-Baltistan and the centroid lands there (35.61 N, 74.62 E, 1,296 m);
+# 34.13 N, 77.55 E is irrigated farmland in the Indus valley near Leh town.
+POINT_OVERRIDES = {("9", "Leh Ladakh"): (34.13, 77.55)}
 COLS = [("G(h)", "ghi"), ("Gb(n)", "dni"), ("Gd(h)", "dhi"), ("T2m", "temp_air"), ("RH", "relative_humidity"),
         ("WS10m", "wind_speed"), ("WD10m", "wind_direction"), ("IR(h)", "longwave_down"), ("SP", "pressure")]  # fmt: skip
 
@@ -81,6 +85,10 @@ def main(research: Path, workers: int = 4) -> None:
             pts.append({"dist_lgd": r["dist_lgd"], "district": r["dtname"], "state_lgd": r["state_lgd"],
                         "state": r["stname"], "lat": float(r["crop_centroid_lat"]),
                         "lon": float(r["crop_centroid_lon"]), "fallback": r["centroid_fallback"]})  # fmt: skip
+            key = (r["dist_lgd"], r["dtname"])
+            if key in POINT_OVERRIDES:
+                pts[-1]["lat"], pts[-1]["lon"] = POINT_OVERRIDES[key]
+                pts[-1]["fallback"] = "manual_point"
     print(len(pts), "points", flush=True)
     failures = []
     with ThreadPoolExecutor(workers) as ex:
