@@ -201,6 +201,8 @@ depend only on density, tilt and direction. Panel height and row width do not ch
 ### 5.5 Speed
 
 - Target: `simulate` for all 10 densities finishes in **0.6 s or less** for any layout on a current laptop.
+  Measured after the build (2026-11-14): 0.25–0.41 s for the preset layouts; 0.67 s for the most extreme
+  allowed layout (tracker rows 0.5 m wide on a 6 m axis), which is 11% over the target.
   A test fails if it takes more than 2 s.
 - The engine works on daylight hours only (about 4,400 rows) and on arrays, with no Python loop over hours.
 
@@ -298,7 +300,9 @@ Tests are written before the code they test.
 
 **Property tests** (Hypothesis, over random valid layouts on a sample pack)
 
-- Light never rises as density rises.
+- Light over the whole ground never rises as density rises. (With an unfarmed strip under vertical rows, light
+  on the farmed band alone can rise slightly between two densities, 0.005 seen in one month, because row
+  shadows land on the unfarmed strip. Found by this test during the build.)
 - Mean light does not change with `height_m` or `collector_width_m` (within 0.005).
 - `light_darkest_tenth` is never above `light_fraction`.
 - Energy per kWp never rises as density rises (fixed layouts).
