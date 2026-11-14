@@ -10,7 +10,7 @@ Model (spec §12): Y_rel = 1 if L >= L_t, else max(0, 1 - k (L_t - L)), with L t
    systems produce. Yields above 100% are capped at 1, as the model cannot represent a shade benefit.
 2. Crop curves: crops with >= 8 usable points from >= 3 studies spanning >= 0.3 of light fraction are fitted to
    their own points (central); low / high keep the group spread around it. Otherwise the crop takes its group curve.
-   A crop with no group but >= 3 points spanning >= 0.15 of light (one study so far: cotton, mustard) is fitted to
+   A crop with no group but >= 3 points spanning >= 0.10 of light (cotton, mustard, sesame) is fitted to
    its own points with an assumed spread (threshold +/-0.05, slope +/-25%).
 3. Grade (spec §13.3): A >= 2 Indian field studies; B 1 Indian study or >= 2 international studies; C 1
    international study or extension from a closely related crop group; D no data and no close group.
@@ -49,7 +49,7 @@ CROPS = {
     "sesame": (None, "no close group", "kharif, summer", []),
     "cumin": (None, "no close group (seed spice)", "rabi", []),
 }
-GRID = [(lt, k) for lt in np.arange(0.40, 1.0001, 0.01) for k in np.arange(0.0, 3.0001, 0.02)]
+GRID = [(lt, k) for lt in np.arange(0.40, 1.0001, 0.01) for k in np.arange(0.0, 6.0001, 0.02)]
 
 
 def model(lt: float, k: float, light: np.ndarray) -> np.ndarray:
@@ -171,11 +171,11 @@ def main(research: Path) -> None:
                 own = fit(light, [p[1] for p in pts])
                 if group:  # keep the group's spread around the crop's own central fit
                     dl, dk = own[0] - cen[0], own[1] - cen[1]
-                    low = (round(low[0] + dl, 2), round(max(0, low[1] + dk), 2))
-                    high = (round(high[0] + dl, 2), round(max(0, high[1] + dk), 2))
+                    low = (round(min(1.0, max(0.4, low[0] + dl)), 2), round(max(0, low[1] + dk), 2))
+                    high = (round(min(1.0, max(0.4, high[0] + dl)), 2), round(max(0, high[1] + dk), 2))
                 cen = own
                 source = f"fitted to {len(pts)} points" + (f"; spread from {group} group" if group else "")
-            elif not group and len(pts) >= 3 and span >= 0.15:
+            elif not group and len(pts) >= 3 and span >= 0.10:
                 # no group to lean on: fit the crop's own points and assume a +/-25% slope and +/-0.05 threshold spread
                 cen = fit(light, [p[1] for p in pts])
                 low = (round(min(1.0, cen[0] + 0.05), 2), round(cen[1] * 1.25, 2))

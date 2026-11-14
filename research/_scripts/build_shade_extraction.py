@@ -282,6 +282,32 @@ STUDIES = {
         "study_type": "Shade-net field trial (India)",
         "licence": "open access (journal)",
     },
+    "lee2022": {
+        "citation": "Lee, H.J., Park, H.H., Kim, Y.O., Kuk, Y.I. (2022). Crop cultivation underneath agro-photovoltaic "
+        "systems and its effects on crop growth, yield, and photosynthetic efficiency. Agronomy 12(8), 1842",
+        "doi_url": "https://doi.org/10.3390/agronomy12081842",
+        "peer_reviewed": "Y",
+        "country": "South Korea",
+        "state_region": "several APV sites (Chungcheongbuk-do, Gyeonggi-do, Jeollanam-do)",
+        "latitude": "",
+        "longitude": "",
+        "koppen": "Cwa",
+        "study_type": "APV field trials at 7 farms (international)",
+        "licence": "CC BY 4.0",
+    },
+    "kim2021": {
+        "citation": "Kim, S., Kim, S., Yoon, C.-Y. (2021). An efficient structure of an agrophotovoltaic system in a "
+        "temperate climate region. Agronomy 11(8), 1584",
+        "doi_url": "https://doi.org/10.3390/agronomy11081584",
+        "peer_reviewed": "Y",
+        "country": "South Korea",
+        "state_region": "Jeollanam-do Agricultural Research and Extension Services",
+        "latitude": "",
+        "longitude": "",
+        "koppen": "Cwa",
+        "study_type": "APV field trial at three shading ratios (international)",
+        "licence": "CC BY 4.0",
+    },
     "laub2022": {
         "citation": "Laub, M., Pataczek, L., Feuerbacher, A., Zikeli, S., Högy, P. (2022). Contrasting yield responses "
         "at varying levels of shade suggest different suitability of crops for dual land-use systems: a "
@@ -864,6 +890,104 @@ ROWS = [
             "same station)",
         )
         for c, c0, pairs in (("groundnut", 2015, ((30, 1517), (60, 998))), ("soybean", 3408, ((30, 2688), (60, 2186))))
+        for sh, t in pairs
+    ],
+    # Korea, Lee et al. (2022): seven APV farms, nominal panel shading rates
+    *[
+        r(
+            "lee2022",
+            crop=c,
+            variety=site,
+            season=season,
+            years=y,
+            shading_method="APV",
+            structure_type=stype,
+            shade_level_pct=sh,
+            light_fraction=round(1 - sh / 100, 3),
+            light_measure="area",
+            light_method="nominal: 1 - APV shading rate as reported for the site",
+            light_basis="nominal_cover",
+            control_yield=c0,
+            treatment_yield=t,
+            yield_unit="kg/ha",
+            caveats=note,
+        )
+        for c, site, season, y, stype, sh, c0, t, note in (
+            (
+                "potato",
+                "Cheongju farm",
+                "spring",
+                "first of two years",
+                "fixed, individually distributed panels",
+                31.6,
+                24907,
+                21650,
+                "total tuber yield; not significant",
+            ),
+            (
+                "potato",
+                "Cheongju farm",
+                "spring",
+                "second of two years",
+                "fixed, individually distributed panels",
+                31.6,
+                24089,
+                21879,
+                "total tuber yield; not significant",
+            ),
+            (
+                "sesame",
+                "Goesan farm",
+                "kharif (summer)",
+                "2021",
+                "fixed, individually distributed panels",
+                31.6,
+                528,
+                429,
+                "fewer effective branches, lower 1000-seed weight",
+            ),
+            (
+                "soybean",
+                "Paju farm",
+                "kharif (summer)",
+                "2021",
+                "fixed, individually distributed panels",
+                32.0,
+                2463,
+                2029,
+                "",
+            ),
+            ("soybean", "Youngkwang farm", "kharif (summer)", "2021", "holding-type panels", 28.0, 2092, 1665, ""),
+            ("rice", "Seungju farm", "kharif (summer)", "2021", "dual-axis tracking", 25.0, 6037, 5248, ""),
+            ("rice", "Boseong farm", "kharif (summer)", "2021", "stationary", 31.6, 6464, 5537, ""),
+            ("rice", "Naju farm", "kharif (summer)", "2021", "stationary", 32.0, 8580, 6040, ""),
+        )
+    ],
+    # Korea, Kim et al. (2021): one APV site, three shading ratios
+    *[
+        r(
+            "kim2021",
+            crop=c,
+            season="kharif (summer)",
+            shading_method="APV",
+            structure_type="fixed APV, three module densities",
+            shade_level_pct=sh,
+            light_fraction=round(1 - sh / 100, 3),
+            light_measure="area",
+            light_method="nominal: 1 - shading ratio of the APV structure",
+            light_basis="nominal_cover",
+            control_yield=c0,
+            treatment_yield=t,
+            yield_unit="Mg/ha grain",
+            caveats="one site, one season" + ("; not a research-list crop" if c == "adzuki bean" else ""),
+        )
+        for c, c0, pairs in (
+            ("sesame", 0.96, ((21.3, 0.89), (25.6, 0.83), (32.0, 0.45))),
+            ("moong", 1.95, ((21.3, 1.54), (25.6, 1.10), (32.0, 1.09))),
+            ("adzuki bean", 2.35, ((21.3, 1.75), (25.6, 1.52), (32.0, 1.47))),
+            ("maize", 8.09, ((21.3, 8.56), (25.6, 6.40), (32.0, 5.63))),
+            ("soybean", 3.64, ((21.3, 3.15), (25.6, 2.88), (32.0, 2.54))),
+        )
         for sh, t in pairs
     ],
 ]

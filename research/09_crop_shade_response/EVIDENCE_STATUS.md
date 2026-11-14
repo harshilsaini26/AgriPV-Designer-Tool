@@ -8,8 +8,8 @@ find next. The model curve and grades are in the product spec (§12, §13); the 
 
 | File | What it holds |
 |---|---|
-| [`extraction/shade_response_extraction.csv`](extraction/shade_response_extraction.csv) | 229 treatment rows: 54 from 16 papers, 175 from the Laub et al. (2022) data set |
-| [`papers/bibliography.csv`](papers/bibliography.csv) | The 17 sources, with DOI, study type and licence (PDFs stay local) |
+| [`extraction/shade_response_extraction.csv`](extraction/shade_response_extraction.csv) | 252 treatment rows: 77 from 18 papers, 175 from the Laub et al. (2022) data set |
+| [`papers/bibliography.csv`](papers/bibliography.csv) | The 19 sources, with DOI, study type and licence (PDFs stay local) |
 | [`papers/SOURCE_laub_2022_shade_metaanalysis.md`](papers/SOURCE_laub_2022_shade_metaanalysis.md) | Source card for the meta-analysis data set (CC BY 4.0) |
 | [`parameters/group_curves_laub2022.csv`](parameters/group_curves_laub2022.csv) | `(L_t, k)` per crop type, fitted to the meta-analysis means and 95% CI |
 | [`parameters/crop_parameters_draft.csv`](parameters/crop_parameters_draft.csv) | Draft `(L_t, k)` low / central / high and grade for each research crop |
@@ -46,9 +46,9 @@ Scripts: `_scripts/build_shade_extraction.py`, then `_scripts/fit_shade_paramete
   0.4–0.95. Central uses the mean, low uses the lower 95% bound and high the upper bound.
 - **Crop curves** replace the group curve only where a crop has at least 8 points from 3 studies covering 0.3 of the
   light range (wheat, soybean and maize so far). They keep the group's low–high spread.
-- **Own curves without a group.** Cotton (2 studies) and mustard (1 study) have no meta-analysis group, so each is
-  fitted to its own points (at least 3 spanning 0.15 of light), with an *assumed* spread: threshold ±0.05, slope
-  ±25%.
+- **Own curves without a group.** Cotton (2 studies), sesame (2 studies) and mustard (1 study) have no
+  meta-analysis group, so each is fitted to its own points (at least 3 spanning 0.10 of light), with an *assumed*
+  spread: threshold ±0.05, slope ±25%. The fit searches thresholds 0.40–1.00 and slopes 0–6.
 - **Sugarcane** borrows the maize (C4) group curve. Sugarcane, maize and sorghum are C4 grasses of the same tribe
   (Andropogoneae), which spec §13.3 allows as an extension from a closely related crop (grade C).
 - **Secondary values.** Six APV trials (Anand wheat, French maize, two Japanese rice trials, Nigerian moong,
@@ -61,30 +61,30 @@ Scripts: `_scripts/build_shade_extraction.py`, then `_scripts/fit_shade_paramete
 
 | Crop | Grade | L_t central | k central | Basis | Indian evidence |
 |---|---|---|---|---|---|
-| Rice | B | 0.96 | 1.06 | C3 cereal group; three APV trials (Korea, Shonai and Chikusei in Japan) give 0.77–0.91 at 0.68–0.75 light | none yet |
+| Rice | B | 0.96 | 1.06 | C3 cereal group; APV trials at four Korean farms and two Japanese sites give 0.70–0.91 at 0.68–0.75 light | none yet |
 | Wheat | **A** | 0.89 | 1.18 | Own fit, 49 points, 13 studies | IARI Delhi shade nets; Anand (Gujarat) APV |
-| Soybean | **A** | 1.00 | 1.14 | Own fit, 58 points, 11 studies | IARI shade nets (in meta-analysis); Raichur 2023 nets |
+| Soybean | **A** | 1.00 | 1.10 | Own fit, 63 points, 13 studies | IARI shade nets (in meta-analysis); Raichur 2023 nets |
 | Cotton | B | 1.00 | 0.80 | Own fit to two studies, both shaded only from flowering: Nanjing (81–84% at 0.79 light, 67–70% at 0.62) and Pettigrew 1994, USA (80% at 0.70) | none |
-| Maize | B | 1.00 | 1.20 | Own fit, 54 points, 11 studies (adds French APV) | none |
+| Maize | B | 1.00 | 1.18 | Own fit, 57 points, 12 studies (adds French and Korean APV) | none |
 | Gram (chickpea) | B | 1.00 | 1.22 | Grain-legume group; the CAZRI point sits 0.21 above it | CAZRI Jodhpur APV |
-| Mustard | B | 0.73 | 3.00 | Own fit to one study (CAFRI Jhansi net houses): 80% at 0.64 light, 16% at 0.47, 10% at 0.25 | CAFRI Jhansi |
-| Bajra | C | 1.00 | 1.32 | Maize (C4) group, borrowed | none |
+| Mustard | B | 0.70 | 3.60 | Own fit to one study (CAFRI Jhansi net houses): 80% at 0.64 light, 16% at 0.47, 10% at 0.25 | CAFRI Jhansi |
+| Bajra | C | 1.00 | 1.32 | Maize (C4) group, borrowed; no direct pearl millet trial found | none |
 | Sugarcane | C | 1.00 | 1.32 | Maize (C4) group, borrowed; conflicts with the one APV trial (Brazil, 39% *gain* at 0.65–0.70 light) | none |
-| Moong | B | 1.00 | 1.22 | Grain-legume group; CAZRI sits 0.06 above it; Nigerian APV gives 1.23 at 0.88 and 0.81 at 0.85 light | CAZRI Jodhpur APV |
+| Moong | B | 1.00 | 1.22 | Grain-legume group; CAZRI sits 0.06 above it; Nigerian APV (1.23 at 0.88, 0.81 at 0.85) and Korean APV (0.79 at 0.79, 0.56 at 0.74 and 0.68) | CAZRI Jodhpur APV |
 | Groundnut | B | 1.00 | 1.22 | Grain-legume group; Raichur 2023 sits above it (75% at 0.70 light, 50% at 0.40) | Raichur 2023 shade nets |
 | Tur | C | 1.00 | 1.22 | Grain-legume group | Raichur shade nets (excluded: light unreliable) |
 | Jowar | C | 1.00 | 1.32 | Maize (C4) group, borrowed | none |
 | Urad | C | 1.00 | 1.22 | Grain-legume group | Raichur shade nets (excluded: light unreliable) |
 | Guar | B | 1.00 | 1.22 | Grain-legume group; the CAZRI point sits on it | CAZRI Jodhpur APV |
-| Potato | B | 0.96 | 1.10 | Tuber group | none |
+| Potato | B | 1.00 | 0.68 | Own fit, 11 points, 3 studies (Germany, Korea, meta-analysis); gentler than the tuber group | none |
 | Onion | C | 0.96 | 1.10 | Tuber group, borrowed for a bulb crop | none |
 | Lentil | C | 1.00 | 1.22 | Grain-legume group | none |
-| Sesame | **D** | — | — | No data, no close group | none |
+| Sesame | B | 0.80 | 3.02 | Own fit to two Korean APV studies: 93% at 0.79 light, 87% at 0.74, 81% and 47% at 0.68; fitted only over 0.68–0.79 light | none |
 | Cumin | **D** | — | — | One CAZRI point (89% at 0.77 light), no group to anchor a curve | CAZRI Jodhpur APV |
 
 **Against the spec targets (§7.3):** the top 10 crops should be grade B or better, and 8 are (wheat and soybean
 at A; rice, cotton, maize, gram, mustard and moong at B). Bajra and sugarcane are C, both on the borrowed maize
-curve. The other 10 crops should be grade C or better; sesame and cumin are still D.
+curve. The other 10 crops should be grade C or better, and all are except cumin (D).
 
 ## What the evidence says so far
 
@@ -103,7 +103,7 @@ curve. The other 10 crops should be grade C or better; sesame and cumin are stil
 4. **Indian wheat is more sensitive than the C3 curve.** Under IARI's shade nets in Delhi, wheat dropped to 66–78% of yield at 20%
    shade (measured light 0.74–0.78), worse than the meta-analysis C3 curve. The winter crop grows in lower light (fog, short days), which may explain it.
 5. **Mustard has a sharp threshold.** At Jhansi, mustard kept 80% of yield at 64% light but collapsed to 16% at
-   47%. The authors put the critical limit at about 67% light. The fitted curve (`L_t` 0.73, slope 3.0) is far
+   47%. The authors put the critical limit at about 67% light. The fitted curve (`L_t` 0.70, slope 3.6) is far
    steeper than any meta-analysis group. Caveats: per-plant yields read from a chart, and net houses rather than
    open field.
 6. **Cotton loses moderately, but only the boll-forming window was shaded.** At Nanjing, nets from flowering to
@@ -117,24 +117,36 @@ curve. The other 10 crops should be grade C or better; sesame and cumin are stil
    study did not measure light relative to open field, and tree roots compete too, so it is not in the table. The
    borrowed maize curve is a cautious default until an Indian trial exists.
 8. **Indian kharif shade-net trials sit above the curves.** At Raichur in 2023, groundnut kept 75% and 50% of yield
-   under nets rated 30% and 60%, and soybean 79% and 64%; the curves give about 63% and 27% (groundnut) and 66%
-   and 32% (soybean). Either the net ratings overstate the real cut (as at Raichur in 2021), or high-sunlight
+   under nets rated 30% and 60%, and soybean 79% and 64%; the curves give about 63% and 27% (groundnut) and 67%
+   and 34% (soybean). Either the net ratings overstate the real cut (as at Raichur in 2021), or high-sunlight
    kharif crops lose less per unit of shade. Measured light under the nets would settle it.
-9. **Year-to-year swings are large.** The same APV gave +3% and −19% for wheat and +11% and −18% for potato in
+9. **Sesame also has a threshold, around 68–75% light.** In Jeollanam-do (Korea) sesame kept 93% and 87% of yield
+   under APV covering 21% and 26% of the field, then fell to 47% at 32% cover; at another Korean farm (Goesan) it kept
+   81% at 32% cover. The fitted curve (`L_t` 0.80, slope 3.0) only covers 0.68–0.79 light; below that it is an
+   extrapolation, and the low and high bounds are assumed, not measured.
+10. **No direct bajra evidence yet.** No shade-net, intercrop or APV trial reporting pearl millet grain yield against
+    light turned up. Two leads were not usable: a foxtail millet trial (Photosynthetica 2017) shaded only 15 days of
+    grain filling, and the University of Illinois APV sorghum trial (Smart Agricultural Technology 2025,
+    doi:10.1016/j.atech.2025.101647), whose page asked for a CAPTCHA. That paper reports that sorghum offsets
+    fewer grains with heavier grains, with no yield penalty in the least-shaded row, which suggests C4 cereals may
+    lose less than the maize curve says.
+11. **Year-to-year swings are large.** The same APV gave +3% and −19% for wheat and +11% and −18% for potato in
    Germany (dry vs wet years), and Korea's soybean fell to 31% in a very wet year. The low–high range has to
    carry this.
 
 ## Next research, in priority order
 
 1. **Bajra and sugarcane up to B** (the last two top-10 crops at C). Bajra: any shade-net, intercrop or APV trial
-   with measured light (ICRISAT, CAZRI, AICRP on pearl millet). Sugarcane: an Indian trial reporting cane yield
-   against light (IISR Lucknow, VSI Pune, SBI Coimbatore), and the full Brazilian APV paper to see why cane gained.
+   with measured light (ICRISAT, CAZRI, AICRP on pearl millet); also read the Illinois APV sorghum paper (open
+   access, but behind a CAPTCHA here), which would support jowar directly. Sugarcane: an Indian trial reporting
+   cane yield against light (IISR Lucknow, VSI Pune, SBI Coimbatore), and the full Brazilian APV paper to see why
+   cane gained.
 2. **Measured light under Indian shade nets.** Raichur's two trials disagree with each other and sit above the
    curves; the authors' theses (UAS Raichur, KrishiKosh) may have the PAR readings.
 3. **Read the paywalled primaries** behind the review-sourced rows (Anand wheat above all, since it makes wheat
    grade A), and get Indian rice data (NRRI Cuttack low-light trials; KrishiKosh theses).
-4. **Sesame and cumin** (still D), then jowar, tur, urad, lentil, onion and potato, from Indian or tropical
-   trials.
+4. **Cumin** (still D), then Indian or tropical trials for sesame (to extend its curve below 0.68 light), jowar,
+   tur, urad, lentil and onion.
 5. **Confirm the CAZRI layout and light.** CAZRI's light-map paper (Santra, Meena and Yadav 2021, *Biosystems
    Engineering*, doi:10.1016/j.biosystemseng.2021.06.017) maps daily light for the same plant: 0–5 mol/m²/day
    below the panels, 5–20 in partly shaded and 20–30 in unshaded interspace. It is paywalled, and ICAR's repository
