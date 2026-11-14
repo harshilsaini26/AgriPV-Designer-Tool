@@ -46,7 +46,7 @@ For a cost-like metric such as payback, the pessimistic case is the *larger* num
 
 ## Provisional policy definition
 
-Yield retention is defined in one place, `apv_core.retention.retention()`, as `a_farm × Y_rel` (per acre of land), and it is checked **per season**. These are the defaults for open questions Q-02 and Q-03 in the spec. If the final policy defines it differently, change that function and its tests.
+Yield retention is defined in one place, `apv_core.retention.retention()`, and it is checked **per season**. By default it is `a_farm × Y_rel` (per acre of land). Setting `SweepInputs(retention_basis=RetentionBasis.CROPPED_AREA)` measures it per cropped area (`Y_rel`) instead, which is Japan's basis. The basis changes only the policy check and the reported retention; LER and farm income always use `a_farm × Y_rel`. These are the defaults for open questions Q-02 and Q-03 in the spec. If the final policy defines retention differently, change that function and its tests.
 
 ## Module map
 

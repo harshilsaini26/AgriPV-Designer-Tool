@@ -232,7 +232,8 @@ Season panels (kharif, rabi, zaid) **share one y-scale**.
 **REQ-POL-02 (P0) Not a block.** GCR values that break the limit stay selectable. They're shaded and marked "Outside proposed limit". Results still appear, with a warning.
 
 **REQ-POL-03 (P0) Allowed GCR range.** The tool works out and shows the **highest GCR at which every crop in the rotation stays ≥ the limit**, using the central estimate and also the low–high range.
-- [ ] Retention is measured **per acre of land** (`a_farm × Y_rel`) and **checked for each season**. This definition is provisional (Q-02, Q-03).
+- [ ] Retention is measured **per acre of land** (`a_farm × Y_rel`) by default and **checked for each season**. This definition is provisional (Q-02, Q-03).
+- [ ] A setting, "Measure yield against", switches the basis to **per cropped area** (`Y_rel`). This is Japan's basis: the farmland under the panels, with the posts excluded. The option is labelled with that source. A non-default basis is shown in the chart label and in the Estimate Sheet. The basis changes only the policy check (line, shading, allowed GCR range, notices) and the reported retention. Farm income and LER always count the land lost to posts and tracks.
 
 **REQ-POL-04 (P0) No allowed GCR.** If no GCR above 0 meets the limit, say: "No panel density in this range keeps [crop] at or above 80% yield". Then list the structure presets (if any) that would, based on the same district's physics.
 
@@ -408,7 +409,7 @@ Season panels (kharif, rabi, zaid) **share one y-scale**.
 |---|---|---|
 | A-1 | District-level data is enough for indicative estimates | Users ask for site precision → keep it out of scope, point to detailed design tools |
 | A-2 | Published shade-response studies can support grade-B parameters for the top 10 crops | Lower evidence grades and wider ranges; more crops marked "insufficient evidence" |
-| A-3 | The draft 80% limit applies per acre of land, checked per season | Change the retention definition (one function); the allowed GCR range changes |
+| A-3 | The draft 80% limit applies per acre of land, checked per season (per cropped area is offered as an option) | Change the default basis or the retention definition (one function); the allowed GCR range changes |
 | A-4 | State KUSUM-A tariffs can be found from public orders | Use national benchmark tariffs with a `state_fallback` flag |
 | A-5 | A one-call sweep fits Vercel function limits | Move physics into per-district fetched files; still no pvlib at runtime |
 
@@ -505,7 +506,7 @@ The look is based on Survey of India topographic sheets. It's a working tool (Op
 - Optional heat-relief uplift (P1, off by default): `Y_rel ← min(Y_rel × (1 + u), 1 + u_cap)`, where `u` depends on days above 40 °C.
 
 ### 12.4 Yield retention and farm income
-- `retention_s = a_farm × Y_rel,s`. Policy check: `retention_s ≥ limit` for every season s (provisional, Q-02/Q-03).
+- `retention_s = a_farm × Y_rel,s` (per acre of land, default) or `retention_s = Y_rel,s` (per cropped area, option). Policy check: `retention_s ≥ limit` for every season s (provisional, Q-02/Q-03). LER (§12.5) and farm income always use `a_farm × Y_rel,s`.
 - `I_farm = Σ_s [ Y_base,s × Y_rel,s × a_farm × price_s − cost_s × a_farm × (1 + p_apv) ]`
 - Baseline: `Y_rel = 1`, `a_farm = 1`, `p_apv = 0`.
 
@@ -601,7 +602,7 @@ Vercel (Hobby now; **Pro before any commercial use**). Static frontend and data 
 |---|---|---|
 | `GET /api/meta` | — | data_version, build date, coverage, configurations, crops (id, name, seasons, grade), policy-limit default |
 | `GET /api/district/{lgd}` | — | context row, flags, insights, default rotation, finance defaults |
-| `POST /api/sweep` | district, business model, configuration, rotation (+ overrides), finance inputs, policy limit | `gcr[]` (11) × {low, central, high} for every headline metric; allowed GCR range; per-season retention; cash-flow summary at the default GCR; `warnings[]`; `data_version` |
+| `POST /api/sweep` | district, business model, configuration, rotation (+ overrides), finance inputs, policy limit, retention basis (`per_acre_of_land` default, or `per_cropped_area`) | `gcr[]` (11) × {low, central, high} for every headline metric; allowed GCR range; per-season retention; cash-flow summary at the default GCR; `warnings[]`; `data_version` |
 | `POST /api/export/xlsx` (P1) | same as sweep + selected GCR | xlsx file |
 
 Errors: 422 with field-level details; 404 for an unknown district or configuration.
@@ -642,7 +643,7 @@ Errors: 422 with field-level details; 404 for an unknown district or configurati
 | ID | Question | Owner | Blocking? |
 |---|---|---|---|
 | Q-01 | What will the final yield-retention limit be, and when will it be decided? **Still open (checked 2026-11-14):** no Indian rule is published. MNRE announced a draft national agrivoltaics policy in October 2026 (not yet released); the India Agrivoltaics Alliance (2024) proposes a 10–20% loss cap; Japan uses 80%, Germany 66% and France 90% (`research/11_finance_policy/yield_limit_policy/`) | Stakeholder (policymakers) | No — editable, default 80% |
-| Q-02 | Is retention measured per acre of land (`a_farm × Y_rel`) or per cropped area (`Y_rel`)? **No Indian definition yet (2026-11-14).** France measures per hectare of the whole parcel (close to per acre of land); Japan measures the farmland under the panels with the posts excluded (close to per cropped area). Recommendation: keep per acre of land, and offer per cropped area as an option | Stakeholder + data | **Yes for `apv_core`** — default to per acre of land until answered |
+| Q-02 | Is retention measured per acre of land (`a_farm × Y_rel`) or per cropped area (`Y_rel`)? **No Indian definition yet (2026-11-14).** France measures per hectare of the whole parcel (close to per acre of land); Japan measures the farmland under the panels with the posts excluded (close to per cropped area). **Decision (2026-11-14):** keep per acre of land as the default, and offer per cropped area as a setting (REQ-POL-03; `RetentionBasis` in `apv_core`) | Stakeholder + data | **Yes for `apv_core`** — default to per acre of land until answered |
 | Q-03 | Does the limit apply to each season's crop separately, or to the whole year's rotation? **Supported, not settled (2026-11-14):** Power Foundation of India (2025) recommends separate thresholds by crop and season (kharif vs rabi); Japan checks each crop every year. Keep per season | Stakeholder | **Yes for `apv_core`** — default to per season |
 | Q-04 | ~~Which crops make up the top 20 for parameter research? Confirm from DES national area data.~~ **Answered (2026-11-07):** the 20 largest *annual* crops by national area (2023-24/2024-25 means, field and horticulture crops together; `research_list` in `research/06_crops/area_production_yield/top20_national.csv`): rice, wheat, soybean, cotton, maize, gram, mustard, bajra, sugarcane, moong, groundnut, tur, jowar, urad, guar, potato, onion, lentil, sesame, cumin. Mango (16th) and coconut (18th) were dropped by owner decision because panels cannot go over mature orchards or plantations; tomato is 29th (8.3 lakh ha) | Data | No (answered) |
 | Q-05 | Do IMD gridded data and Agmarknet licences allow public, attributed use in an open-source app? | Legal / data | Yes for pipeline |
@@ -677,7 +678,7 @@ There are no hard external deadlines. Work is delivered in phases, and **each su
 | **APV / Agri-PV** | Agrivoltaics: crops and solar PV on the same land |
 | **GCR** | Ground coverage ratio: module area ÷ ground area (0 = no panels) |
 | **LER** | Land equivalent ratio: agri yield share + energy yield share; > 1 means combined use beats separate use |
-| **Yield retention** | APV crop yield per acre ÷ open-field yield per acre |
+| **Yield retention** | APV crop yield per acre ÷ open-field yield per acre (default). Optional basis: yield per cropped acre, excluding land lost to posts and tracks |
 | **PM-KUSUM A** | Indian scheme component for farmer- or FPO-owned grid-connected solar plants of 0.5–2 MW selling to the DISCOM |
 | **FPO** | Farmer Producer Organisation |
 | **EPC** | Engineering, procurement and construction firm |

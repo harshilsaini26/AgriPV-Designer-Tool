@@ -25,7 +25,7 @@ from apv_core.ler import economic_ratio, energy_term, ler
 from apv_core.notices import Notice, NoticeCode
 from apv_core.physics import PhysicsTable, Structure, farmable_fraction, kwp_per_acre
 from apv_core.ranges import Case, Range
-from apv_core.retention import allowed_gcr, outside_limit, retention
+from apv_core.retention import RetentionBasis, allowed_gcr, outside_limit, retention
 
 
 class BusinessModel(StrEnum):
@@ -59,12 +59,14 @@ class SweepInputs:
     finance: FinanceInputs
     business_model: BusinessModel
     policy_limit: float = DEFAULT_POLICY_LIMIT
+    retention_basis: RetentionBasis = RetentionBasis.LAND
     apv_cost_premium: float = DEFAULT_APV_COST_PREMIUM
     land_acres: float | None = None
     range_spread: float = DEFAULT_RANGE_SPREAD
 
     def __post_init__(self) -> None:
         object.__setattr__(self, "rotation", tuple(self.rotation))
+        object.__setattr__(self, "retention_basis", RetentionBasis(self.retention_basis))
         seasons = [sc.season for sc in self.rotation]
         if not 1 <= len(seasons) <= 3 or len(set(seasons)) != len(seasons):
             raise ValueError("rotation needs 1-3 crops, at most one per season")
@@ -83,6 +85,7 @@ class SweepResult:
     gcr: tuple[float, ...]
     metrics: dict[str, tuple[Range, ...]]
     retention: dict[Season, tuple[Range, ...]]
+    retention_basis: RetentionBasis
     outside_policy: tuple[bool, ...]
     allowed_gcr: Range
     baseline_farm_income: float
@@ -99,13 +102,15 @@ def _run_case(inputs: SweepInputs, case: Case) -> tuple[dict[str, list], dict[Se
     kwh_yr1 = p.energy_kwh_per_kwp.sum(axis=1)
     e_term = energy_term(kwp, kwh_yr1, p.ref_energy_kwh_per_acre)
 
-    ret: dict[Season, np.ndarray] = {}
+    ret: dict[Season, np.ndarray] = {}  # on the chosen policy basis
+    land_ret: dict[Season, np.ndarray] = {}  # always per acre of land, for LER
     farm = np.zeros(len(GCR_GRID))
     for sc in inputs.rotation:
         y_rel = relative_yield(season_light(p.light_fraction, sc.season), sc.crop.l_t.get(case), sc.crop.k.get(case))
-        ret[sc.season] = retention(a_farm, y_rel)
+        ret[sc.season] = retention(a_farm, y_rel, inputs.retention_basis)
+        land_ret[sc.season] = retention(a_farm, y_rel, RetentionBasis.LAND)
         farm += season_farm_income(sc.economics, y_rel, a_farm, premium)
-    ler_values = ler(revenue_weights(inputs.rotation), ret, e_term)
+    ler_values = ler(revenue_weights(inputs.rotation), land_ret, e_term)
     baseline = sum(baseline_income(sc.economics) for sc in inputs.rotation)
 
     out: dict[str, list] = {k: [] for k in METRIC_KEYS}
@@ -225,6 +230,7 @@ def run_sweep(inputs: SweepInputs) -> SweepResult:
         gcr=GCR_GRID,
         metrics=metrics,
         retention=ret_ranges,
+        retention_basis=inputs.retention_basis,
         outside_policy=tuple(bool(x) for x in flags),
         allowed_gcr=allowed,
         baseline_farm_income=float(sum(baseline_income(sc.economics) for sc in inputs.rotation)),

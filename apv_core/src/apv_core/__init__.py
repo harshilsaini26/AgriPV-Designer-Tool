@@ -7,6 +7,7 @@ from apv_core.finance import FinanceInputs
 from apv_core.notices import Notice, NoticeCode
 from apv_core.physics import PhysicsTable, Structure
 from apv_core.ranges import Case, Range
+from apv_core.retention import RetentionBasis
 from apv_core.sweep import METRIC_KEYS, BusinessModel, SweepInputs, SweepResult, run_sweep
 
 __all__ = [
@@ -23,6 +24,7 @@ __all__ = [
     "NoticeCode",
     "PhysicsTable",
     "Range",
+    "RetentionBasis",
     "Season",
     "SeasonCrop",
     "Structure",

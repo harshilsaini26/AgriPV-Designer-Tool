@@ -2,7 +2,7 @@ import numpy as np
 import pytest
 
 from apv_core.constants import GCR_GRID, Season
-from apv_core.retention import allowed_gcr, outside_limit, retention
+from apv_core.retention import RetentionBasis, allowed_gcr, outside_limit, retention
 
 K = np.array([1.0, 1.0, 0.95, 0.9, 0.85, 0.8, 0.75, 0.7, 0.65, 0.6, 0.55])
 R = np.array([1.0, 0.99, 0.97, 0.94, 0.9, 0.86, 0.82, 0.78, 0.74, 0.7, 0.66])
@@ -10,6 +10,22 @@ R = np.array([1.0, 0.99, 0.97, 0.94, 0.9, 0.86, 0.82, 0.78, 0.74, 0.7, 0.66])
 
 def test_retention_is_a_farm_times_yield():
     np.testing.assert_allclose(retention(0.95, np.array([1.0, 0.8])), [0.95, 0.76])
+
+
+def test_default_basis_is_per_acre_of_land():
+    y = np.array([1.0, 0.8])
+    np.testing.assert_allclose(retention(0.95, y), retention(0.95, y, RetentionBasis.LAND))
+
+
+def test_cropped_area_basis_ignores_farmable_fraction():
+    a_farm = np.array([1.0, 0.9])
+    out = retention(a_farm, np.array([1.0, 0.8]), RetentionBasis.CROPPED_AREA)
+    np.testing.assert_allclose(out, [1.0, 0.8])
+
+
+def test_retention_basis_values():
+    assert RetentionBasis("per_acre_of_land") is RetentionBasis.LAND
+    assert RetentionBasis("per_cropped_area") is RetentionBasis.CROPPED_AREA
 
 
 def test_allowed_gcr_uses_strictest_season():

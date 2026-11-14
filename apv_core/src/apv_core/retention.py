@@ -1,20 +1,34 @@
 """Yield retention against the draft policy limit (spec §12.4, §12.7; REQ-POL-01..04).
 
 Provisional definitions pending open questions Q-02 / Q-03:
-- retention is measured per acre of land (a_farm × Y_rel), and
+- retention is measured per acre of land (a_farm × Y_rel) by default, or per cropped area (Y_rel) as an
+  option (Japan's basis: the farmland under the panels, with the posts excluded), and
 - the limit is checked separately for every season in the rotation.
 """
 
 from collections.abc import Mapping, Sequence
+from enum import StrEnum
 
 import numpy as np
 
 from apv_core.constants import POLICY_LIMIT_MAX, POLICY_LIMIT_MIN, TOL, Season
 
 
-def retention(a_farm: np.ndarray | float, y_rel: np.ndarray) -> np.ndarray:
-    """The single definition of yield retention (Q-02: per acre of land)."""
-    return np.asarray(a_farm, dtype=float) * np.asarray(y_rel, dtype=float)
+class RetentionBasis(StrEnum):
+    """What the policy limit is measured against (Q-02)."""
+
+    LAND = "per_acre_of_land"  # a_farm × Y_rel: crop lost to posts and tracks counts (default, stricter)
+    CROPPED_AREA = "per_cropped_area"  # Y_rel: only the shade effect on the area still farmed
+
+
+def retention(
+    a_farm: np.ndarray | float, y_rel: np.ndarray, basis: RetentionBasis = RetentionBasis.LAND
+) -> np.ndarray:
+    """The single definition of yield retention (Q-02). LER and farm income always use the LAND basis."""
+    y = np.asarray(y_rel, dtype=float)
+    if basis is RetentionBasis.CROPPED_AREA:
+        return np.broadcast_to(y, np.broadcast_shapes(np.shape(a_farm), y.shape)).copy()
+    return np.asarray(a_farm, dtype=float) * y
 
 
 def _check(retention_by_season: Mapping[Season, np.ndarray], limit: float) -> None:

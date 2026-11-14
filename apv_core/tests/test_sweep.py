@@ -1,7 +1,7 @@
 import pytest
 from fixtures import elevated_structure, finance_defaults, onion_rabi, soybean_kharif, synthetic_physics
 
-from apv_core import GCR_GRID, BusinessModel, Case, NoticeCode, Season, SweepInputs, run_sweep
+from apv_core import GCR_GRID, BusinessModel, Case, NoticeCode, RetentionBasis, Season, SweepInputs, run_sweep
 
 
 def inputs(**kw):
@@ -93,3 +93,27 @@ def test_inputs_validation():
         inputs(policy_limit=0.3)
     with pytest.raises(ValueError):
         inputs(rotation=(soybean_kharif(), soybean_kharif()))
+
+
+def test_default_retention_basis_is_land_and_reported():
+    r = run_sweep(inputs())
+    assert r.retention_basis is RetentionBasis.LAND
+
+
+def test_cropped_area_basis_raises_retention_where_posts_take_land():
+    land = run_sweep(inputs())
+    crop = run_sweep(inputs(retention_basis=RetentionBasis.CROPPED_AREA))
+    assert crop.retention_basis is RetentionBasis.CROPPED_AREA
+    for s in land.retention:
+        assert crop.retention[s][0].central == pytest.approx(land.retention[s][0].central)
+        for i in range(1, len(GCR_GRID)):
+            assert crop.retention[s][i].central > land.retention[s][i].central
+    a_land, a_crop = land.allowed_gcr.central, crop.allowed_gcr.central
+    assert a_crop is not None and (a_land is None or a_crop >= a_land)
+
+
+def test_ler_and_farm_income_do_not_depend_on_retention_basis():
+    land = run_sweep(inputs())
+    crop = run_sweep(inputs(retention_basis=RetentionBasis.CROPPED_AREA))
+    for key in ("ler", "farm_income", "economic_ratio"):
+        assert crop.metrics[key] == land.metrics[key]
