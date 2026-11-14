@@ -45,6 +45,7 @@ COLS = [
     "light_fraction",
     "light_measure",
     "light_method",
+    "light_basis",
     "control_yield",
     "treatment_yield",
     "yield_unit",
@@ -159,10 +160,13 @@ CAZRI = {
     "shading_method": "APV",
     "structure_type": "fixed-tilt ground-mounted arrays (2-row and 3-row), crops in inter-row spaces",
     "module_type": "mono-Si, tilt 26°",
-    "light_measure": "PAR",
-    "light_method": "spot midday PAR in the shaded part of the interspace vs control (9:00-15:00); the sunlit part "
-    "of the interspace gets more, so the interspace daily mean is higher than this value",
+    "light_measure": "global irradiance (modelled)",
+    "light_method": "season-mean light over the whole interspace, modelled from the published layout "
+    "(_scripts/cazri_interspace_light.py): mean of the 2-row (AVS-3) and 3-row (AVS-4, AVS-5) arrays",
+    "light_basis": "modelled_season",
 }
+KHARIF_L = "light 0.91 (range 0.87-0.94 for lower-edge height 0.5-1.5 m and portrait or landscape modules)"
+RABI_L = "light 0.77 (range 0.65-0.86 for lower-edge height 0.5-1.5 m and portrait or landscape modules)"
 KOREA = {
     "shading_method": "APV",
     "structure_type": "fixed overhead dummy panels, 3.3 m high, 1.5 m apart, tilt 35°",
@@ -173,6 +177,7 @@ KOREA = {
     "light_fraction": 0.70,
     "light_measure": "area",
     "light_method": "nominal: 1 - panel shading rate (shaded area / system area); not measured",
+    "light_basis": "nominal_cover",
 }
 WESELEK = {
     "shading_method": "APV",
@@ -182,11 +187,13 @@ WESELEK = {
     "light_fraction": 0.70,
     "light_measure": "PAR",
     "light_method": "measured: mean daily PAR about 30% lower under AV than reference, both years",
+    "light_basis": "measured_season",
 }
 MANOJ = {
     "shading_method": "shade net",
     "structure_type": "white shade nets from 25 DAS to harvest",
     "light_measure": "nominal",
+    "light_basis": "nominal_net_inconsistent",
     "years": "two seasons (mean)",
     "season": "kharif",
     "irrigated_or_rainfed": "rainfed",
@@ -195,9 +202,9 @@ MANOJ = {
 MUKH = {
     "shading_method": "shade net",
     "structure_type": "shade nets rated 20/35/50/75% over the whole season",
-    "light_measure": "nominal",
-    "light_method": "nominal net rating; measured global radiation at 61 DAS was 0.76/0.65/0.41/0.22 of control "
-    "in 2014-15",
+    "light_measure": "global irradiance (measured)",
+    "light_method": "mean of the global radiation measured under each net on 8 dates (61-128 DAS), Table 1",
+    "light_basis": "measured_season",
     "season": "rabi",
     "irrigated_or_rainfed": "irrigated",
     "yield_unit": "g/m2 grain",
@@ -227,13 +234,13 @@ ROWS = [
         years="2021",
         irrigated_or_rainfed="rainfed",
         **CAZRI,
-        light_fraction=0.93,
+        light_fraction=0.911,
         treatment_yield=1155,
         control_yield=1211,
         yield_unit="kg/ha",
         relative_yield=0.954,
-        caveats="control derived (1155 / 0.954); light 0.93 is the 2-row array value (3-row value printed as 392 vs "
-        "1233 µmol, inconsistent with the stated 7%); mung bean did better on the shaded side of the interspace",
+        caveats="control derived (1155 / 0.954); " + KHARIF_L + "; paper's spot midday PAR in the shaded part was "
+        "0.93 of control (2-row); mung bean did better on the shaded side of the interspace",
     ),
     r(
         "poonia2024",
@@ -242,11 +249,12 @@ ROWS = [
         years="2021",
         irrigated_or_rainfed="rainfed",
         **CAZRI,
+        light_fraction=0.911,
         treatment_yield=670,
         control_yield=733,
         yield_unit="kg/ha",
         relative_yield=0.914,
-        caveats="control derived (670 / 0.914); no PAR value printed for moth bean; not a research-list crop",
+        caveats="control derived (670 / 0.914); " + KHARIF_L + "; not a research-list crop",
     ),
     r(
         "poonia2024",
@@ -256,12 +264,12 @@ ROWS = [
         years="2021",
         irrigated_or_rainfed="rainfed",
         **CAZRI,
+        light_fraction=0.911,
         treatment_yield=2008,
         control_yield=2277,
         yield_unit="kg/ha",
         relative_yield=0.882,
-        caveats="control derived (2008 / 0.882); no PAR value printed for cluster bean; "
-        "leeward half of the interspace yielded less",
+        caveats="control derived (2008 / 0.882); " + KHARIF_L + "; leeward half of the interspace yielded less",
     ),
     r(
         "poonia2024",
@@ -271,11 +279,11 @@ ROWS = [
         years="2021-22",
         irrigated_or_rainfed="irrigated",
         **CAZRI,
-        light_fraction=0.47,
+        light_fraction=0.772,
         treatment_yield=2490,
         control_yield=2670,
         yield_unit="kg/ha",
-        caveats="light = mean of 2-row (0.53) and 3-row (0.41) spot PAR",
+        caveats=RABI_L + "; paper's spot midday PAR in the shaded part: 0.53 (2-row), 0.41 (3-row)",
     ),
     r(
         "poonia2024",
@@ -284,11 +292,11 @@ ROWS = [
         years="2021-22",
         irrigated_or_rainfed="irrigated",
         **CAZRI,
-        light_fraction=0.57,
+        light_fraction=0.772,
         treatment_yield=1000,
         control_yield=1120,
         yield_unit="kg/ha",
-        caveats="light = mean of 2-row (0.58) and 3-row (0.56) spot PAR",
+        caveats=RABI_L + "; paper's spot midday PAR in the shaded part: 0.58 (2-row), 0.56 (3-row)",
     ),
     r(
         "poonia2024",
@@ -297,11 +305,12 @@ ROWS = [
         years="2021-22",
         irrigated_or_rainfed="irrigated",
         **CAZRI,
-        light_fraction=0.57,
+        light_fraction=0.772,
         treatment_yield=700,
         control_yield=760,
         yield_unit="kg/ha",
-        caveats="light = mean of 2-row (0.46) and 3-row (0.68) spot PAR; not a research-list crop",
+        caveats=RABI_L + "; paper's spot midday PAR in the shaded part: 0.46 (2-row), 0.68 (3-row); "
+        "not a research-list crop",
     ),
     # Kyungpook, Korea (30% panel shading rate)
     r(
@@ -403,6 +412,7 @@ ROWS = [
         light_fraction=0.67,
         light_measure="PPFD",
         light_method="measured shading rate (PPFD below vs above panels); 27-39% range",
+        light_basis="measured_season",
         relative_yield=0.80,
         caveats="summary: authors conclude 27-39% shading keeps >= 80% of yield; derived from the regression in "
         "their Fig. 6, not a treatment mean",
@@ -463,7 +473,8 @@ ROWS = [
             light_method="nominal white net rating",
             control_yield=c0,
             treatment_yield=t,
-            caveats="75% net yielded no less than 50% net, so net ratings may overstate the real light cut"
+            caveats="75% net yielded no less than 50% net, so the net ratings do not track the real light cut; "
+            "excluded from fitting until measured light is found"
             + ("; not a research-list crop" if c == "cowpea" else ""),
         )
         for c, v, c0, pairs in (
@@ -481,15 +492,16 @@ ROWS = [
             years=y,
             **MUKH,
             shade_level_pct=s,
-            light_fraction=1 - s / 100,
+            light_fraction=lf,
             control_yield=c0,
             treatment_yield=t,
+            caveats=f"net rated {s}% shade",
         )
         for y, c0, pairs in (
-            ("2014-15", 474.22, ((20, 368.33), (35, 250.56), (50, 152.11), (75, 93.33))),
-            ("2015-16", 425.11, ((20, 280.22), (35, 181.11), (50, 113.89), (75, 51.33))),
+            ("2014-15", 474.22, ((20, 0.784, 368.33), (35, 0.645, 250.56), (50, 0.469, 152.11), (75, 0.255, 93.33))),
+            ("2015-16", 425.11, ((20, 0.744, 280.22), (35, 0.604, 181.11), (50, 0.427, 113.89), (75, 0.239, 51.33))),
         )
-        for s, t in pairs
+        for s, lf, t in pairs
     ],
 ]
 
@@ -534,6 +546,7 @@ def laub_rows(xlsx: Path) -> list[dict]:
                 light_fraction=round(1 - rsr / 100, 3),
                 light_measure="solar radiation",
                 light_method="reduction in solar radiation as compiled by Laub et al.",
+                light_basis="compiled",
                 relative_yield=round(yld / 100, 3),
                 yield_unit="% of control",
                 caveats=f"from Laub 2022 data set; original study: {ref} ({doi}); Laub climatic zone: {zone}; "

@@ -117,6 +117,8 @@ def main(research: Path) -> None:
     for r in rows:
         if r["used_for"] == "context_only" or "outlier" in r["caveats"] or "forage" in r["yield_unit"]:
             continue
+        if r["light_basis"].startswith("nominal_net"):  # net ratings that do not track the measured light
+            continue
         if r["light_fraction"] == "" or r["relative_yield"] == "":
             continue
         indian = r["country"] == "India" or (r["study_id"] == "laub2022" and in_india(r["latitude"], r["longitude"]))
