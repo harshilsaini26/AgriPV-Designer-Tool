@@ -147,7 +147,7 @@ Analytics must be privacy-friendly: no personal data, no cookies beyond the esse
 | Crop coverage | Shade-response parameters for the **20 largest annual crops by national cropped area** (perennial tree crops excluded; list in Q-04), covering every season they're grown in |
 | Evidence grade | Top 10 crops at **grade B or better**; the other 10 at **grade C or better** (grades defined in §13.3) |
 | Yield validation | Across all published Indian APV / shade-trial data points collected, predicted relative yield is within **±15 percentage points** of observed for **≥ 80%** of points |
-| Energy validation | pvlib annual energy within **±3%** of PySAM for 10 sample districts, and within **±7%** of Global Solar Atlas PV output |
+| Energy validation | The physics engine's annual energy within **±1%** of pvlib on the same inputs, within **±3%** of PySAM for 10 sample districts, and within **±7%** of Global Solar Atlas PV output |
 | Data coverage | Every layer covers **≥ 95%** of districts; the crop layer covers **≥ 90%** |
 
 ## 8. Requirements
@@ -188,13 +188,16 @@ Priorities: **P0** = must ship in v1; **P1** = soon after launch; **P2** = futur
 ### 8.4 Model inputs — `MOD`
 **REQ-MOD-01 (P0) Business model.** Choose PM-KUSUM A (farmer/FPO owner) or land lease (developer-owned). Default: KUSUM-A.
 
-**REQ-MOD-02 (P0) Structure preset.** Choose from:
+**REQ-MOD-02 (P0) Structure preset and layout.** Start from a preset:
 - elevated fixed-tilt at 3 clearance heights,
 - single-axis tracker at 2 heights,
 - vertical bifacial (east–west),
 - with a monofacial or bifacial module option where it applies.
 
 Each preset shows a small diagram and its default farmable fraction (`a_farm`). Default: elevated fixed-tilt, middle height, bifacial.
+- [ ] A preset is a starting point. The user can edit tilt and facing direction (turning limit for trackers), panel height, row width (panels per row) and module specs (efficiency, bifaciality, temperature coefficient), within the limits in the physics design (§5.1 of [`2026-11-14-live-physics-design.md`](2026-11-14-live-physics-design.md)). A value outside its limits shows a field-level error.
+- [ ] An edited layout is labelled "Custom layout" in the results and in the Estimate Sheet, with the changed values listed.
+- [ ] Height and row width change how even the light is and the clear gap between rows, not average light or energy. The interface says so next to those fields.
 
 **REQ-MOD-03 (P0) Crop rotation.** Choose a kharif crop, a rabi crop and an optional zaid crop. Defaults are the district's main crop by area in each season.
 - [ ] Each crop shows its shade-tolerance group and evidence grade.
@@ -350,7 +353,7 @@ Season panels (kharif, rabi, zaid) **share one y-scale**.
 
 **REQ-PIP-03 (P0)** Build outputs (§14.4) are versioned with a manifest and checksums. Builds can be safely re-run. Raw downloads are cached locally and not committed.
 
-**REQ-PIP-04 (P0)** Physics is pre-computed for every district × configuration × GCR (§12.1) and checked against PySAM and Global Solar Atlas (§7.3).
+**REQ-PIP-04 (P0)** A weather pack (hourly weather and sun positions) is built for every district, and the live physics engine is checked against pvlib, PySAM and Global Solar Atlas (§7.3, §12.1).
 
 **REQ-PIP-05 (P0)** Mapping between old and new district boundaries, with the `boundary_mapped` flag.
 
@@ -368,7 +371,7 @@ Season panels (kharif, rabi, zaid) **share one y-scale**.
 
 **REQ-ERR-03 (P0)** Validation errors appear next to the input that caused them, in plain language, saying what's wrong and how to fix it.
 
-**REQ-ERR-04 (P0)** Unknown district or configuration → a clear 404 or 422 and a UI message; never a 500 with a stack trace.
+**REQ-ERR-04 (P0)** Unknown district or preset, or a layout value outside its limits → a clear 404 or 422 and a UI message; never a 500 with a stack trace.
 
 ### 8.20 Non-functional — `NFR`
 **REQ-NFR-01 (P0) Performance.** First contentful paint ≤ 2.0 s on a mid-range laptop over 4G. District sheet ≤ 1 s after selection. Sweep latency as in §7.1.
@@ -400,7 +403,7 @@ Season panels (kharif, rabi, zaid) **share one y-scale**.
 - **P2-02** Hindi and regional languages: the translation layer and Devanagari-capable fonts are in place from v1.
 - **P2-03** Water balance (cleaning water, rainwater harvesting): add district water fields to the pipeline schema.
 - **P2-04** Policymaker view: limit scenarios across many districts. Data model supports batch sweeps.
-- **P2-05** User-supplied site data (custom TMY, geometry): the API accepts optional overrides.
+- **P2-05** User-supplied site weather (custom TMY): the API accepts an optional override. Custom geometry moved into v1 (REQ-MOD-02).
 - **P2-06** A sub-district (block) level where data allows: the pipeline keys on generic admin units, not only districts.
 
 ## 9. Assumptions
@@ -411,7 +414,7 @@ Season panels (kharif, rabi, zaid) **share one y-scale**.
 | A-2 | Published shade-response studies can support grade-B parameters for the top 10 crops | Lower evidence grades and wider ranges; more crops marked "insufficient evidence" |
 | A-3 | The draft 80% limit applies per acre of land, checked per season (per cropped area is offered as an option) | Change the default basis or the retention definition (one function); the allowed GCR range changes |
 | A-4 | State KUSUM-A tariffs can be found from public orders | Use national benchmark tariffs with a `state_fallback` flag |
-| A-5 | A one-call sweep fits Vercel function limits | Move physics into per-district fetched files; still no pvlib at runtime |
+| A-5 | A one-call sweep with live physics fits Vercel function limits (size and 1.5 s warm latency) | Thin the hourly data or cache results per district and layout; still no pvlib at runtime |
 
 ---
 
@@ -471,28 +474,26 @@ The look is based on Survey of India topographic sheets. It's a working tool (Op
 
 ## 11. System architecture
 
-- **`pipeline/`** (offline Python): fetch → clean → aggregate to districts → simulate physics → validate → build artefacts.
+- **`pipeline/`** (offline Python): fetch → clean → aggregate to districts → build weather packs → validate → build artefacts.
+- **`apv_physics/`** (Python package, numpy only): the live physics engine. Takes one district's weather pack and a layout; returns monthly energy, ground light and light evenness for every GCR.
 - **`apv_core/`** (Python package): crop response, LER, finance, sweep, ranges. Pure functions, no I/O, fully unit-tested.
-- **`api/`**: FastAPI on Vercel's Python runtime. Imports `apv_core`; bundles `physics.parquet`, `crops.json` and `finance_defaults.json`.
+- **`api/`**: FastAPI on Vercel's Python runtime. Imports `apv_physics` and `apv_core`; reads the district's weather pack; bundles `crops.json` and `finance_defaults.json`.
 - **`web/`**: Vite + React + TypeScript; MapLibre GL; charts; print stylesheet for the Estimate Sheet.
 - **`data/`**: versioned build outputs; static context and boundaries copied to `web/public/data/` for the CDN.
 - **`docs/`**: specs, methodology source, sources register.
 
-**Core decision: physics offline, economics live.** pvlib runs only in the pipeline. The API does numpy-only calculations on pre-computed lookups, so the function stays small and quick to start on Vercel. *Trade-off:* structure presets only, no free geometry.
+**Core decision (revised 2026-11-14): weather offline, physics and economics live.** The pipeline prepares each district's hourly weather and sun positions with pvlib. The API runs our own numpy-only physics engine on that weather for whatever layout the user enters, so pvlib never runs on the server and the function stays small and quick to start on Vercel. *Trade-off:* about 30–50 MB of weather packs to host, and an engine of our own to keep in step with pvlib (checked in tests). *Gain:* free layout geometry. Design: [`2026-11-14-live-physics-design.md`](2026-11-14-live-physics-design.md).
 
 **One sweep per change of inputs.** `POST /api/sweep` returns all 11 GCR values at low, central and high. The slider reads results already loaded in the browser.
 
 ## 12. Model specification
 
-### 12.1 Physics (offline, pvlib)
-- **Configuration grid** (with GCR ∈ {0.05 … 0.50}, 10 values; GCR 0.00 is the analytical baseline):
-  - elevated fixed-tilt: 3 clearance heights × {mono, bifacial} = 60
-  - single-axis tracker: 2 hub heights × {mono, bifacial} = 40
-  - vertical bifacial east–west: 10
-  - total **110 configurations per district**
-- **Energy:** pvlib simulation on the district TMY, with standard losses and bifacial gain where it applies. Stored as monthly AC energy per kWp, `E[m]`.
-- **Ground light:** a 2-D view-factor model across the row pitch (infinite-sheds geometry). It covers direct-beam shadow plus diffuse light from the visible sky, on a ground line across the row, averaged over the cultivable band. Stored as the monthly ground light fraction relative to open field, `L[m]`. PAR is taken as a fixed fraction of shortwave.
-- **Reference PV for LER:** ground-mounted fixed tilt at GCR 0.45 in the same district. Stored as `E_ref` per acre.
+### 12.1 Physics (live, `apv_physics`)
+Full design: [`2026-11-14-live-physics-design.md`](2026-11-14-live-physics-design.md).
+- **Layout:** structure type (fixed, tracker, vertical), tilt and facing direction, panel height, row width and module specs; presets fill these in. GCR ∈ {0.05 … 0.50}, 10 values; GCR 0.00 is the analytical baseline.
+- **Energy:** hourly simulation on the district's calibrated typical year: infinite-rows irradiance on the front and back of the panels, reflection loss, panel temperature, PVWatts DC and inverter models, and fixed losses. Returned as monthly AC energy per kWp, `E[m]`.
+- **Ground light:** a 2-D model across the row pitch (infinite rows). Each of 100 ground strips gets direct light unless a panel blocks it, plus the sky light it can see between rows. Averaged over the cultivable band and returned as the monthly ground light fraction relative to open field, `L[m]`, with the light on the darkest tenth of the band as an evenness figure. PAR is taken as a fixed fraction of shortwave.
+- **Reference PV for LER:** ground-mounted fixed tilt at GCR 0.45 in the same district, with the same module. Returned as `E_ref` per acre.
 - **GCR definition for vertical bifacial:** module height ÷ row pitch (documented in Method).
 
 ### 12.2 Land use
@@ -575,7 +576,7 @@ Before averaging rasters over a district, mask them to cropland using ESA WorldC
 ### 14.4 Build outputs
 - `districts.parquet` / `.json`
 - `boundaries.geojson` (or `.pmtiles`)
-- `physics.parquet` (district × config × GCR × month: `E`, `L`; plus `E_ref`)
+- `weather/<stem>.npz` (one weather pack per district: hourly irradiance, temperature, wind and sun position) and `weather/index.json`
 - `crops.json`
 - `finance_defaults.json` (state tariffs, CAPEX, O&M with source and date)
 - `insight_rules.yaml`
@@ -590,6 +591,7 @@ Before averaging rasters over a district, mask them to cropland using ESA WorldC
 ### 15.1 Stack
 - **Frontend:** Vite, React, TypeScript, MapLibre GL, a charting library (picked in the web plan), and Barlow / Barlow Condensed fonts served from the project.
 - **API:** FastAPI on Vercel's Python runtime; numpy and pydantic.
+- **Physics engine (`apv_physics`):** numpy only at runtime; pvlib in tests.
 - **Pipeline:** pvlib, PySAM (validation only), rasterio and geopandas.
 - **Tooling:** pytest, Hypothesis, Vitest, Playwright, GitHub Actions.
 
@@ -600,12 +602,12 @@ Vercel (Hobby now; **Pro before any commercial use**). Static frontend and data 
 
 | Method & path | Request | Response |
 |---|---|---|
-| `GET /api/meta` | — | data_version, build date, coverage, configurations, crops (id, name, seasons, grade), policy-limit default |
+| `GET /api/meta` | — | data_version, build date, coverage, structure presets and layout limits, crops (id, name, seasons, grade), policy-limit default |
 | `GET /api/district/{lgd}` | — | context row, flags, insights, default rotation, finance defaults |
-| `POST /api/sweep` | district, business model, configuration, rotation (+ overrides), finance inputs, policy limit, retention basis (`per_acre_of_land` default, or `per_cropped_area`) | `gcr[]` (11) × {low, central, high} for every headline metric; allowed GCR range; per-season retention; cash-flow summary at the default GCR; `warnings[]`; `data_version` |
+| `POST /api/sweep` | district, business model, layout (preset id or the layout fields of REQ-MOD-02), rotation (+ overrides), finance inputs, policy limit, retention basis (`per_acre_of_land` default, or `per_cropped_area`) | `gcr[]` (11) × {low, central, high} for every headline metric; allowed GCR range; per-season retention; cash-flow summary at the default GCR; `warnings[]`; `data_version` |
 | `POST /api/export/xlsx` (P1) | same as sweep + selected GCR | xlsx file |
 
-Errors: 422 with field-level details; 404 for an unknown district or configuration.
+Errors: 422 with field-level details; 404 for an unknown district or preset.
 
 ### 15.4 Testing strategy
 - **`apv_core`:**
@@ -615,7 +617,8 @@ Errors: 422 with field-level details; 404 for an unknown district or configurati
   - retention and allowed-range logic
   - crop-curve properties (never above 1, never rising as light falls)
 - **Property tests (Hypothesis):** a higher tariff never lowers IRR; a higher GCR never raises retention; GCR 0 equals the baseline exactly.
-- **Pipeline:** structure, range and coverage checks; snapshot tests for sample districts; physics checked against PySAM and Global Solar Atlas.
+- **`apv_physics`:** known-answer geometry tests; property tests (light never rises with GCR; mean light does not depend on height); agreement with pvlib on sample districts; a speed test.
+- **Pipeline:** structure, range and coverage checks; snapshot tests for sample districts; weather-pack checks; engine checked against PySAM and Global Solar Atlas.
 - **Crop evidence:** schema validation of `crops.json`; validation-set error check (§13.4) in CI.
 - **API:** TestClient contract tests; OpenAPI → TypeScript type check in CI.
 - **Web:**
@@ -662,7 +665,7 @@ There are no hard external deadlines. Work is delivered in phases, and **each su
 |---|---|---|
 | **0 — Research and data access** (runs alongside phase 1) | Crop parameter literature review (§13), licence checks (Q-05), KUSUM tariff sourcing (Q-06), answers to Q-02 and Q-03 | `crops.json` meets the §7.3 targets (draft); licences cleared |
 | **1 — `apv_core`** | Crop response, retention and allowed range, LER, KUSUM-A and lease finance, ranges, sweep; tested on synthetic fixtures | All `apv_core` tests passing; reference cases match |
-| **2 — `pipeline`** | District list, six layers, cropland weighting, physics, validation, build outputs | Coverage and physics validation targets met |
+| **2 — `pipeline` and `apv_physics`** | Live physics engine and weather packs first; then district list, six layers, cropland weighting, validation, build outputs | Coverage and physics validation targets met |
 | **3 — `api`** | FastAPI on Vercel, bundled data files, contract, OpenAPI types | Contract tests passing; latency targets on a preview deployment |
 | **4 — `web`** | Toposheet UI: home, district sheet, model, compare, Estimate Sheet, Learn, Method | End-to-end and accessibility checks passing; P0 acceptance criteria met |
 | **5 — Validation and beta** | 8+ user interviews (FPO, NGO, EPC, consultant); crop validation published | §7.3 met; qualitative trust ≥ 6/8 |
