@@ -646,11 +646,11 @@ Errors: 422 with field-level details; 404 for an unknown district or configurati
 | Q-03 | Does the limit apply to each season's crop separately, or to the whole year's rotation? | Stakeholder | **Yes for `apv_core`** — default to per season |
 | Q-04 | ~~Which crops make up the top 20 for parameter research? Confirm from DES national area data.~~ **Answered (2026-11-07):** the 20 largest *annual* crops by national area (2023-24/2024-25 means, field and horticulture crops together; `research_list` in `research/06_crops/area_production_yield/top20_national.csv`): rice, wheat, soybean, cotton, maize, gram, mustard, bajra, sugarcane, moong, groundnut, tur, jowar, urad, guar, potato, onion, lentil, sesame, cumin. Mango (16th) and coconut (18th) were dropped by owner decision because panels cannot go over mature orchards or plantations; tomato is 29th (8.3 lakh ha) | Data | No (answered) |
 | Q-05 | Do IMD gridded data and Agmarknet licences allow public, attributed use in an open-source app? | Legal / data | Yes for pipeline |
-| Q-06 | Where are the official state-wise KUSUM-A tariffs published? | Data | No — national fallback |
+| Q-06 | Where are the official state-wise KUSUM-A tariffs published? **Partly answered (2026-11-14):** in each state regulator's order; `research/11_finance_policy/kusum/kusum_a_state_tariffs.csv` has 9 states (5 read in the orders), and the rest use a national fallback of ₹3.11/kWh (the median) | Data | No — national fallback |
 | Q-07 | Product name and domain | Stakeholder | No |
 | Q-08 | Which privacy-friendly analytics tool (e.g. Vercel Web Analytics, Plausible, self-hosted Umami)? | Engineering | No |
 | Q-09 | Will any commercial user use it at launch (meaning Vercel Pro is required)? | Stakeholder | No |
-| Q-10 | Default tariff and CAPEX range for the low/high cases (±10% proposed) | Data | No |
+| Q-10 | Default tariff and CAPEX range for the low/high cases (±10% proposed) | Data | No — research suggests wider, one-sided ranges for elevated structures (e.g. ×1.15–1.51 around ×1.19 at 2.5 m; `research/11_finance_policy/capex_om/capex_om_benchmarks.csv`) |
 | Q-11 | Should the Estimate Sheet include a Hindi summary in v1? | Stakeholder | No |
 
 ## 18. Timeline and phasing

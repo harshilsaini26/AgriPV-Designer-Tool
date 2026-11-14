@@ -1,0 +1,15 @@
+item,unit,rate,amount_inr_lakh_per_mw_ac,notes
+Solar module price (international),US cents/Wp,11.1,,"India-RE-Navigator, Dec 2023, converted at 83.22 INR/USD"
+Solar module cost at site,INR/Wp,9.4,94.00,"incl. 2.3% port-to-site overheads; Commission's figure"
+DC/AC overloading,%,10,103.40,module cost per MW AC at 1.10 DC/AC ratio
+Basic customs duty on modules,%,40,41.36,
+Solar modules after BCD,INR lakh/MW,,144.76,
+Inverter,INR lakh/MW,,44.03,
+"Balance of system (structure, cabling, civil, etc.)",INR lakh/MW,,95.95,ground-mount fixed tilt
+Capital cost before tax,INR lakh/MW,,284.74,
+GST on 70% of capital cost,%,12,23.92,
+GST on 30% of capital cost,%,18,15.38,
+Capital cost after taxes and duties,INR lakh/MW,,324.03,
+11 kV line to the substation (5 km),INR lakh/km,3.21,16.05,KUSUM-A plants must be within about 5 km of a substation
+11 kV bay and switchgear,INR lakh,6.96,6.96,
+Total capital cost,INR lakh/MW,,347.04,"approved by MPERC, 20 June 2024 (petition had proposed 347.92)"
