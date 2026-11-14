@@ -97,3 +97,19 @@ def test_no_heavy_imports():
         ).stdout.strip()
         == "False"
     )
+
+
+def test_nearly_flat_tilt_matches_flat():
+    flat = simulate(JODHPUR, Layout(Kind.FIXED, MONOFACIAL, 2.0, 4.56, tilt_deg=0.0))
+    nearly = simulate(JODHPUR, Layout(Kind.FIXED, MONOFACIAL, 2.0, 4.56, tilt_deg=1e-9))
+    assert flat.table.energy_kwh_per_kwp[1].sum() > 1500
+    np.testing.assert_allclose(nearly.table.energy_kwh_per_kwp, flat.table.energy_kwh_per_kwp, rtol=1e-6)
+
+
+def test_non_finite_light_is_an_error_not_zero_energy(monkeypatch):
+    import importlib
+
+    sim = importlib.import_module("apv_physics.simulate")  # the package also exports a function of this name
+    monkeypatch.setattr(sim, "effective_irradiance", lambda parts, *a, **k: parts["front_direct"] * np.nan)
+    with pytest.raises(FloatingPointError):
+        simulate(JODHPUR, FIXED)

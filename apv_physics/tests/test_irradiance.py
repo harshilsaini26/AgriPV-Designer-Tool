@@ -78,3 +78,10 @@ def test_effective_irradiance_adds_rear_gain():
     bif = effective_irradiance(p, 20.0, 0.8, 0.05)
     assert mono[0] < p["front_direct"][0] + p["front_sky"][0] + p["front_ground"][0]  # reflection loss
     assert bif[0] > mono[0]
+
+
+def test_iam_diffuse_is_finite_for_nearly_flat_panels():
+    sky, ground = iam_diffuse(np.array([1e-12, 180.0 - 1e-12]))
+    assert np.isfinite(sky).all() and np.isfinite(ground).all()
+    np.testing.assert_allclose([sky[0], ground[1]], 0.951460, atol=1e-6)
+    np.testing.assert_allclose([ground[0], sky[1]], 0.0, atol=1e-6)

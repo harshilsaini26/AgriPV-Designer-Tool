@@ -27,8 +27,9 @@ def iam_diffuse(surface_tilt_deg, a_r: float = 0.16) -> tuple[np.ndarray, np.nda
     """
     c1, c2 = 0.4244, 0.5 * a_r - 0.154
     tilt = np.asarray(surface_tilt_deg, dtype=float)
-    tilt = np.where(tilt == 0, 1e-6, tilt)
-    tilt = np.where(tilt == 180, 180 - 1e-6, tilt)
+    # exactly flat or face-down makes the formula 0 / 0; pvlib nudges 0 and 180 only, which leaves a NaN for
+    # tilts a hair away from them, so the nudge here covers the whole neighbourhood
+    tilt = np.clip(tilt, 1e-6, 180 - 1e-6)
     beta = np.radians(tilt)
     sin_beta = np.where(tilt < 90, np.sin(beta), np.sin(np.pi - beta))
     term_sky = sin_beta + (np.pi - beta - sin_beta) / (1 + np.cos(beta))

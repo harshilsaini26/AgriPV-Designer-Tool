@@ -46,6 +46,8 @@ def _monthly_energy(
         weather.ghi, weather.dhi, weather.dni, weather.dni_extra, losses.albedo,
     )  # fmt: skip
     g_eff = effective_irradiance(parts, surface_tilt, module.bifaciality, losses.rear_shading)
+    if not np.isfinite(g_eff).all():  # never let a NaN turn silently into zero energy further down
+        raise FloatingPointError("the irradiance on the panels is not finite for this layout")
     temp_cell = cell_temperature(g_eff, weather.temp_air, weather.wind_speed)
     ac = ac_power_per_kwp(dc_power_per_kwp(g_eff, temp_cell, module.temp_coeff_per_c), losses)
     return np.bincount(weather.month - 1, weights=ac, minlength=12) / 1000.0
