@@ -1,0 +1,22 @@
+name: apv_physics
+
+on:
+  push:
+    paths: ["apv_core/**", "apv_physics/**", ".github/workflows/apv_physics.yml"]
+  pull_request:
+    paths: ["apv_core/**", "apv_physics/**", ".github/workflows/apv_physics.yml"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -e apv_core -e "apv_physics[dev]"
+      - run: ruff check apv_physics
+      - run: pytest apv_physics
