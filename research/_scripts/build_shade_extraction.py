@@ -21,6 +21,11 @@ from pathlib import Path
 
 import openpyxl
 
+REVIEW = (
+    "values as tabulated in the systematic review in Energies 19(2):539 (2026), doi:10.3390/en19020539; "
+    "primary paper not read (paywalled)"
+)
+
 COLS = [
     "study_id",
     "citation",
@@ -139,6 +144,116 @@ STUDIES = {
         "koppen": "BSh",
         "study_type": "Shade-net field trial (India)",
         "licence": "open access (journal)",
+    },
+    "chen2017": {
+        "citation": "Chen, B.L., Yang, H.K., Ma, Y.N., Liu, J.R., Lv, F.J., Chen, J., Meng, Y.L., Wang, Y.H., Zhou, Z.G. "
+        "(2017). Effect of shading on yield, fiber quality and physiological characteristics of cotton subtending "
+        "leaves on different fruiting positions. Photosynthetica 55(2), 240-250",
+        "doi_url": "https://doi.org/10.1007/s11099-016-0209-7",
+        "peer_reviewed": "Y",
+        "country": "China",
+        "state_region": "Jiangsu, Nanjing",
+        "latitude": 32.0,
+        "longitude": 118.8,
+        "koppen": "Cfa",
+        "study_type": "Shade-net field trial (international)",
+        "licence": "journal article (facts extracted)",
+    },
+    "alam2018": {
+        "citation": "Alam, B., Singh, R., Chaturvedi, M., Newaj, R., Chaturvedi, O.P. (2018). Determination of "
+        "critical low light limit and adaptive physiological and biochemical traits regulating growth and yield of "
+        "mustard (Brassica juncea Coss.). Physiology and Molecular Biology of Plants 24(5), 985 ff.",
+        "doi_url": "https://doi.org/10.1007/s12298-018-0537-0",
+        "peer_reviewed": "Y",
+        "country": "India",
+        "state_region": "Uttar Pradesh, Jhansi (ICAR-CAFRI)",
+        "latitude": 25.45,
+        "longitude": 78.58,
+        "koppen": "BSh",
+        "study_type": "Shade-net house trial (India)",
+        "licence": "journal article (facts extracted; full text in PMC)",
+    },
+    "prakash2025": {
+        "citation": "Prakash, V., Lunagaria, M., Upadhyaya, A., Das, A., Gupta, A., Kumar, Y., Subash, N., Ghasal, P., "
+        "Singh, A., Trivedi, A., et al. (2025). Influence of agrivoltaic system-induced microclimate modifications "
+        "on wheat growth and yield. Agricultural and Forest Meteorology 373, 110775",
+        "doi_url": "https://doi.org/10.1016/j.agrformet.2025.110775",
+        "peer_reviewed": "Y",
+        "country": "India",
+        "state_region": "Gujarat, Anand",
+        "latitude": 22.56,
+        "longitude": 72.95,
+        "koppen": "BSh",
+        "study_type": "APV field trial (India)",
+        "licence": "journal article (facts extracted)",
+    },
+    "ramosfuentes2023": {
+        "citation": "Ramos-Fuentes, I.A., Elamri, Y., Cheviron, B., Dejean, C., Belaud, G., Fumey, D. (2023). Effects "
+        "of shade and deficit irrigation on maize growth and development in fixed and dynamic AgriVoltaic systems. "
+        "Agricultural Water Management 280, 108187",
+        "doi_url": "https://doi.org/10.1016/j.agwat.2023.108187",
+        "peer_reviewed": "Y",
+        "country": "France",
+        "state_region": "Occitanie",
+        "latitude": 43.6,
+        "longitude": 3.9,
+        "koppen": "Csa",
+        "study_type": "APV field trial (international)",
+        "licence": "journal article (facts extracted)",
+    },
+    "nasukawa2025": {
+        "citation": "Nasukawa, H., Kuwabara, Y., Tatsumi, K., Tajima, R. (2025). Rice yield and energy balance in an "
+        "agrivoltaic system established in Shonai plain, northern Japan. Science of the Total Environment 959, 178315",
+        "doi_url": "https://doi.org/10.1016/j.scitotenv.2024.178315",
+        "peer_reviewed": "Y",
+        "country": "Japan",
+        "state_region": "Yamagata, Shonai plain",
+        "latitude": 38.9,
+        "longitude": 139.85,
+        "koppen": "Cfa",
+        "study_type": "APV field trial (international)",
+        "licence": "journal article (facts extracted)",
+    },
+    "thum2025": {
+        "citation": "Thum, C.H., Okada, K., Yamasaki, Y., Kato, Y. (2025). Impacts of agrivoltaic systems on "
+        "microclimate, grain yield, and quality of lowland rice under a temperate climate. Field Crops Research 326, "
+        "109877",
+        "doi_url": "https://doi.org/10.1016/j.fcr.2025.109877",
+        "peer_reviewed": "Y",
+        "country": "Japan",
+        "state_region": "Ibaraki, Chikusei",
+        "latitude": 36.3,
+        "longitude": 139.98,
+        "koppen": "Cfa",
+        "study_type": "APV field trial (international)",
+        "licence": "journal article (facts extracted)",
+    },
+    "ukwu2025": {
+        "citation": "Ukwu, U.N., Muller, O., Meier-Gruell, M., Uguru, M.I. (2025). Yield sensitivity of mungbean "
+        "(Vigna radiata L.) genotypes to different agrivoltaic environments in tropical Nigeria. Plants 14, 1326",
+        "doi_url": "https://doi.org/10.3390/plants14091326",
+        "peer_reviewed": "Y",
+        "country": "Nigeria",
+        "state_region": "Enugu, Nsukka",
+        "latitude": 6.86,
+        "longitude": 7.4,
+        "koppen": "Aw",
+        "study_type": "APV field trial (international, tropical)",
+        "licence": "CC BY 4.0",
+    },
+    "junior2025": {
+        "citation": "Junior, R.A.F., Torres, I.C., de Souza, L.F.L., dos Santos, M.A., Cavalcante, M.A.A., Tiba, C., "
+        "de Souza, J.L. (2025). Agrophotovoltaic systems in sugarcane crop - a Brazilian case study. Energy "
+        "Conversion and Management 344, 120307",
+        "doi_url": "https://doi.org/10.1016/j.enconman.2025.120307",
+        "peer_reviewed": "Y",
+        "country": "Brazil",
+        "state_region": "Alagoas (Santa Clotilde mill)",
+        "latitude": -9.5,
+        "longitude": -35.8,
+        "koppen": "As",
+        "study_type": "APV field trial (international, tropical)",
+        "licence": "journal article (facts extracted)",
     },
     "laub2022": {
         "citation": "Laub, M., Pataczek, L., Feuerbacher, A., Zikeli, S., Högy, P. (2022). Contrasting yield responses "
@@ -503,6 +618,181 @@ ROWS = [
         )
         for s, lf, t in pairs
     ],
+    # Nanjing cotton: nets from flowering (50% bloom on FP1 of the 6th branch) to boll opening, 46-48 days
+    *[
+        r(
+            "chen2017",
+            crop="cotton",
+            season="kharif (summer)",
+            years=y,
+            irrigated_or_rainfed="rainfed",
+            shading_method="shade net",
+            structure_type="white polyethylene nets > 2 m high, flowering to boll opening only",
+            shade_level_pct=sh,
+            light_fraction=1 - sh / 100,
+            light_measure="solar radiation",
+            light_method="share of solar radiation the nets blocked above the canopy on clear days",
+            light_basis="measured_window",
+            control_yield=c0,
+            treatment_yield=t,
+            yield_unit="kg/ha lint",
+            quality_notes="fewer and lighter bolls; lower fibre strength and micronaire",
+            caveats="shade only in the reproductive window (46-48 of about 150 days), the most sensitive phase; "
+            "season-long shade at this level would likely cost more",
+        )
+        for y, c0, pairs in (("2010", 1703, ((21, 1374), (38, 1145))), ("2011", 1930, ((21, 1611), (38, 1346))))
+        for sh, t in pairs
+    ],
+    # Jhansi mustard: net houses, yield per plant read from Fig. 1b (about +/- 2 g)
+    *[
+        r(
+            "alam2018",
+            crop="mustard",
+            season="rabi",
+            years="two seasons (mean)",
+            irrigated_or_rainfed="irrigated",
+            shading_method="shade net",
+            structure_type="net houses 25 x 8 x 3 m rated 67, 50 and 25% light",
+            light_fraction=lf,
+            light_measure="PPFD",
+            light_method="measured PPFD under each net vs open (09:30-10:00, Table 1)",
+            light_basis="measured_spot",
+            control_yield=69,
+            treatment_yield=t,
+            yield_unit="g/plant grain (read from figure)",
+            n=30,
+            caveats="per-plant yield read from a bar chart; net houses, not open field; "
+            "authors put the critical limit at about 67% light",
+        )
+        for lf, t in ((0.641, 55), (0.467, 11), (0.245, 7))
+    ],
+    # Anand wheat APV (India): two light zones as tabulated in the 2026 review
+    r(
+        "prakash2025",
+        crop="wheat",
+        season="rabi",
+        years="2017-2019",
+        irrigated_or_rainfed="irrigated",
+        shading_method="APV",
+        structure_type="poly-Si APV",
+        light_fraction=0.517,
+        light_measure="PAR",
+        light_method="PAR reduction 28-68.6% (midpoint used)",
+        light_basis="measured_range",
+        relative_yield=0.738,
+        caveats="lighter zone; " + REVIEW,
+    ),
+    r(
+        "prakash2025",
+        crop="wheat",
+        season="rabi",
+        years="2017-2019",
+        irrigated_or_rainfed="irrigated",
+        shading_method="APV",
+        structure_type="poly-Si APV",
+        light_fraction=0.187,
+        light_measure="PAR",
+        light_method="PAR reduction 72.8-89.8% (midpoint used)",
+        light_basis="measured_range",
+        relative_yield=0.372,
+        caveats="darker zone; " + REVIEW,
+    ),
+    # France maize APV
+    *[
+        r(
+            "ramosfuentes2023",
+            crop="maize",
+            season="kharif (summer)",
+            years="2019-2021",
+            irrigated_or_rainfed="irrigated",
+            shading_method="APV",
+            structure_type="fixed and dynamic (tracking) APV",
+            shade_level_pct=sh,
+            light_fraction=1 - sh / 100,
+            light_measure="shading",
+            light_method=f"shading rate {txt}",
+            light_basis="measured_range",
+            relative_yield=ry,
+            caveats=REVIEW,
+        )
+        for sh, txt, ry in ((35, "35%", 0.84), (32.5, "30-35%", 0.91), (55, "54-56%", 0.70))
+    ],
+    # Japanese rice APV
+    r(
+        "nasukawa2025",
+        crop="rice",
+        season="kharif (summer)",
+        years="2021-2023",
+        irrigated_or_rainfed="irrigated",
+        shading_method="APV",
+        structure_type="c-Si APV",
+        shade_level_pct=32,
+        light_fraction=0.68,
+        light_measure="shading",
+        light_method="shading rate 32%",
+        light_basis="measured_range",
+        relative_yield=0.866,
+        quality_notes="protein content +6.4%",
+        caveats=REVIEW,
+    ),
+    r(
+        "thum2025",
+        crop="rice",
+        season="kharif (summer)",
+        years="2018-2023",
+        irrigated_or_rainfed="irrigated",
+        shading_method="APV",
+        structure_type="c-Si APV, modules over 27% of the field",
+        light_fraction=0.745,
+        light_measure="light",
+        light_method="light reduction 21-30% (midpoint used)",
+        light_basis="measured_range",
+        control_yield=8.5,
+        treatment_yield=6.5,
+        yield_unit="t/ha",
+        quality_notes="more chalky grain, lower head rice yield",
+        caveats="six-year means as reported in pv magazine (2025-04-01) and the 2026 review; loss not significant "
+        "in two of six years, larger in rainy years; primary paper not read (paywalled)",
+    ),
+    # Nigeria moong APV
+    *[
+        r(
+            "ukwu2025",
+            crop="moong",
+            season="kharif",
+            years="2022-2023",
+            irrigated_or_rainfed="rainfed",
+            shading_method="APV",
+            structure_type="bifacial APV",
+            light_fraction=lf,
+            light_measure="PAR",
+            light_method=f"PAR reduction {round(100 * (1 - lf))}%",
+            light_basis="measured_range",
+            relative_yield=ry,
+            caveats=REVIEW + "; mean across genotypes",
+        )
+        for lf, ry in ((0.88, 1.23), (0.85, 0.81))
+    ],
+    # Brazil sugarcane APV
+    r(
+        "junior2025",
+        crop="sugarcane",
+        season="whole year",
+        years="2022-2023",
+        irrigated_or_rainfed="rainfed",
+        shading_method="APV",
+        structure_type="poly-Si APV with adjustable inter-unit distance",
+        light_fraction=0.675,
+        light_measure="PAR",
+        light_method="65-70% PAR under APV (midpoint), as tabulated in the 2026 review",
+        light_basis="measured_range",
+        control_yield=59.10,
+        treatment_yield=82.02,
+        yield_unit="Mg/ha stalk",
+        caveats="APV beat open field by 38.8% (higher leaf area index); one site, one season, cause not "
+        "isolated (microclimate or water), so not used to fit a loss curve; yields from the paper's abstract",
+        used_for="context_only",
+    ),
 ]
 
 # Laub (2022) crops kept, mapped to the research list (proxies noted)

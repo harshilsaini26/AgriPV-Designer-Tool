@@ -10,6 +10,8 @@ Model (spec §12): Y_rel = 1 if L >= L_t, else max(0, 1 - k (L_t - L)), with L t
    systems produce. Yields above 100% are capped at 1, as the model cannot represent a shade benefit.
 2. Crop curves: crops with >= 8 usable points from >= 3 studies spanning >= 0.3 of light fraction are fitted to
    their own points (central); low / high keep the group spread around it. Otherwise the crop takes its group curve.
+   A crop with no group but >= 3 points spanning >= 0.15 of light (one study so far: cotton, mustard) is fitted to
+   its own points with an assumed spread (threshold +/-0.05, slope +/-25%).
 3. Grade (spec §13.3): A >= 2 Indian field studies; B 1 Indian study or >= 2 international studies; C 1
    international study or extension from a closely related crop group; D no data and no close group.
 Writes 09_crop_shade_response/parameters/crop_parameters_draft.csv and group_curves_laub2022.csv.
@@ -173,6 +175,13 @@ def main(research: Path) -> None:
                     high = (round(high[0] + dl, 2), round(max(0, high[1] + dk), 2))
                 cen = own
                 source = f"fitted to {len(pts)} points" + (f"; spread from {group} group" if group else "")
+            elif not group and len(pts) >= 3 and span >= 0.15:
+                # no group to lean on: fit the crop's own points and assume a +/-25% slope and +/-0.05 threshold spread
+                cen = fit(light, [p[1] for p in pts])
+                low = (round(min(1.0, cen[0] + 0.05), 2), round(cen[1] * 1.25, 2))
+                high = (round(cen[0] - 0.05, 2), round(cen[1] * 0.75, 2))
+                source = f"fitted to {len(pts)} points from {len(studies)} study; spread assumed"
+                notes.append("one study only: spread is assumed (threshold +/-0.05, slope +/-25%), not measured")
             rmse = ""
             if pts and cen[0] != "":
                 rmse = round(
@@ -205,7 +214,7 @@ def main(research: Path) -> None:
                 )
             if group and closeness.startswith("related"):
                 notes.append(f"group curve borrowed from a related group: {closeness}")
-            if not group:
+            if not group and cen[0] == "":
                 notes.append(f"no parameters yet: {closeness}")
             w.writerow(
                 [
