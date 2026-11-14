@@ -79,17 +79,12 @@ def vf_ground_sky_2d(rotation, gcr, x, pitch, height, max_rows=10):
     distance_to_row_centers = (all_k - x) * pitch
     dy = width * sind(rotation)
     dx = width * cosd(rotation)
-    phi = np.empty((2, x.shape[0], rotation.shape[1], len(all_k)))
     # angles from x to the two edges of each row
-    np.add(distance_to_row_centers, dx, out=phi[0])
-    np.arctan2(height + dy, phi[0], out=phi[0])
-    np.subtract(distance_to_row_centers, dx, out=phi[1])
-    np.arctan2(height - dy, phi[1], out=phi[1])
-    phi.sort(axis=0)  # phi[0] is the lesser angle
+    edge_1 = np.arctan2(height + dy, distance_to_row_centers + dx)
+    edge_2 = np.arctan2(height - dy, distance_to_row_centers - dx)
+    lesser, greater = np.minimum(edge_1, edge_2), np.maximum(edge_1, edge_2)
     # sky seen through each gap: between one row's far edge and the next row's near edge
-    next_edge = np.cos(phi[1, :, :, 1:])
-    prev_edge = np.cos(phi[0, :, :, :-1])
-    gaps = np.clip(next_edge - prev_edge, a_min=0.0, a_max=None)
+    gaps = np.clip(np.cos(greater[:, :, 1:]) - np.cos(lesser[:, :, :-1]), a_min=0.0, a_max=None)
     return np.sum(gaps, axis=-1) / 2
 
 

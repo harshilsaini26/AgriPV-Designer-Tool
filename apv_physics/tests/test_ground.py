@@ -59,6 +59,15 @@ def test_sky_view_matches_pvlib_and_shapes():
     assert strip_sky_view(rot, 0.4, 2.5, 5.7).shape == (4, 100)
 
 
+def test_tracker_sky_view_table_is_accurate_for_both_directions():
+    rot = np.array([-50.0, -12.3, 0.0, 0.3, 12.2, 55.0])
+    x = (np.arange(100) + 0.5) / 100
+    direct = pv.vf_ground_sky_2d(
+        rot, 0.4, x, 5.7, 2.5, max_rows=np.ceil(2.5 / (5.7 * np.tan(np.radians(5))))
+    ).T
+    np.testing.assert_allclose(strip_sky_view(rot, 0.4, 2.5, 5.7), direct, atol=2e-3)
+
+
 def test_farmed_mask():
     assert farmed_mask(10.0, 0.0).all()
     m = farmed_mask(10.0, 1.0)  # 0.5 m either side of the row centre

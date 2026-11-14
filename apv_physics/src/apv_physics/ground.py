@@ -17,7 +17,7 @@ from apv_physics.inputs import Weather
 from apv_physics.viewfactors import cosd, sind
 
 N_STRIPS = 100
-_ROTATION_GRID_STEP = 0.5  # degrees; sky view for trackers is tabulated on this grid
+_ROTATION_GRID_STEP = 1.0  # degrees; sky view for trackers is tabulated on this grid (spec §5.4)
 _MAX_TAN_PHI = 1e9  # sun on the horizon across the rows: the shadow covers everything anyway
 
 
@@ -49,20 +49,22 @@ def strip_unshaded(rotation, tan_phi, gcr: float, height: float, pitch: float) -
 def strip_sky_view(rotation, gcr: float, height: float, pitch: float) -> np.ndarray:
     """Share of the sky dome seen from the centre of each strip.
 
-    A scalar `rotation` gives shape (N_STRIPS,). An hourly array gives shape (n_hours, N_STRIPS), looked up
-    from a table on a 0.5 degree grid of rotation.
+    A scalar `rotation` gives shape (N_STRIPS,). An hourly array (trackers) gives shape (n_hours, N_STRIPS),
+    interpolated from a table on a 1 degree grid of rotation. The table covers one turning direction only: a
+    row turned the other way is the mirror image, so its strips are read in reverse order.
     """
     x = (np.arange(N_STRIPS) + 0.5) / N_STRIPS
     max_rows = np.ceil(height / (pitch * vf.tand(5)))
     if np.ndim(rotation) == 0:
         return vf.vf_ground_sky_2d(float(rotation), gcr, x, pitch, height, max_rows=max_rows)[:, 0]
     rotation = np.asarray(rotation, dtype=float)
-    lo = np.floor(rotation.min() / _ROTATION_GRID_STEP) * _ROTATION_GRID_STEP
-    hi = np.ceil(rotation.max() / _ROTATION_GRID_STEP) * _ROTATION_GRID_STEP
-    grid = np.arange(lo, hi + 0.5 * _ROTATION_GRID_STEP, _ROTATION_GRID_STEP)
+    turn = np.abs(rotation) / _ROTATION_GRID_STEP
+    grid = np.arange(0.0, np.ceil(turn.max()) + 1.5) * _ROTATION_GRID_STEP
     table = vf.vf_ground_sky_2d(grid, gcr, x, pitch, height, max_rows=max_rows).T  # (len(grid), N_STRIPS)
-    nearest = np.rint((rotation - lo) / _ROTATION_GRID_STEP).astype(int)
-    return table[nearest]
+    below = np.minimum(np.floor(turn).astype(int), len(grid) - 2)
+    weight = (turn - below)[:, np.newaxis]
+    view = table[below] * (1.0 - weight) + table[below + 1] * weight
+    return np.where((rotation < 0)[:, np.newaxis], view[:, ::-1], view)
 
 
 def farmed_mask(pitch: float, unfarmed_strip_m: float) -> np.ndarray:
