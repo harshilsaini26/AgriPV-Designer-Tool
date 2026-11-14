@@ -255,6 +255,33 @@ STUDIES = {
         "study_type": "APV field trial (international, tropical)",
         "licence": "journal article (facts extracted)",
     },
+    "pettigrew1994": {
+        "citation": "Pettigrew, W.T. (1994). Source-to-sink manipulation effects on cotton lint yield and yield "
+        "components. Agronomy Journal 86, 731-735",
+        "doi_url": "https://doi.org/10.2134/agronj1994.00021962008600040027x",
+        "peer_reviewed": "Y",
+        "country": "USA",
+        "state_region": "",
+        "latitude": "",
+        "longitude": "",
+        "koppen": "",
+        "study_type": "Shade-cloth field trial (international)",
+        "licence": "journal article (facts extracted)",
+    },
+    "jyothiprakash2025": {
+        "citation": "Jyothi Prakash, H.P., Umesh, M.R., Manjunatha, N., Kamble, A.S., Rajanna, B. (2025). Canopy "
+        "characteristics, yield, radiation use efficiency and quality of oilseeds under reduced sunlight. Plant "
+        "Archives 25(1), 2113-2119",
+        "doi_url": "https://doi.org/10.51470/PLANTARCHIVES.2025.v25.no.1.307",
+        "peer_reviewed": "Y",
+        "country": "India",
+        "state_region": "Karnataka, Raichur (UAS Raichur)",
+        "latitude": 16.2,
+        "longitude": 77.32,
+        "koppen": "BSh",
+        "study_type": "Shade-net field trial (India)",
+        "licence": "open access (journal)",
+    },
     "laub2022": {
         "citation": "Laub, M., Pataczek, L., Feuerbacher, A., Zikeli, S., Högy, P. (2022). Contrasting yield responses "
         "at varying levels of shade suggest different suitability of crops for dual land-use systems: a "
@@ -793,6 +820,52 @@ ROWS = [
         "isolated (microclimate or water), so not used to fit a loss curve; yields from the paper's abstract",
         used_for="context_only",
     ),
+    # Pettigrew (1994): 30% shade cloth during reproductive development, 1991-1992 mean
+    r(
+        "pettigrew1994",
+        crop="cotton",
+        season="kharif (summer)",
+        years="1991-1992 (mean)",
+        shading_method="shade cloth",
+        structure_type="30% shade cloth during reproductive development",
+        shade_level_pct=30,
+        light_fraction=0.70,
+        light_measure="nominal",
+        light_method="shade cloth rating during the shading window",
+        light_basis="net_rating_window",
+        control_yield=1190,
+        treatment_yield=957,
+        yield_unit="kg/ha lint",
+        quality_notes="26% fewer bolls; boll mass unchanged",
+        caveats="values from Table 1 of Wells, 'Light and the cotton plant' (Cotton Foundation, Stress Physiology in "
+        "Cotton, ch. 4), adapted from Pettigrew (1994); primary paper not read; shade only during reproductive "
+        "development",
+    ),
+    # Raichur oilseeds, kharif 2023: white nets from 25 DAS to maturity
+    *[
+        r(
+            "jyothiprakash2025",
+            crop=c,
+            season="kharif",
+            years="2023",
+            irrigated_or_rainfed="rainfed",
+            shading_method="shade net",
+            structure_type="white shade nets 6 ft high, from 25 DAS to maturity",
+            shade_level_pct=sh,
+            light_fraction=1 - sh / 100,
+            light_measure="PAR (net rating)",
+            light_method="net rated to cut 30% or 60% of incident light; PAR reduction computed per the paper's "
+            "formula, values not printed",
+            light_basis="net_rating",
+            control_yield=c0,
+            treatment_yield=t,
+            yield_unit="kg/ha seed",
+            caveats="yields fall steadily with shade, so the ratings look usable (unlike Manoj et al. 2021 at the "
+            "same station)",
+        )
+        for c, c0, pairs in (("groundnut", 2015, ((30, 1517), (60, 998))), ("soybean", 3408, ((30, 2688), (60, 2186))))
+        for sh, t in pairs
+    ],
 ]
 
 # Laub (2022) crops kept, mapped to the research list (proxies noted)

@@ -36,7 +36,7 @@ CROPS = {
     "gram": ("Grain legumes", "own group", "rabi", []),
     "mustard": (None, "no close group (C3 oilseed; brassica)", "rabi", []),
     "bajra": ("Maize", "related (C4 cereal)", "kharif, summer", []),
-    "sugarcane": (None, "no close group (C4 grass, 10-18 months)", "whole year", []),
+    "sugarcane": ("Maize", "related (C4 grass of the same tribe as maize and sorghum; 10-18 months)", "whole year", []),
     "moong": ("Grain legumes", "own group", "kharif, summer", []),
     "groundnut": ("Grain legumes", "own group", "kharif, rabi, summer", []),
     "tur": ("Grain legumes", "own group", "kharif", []),
@@ -180,8 +180,8 @@ def main(research: Path) -> None:
                 cen = fit(light, [p[1] for p in pts])
                 low = (round(min(1.0, cen[0] + 0.05), 2), round(cen[1] * 1.25, 2))
                 high = (round(cen[0] - 0.05, 2), round(cen[1] * 0.75, 2))
-                source = f"fitted to {len(pts)} points from {len(studies)} study; spread assumed"
-                notes.append("one study only: spread is assumed (threshold +/-0.05, slope +/-25%), not measured")
+                source = f"fitted to {len(pts)} points from {len(studies)} {'study' if len(studies) == 1 else 'studies'}; spread assumed"
+                notes.append("few studies: spread is assumed (threshold +/-0.05, slope +/-25%), not measured")
             rmse = ""
             if pts and cen[0] != "":
                 rmse = round(
