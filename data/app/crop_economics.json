@@ -1,0 +1,1777 @@
+{
+ "by_state": {
+  "Andhra Pradesh": {
+   "cotton": {
+    "yield_q_per_acre": 6.72,
+    "price_per_q": 7059,
+    "cost_per_acre": 29446,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "gram": {
+    "yield_q_per_acre": 6.55,
+    "price_per_q": 5715,
+    "cost_per_acre": 15326,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "groundnut": {
+    "yield_q_per_acre": 3.95,
+    "price_per_q": 5318,
+    "cost_per_acre": 27027,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "jowar": {
+    "yield_q_per_acre": 19.13,
+    "price_per_q": 2928,
+    "cost_per_acre": 22487,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "maize": {
+    "yield_q_per_acre": 29.1,
+    "price_per_q": 1755,
+    "cost_per_acre": 25737,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "moong": {
+    "yield_q_per_acre": 2.84,
+    "price_per_q": 6299,
+    "cost_per_acre": 12883,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "onion": {
+    "yield_q_per_acre": 46.02,
+    "price_per_q": 771,
+    "cost_per_acre": 44416,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "rice": {
+    "yield_q_per_acre": 23.1,
+    "price_per_q": 1742,
+    "cost_per_acre": 29257,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "sesame": {
+    "yield_q_per_acre": 1.46,
+    "price_per_q": 8095,
+    "cost_per_acre": 9294,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "sugarcane": {
+    "yield_q_per_acre": 147.87,
+    "price_per_q": 275,
+    "cost_per_acre": 50671,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "tur": {
+    "yield_q_per_acre": 2.58,
+    "price_per_q": 6523,
+    "cost_per_acre": 11469,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "urad": {
+    "yield_q_per_acre": 4.41,
+    "price_per_q": 6613,
+    "cost_per_acre": 13392,
+    "year": "2021-22",
+    "basis": "state"
+   }
+  },
+  "Assam": {
+   "mustard": {
+    "yield_q_per_acre": 3.96,
+    "price_per_q": 5034,
+    "cost_per_acre": 12195,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "potato": {
+    "yield_q_per_acre": 47.4,
+    "price_per_q": 1656,
+    "cost_per_acre": 39636,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "rice": {
+    "yield_q_per_acre": 14.91,
+    "price_per_q": 1258,
+    "cost_per_acre": 18150,
+    "year": "2021-22",
+    "basis": "state"
+   }
+  },
+  "Bihar": {
+   "gram": {
+    "yield_q_per_acre": 5.37,
+    "price_per_q": 5822,
+    "cost_per_acre": 12294,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "lentil": {
+    "yield_q_per_acre": 3.86,
+    "price_per_q": 5234,
+    "cost_per_acre": 10705,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "maize": {
+    "yield_q_per_acre": 18.64,
+    "price_per_q": 1731,
+    "cost_per_acre": 18429,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "moong": {
+    "yield_q_per_acre": 3.23,
+    "price_per_q": 6000,
+    "cost_per_acre": 5357,
+    "year": "2019-20",
+    "basis": "state"
+   },
+   "mustard": {
+    "yield_q_per_acre": 4.3,
+    "price_per_q": 6561,
+    "cost_per_acre": 11247,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "potato": {
+    "yield_q_per_acre": 62.38,
+    "price_per_q": 1014,
+    "cost_per_acre": 29786,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "rice": {
+    "yield_q_per_acre": 11.57,
+    "price_per_q": 1388,
+    "cost_per_acre": 15425,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "sugarcane": {
+    "yield_q_per_acre": 215.62,
+    "price_per_q": 310,
+    "cost_per_acre": 29807,
+    "year": "2019-20",
+    "basis": "state"
+   },
+   "wheat": {
+    "yield_q_per_acre": 11.85,
+    "price_per_q": 1904,
+    "cost_per_acre": 16280,
+    "year": "2021-22",
+    "basis": "state"
+   }
+  },
+  "Chhattisgarh": {
+   "gram": {
+    "yield_q_per_acre": 5.5,
+    "price_per_q": 4736,
+    "cost_per_acre": 13608,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "maize": {
+    "yield_q_per_acre": 7.9,
+    "price_per_q": 1649,
+    "cost_per_acre": 20175,
+    "year": "2019-20",
+    "basis": "state"
+   },
+   "mustard": {
+    "yield_q_per_acre": 4.45,
+    "price_per_q": 4400,
+    "cost_per_acre": 3599,
+    "year": "2019-20",
+    "basis": "state"
+   },
+   "rice": {
+    "yield_q_per_acre": 16.94,
+    "price_per_q": 1770,
+    "cost_per_acre": 17270,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "soybean": {
+    "yield_q_per_acre": 1.7,
+    "price_per_q": 3240,
+    "cost_per_acre": 9605,
+    "year": "2020-21",
+    "basis": "state"
+   },
+   "urad": {
+    "yield_q_per_acre": 1.46,
+    "price_per_q": 4500,
+    "cost_per_acre": 17604,
+    "year": "2019-20",
+    "basis": "state"
+   },
+   "wheat": {
+    "yield_q_per_acre": 10.25,
+    "price_per_q": 1999,
+    "cost_per_acre": 12780,
+    "year": "2021-22",
+    "basis": "state"
+   }
+  },
+  "Gujarat": {
+   "bajra": {
+    "yield_q_per_acre": 11.22,
+    "price_per_q": 2076,
+    "cost_per_acre": 20957,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "cotton": {
+    "yield_q_per_acre": 6.0,
+    "price_per_q": 7889,
+    "cost_per_acre": 26848,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "gram": {
+    "yield_q_per_acre": 5.06,
+    "price_per_q": 5193,
+    "cost_per_acre": 16523,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "groundnut": {
+    "yield_q_per_acre": 6.68,
+    "price_per_q": 5442,
+    "cost_per_acre": 29062,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "maize": {
+    "yield_q_per_acre": 9.1,
+    "price_per_q": 2108,
+    "cost_per_acre": 21120,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "moong": {
+    "yield_q_per_acre": 2.67,
+    "price_per_q": 6459,
+    "cost_per_acre": 12712,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "mustard": {
+    "yield_q_per_acre": 8.58,
+    "price_per_q": 6197,
+    "cost_per_acre": 20794,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "onion": {
+    "yield_q_per_acre": 67.87,
+    "price_per_q": 1523,
+    "cost_per_acre": 47535,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "potato": {
+    "yield_q_per_acre": 113.23,
+    "price_per_q": 1120,
+    "cost_per_acre": 67172,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "rice": {
+    "yield_q_per_acre": 14.97,
+    "price_per_q": 1668,
+    "cost_per_acre": 21789,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "sesame": {
+    "yield_q_per_acre": 1.3,
+    "price_per_q": 14380,
+    "cost_per_acre": 15492,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "soybean": {
+    "yield_q_per_acre": 2.55,
+    "price_per_q": 4313,
+    "cost_per_acre": 16542,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "sugarcane": {
+    "yield_q_per_acre": 351.53,
+    "price_per_q": 292,
+    "cost_per_acre": 40124,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "tur": {
+    "yield_q_per_acre": 3.85,
+    "price_per_q": 6511,
+    "cost_per_acre": 15316,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "urad": {
+    "yield_q_per_acre": 1.68,
+    "price_per_q": 5679,
+    "cost_per_acre": 12195,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "wheat": {
+    "yield_q_per_acre": 13.17,
+    "price_per_q": 2247,
+    "cost_per_acre": 15865,
+    "year": "2021-22",
+    "basis": "state"
+   }
+  },
+  "Haryana": {
+   "bajra": {
+    "yield_q_per_acre": 5.8,
+    "price_per_q": 2441,
+    "cost_per_acre": 12595,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "cotton": {
+    "yield_q_per_acre": 4.41,
+    "price_per_q": 7697,
+    "cost_per_acre": 21833,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "gram": {
+    "yield_q_per_acre": 3.59,
+    "price_per_q": 5131,
+    "cost_per_acre": 11434,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "mustard": {
+    "yield_q_per_acre": 7.3,
+    "price_per_q": 6033,
+    "cost_per_acre": 12863,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "rice": {
+    "yield_q_per_acre": 21.4,
+    "price_per_q": 2552,
+    "cost_per_acre": 24290,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "sugarcane": {
+    "yield_q_per_acre": 291.87,
+    "price_per_q": 355,
+    "cost_per_acre": 36217,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "wheat": {
+    "yield_q_per_acre": 17.89,
+    "price_per_q": 2017,
+    "cost_per_acre": 16181,
+    "year": "2021-22",
+    "basis": "state"
+   }
+  },
+  "Himachal Pradesh": {
+   "maize": {
+    "yield_q_per_acre": 7.82,
+    "price_per_q": 1742,
+    "cost_per_acre": 16394,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "mustard": {
+    "yield_q_per_acre": 2.03,
+    "price_per_q": 7139,
+    "cost_per_acre": 12704,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "potato": {
+    "yield_q_per_acre": 25.56,
+    "price_per_q": 2445,
+    "cost_per_acre": 45781,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "rice": {
+    "yield_q_per_acre": 12.51,
+    "price_per_q": 1965,
+    "cost_per_acre": 18122,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "sesame": {
+    "yield_q_per_acre": 0.92,
+    "price_per_q": 15346,
+    "cost_per_acre": 13196,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "soybean": {
+    "yield_q_per_acre": 1.8,
+    "price_per_q": 6253,
+    "cost_per_acre": 15402,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "urad": {
+    "yield_q_per_acre": 1.29,
+    "price_per_q": 11508,
+    "cost_per_acre": 12326,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "wheat": {
+    "yield_q_per_acre": 8.72,
+    "price_per_q": 2081,
+    "cost_per_acre": 16376,
+    "year": "2021-22",
+    "basis": "state"
+   }
+  },
+  "Jharkhand": {
+   "gram": {
+    "yield_q_per_acre": 3.06,
+    "price_per_q": 5503,
+    "cost_per_acre": 19490,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "maize": {
+    "yield_q_per_acre": 16.76,
+    "price_per_q": 1500,
+    "cost_per_acre": 18203,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "mustard": {
+    "yield_q_per_acre": 2.64,
+    "price_per_q": 5789,
+    "cost_per_acre": 14270,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "potato": {
+    "yield_q_per_acre": 36.35,
+    "price_per_q": 1109,
+    "cost_per_acre": 36455,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "rice": {
+    "yield_q_per_acre": 11.07,
+    "price_per_q": 1368,
+    "cost_per_acre": 18406,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "wheat": {
+    "yield_q_per_acre": 10.56,
+    "price_per_q": 1836,
+    "cost_per_acre": 17331,
+    "year": "2021-22",
+    "basis": "state"
+   }
+  },
+  "Karnataka": {
+   "cotton": {
+    "yield_q_per_acre": 5.38,
+    "price_per_q": 7141,
+    "cost_per_acre": 23514,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "gram": {
+    "yield_q_per_acre": 3.74,
+    "price_per_q": 4842,
+    "cost_per_acre": 12414,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "groundnut": {
+    "yield_q_per_acre": 4.95,
+    "price_per_q": 5607,
+    "cost_per_acre": 22403,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "jowar": {
+    "yield_q_per_acre": 4.48,
+    "price_per_q": 2708,
+    "cost_per_acre": 12800,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "maize": {
+    "yield_q_per_acre": 14.35,
+    "price_per_q": 1769,
+    "cost_per_acre": 19365,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "moong": {
+    "yield_q_per_acre": 1.86,
+    "price_per_q": 7460,
+    "cost_per_acre": 11436,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "onion": {
+    "yield_q_per_acre": 21.55,
+    "price_per_q": 1902,
+    "cost_per_acre": 28522,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "potato": {
+    "yield_q_per_acre": 49.33,
+    "price_per_q": 1601,
+    "cost_per_acre": 40978,
+    "year": "2019-20",
+    "basis": "state"
+   },
+   "rice": {
+    "yield_q_per_acre": 19.42,
+    "price_per_q": 1880,
+    "cost_per_acre": 28807,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "sesame": {
+    "yield_q_per_acre": 0.83,
+    "price_per_q": 8985,
+    "cost_per_acre": 10036,
+    "year": "2019-20",
+    "basis": "state"
+   },
+   "soybean": {
+    "yield_q_per_acre": 5.48,
+    "price_per_q": 4818,
+    "cost_per_acre": 15779,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "sugarcane": {
+    "yield_q_per_acre": 380.33,
+    "price_per_q": 265,
+    "cost_per_acre": 31841,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "tur": {
+    "yield_q_per_acre": 2.7,
+    "price_per_q": 6076,
+    "cost_per_acre": 12700,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "urad": {
+    "yield_q_per_acre": 2.18,
+    "price_per_q": 6693,
+    "cost_per_acre": 10736,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "wheat": {
+    "yield_q_per_acre": 4.4,
+    "price_per_q": 2468,
+    "cost_per_acre": 13207,
+    "year": "2021-22",
+    "basis": "state"
+   }
+  },
+  "Kerala": {
+   "groundnut": {
+    "yield_q_per_acre": 4.86,
+    "price_per_q": 5558,
+    "cost_per_acre": 25367,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "rice": {
+    "yield_q_per_acre": 14.66,
+    "price_per_q": 2737,
+    "cost_per_acre": 32110,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "sesame": {
+    "yield_q_per_acre": 0.57,
+    "price_per_q": 25061,
+    "cost_per_acre": 12339,
+    "year": "2021-22",
+    "basis": "state"
+   }
+  },
+  "Madhya Pradesh": {
+   "cotton": {
+    "yield_q_per_acre": 6.09,
+    "price_per_q": 4780,
+    "cost_per_acre": 24159,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "gram": {
+    "yield_q_per_acre": 4.81,
+    "price_per_q": 4841,
+    "cost_per_acre": 12355,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "groundnut": {
+    "yield_q_per_acre": 3.45,
+    "price_per_q": 3609,
+    "cost_per_acre": 17116,
+    "year": "2019-20",
+    "basis": "state"
+   },
+   "jowar": {
+    "yield_q_per_acre": 7.91,
+    "price_per_q": 1816,
+    "cost_per_acre": 12436,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "lentil": {
+    "yield_q_per_acre": 4.09,
+    "price_per_q": 4863,
+    "cost_per_acre": 10101,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "maize": {
+    "yield_q_per_acre": 12.6,
+    "price_per_q": 1556,
+    "cost_per_acre": 15333,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "moong": {
+    "yield_q_per_acre": 1.97,
+    "price_per_q": 3890,
+    "cost_per_acre": 7004,
+    "year": "2019-20",
+    "basis": "state"
+   },
+   "mustard": {
+    "yield_q_per_acre": 6.14,
+    "price_per_q": 5987,
+    "cost_per_acre": 12348,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "onion": {
+    "yield_q_per_acre": 115.16,
+    "price_per_q": 864,
+    "cost_per_acre": 39280,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "potato": {
+    "yield_q_per_acre": 84.06,
+    "price_per_q": 1172,
+    "cost_per_acre": 37436,
+    "year": "2019-20",
+    "basis": "state"
+   },
+   "rice": {
+    "yield_q_per_acre": 18.16,
+    "price_per_q": 1840,
+    "cost_per_acre": 18187,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "sesame": {
+    "yield_q_per_acre": 2.33,
+    "price_per_q": 9100,
+    "cost_per_acre": 10570,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "soybean": {
+    "yield_q_per_acre": 4.35,
+    "price_per_q": 3865,
+    "cost_per_acre": 11943,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "tur": {
+    "yield_q_per_acre": 3.18,
+    "price_per_q": 6270,
+    "cost_per_acre": 9180,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "urad": {
+    "yield_q_per_acre": 2.36,
+    "price_per_q": 4549,
+    "cost_per_acre": 9354,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "wheat": {
+    "yield_q_per_acre": 16.49,
+    "price_per_q": 1767,
+    "cost_per_acre": 13973,
+    "year": "2021-22",
+    "basis": "state"
+   }
+  },
+  "Maharashtra": {
+   "bajra": {
+    "yield_q_per_acre": 10.66,
+    "price_per_q": 2006,
+    "cost_per_acre": 24008,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "cotton": {
+    "yield_q_per_acre": 5.15,
+    "price_per_q": 6777,
+    "cost_per_acre": 31118,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "gram": {
+    "yield_q_per_acre": 5.58,
+    "price_per_q": 4664,
+    "cost_per_acre": 17996,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "groundnut": {
+    "yield_q_per_acre": 4.75,
+    "price_per_q": 6968,
+    "cost_per_acre": 39316,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "jowar": {
+    "yield_q_per_acre": 4.35,
+    "price_per_q": 2829,
+    "cost_per_acre": 16423,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "maize": {
+    "yield_q_per_acre": 23.07,
+    "price_per_q": 1764,
+    "cost_per_acre": 27101,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "moong": {
+    "yield_q_per_acre": 3.27,
+    "price_per_q": 6037,
+    "cost_per_acre": 17279,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "onion": {
+    "yield_q_per_acre": 106.29,
+    "price_per_q": 994,
+    "cost_per_acre": 64627,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "rice": {
+    "yield_q_per_acre": 8.32,
+    "price_per_q": 2244,
+    "cost_per_acre": 33068,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "soybean": {
+    "yield_q_per_acre": 6.51,
+    "price_per_q": 5003,
+    "cost_per_acre": 21738,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "sugarcane": {
+    "yield_q_per_acre": 429.23,
+    "price_per_q": 238,
+    "cost_per_acre": 72934,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "tur": {
+    "yield_q_per_acre": 8.06,
+    "price_per_q": 5934,
+    "cost_per_acre": 30217,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "urad": {
+    "yield_q_per_acre": 3.26,
+    "price_per_q": 6296,
+    "cost_per_acre": 15683,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "wheat": {
+    "yield_q_per_acre": 10.66,
+    "price_per_q": 2498,
+    "cost_per_acre": 21843,
+    "year": "2021-22",
+    "basis": "state"
+   }
+  },
+  "Odisha": {
+   "cotton": {
+    "yield_q_per_acre": 5.61,
+    "price_per_q": 6225,
+    "cost_per_acre": 25483,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "groundnut": {
+    "yield_q_per_acre": 3.16,
+    "price_per_q": 6410,
+    "cost_per_acre": 20228,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "maize": {
+    "yield_q_per_acre": 11.05,
+    "price_per_q": 1552,
+    "cost_per_acre": 20026,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "moong": {
+    "yield_q_per_acre": 1.65,
+    "price_per_q": 7278,
+    "cost_per_acre": 6959,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "mustard": {
+    "yield_q_per_acre": 1.1,
+    "price_per_q": 5868,
+    "cost_per_acre": 8789,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "rice": {
+    "yield_q_per_acre": 16.38,
+    "price_per_q": 1422,
+    "cost_per_acre": 22512,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "sesame": {
+    "yield_q_per_acre": 0.9,
+    "price_per_q": 8111,
+    "cost_per_acre": 7080,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "tur": {
+    "yield_q_per_acre": 1.66,
+    "price_per_q": 6321,
+    "cost_per_acre": 6581,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "urad": {
+    "yield_q_per_acre": 1.42,
+    "price_per_q": 7369,
+    "cost_per_acre": 7098,
+    "year": "2021-22",
+    "basis": "state"
+   }
+  },
+  "Punjab": {
+   "cotton": {
+    "yield_q_per_acre": 8.92,
+    "price_per_q": 7830,
+    "cost_per_acre": 25572,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "maize": {
+    "yield_q_per_acre": 15.18,
+    "price_per_q": 1765,
+    "cost_per_acre": 25347,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "moong": {
+    "yield_q_per_acre": 6.93,
+    "price_per_q": 6146,
+    "cost_per_acre": 12092,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "mustard": {
+    "yield_q_per_acre": 6.07,
+    "price_per_q": 5914,
+    "cost_per_acre": 15162,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "potato": {
+    "yield_q_per_acre": 104.78,
+    "price_per_q": 948,
+    "cost_per_acre": 49973,
+    "year": "2019-20",
+    "basis": "state"
+   },
+   "rice": {
+    "yield_q_per_acre": 28.25,
+    "price_per_q": 2036,
+    "cost_per_acre": 23788,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "sugarcane": {
+    "yield_q_per_acre": 312.85,
+    "price_per_q": 312,
+    "cost_per_acre": 27855,
+    "year": "2019-20",
+    "basis": "state"
+   },
+   "wheat": {
+    "yield_q_per_acre": 17.18,
+    "price_per_q": 2151,
+    "cost_per_acre": 15216,
+    "year": "2021-22",
+    "basis": "state"
+   }
+  },
+  "Rajasthan": {
+   "bajra": {
+    "yield_q_per_acre": 4.39,
+    "price_per_q": 1616,
+    "cost_per_acre": 12975,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "cotton": {
+    "yield_q_per_acre": 7.81,
+    "price_per_q": 6811,
+    "cost_per_acre": 29541,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "gram": {
+    "yield_q_per_acre": 5.36,
+    "price_per_q": 4663,
+    "cost_per_acre": 15566,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "groundnut": {
+    "yield_q_per_acre": 10.37,
+    "price_per_q": 5285,
+    "cost_per_acre": 27517,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "jowar": {
+    "yield_q_per_acre": 4.57,
+    "price_per_q": 1764,
+    "cost_per_acre": 15282,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "maize": {
+    "yield_q_per_acre": 9.15,
+    "price_per_q": 1916,
+    "cost_per_acre": 20843,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "moong": {
+    "yield_q_per_acre": 1.78,
+    "price_per_q": 6646,
+    "cost_per_acre": 10056,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "mustard": {
+    "yield_q_per_acre": 6.67,
+    "price_per_q": 6559,
+    "cost_per_acre": 17213,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "onion": {
+    "yield_q_per_acre": 83.96,
+    "price_per_q": 1040,
+    "cost_per_acre": 66096,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "sesame": {
+    "yield_q_per_acre": 0.9,
+    "price_per_q": 11004,
+    "cost_per_acre": 9353,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "soybean": {
+    "yield_q_per_acre": 3.85,
+    "price_per_q": 5612,
+    "cost_per_acre": 17266,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "urad": {
+    "yield_q_per_acre": 1.96,
+    "price_per_q": 5484,
+    "cost_per_acre": 12819,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "wheat": {
+    "yield_q_per_acre": 16.85,
+    "price_per_q": 2161,
+    "cost_per_acre": 23573,
+    "year": "2021-22",
+    "basis": "state"
+   }
+  },
+  "Tamil Nadu": {
+   "cotton": {
+    "yield_q_per_acre": 8.65,
+    "price_per_q": 7291,
+    "cost_per_acre": 41505,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "gram": {
+    "yield_q_per_acre": 2.82,
+    "price_per_q": 5497,
+    "cost_per_acre": 19088,
+    "year": "2020-21",
+    "basis": "state"
+   },
+   "groundnut": {
+    "yield_q_per_acre": 5.97,
+    "price_per_q": 5797,
+    "cost_per_acre": 27554,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "jowar": {
+    "yield_q_per_acre": 4.74,
+    "price_per_q": 3365,
+    "cost_per_acre": 18759,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "maize": {
+    "yield_q_per_acre": 17.05,
+    "price_per_q": 2012,
+    "cost_per_acre": 25805,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "moong": {
+    "yield_q_per_acre": 1.7,
+    "price_per_q": 6338,
+    "cost_per_acre": 9040,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "onion": {
+    "yield_q_per_acre": 34.15,
+    "price_per_q": 3716,
+    "cost_per_acre": 78723,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "rice": {
+    "yield_q_per_acre": 18.31,
+    "price_per_q": 1826,
+    "cost_per_acre": 27139,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "sesame": {
+    "yield_q_per_acre": 2.76,
+    "price_per_q": 10871,
+    "cost_per_acre": 14954,
+    "year": "2019-20",
+    "basis": "state"
+   },
+   "sugarcane": {
+    "yield_q_per_acre": 435.05,
+    "price_per_q": 281,
+    "cost_per_acre": 76784,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "tur": {
+    "yield_q_per_acre": 3.83,
+    "price_per_q": 5035,
+    "cost_per_acre": 21803,
+    "year": "2019-20",
+    "basis": "state"
+   },
+   "urad": {
+    "yield_q_per_acre": 2.55,
+    "price_per_q": 7051,
+    "cost_per_acre": 13661,
+    "year": "2021-22",
+    "basis": "state"
+   }
+  },
+  "Telangana": {
+   "cotton": {
+    "yield_q_per_acre": 6.47,
+    "price_per_q": 5397,
+    "cost_per_acre": 32895,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "gram": {
+    "yield_q_per_acre": 4.65,
+    "price_per_q": 5138,
+    "cost_per_acre": 11044,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "groundnut": {
+    "yield_q_per_acre": 7.22,
+    "price_per_q": 6836,
+    "cost_per_acre": 38580,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "jowar": {
+    "yield_q_per_acre": 3.19,
+    "price_per_q": 3177,
+    "cost_per_acre": 20410,
+    "year": "2019-20",
+    "basis": "state"
+   },
+   "maize": {
+    "yield_q_per_acre": 21.84,
+    "price_per_q": 2008,
+    "cost_per_acre": 27130,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "moong": {
+    "yield_q_per_acre": 1.46,
+    "price_per_q": 6419,
+    "cost_per_acre": 13017,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "rice": {
+    "yield_q_per_acre": 22.08,
+    "price_per_q": 1973,
+    "cost_per_acre": 32137,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "sesame": {
+    "yield_q_per_acre": 3.85,
+    "price_per_q": 9788,
+    "cost_per_acre": 12026,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "soybean": {
+    "yield_q_per_acre": 3.38,
+    "price_per_q": 4947,
+    "cost_per_acre": 14573,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "tur": {
+    "yield_q_per_acre": 2.84,
+    "price_per_q": 7410,
+    "cost_per_acre": 14477,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "urad": {
+    "yield_q_per_acre": 3.41,
+    "price_per_q": 5040,
+    "cost_per_acre": 8006,
+    "year": "2019-20",
+    "basis": "state"
+   }
+  },
+  "Uttar Pradesh": {
+   "bajra": {
+    "yield_q_per_acre": 7.65,
+    "price_per_q": 1632,
+    "cost_per_acre": 12513,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "gram": {
+    "yield_q_per_acre": 3.73,
+    "price_per_q": 5741,
+    "cost_per_acre": 14636,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "groundnut": {
+    "yield_q_per_acre": 4.22,
+    "price_per_q": 4699,
+    "cost_per_acre": 14368,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "lentil": {
+    "yield_q_per_acre": 3.74,
+    "price_per_q": 5705,
+    "cost_per_acre": 10343,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "maize": {
+    "yield_q_per_acre": 10.96,
+    "price_per_q": 1701,
+    "cost_per_acre": 15999,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "moong": {
+    "yield_q_per_acre": 1.21,
+    "price_per_q": 7465,
+    "cost_per_acre": 11308,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "mustard": {
+    "yield_q_per_acre": 5.73,
+    "price_per_q": 6200,
+    "cost_per_acre": 15591,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "potato": {
+    "yield_q_per_acre": 85.31,
+    "price_per_q": 1127,
+    "cost_per_acre": 50443,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "rice": {
+    "yield_q_per_acre": 14.63,
+    "price_per_q": 1592,
+    "cost_per_acre": 22585,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "sesame": {
+    "yield_q_per_acre": 0.72,
+    "price_per_q": 9791,
+    "cost_per_acre": 7329,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "sugarcane": {
+    "yield_q_per_acre": 266.71,
+    "price_per_q": 344,
+    "cost_per_acre": 40050,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "tur": {
+    "yield_q_per_acre": 3.77,
+    "price_per_q": 7502,
+    "cost_per_acre": 15765,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "urad": {
+    "yield_q_per_acre": 1.22,
+    "price_per_q": 7372,
+    "cost_per_acre": 7804,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "wheat": {
+    "yield_q_per_acre": 14.78,
+    "price_per_q": 1963,
+    "cost_per_acre": 19880,
+    "year": "2021-22",
+    "basis": "state"
+   }
+  },
+  "Uttarakhand": {
+   "rice": {
+    "yield_q_per_acre": 14.46,
+    "price_per_q": 1756,
+    "cost_per_acre": 19501,
+    "year": "2019-20",
+    "basis": "state"
+   },
+   "sugarcane": {
+    "yield_q_per_acre": 233.04,
+    "price_per_q": 312,
+    "cost_per_acre": 28375,
+    "year": "2019-20",
+    "basis": "state"
+   },
+   "wheat": {
+    "yield_q_per_acre": 13.22,
+    "price_per_q": 1867,
+    "cost_per_acre": 15707,
+    "year": "2019-20",
+    "basis": "state"
+   }
+  },
+  "West Bengal": {
+   "gram": {
+    "yield_q_per_acre": 4.37,
+    "price_per_q": 4285,
+    "cost_per_acre": 13229,
+    "year": "2020-21",
+    "basis": "state"
+   },
+   "groundnut": {
+    "yield_q_per_acre": 13.19,
+    "price_per_q": 4651,
+    "cost_per_acre": 41680,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "lentil": {
+    "yield_q_per_acre": 3.72,
+    "price_per_q": 6273,
+    "cost_per_acre": 16776,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "moong": {
+    "yield_q_per_acre": 2.07,
+    "price_per_q": 5693,
+    "cost_per_acre": 6940,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "mustard": {
+    "yield_q_per_acre": 4.48,
+    "price_per_q": 6207,
+    "cost_per_acre": 17561,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "potato": {
+    "yield_q_per_acre": 110.74,
+    "price_per_q": 1085,
+    "cost_per_acre": 71702,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "rice": {
+    "yield_q_per_acre": 14.63,
+    "price_per_q": 1592,
+    "cost_per_acre": 22585,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "sesame": {
+    "yield_q_per_acre": 4.12,
+    "price_per_q": 6169,
+    "cost_per_acre": 19993,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "urad": {
+    "yield_q_per_acre": 2.87,
+    "price_per_q": 9008,
+    "cost_per_acre": 10985,
+    "year": "2021-22",
+    "basis": "state"
+   },
+   "wheat": {
+    "yield_q_per_acre": 8.5,
+    "price_per_q": 1950,
+    "cost_per_acre": 19970,
+    "year": "2021-22",
+    "basis": "state"
+   }
+  }
+ },
+ "national": {
+  "bajra": {
+   "yield_q_per_acre": 7.65,
+   "price_per_q": 2006,
+   "cost_per_acre": 12975,
+   "year": "2021-22",
+   "basis": "national_median",
+   "n_states": 5
+  },
+  "cotton": {
+   "yield_q_per_acre": 6.09,
+   "price_per_q": 7059,
+   "cost_per_acre": 26848,
+   "year": "2021-22",
+   "basis": "national_median",
+   "n_states": 11
+  },
+  "gram": {
+   "yield_q_per_acre": 4.73,
+   "price_per_q": 5134,
+   "cost_per_acre": 14122,
+   "year": "2021-22",
+   "basis": "national_median",
+   "n_states": 14
+  },
+  "groundnut": {
+   "yield_q_per_acre": 4.91,
+   "price_per_q": 5500,
+   "cost_per_acre": 27272,
+   "year": "2021-22",
+   "basis": "national_median",
+   "n_states": 12
+  },
+  "jowar": {
+   "yield_q_per_acre": 4.57,
+   "price_per_q": 2829,
+   "cost_per_acre": 16423,
+   "year": "2021-22",
+   "basis": "national_median",
+   "n_states": 7
+  },
+  "lentil": {
+   "yield_q_per_acre": 3.8,
+   "price_per_q": 5470,
+   "cost_per_acre": 10524,
+   "year": "2021-22",
+   "basis": "national_median",
+   "n_states": 4
+  },
+  "maize": {
+   "yield_q_per_acre": 14.35,
+   "price_per_q": 1755,
+   "cost_per_acre": 20175,
+   "year": "2021-22",
+   "basis": "national_median",
+   "n_states": 15
+  },
+  "moong": {
+   "yield_q_per_acre": 1.97,
+   "price_per_q": 6338,
+   "cost_per_acre": 11308,
+   "year": "2021-22",
+   "basis": "national_median",
+   "n_states": 13
+  },
+  "mustard": {
+   "yield_q_per_acre": 4.48,
+   "price_per_q": 6033,
+   "cost_per_acre": 12863,
+   "year": "2021-22",
+   "basis": "national_median",
+   "n_states": 13
+  },
+  "onion": {
+   "yield_q_per_acre": 67.87,
+   "price_per_q": 1040,
+   "cost_per_acre": 47535,
+   "year": "2021-22",
+   "basis": "national_median",
+   "n_states": 7
+  },
+  "potato": {
+   "yield_q_per_acre": 73.22,
+   "price_per_q": 1124,
+   "cost_per_acre": 43380,
+   "year": "2021-22",
+   "basis": "national_median",
+   "n_states": 10
+  },
+  "rice": {
+   "yield_q_per_acre": 14.97,
+   "price_per_q": 1770,
+   "cost_per_acre": 22585,
+   "year": "2021-22",
+   "basis": "national_median",
+   "n_states": 19
+  },
+  "sesame": {
+   "yield_q_per_acre": 1.11,
+   "price_per_q": 9790,
+   "cost_per_acre": 11298,
+   "year": "2021-22",
+   "basis": "national_median",
+   "n_states": 12
+  },
+  "soybean": {
+   "yield_q_per_acre": 3.62,
+   "price_per_q": 4882,
+   "cost_per_acre": 15590,
+   "year": "2021-22",
+   "basis": "national_median",
+   "n_states": 8
+  },
+  "sugarcane": {
+   "yield_q_per_acre": 302.36,
+   "price_per_q": 301,
+   "cost_per_acre": 38134,
+   "year": "2021-22",
+   "basis": "national_median",
+   "n_states": 10
+  },
+  "tur": {
+   "yield_q_per_acre": 3.18,
+   "price_per_q": 6321,
+   "cost_per_acre": 14477,
+   "year": "2021-22",
+   "basis": "national_median",
+   "n_states": 9
+  },
+  "urad": {
+   "yield_q_per_acre": 2.18,
+   "price_per_q": 6613,
+   "cost_per_acre": 12195,
+   "year": "2021-22",
+   "basis": "national_median",
+   "n_states": 13
+  },
+  "wheat": {
+   "yield_q_per_acre": 12.51,
+   "price_per_q": 2008,
+   "cost_per_acre": 16230,
+   "year": "2021-22",
+   "basis": "national_median",
+   "n_states": 14
+  }
+ },
+ "source": "DES cost of cultivation (A2+FL), via India Data Portal",
+ "example_rotation": {
+  "by_state": {
+   "Andhra Pradesh": [
+    {
+     "season": "kharif",
+     "crop_id": "rice"
+    },
+    {
+     "season": "rabi",
+     "crop_id": "urad"
+    }
+   ],
+   "Assam": [
+    {
+     "season": "kharif",
+     "crop_id": "rice"
+    },
+    {
+     "season": "rabi",
+     "crop_id": "mustard"
+    }
+   ],
+   "Bihar": [
+    {
+     "season": "kharif",
+     "crop_id": "rice"
+    },
+    {
+     "season": "rabi",
+     "crop_id": "wheat"
+    }
+   ],
+   "Chhattisgarh": [
+    {
+     "season": "kharif",
+     "crop_id": "rice"
+    },
+    {
+     "season": "rabi",
+     "crop_id": "wheat"
+    }
+   ],
+   "Gujarat": [
+    {
+     "season": "kharif",
+     "crop_id": "cotton"
+    },
+    {
+     "season": "rabi",
+     "crop_id": "groundnut"
+    }
+   ],
+   "Haryana": [
+    {
+     "season": "kharif",
+     "crop_id": "rice"
+    },
+    {
+     "season": "rabi",
+     "crop_id": "wheat"
+    }
+   ],
+   "Himachal Pradesh": [
+    {
+     "season": "kharif",
+     "crop_id": "maize"
+    },
+    {
+     "season": "rabi",
+     "crop_id": "wheat"
+    }
+   ],
+   "Jharkhand": [
+    {
+     "season": "kharif",
+     "crop_id": "rice"
+    },
+    {
+     "season": "rabi",
+     "crop_id": "wheat"
+    }
+   ],
+   "Karnataka": [
+    {
+     "season": "kharif",
+     "crop_id": "maize"
+    },
+    {
+     "season": "rabi",
+     "crop_id": "rice"
+    }
+   ],
+   "Kerala": [
+    {
+     "season": "kharif",
+     "crop_id": "rice"
+    },
+    {
+     "season": "rabi",
+     "crop_id": "groundnut"
+    }
+   ],
+   "Madhya Pradesh": [
+    {
+     "season": "kharif",
+     "crop_id": "soybean"
+    },
+    {
+     "season": "rabi",
+     "crop_id": "wheat"
+    }
+   ],
+   "Maharashtra": [
+    {
+     "season": "kharif",
+     "crop_id": "soybean"
+    },
+    {
+     "season": "rabi",
+     "crop_id": "gram"
+    }
+   ],
+   "Odisha": [
+    {
+     "season": "kharif",
+     "crop_id": "rice"
+    },
+    {
+     "season": "rabi",
+     "crop_id": "urad"
+    }
+   ],
+   "Punjab": [
+    {
+     "season": "kharif",
+     "crop_id": "rice"
+    },
+    {
+     "season": "rabi",
+     "crop_id": "wheat"
+    }
+   ],
+   "Rajasthan": [
+    {
+     "season": "kharif",
+     "crop_id": "bajra"
+    },
+    {
+     "season": "rabi",
+     "crop_id": "wheat"
+    }
+   ],
+   "Tamil Nadu": [
+    {
+     "season": "kharif",
+     "crop_id": "rice"
+    },
+    {
+     "season": "rabi",
+     "crop_id": "groundnut"
+    }
+   ],
+   "Telangana": [
+    {
+     "season": "kharif",
+     "crop_id": "rice"
+    },
+    {
+     "season": "rabi",
+     "crop_id": "maize"
+    }
+   ],
+   "Uttar Pradesh": [
+    {
+     "season": "kharif",
+     "crop_id": "rice"
+    },
+    {
+     "season": "rabi",
+     "crop_id": "wheat"
+    }
+   ],
+   "Uttarakhand": [
+    {
+     "season": "kharif",
+     "crop_id": "rice"
+    },
+    {
+     "season": "rabi",
+     "crop_id": "wheat"
+    }
+   ],
+   "West Bengal": [
+    {
+     "season": "kharif",
+     "crop_id": "rice"
+    },
+    {
+     "season": "rabi",
+     "crop_id": "mustard"
+    }
+   ]
+  },
+  "national": [
+   {
+    "season": "kharif",
+    "crop_id": "rice"
+   },
+   {
+    "season": "rabi",
+    "crop_id": "wheat"
+   }
+  ]
+ }
+}

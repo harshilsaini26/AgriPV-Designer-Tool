@@ -1,0 +1,29 @@
+{
+ "data_version": "2026-11-15",
+ "files": {
+  "districts.json": {
+   "sha256": "5f849becc2cc56d52741eac8bd51dbb530bcf208f3e23be57c69ce6c29606245",
+   "count": 785
+  },
+  "crops.json": {
+   "sha256": "2735164d6efd69214464aa2e84f8dd84f9a9c34437f2ecf05d6b527be9c65fbd",
+   "count": 20
+  },
+  "crop_economics.json": {
+   "sha256": "58553b3bb55f35d062c126ba5d475ca1c3e6a9310916eeafb52295d2fc4b218f",
+   "count": 20
+  },
+  "finance_defaults.json": {
+   "sha256": "ec09685c802a6ee308a6e925f7654b4241f1c95c836331cc7bde7b4eb83312b0",
+   "count": 11
+  },
+  "structures.json": {
+   "sha256": "d87e5491370ce1efd1a19837aac458d8446b25cc816c39911f0d91129c82c15b",
+   "count": 6
+  },
+  "sources.json": {
+   "sha256": "5d29436fff938571218c723da8baf85d132925eaf6ea9c818495652c48ec0ff2",
+   "count": 9
+  }
+ }
+}

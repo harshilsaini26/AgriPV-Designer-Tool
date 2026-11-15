@@ -1,0 +1,139 @@
+{
+ "tariffs": {
+  "Madhya Pradesh": {
+   "tariff_per_kwh": 3.25,
+   "order": "MPERC Petition No. 13 of 2024",
+   "order_date": "2024-06-20",
+   "status": "verified",
+   "flag": "state"
+  },
+  "Odisha": {
+   "tariff_per_kwh": 3.76,
+   "order": "OERC Case No. 96 of 2025",
+   "order_date": "2025-12-20",
+   "status": "verified",
+   "flag": "state"
+  },
+  "Telangana": {
+   "tariff_per_kwh": 3.13,
+   "order": "TSERC order 2021-01-02; retained by TGERC O.P. No. 32 of 2025",
+   "order_date": "2025-04-22",
+   "status": "verified",
+   "flag": "state"
+  },
+  "Maharashtra": {
+   "tariff_per_kwh": 3.29,
+   "order": "MERC Case No. 26 of 2023",
+   "order_date": "2023-03-17",
+   "status": "verified",
+   "flag": "state"
+  },
+  "Gujarat": {
+   "tariff_per_kwh": 2.95,
+   "order": "GERC Petition No. 2247 of 2023",
+   "order_date": "2025-05-06",
+   "status": "verified",
+   "flag": "state"
+  },
+  "Jharkhand": {
+   "tariff_per_kwh": 3.09,
+   "order": "JSERC Case No. 03 of 2020",
+   "order_date": "2021-01-08",
+   "status": "verified",
+   "flag": "state"
+  },
+  "Kerala": {
+   "tariff_per_kwh": 3.66,
+   "order": "KSERC OP No. 43/2021",
+   "order_date": "2021-10-04",
+   "status": "verified",
+   "flag": "state"
+  },
+  "Rajasthan": {
+   "tariff_per_kwh": 3.04,
+   "order": "RERC order (as cited in the TGERC 2025 order and trade press)",
+   "order_date": "2025-03-25",
+   "status": "needs_update",
+   "flag": "state"
+  },
+  "Haryana": {
+   "tariff_per_kwh": 3.11,
+   "order": "HERC order (as reported)",
+   "order_date": "2026-05",
+   "status": "unverified",
+   "flag": "state"
+  },
+  "Uttar Pradesh": {
+   "tariff_per_kwh": 3.1,
+   "order": "UPERC approval (as reported)",
+   "order_date": "c. 2020",
+   "status": "unverified",
+   "flag": "state"
+  },
+  "Punjab": {
+   "tariff_per_kwh": 2.748,
+   "order": "PSERC order (as cited in a PEDA tender)",
+   "order_date": "2020-10-09",
+   "status": "unverified",
+   "flag": "state"
+  }
+ },
+ "national_fallback": {
+  "tariff_per_kwh": 3.11,
+  "flag": "state_fallback"
+ },
+ "base_capex_per_kwp": {
+  "central": 31550,
+  "low": 28390,
+  "high": 34700
+ },
+ "base_om_per_kwp_year": {
+  "central": 640,
+  "low": 410,
+  "high": 700
+ },
+ "om_escalation": 0.0525,
+ "price_year": 2024,
+ "assumptions": {
+  "debt_share": {
+   "value": 0.7,
+   "flag": "assumption"
+  },
+  "interest_rate": {
+   "value": 0.1,
+   "flag": "assumption"
+  },
+  "loan_years": {
+   "value": 15,
+   "flag": "assumption"
+  },
+  "discount_rate": {
+   "value": 0.09,
+   "flag": "assumption"
+  },
+  "degradation": {
+   "value": 0.005,
+   "flag": "assumption"
+  },
+  "availability": {
+   "value": 0.99,
+   "flag": "assumption"
+  },
+  "crop_inflation": {
+   "value": 0.05,
+   "flag": "assumption"
+  },
+  "target_irr": {
+   "value": 0.12,
+   "flag": "assumption"
+  },
+  "lease_per_acre_year": {
+   "value": 40000,
+   "flag": "assumption"
+  },
+  "lease_escalation": {
+   "value": 0.05,
+   "flag": "assumption"
+  }
+ }
+}

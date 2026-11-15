@@ -1,0 +1,74 @@
+[
+ {
+  "id": "weather",
+  "title": "Typical-year weather for each district",
+  "attribution": "PVGIS © European Union (JRC), PVGIS-ERA5 2005–2023; contains modified Copernicus Climate Change Service information (ERA5); calibrated to Global Solar Atlas 2.0 (Solargis / World Bank Group)",
+  "licence": "PVGIS: free use with acknowledgement; ERA5: Copernicus licence; Global Solar Atlas: CC BY 4.0",
+  "url": "https://re.jrc.ec.europa.eu/pvg_tools/",
+  "used_for": "panel energy and light on the crop"
+ },
+ {
+  "id": "crop_shade",
+  "title": "Crop response to shade (draft parameters)",
+  "attribution": "Laub, M. et al. (2022), meta-analysis data set, plus the field trials listed with each crop",
+  "licence": "CC BY 4.0 (meta-analysis); papers cited, not reproduced",
+  "url": "https://github.com/harshilsaini26/AgriPV-Designer-Tool/tree/main/research/09_crop_shade_response",
+  "used_for": "yield kept under panels; evidence grades"
+ },
+ {
+  "id": "crop_economics",
+  "title": "Cost of cultivation, yield and value by state",
+  "attribution": "Directorate of Economics and Statistics, Ministry of Agriculture and Farmers Welfare, via India Data Portal",
+  "licence": "ODC-By",
+  "url": "https://indiadataportal.com/",
+  "used_for": "crop yield, price and cost defaults (state figures, latest year)"
+ },
+ {
+  "id": "tariffs",
+  "title": "PM-KUSUM Component A tariffs",
+  "attribution": "State electricity regulatory commission orders, as listed with each tariff",
+  "licence": "Public regulatory orders (facts cited)",
+  "url": "https://github.com/harshilsaini26/AgriPV-Designer-Tool/tree/main/research/11_finance_policy/kusum",
+  "used_for": "default tariff per state"
+ },
+ {
+  "id": "costs",
+  "title": "Capital and operating cost benchmarks",
+  "attribution": "MPERC order in Petition 13 of 2024 (20 June 2024), with agrivoltaic cost multipliers from published Indian and international benchmarks",
+  "licence": "Public regulatory order (facts cited)",
+  "url": "https://mperc.in/",
+  "used_for": "cost per kWp and O&M per structure"
+ },
+ {
+  "id": "structures",
+  "title": "Structure presets",
+  "attribution": "AgriPV Lab presets; land-loss limits from DIN SPEC 91434:2021-05 via Fraunhofer ISE (2022), Agrivoltaics: Opportunities for Agriculture and the Energy Transition",
+  "licence": "Cited facts; presets partly assumed",
+  "url": "https://github.com/harshilsaini26/AgriPV-Designer-Tool/tree/main/research/12_structures_technology",
+  "used_for": "layouts and farmable fraction"
+ },
+ {
+  "id": "modules",
+  "title": "Module parameters",
+  "attribution": "Manufacturer datasheets (Polycab, Onix Renewable, Emmvee)",
+  "licence": "Cited facts",
+  "url": "https://github.com/harshilsaini26/AgriPV-Designer-Tool/tree/main/research/12_structures_technology",
+  "used_for": "efficiency, bifaciality, temperature coefficient"
+ },
+ {
+  "id": "districts",
+  "title": "District names and codes",
+  "attribution": "Local Government Directory (Ministry of Panchayati Raj); boundaries via Bharatlas",
+  "licence": "Government Open Data Licence – India",
+  "url": "https://lgdirectory.gov.in/",
+  "used_for": "district list and search"
+ },
+ {
+  "id": "pvlib",
+  "title": "Physics engine",
+  "attribution": "View-factor and irradiance code adapted from pvlib-python 0.16.1",
+  "licence": "BSD 3-Clause",
+  "url": "https://github.com/pvlib/pvlib-python",
+  "used_for": "panel irradiance and ground light"
+ }
+]

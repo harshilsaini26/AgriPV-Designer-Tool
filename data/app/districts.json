@@ -1,0 +1,7852 @@
+[
+ {
+  "id": "603_nicobars",
+  "lgd": "603",
+  "name": "Nicobars",
+  "state": "Andaman & Nicobar",
+  "lat": 7.2743,
+  "lon": 93.6445,
+  "elevation_m": 34.0,
+  "optimum_tilt_deg": 8.3
+ },
+ {
+  "id": "632_north_and_middle_andaman",
+  "lgd": "632",
+  "name": "North And Middle Andaman",
+  "state": "Andaman & Nicobar",
+  "lat": 13.0048,
+  "lon": 92.8987,
+  "elevation_m": 28.0,
+  "optimum_tilt_deg": 16.7
+ },
+ {
+  "id": "602_south_andamans",
+  "lgd": "602",
+  "name": "South Andamans",
+  "state": "Andaman & Nicobar",
+  "lat": 11.5068,
+  "lon": 92.6603,
+  "elevation_m": 0.0,
+  "optimum_tilt_deg": 14.0
+ },
+ {
+  "id": "745_alluri_sitharama_raju",
+  "lgd": "745",
+  "name": "Alluri Sitharama Raju",
+  "state": "Andhra Pradesh",
+  "lat": 17.8771,
+  "lon": 82.0305,
+  "elevation_m": 958.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "744_anakapalli",
+  "lgd": "744",
+  "name": "Anakapalli",
+  "state": "Andhra Pradesh",
+  "lat": 17.6716,
+  "lon": 82.8151,
+  "elevation_m": 86.0,
+  "optimum_tilt_deg": 20.8
+ },
+ {
+  "id": "502_anantapur",
+  "lgd": "502",
+  "name": "Anantapur",
+  "state": "Andhra Pradesh",
+  "lat": 14.7763,
+  "lon": 77.3658,
+  "elevation_m": 477.0,
+  "optimum_tilt_deg": 19.0
+ },
+ {
+  "id": "753_annamayya",
+  "lgd": "753",
+  "name": "Annamayya",
+  "state": "Andhra Pradesh",
+  "lat": 13.8739,
+  "lon": 78.6945,
+  "elevation_m": 644.0,
+  "optimum_tilt_deg": 17.0
+ },
+ {
+  "id": "750_bapatla",
+  "lgd": "750",
+  "name": "Bapatla",
+  "state": "Andhra Pradesh",
+  "lat": 15.9502,
+  "lon": 80.3735,
+  "elevation_m": 4.0,
+  "optimum_tilt_deg": 18.0
+ },
+ {
+  "id": "503_chittoor",
+  "lgd": "503",
+  "name": "Chittoor",
+  "state": "Andhra Pradesh",
+  "lat": 13.241,
+  "lon": 78.8478,
+  "elevation_m": 604.0,
+  "optimum_tilt_deg": 16.0
+ },
+ {
+  "id": "505_east_godavari",
+  "lgd": "505",
+  "name": "East Godavari",
+  "state": "Andhra Pradesh",
+  "lat": 17.0316,
+  "lon": 81.7391,
+  "elevation_m": 10.0,
+  "optimum_tilt_deg": 19.6
+ },
+ {
+  "id": "748_eluru",
+  "lgd": "748",
+  "name": "Eluru",
+  "state": "Andhra Pradesh",
+  "lat": 16.8893,
+  "lon": 81.1697,
+  "elevation_m": 70.0,
+  "optimum_tilt_deg": 19.8
+ },
+ {
+  "id": "506_guntur",
+  "lgd": "506",
+  "name": "Guntur",
+  "state": "Andhra Pradesh",
+  "lat": 16.2662,
+  "lon": 80.4587,
+  "elevation_m": 23.0,
+  "optimum_tilt_deg": 18.3
+ },
+ {
+  "id": "746_kakinada",
+  "lgd": "746",
+  "name": "Kakinada",
+  "state": "Andhra Pradesh",
+  "lat": 17.1056,
+  "lon": 82.2202,
+  "elevation_m": 22.0,
+  "optimum_tilt_deg": 20.0
+ },
+ {
+  "id": "747_konaseema",
+  "lgd": "747",
+  "name": "Konaseema",
+  "state": "Andhra Pradesh",
+  "lat": 16.7094,
+  "lon": 81.9911,
+  "elevation_m": 9.0,
+  "optimum_tilt_deg": 18.8
+ },
+ {
+  "id": "510_krishna",
+  "lgd": "510",
+  "name": "Krishna",
+  "state": "Andhra Pradesh",
+  "lat": 16.3044,
+  "lon": 80.9729,
+  "elevation_m": 12.0,
+  "optimum_tilt_deg": 18.4
+ },
+ {
+  "id": "511_kurnool",
+  "lgd": "511",
+  "name": "Kurnool",
+  "state": "Andhra Pradesh",
+  "lat": 15.5999,
+  "lon": 77.5088,
+  "elevation_m": 399.0,
+  "optimum_tilt_deg": 20.0
+ },
+ {
+  "id": "755_nandyal",
+  "lgd": "755",
+  "name": "Nandyal",
+  "state": "Andhra Pradesh",
+  "lat": 15.4424,
+  "lon": 78.3402,
+  "elevation_m": 208.0,
+  "optimum_tilt_deg": 19.0
+ },
+ {
+  "id": "749_ntr",
+  "lgd": "749",
+  "name": "Ntr",
+  "state": "Andhra Pradesh",
+  "lat": 16.8439,
+  "lon": 80.457,
+  "elevation_m": 49.0,
+  "optimum_tilt_deg": 19.7
+ },
+ {
+  "id": "751_palnadu",
+  "lgd": "751",
+  "name": "Palnadu",
+  "state": "Andhra Pradesh",
+  "lat": 16.3599,
+  "lon": 79.8607,
+  "elevation_m": 187.0,
+  "optimum_tilt_deg": 18.9
+ },
+ {
+  "id": "743_parvathipuram_manyam",
+  "lgd": "743",
+  "name": "Parvathipuram Manyam",
+  "state": "Andhra Pradesh",
+  "lat": 18.7217,
+  "lon": 83.4925,
+  "elevation_m": 96.0,
+  "optimum_tilt_deg": 22.7
+ },
+ {
+  "id": "517_prakasam",
+  "lgd": "517",
+  "name": "Prakasam",
+  "state": "Andhra Pradesh",
+  "lat": 15.5915,
+  "lon": 79.5303,
+  "elevation_m": 136.0,
+  "optimum_tilt_deg": 18.0
+ },
+ {
+  "id": "515_spsr_nellore",
+  "lgd": "515",
+  "name": "Spsr Nellore",
+  "state": "Andhra Pradesh",
+  "lat": 14.6943,
+  "lon": 79.7735,
+  "elevation_m": 63.0,
+  "optimum_tilt_deg": 16.0
+ },
+ {
+  "id": "754_sri_sathya_sai",
+  "lgd": "754",
+  "name": "Sri Sathya Sai",
+  "state": "Andhra Pradesh",
+  "lat": 14.1291,
+  "lon": 77.7278,
+  "elevation_m": 472.0,
+  "optimum_tilt_deg": 18.8
+ },
+ {
+  "id": "519_srikakulam",
+  "lgd": "519",
+  "name": "Srikakulam",
+  "state": "Andhra Pradesh",
+  "lat": 18.5646,
+  "lon": 84.0897,
+  "elevation_m": 67.0,
+  "optimum_tilt_deg": 21.0
+ },
+ {
+  "id": "752_tirupati",
+  "lgd": "752",
+  "name": "Tirupati",
+  "state": "Andhra Pradesh",
+  "lat": 13.8034,
+  "lon": 79.7475,
+  "elevation_m": 53.0,
+  "optimum_tilt_deg": 15.7
+ },
+ {
+  "id": "520_visakhapatanam",
+  "lgd": "520",
+  "name": "Visakhapatanam",
+  "state": "Andhra Pradesh",
+  "lat": 17.9091,
+  "lon": 83.3185,
+  "elevation_m": 96.0,
+  "optimum_tilt_deg": 21.0
+ },
+ {
+  "id": "521_vizianagaram",
+  "lgd": "521",
+  "name": "Vizianagaram",
+  "state": "Andhra Pradesh",
+  "lat": 18.3051,
+  "lon": 83.4252,
+  "elevation_m": 95.0,
+  "optimum_tilt_deg": 21.9
+ },
+ {
+  "id": "523_west_godavari",
+  "lgd": "523",
+  "name": "West Godavari",
+  "state": "Andhra Pradesh",
+  "lat": 16.6288,
+  "lon": 81.6041,
+  "elevation_m": 17.0,
+  "optimum_tilt_deg": 19.0
+ },
+ {
+  "id": "504_y_s_r",
+  "lgd": "504",
+  "name": "Y.S.R.",
+  "state": "Andhra Pradesh",
+  "lat": 14.6768,
+  "lon": 78.5705,
+  "elevation_m": 157.0,
+  "optimum_tilt_deg": 18.0
+ },
+ {
+  "id": "628_anjaw",
+  "lgd": "628",
+  "name": "Anjaw",
+  "state": "Arunachal Pradesh",
+  "lat": 28.0108,
+  "lon": 96.8179,
+  "elevation_m": 3626.0,
+  "optimum_tilt_deg": 30.3
+ },
+ {
+  "id": "229_changlang",
+  "lgd": "229",
+  "name": "Changlang",
+  "state": "Arunachal Pradesh",
+  "lat": 27.477,
+  "lon": 96.0549,
+  "elevation_m": 189.0,
+  "optimum_tilt_deg": 29.7
+ },
+ {
+  "id": "230_dibang_valley",
+  "lgd": "230",
+  "name": "Dibang Valley",
+  "state": "Arunachal Pradesh",
+  "lat": 28.7628,
+  "lon": 95.7817,
+  "elevation_m": 2803.0,
+  "optimum_tilt_deg": 29.9
+ },
+ {
+  "id": "231_east_kameng",
+  "lgd": "231",
+  "name": "East Kameng",
+  "state": "Arunachal Pradesh",
+  "lat": 27.3931,
+  "lon": 92.9457,
+  "elevation_m": 1208.0,
+  "optimum_tilt_deg": 27.3
+ },
+ {
+  "id": "232_east_siang",
+  "lgd": "232",
+  "name": "East Siang",
+  "state": "Arunachal Pradesh",
+  "lat": 27.955,
+  "lon": 95.3449,
+  "elevation_m": 142.0,
+  "optimum_tilt_deg": 29.4
+ },
+ {
+  "id": "766_itanagar_capital_complex",
+  "lgd": "766",
+  "name": "Itanagar capital complex",
+  "state": "Arunachal Pradesh",
+  "lat": 27.106,
+  "lon": 93.7155,
+  "elevation_m": 181.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "718_kamle",
+  "lgd": "718",
+  "name": "Kamle",
+  "state": "Arunachal Pradesh",
+  "lat": 27.6744,
+  "lon": 94.112,
+  "elevation_m": 1500.0,
+  "optimum_tilt_deg": 28.8
+ },
+ {
+  "id": "677_kra_daadi",
+  "lgd": "677",
+  "name": "Kra Daadi",
+  "state": "Arunachal Pradesh",
+  "lat": 27.7197,
+  "lon": 93.657,
+  "elevation_m": 1017.0,
+  "optimum_tilt_deg": 27.9
+ },
+ {
+  "id": "233_kurung_kumey",
+  "lgd": "233",
+  "name": "Kurung Kumey",
+  "state": "Arunachal Pradesh",
+  "lat": 27.772,
+  "lon": 93.4033,
+  "elevation_m": 1526.0,
+  "optimum_tilt_deg": 27.4
+ },
+ {
+  "id": "724_leparada",
+  "lgd": "724",
+  "name": "Leparada",
+  "state": "Arunachal Pradesh",
+  "lat": 27.959,
+  "lon": 94.7072,
+  "elevation_m": 748.0,
+  "optimum_tilt_deg": 29.1
+ },
+ {
+  "id": "234_lohit",
+  "lgd": "234",
+  "name": "Lohit",
+  "state": "Arunachal Pradesh",
+  "lat": 27.8448,
+  "lon": 96.1236,
+  "elevation_m": 178.0,
+  "optimum_tilt_deg": 29.3
+ },
+ {
+  "id": "666_longding",
+  "lgd": "666",
+  "name": "Longding",
+  "state": "Arunachal Pradesh",
+  "lat": 26.8488,
+  "lon": 95.3191,
+  "elevation_m": 1208.0,
+  "optimum_tilt_deg": 28.9
+ },
+ {
+  "id": "235_lower_dibang_valley",
+  "lgd": "235",
+  "name": "Lower Dibang Valley",
+  "state": "Arunachal Pradesh",
+  "lat": 28.0442,
+  "lon": 95.7552,
+  "elevation_m": 172.0,
+  "optimum_tilt_deg": 30.0
+ },
+ {
+  "id": "719_lower_siang",
+  "lgd": "719",
+  "name": "Lower Siang",
+  "state": "Arunachal Pradesh",
+  "lat": 27.7558,
+  "lon": 94.8979,
+  "elevation_m": 149.0,
+  "optimum_tilt_deg": 29.4
+ },
+ {
+  "id": "236_lower_subansiri",
+  "lgd": "236",
+  "name": "Lower Subansiri",
+  "state": "Arunachal Pradesh",
+  "lat": 27.5563,
+  "lon": 93.8147,
+  "elevation_m": 1704.0,
+  "optimum_tilt_deg": 28.1
+ },
+ {
+  "id": "678_namsai",
+  "lgd": "678",
+  "name": "Namsai",
+  "state": "Arunachal Pradesh",
+  "lat": 27.6881,
+  "lon": 95.9388,
+  "elevation_m": 168.0,
+  "optimum_tilt_deg": 29.2
+ },
+ {
+  "id": "723_pakke_kessang",
+  "lgd": "723",
+  "name": "Pakke Kessang",
+  "state": "Arunachal Pradesh",
+  "lat": 27.1762,
+  "lon": 93.0917,
+  "elevation_m": 1855.0,
+  "optimum_tilt_deg": 28.1
+ },
+ {
+  "id": "237_papum_pare",
+  "lgd": "237",
+  "name": "Papum Pare",
+  "state": "Arunachal Pradesh",
+  "lat": 27.0639,
+  "lon": 93.6374,
+  "elevation_m": 206.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "725_shi_yomi",
+  "lgd": "725",
+  "name": "Shi Yomi",
+  "state": "Arunachal Pradesh",
+  "lat": 28.6599,
+  "lon": 94.1424,
+  "elevation_m": 2643.0,
+  "optimum_tilt_deg": 28.2
+ },
+ {
+  "id": "679_siang",
+  "lgd": "679",
+  "name": "Siang",
+  "state": "Arunachal Pradesh",
+  "lat": 28.3176,
+  "lon": 94.8683,
+  "elevation_m": 712.0,
+  "optimum_tilt_deg": 28.7
+ },
+ {
+  "id": "238_tawang",
+  "lgd": "238",
+  "name": "Tawang",
+  "state": "Arunachal Pradesh",
+  "lat": 27.5432,
+  "lon": 91.7979,
+  "elevation_m": 2071.0,
+  "optimum_tilt_deg": 29.8
+ },
+ {
+  "id": "239_tirap",
+  "lgd": "239",
+  "name": "Tirap",
+  "state": "Arunachal Pradesh",
+  "lat": 27.0517,
+  "lon": 95.4815,
+  "elevation_m": 514.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "240_upper_siang",
+  "lgd": "240",
+  "name": "Upper Siang",
+  "state": "Arunachal Pradesh",
+  "lat": 28.5011,
+  "lon": 95.1181,
+  "elevation_m": 902.0,
+  "optimum_tilt_deg": 29.4
+ },
+ {
+  "id": "241_upper_subansiri",
+  "lgd": "241",
+  "name": "Upper Subansiri",
+  "state": "Arunachal Pradesh",
+  "lat": 27.9937,
+  "lon": 94.3028,
+  "elevation_m": 292.0,
+  "optimum_tilt_deg": 28.1
+ },
+ {
+  "id": "242_west_kameng",
+  "lgd": "242",
+  "name": "West Kameng",
+  "state": "Arunachal Pradesh",
+  "lat": 27.1891,
+  "lon": 92.3192,
+  "elevation_m": 1990.0,
+  "optimum_tilt_deg": 27.1
+ },
+ {
+  "id": "243_west_siang",
+  "lgd": "243",
+  "name": "West Siang",
+  "state": "Arunachal Pradesh",
+  "lat": 28.1592,
+  "lon": 94.7679,
+  "elevation_m": 661.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "739_bajali",
+  "lgd": "739",
+  "name": "Bajali",
+  "state": "Assam",
+  "lat": 26.507,
+  "lon": 91.1396,
+  "elevation_m": 45.0,
+  "optimum_tilt_deg": 26.4
+ },
+ {
+  "id": "616_baksa",
+  "lgd": "616",
+  "name": "Baksa",
+  "state": "Assam",
+  "lat": 26.6351,
+  "lon": 91.2345,
+  "elevation_m": 56.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "280_barpeta",
+  "lgd": "280",
+  "name": "Barpeta",
+  "state": "Assam",
+  "lat": 26.3156,
+  "lon": 90.9863,
+  "elevation_m": 42.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "705_biswanath",
+  "lgd": "705",
+  "name": "Biswanath",
+  "state": "Assam",
+  "lat": 26.8197,
+  "lon": 93.2897,
+  "elevation_m": 82.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "281_bongaigaon",
+  "lgd": "281",
+  "name": "Bongaigaon",
+  "state": "Assam",
+  "lat": 26.3402,
+  "lon": 90.6045,
+  "elevation_m": 43.0,
+  "optimum_tilt_deg": 26.7
+ },
+ {
+  "id": "282_cachar",
+  "lgd": "282",
+  "name": "Cachar",
+  "state": "Assam",
+  "lat": 24.7949,
+  "lon": 92.8079,
+  "elevation_m": 25.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "708_charaideo",
+  "lgd": "708",
+  "name": "Charaideo",
+  "state": "Assam",
+  "lat": 27.065,
+  "lon": 95.0203,
+  "elevation_m": 112.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "612_chirang",
+  "lgd": "612",
+  "name": "Chirang",
+  "state": "Assam",
+  "lat": 26.5993,
+  "lon": 90.6003,
+  "elevation_m": 70.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "283_darrang",
+  "lgd": "283",
+  "name": "Darrang",
+  "state": "Assam",
+  "lat": 26.4639,
+  "lon": 92.0271,
+  "elevation_m": 63.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "284_dhemaji",
+  "lgd": "284",
+  "name": "Dhemaji",
+  "state": "Assam",
+  "lat": 27.5631,
+  "lon": 94.7244,
+  "elevation_m": 113.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "285_dhubri",
+  "lgd": "285",
+  "name": "Dhubri",
+  "state": "Assam",
+  "lat": 26.1635,
+  "lon": 90.0186,
+  "elevation_m": 39.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "286_dibrugarh",
+  "lgd": "286",
+  "name": "Dibrugarh",
+  "state": "Assam",
+  "lat": 27.3351,
+  "lon": 95.0622,
+  "elevation_m": 108.0,
+  "optimum_tilt_deg": 28.6
+ },
+ {
+  "id": "299_dima_hasao",
+  "lgd": "299",
+  "name": "Dima Hasao",
+  "state": "Assam",
+  "lat": 25.5306,
+  "lon": 93.0001,
+  "elevation_m": 130.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "287_goalpara",
+  "lgd": "287",
+  "name": "Goalpara",
+  "state": "Assam",
+  "lat": 26.0436,
+  "lon": 90.6146,
+  "elevation_m": 45.0,
+  "optimum_tilt_deg": 26.9
+ },
+ {
+  "id": "288_golaghat",
+  "lgd": "288",
+  "name": "Golaghat",
+  "state": "Assam",
+  "lat": 26.4168,
+  "lon": 93.8681,
+  "elevation_m": 121.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "289_hailakandi",
+  "lgd": "289",
+  "name": "Hailakandi",
+  "state": "Assam",
+  "lat": 24.6117,
+  "lon": 92.5961,
+  "elevation_m": 29.0,
+  "optimum_tilt_deg": 26.4
+ },
+ {
+  "id": "709_hojai",
+  "lgd": "709",
+  "name": "Hojai",
+  "state": "Assam",
+  "lat": 26.0009,
+  "lon": 92.9599,
+  "elevation_m": 77.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "290_jorhat",
+  "lgd": "290",
+  "name": "Jorhat",
+  "state": "Assam",
+  "lat": 26.7128,
+  "lon": 94.2491,
+  "elevation_m": 101.0,
+  "optimum_tilt_deg": 27.3
+ },
+ {
+  "id": "291_kamrup",
+  "lgd": "291",
+  "name": "Kamrup",
+  "state": "Assam",
+  "lat": 26.1602,
+  "lon": 91.4203,
+  "elevation_m": 50.0,
+  "optimum_tilt_deg": 25.8
+ },
+ {
+  "id": "618_kamrup_metro",
+  "lgd": "618",
+  "name": "Kamrup Metro",
+  "state": "Assam",
+  "lat": 26.1377,
+  "lon": 91.9566,
+  "elevation_m": 105.0,
+  "optimum_tilt_deg": 26.8
+ },
+ {
+  "id": "292_karbi_anglong",
+  "lgd": "292",
+  "name": "Karbi Anglong",
+  "state": "Assam",
+  "lat": 26.1366,
+  "lon": 93.3115,
+  "elevation_m": 489.0,
+  "optimum_tilt_deg": 27.7
+ },
+ {
+  "id": "293_karimganj",
+  "lgd": "293",
+  "name": "Karimganj",
+  "state": "Assam",
+  "lat": 24.6472,
+  "lon": 92.3829,
+  "elevation_m": 31.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "294_kokrajhar",
+  "lgd": "294",
+  "name": "Kokrajhar",
+  "state": "Assam",
+  "lat": 26.4767,
+  "lon": 90.1175,
+  "elevation_m": 48.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "295_lakhimpur",
+  "lgd": "295",
+  "name": "Lakhimpur",
+  "state": "Assam",
+  "lat": 27.1543,
+  "lon": 94.1509,
+  "elevation_m": 87.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "706_majuli",
+  "lgd": "706",
+  "name": "Majuli",
+  "state": "Assam",
+  "lat": 26.9771,
+  "lon": 94.2073,
+  "elevation_m": 85.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "296_marigaon",
+  "lgd": "296",
+  "name": "Marigaon",
+  "state": "Assam",
+  "lat": 26.2779,
+  "lon": 92.2823,
+  "elevation_m": 57.0,
+  "optimum_tilt_deg": 26.3
+ },
+ {
+  "id": "297_nagaon",
+  "lgd": "297",
+  "name": "Nagaon",
+  "state": "Assam",
+  "lat": 26.3347,
+  "lon": 92.7044,
+  "elevation_m": 67.0,
+  "optimum_tilt_deg": 26.8
+ },
+ {
+  "id": "298_nalbari",
+  "lgd": "298",
+  "name": "Nalbari",
+  "state": "Assam",
+  "lat": 26.3809,
+  "lon": 91.3845,
+  "elevation_m": 55.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "300_sivasagar",
+  "lgd": "300",
+  "name": "Sivasagar",
+  "state": "Assam",
+  "lat": 26.9879,
+  "lon": 94.6521,
+  "elevation_m": 90.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "301_sonitpur",
+  "lgd": "301",
+  "name": "Sonitpur",
+  "state": "Assam",
+  "lat": 26.7429,
+  "lon": 92.5991,
+  "elevation_m": 82.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "707_south_salmara_mancachar",
+  "lgd": "707",
+  "name": "South Salmara Mancachar",
+  "state": "Assam",
+  "lat": 25.7803,
+  "lon": 89.9611,
+  "elevation_m": 27.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "756_tamulpur",
+  "lgd": "756",
+  "name": "Tamulpur",
+  "state": "Assam",
+  "lat": 26.6458,
+  "lon": 91.623,
+  "elevation_m": 79.0,
+  "optimum_tilt_deg": 26.9
+ },
+ {
+  "id": "302_tinsukia",
+  "lgd": "302",
+  "name": "Tinsukia",
+  "state": "Assam",
+  "lat": 27.6321,
+  "lon": 95.6185,
+  "elevation_m": 142.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "617_udalguri",
+  "lgd": "617",
+  "name": "Udalguri",
+  "state": "Assam",
+  "lat": 26.7009,
+  "lon": 92.0524,
+  "elevation_m": 100.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "710_west_karbi_anglong",
+  "lgd": "710",
+  "name": "West Karbi Anglong",
+  "state": "Assam",
+  "lat": 25.8786,
+  "lon": 92.713,
+  "elevation_m": 161.0,
+  "optimum_tilt_deg": 27.1
+ },
+ {
+  "id": "188_araria",
+  "lgd": "188",
+  "name": "Araria",
+  "state": "Bihar",
+  "lat": 26.1978,
+  "lon": 87.3692,
+  "elevation_m": 55.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "611_arwal",
+  "lgd": "611",
+  "name": "Arwal",
+  "state": "Bihar",
+  "lat": 25.1602,
+  "lon": 84.6818,
+  "elevation_m": 78.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "189_aurangabad",
+  "lgd": "189",
+  "name": "Aurangabad",
+  "state": "Bihar",
+  "lat": 24.8008,
+  "lon": 84.4088,
+  "elevation_m": 105.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "190_banka",
+  "lgd": "190",
+  "name": "Banka",
+  "state": "Bihar",
+  "lat": 24.8873,
+  "lon": 86.8666,
+  "elevation_m": 117.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "191_begusarai",
+  "lgd": "191",
+  "name": "Begusarai",
+  "state": "Bihar",
+  "lat": 25.4962,
+  "lon": 86.1373,
+  "elevation_m": 42.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "192_bhagalpur",
+  "lgd": "192",
+  "name": "Bhagalpur",
+  "state": "Bihar",
+  "lat": 25.2607,
+  "lon": 87.0887,
+  "elevation_m": 37.0,
+  "optimum_tilt_deg": 23.6
+ },
+ {
+  "id": "193_bhojpur",
+  "lgd": "193",
+  "name": "Bhojpur",
+  "state": "Bihar",
+  "lat": 25.4651,
+  "lon": 84.5347,
+  "elevation_m": 65.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "194_buxar",
+  "lgd": "194",
+  "name": "Buxar",
+  "state": "Bihar",
+  "lat": 25.4828,
+  "lon": 84.0968,
+  "elevation_m": 74.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "195_darbhanga",
+  "lgd": "195",
+  "name": "Darbhanga",
+  "state": "Bihar",
+  "lat": 26.0721,
+  "lon": 86.066,
+  "elevation_m": 48.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "196_gaya",
+  "lgd": "196",
+  "name": "Gaya",
+  "state": "Bihar",
+  "lat": 24.731,
+  "lon": 84.9485,
+  "elevation_m": 112.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "197_gopalganj",
+  "lgd": "197",
+  "name": "Gopalganj",
+  "state": "Bihar",
+  "lat": 26.4444,
+  "lon": 84.3554,
+  "elevation_m": 72.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "198_jamui",
+  "lgd": "198",
+  "name": "Jamui",
+  "state": "Bihar",
+  "lat": 24.8066,
+  "lon": 86.2651,
+  "elevation_m": 109.0,
+  "optimum_tilt_deg": 24.8
+ },
+ {
+  "id": "199_jehanabad",
+  "lgd": "199",
+  "name": "Jehanabad",
+  "state": "Bihar",
+  "lat": 25.155,
+  "lon": 85.0146,
+  "elevation_m": 70.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "200_kaimur_bhabua",
+  "lgd": "200",
+  "name": "Kaimur (Bhabua)",
+  "state": "Bihar",
+  "lat": 25.0917,
+  "lon": 83.6208,
+  "elevation_m": 83.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "201_katihar",
+  "lgd": "201",
+  "name": "Katihar",
+  "state": "Bihar",
+  "lat": 25.556,
+  "lon": 87.6494,
+  "elevation_m": 32.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "202_khagaria",
+  "lgd": "202",
+  "name": "Khagaria",
+  "state": "Bihar",
+  "lat": 25.5147,
+  "lon": 86.6,
+  "elevation_m": 38.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "203_kishanganj",
+  "lgd": "203",
+  "name": "Kishanganj",
+  "state": "Bihar",
+  "lat": 26.294,
+  "lon": 87.9212,
+  "elevation_m": 60.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "204_lakhisarai",
+  "lgd": "204",
+  "name": "Lakhisarai",
+  "state": "Bihar",
+  "lat": 25.1654,
+  "lon": 86.112,
+  "elevation_m": 50.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "205_madhepura",
+  "lgd": "205",
+  "name": "Madhepura",
+  "state": "Bihar",
+  "lat": 25.8153,
+  "lon": 86.8978,
+  "elevation_m": 46.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "206_madhubani",
+  "lgd": "206",
+  "name": "Madhubani",
+  "state": "Bihar",
+  "lat": 26.4066,
+  "lon": 86.2348,
+  "elevation_m": 64.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "207_munger",
+  "lgd": "207",
+  "name": "Munger",
+  "state": "Bihar",
+  "lat": 25.2152,
+  "lon": 86.5451,
+  "elevation_m": 137.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "208_muzaffarpur",
+  "lgd": "208",
+  "name": "Muzaffarpur",
+  "state": "Bihar",
+  "lat": 26.1532,
+  "lon": 85.3245,
+  "elevation_m": 58.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "209_nalanda",
+  "lgd": "209",
+  "name": "Nalanda",
+  "state": "Bihar",
+  "lat": 25.2258,
+  "lon": 85.4499,
+  "elevation_m": 55.0,
+  "optimum_tilt_deg": 23.8
+ },
+ {
+  "id": "210_nawada",
+  "lgd": "210",
+  "name": "Nawada",
+  "state": "Bihar",
+  "lat": 24.8489,
+  "lon": 85.5741,
+  "elevation_m": 95.0,
+  "optimum_tilt_deg": 24.1
+ },
+ {
+  "id": "211_pashchim_champaran",
+  "lgd": "211",
+  "name": "Pashchim Champaran",
+  "state": "Bihar",
+  "lat": 27.0361,
+  "lon": 84.3735,
+  "elevation_m": 86.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "212_patna",
+  "lgd": "212",
+  "name": "Patna",
+  "state": "Bihar",
+  "lat": 25.44,
+  "lon": 85.2226,
+  "elevation_m": 54.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "213_purbi_champaran",
+  "lgd": "213",
+  "name": "Purbi Champaran",
+  "state": "Bihar",
+  "lat": 26.6282,
+  "lon": 84.9262,
+  "elevation_m": 70.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "214_purnia",
+  "lgd": "214",
+  "name": "Purnia",
+  "state": "Bihar",
+  "lat": 25.8138,
+  "lon": 87.4046,
+  "elevation_m": 42.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "215_rohtas",
+  "lgd": "215",
+  "name": "Rohtas",
+  "state": "Bihar",
+  "lat": 25.0555,
+  "lon": 84.0587,
+  "elevation_m": 105.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "216_saharsa",
+  "lgd": "216",
+  "name": "Saharsa",
+  "state": "Bihar",
+  "lat": 25.8098,
+  "lon": 86.5933,
+  "elevation_m": 42.0,
+  "optimum_tilt_deg": 23.7
+ },
+ {
+  "id": "217_samastipur",
+  "lgd": "217",
+  "name": "Samastipur",
+  "state": "Bihar",
+  "lat": 25.7698,
+  "lon": 85.8764,
+  "elevation_m": 50.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "218_saran",
+  "lgd": "218",
+  "name": "Saran",
+  "state": "Bihar",
+  "lat": 25.9121,
+  "lon": 84.82,
+  "elevation_m": 59.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "219_sheikhpura",
+  "lgd": "219",
+  "name": "Sheikhpura",
+  "state": "Bihar",
+  "lat": 25.1226,
+  "lon": 85.8403,
+  "elevation_m": 52.0,
+  "optimum_tilt_deg": 23.8
+ },
+ {
+  "id": "220_sheohar",
+  "lgd": "220",
+  "name": "Sheohar",
+  "state": "Bihar",
+  "lat": 26.4961,
+  "lon": 85.3019,
+  "elevation_m": 64.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "221_sitamarhi",
+  "lgd": "221",
+  "name": "Sitamarhi",
+  "state": "Bihar",
+  "lat": 26.5866,
+  "lon": 85.5564,
+  "elevation_m": 66.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "222_siwan",
+  "lgd": "222",
+  "name": "Siwan",
+  "state": "Bihar",
+  "lat": 26.1582,
+  "lon": 84.3775,
+  "elevation_m": 66.0,
+  "optimum_tilt_deg": 23.8
+ },
+ {
+  "id": "223_supaul",
+  "lgd": "223",
+  "name": "Supaul",
+  "state": "Bihar",
+  "lat": 26.2387,
+  "lon": 86.8154,
+  "elevation_m": 60.0,
+  "optimum_tilt_deg": 23.7
+ },
+ {
+  "id": "224_vaishali",
+  "lgd": "224",
+  "name": "Vaishali",
+  "state": "Bihar",
+  "lat": 25.7675,
+  "lon": 85.3816,
+  "elevation_m": 51.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "44_chandigarh",
+  "lgd": "44",
+  "name": "Chandigarh",
+  "state": "Chandigarh",
+  "lat": 30.7442,
+  "lon": 76.7773,
+  "elevation_m": 348.0,
+  "optimum_tilt_deg": 28.3
+ },
+ {
+  "id": "646_balod",
+  "lgd": "646",
+  "name": "Balod",
+  "state": "Chhattisgarh",
+  "lat": 20.8046,
+  "lon": 81.2098,
+  "elevation_m": 308.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "644_baloda_bazar",
+  "lgd": "644",
+  "name": "Baloda Bazar",
+  "state": "Chhattisgarh",
+  "lat": 21.6176,
+  "lon": 82.1639,
+  "elevation_m": 248.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "649_balrampur",
+  "lgd": "649",
+  "name": "Balrampur",
+  "state": "Chhattisgarh",
+  "lat": 23.5646,
+  "lon": 83.5131,
+  "elevation_m": 681.0,
+  "optimum_tilt_deg": 26.2
+ },
+ {
+  "id": "374_bastar",
+  "lgd": "374",
+  "name": "Bastar",
+  "state": "Chhattisgarh",
+  "lat": 19.1516,
+  "lon": 81.8849,
+  "elevation_m": 536.0,
+  "optimum_tilt_deg": 24.9
+ },
+ {
+  "id": "650_bemetara",
+  "lgd": "650",
+  "name": "Bemetara",
+  "state": "Chhattisgarh",
+  "lat": 21.6658,
+  "lon": 81.466,
+  "elevation_m": 273.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "636_bijapur",
+  "lgd": "636",
+  "name": "Bijapur",
+  "state": "Chhattisgarh",
+  "lat": 18.836,
+  "lon": 80.8055,
+  "elevation_m": 320.0,
+  "optimum_tilt_deg": 23.9
+ },
+ {
+  "id": "375_bilaspur",
+  "lgd": "375",
+  "name": "Bilaspur",
+  "state": "Chhattisgarh",
+  "lat": 22.117,
+  "lon": 82.1233,
+  "elevation_m": 277.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "376_dantewada",
+  "lgd": "376",
+  "name": "Dantewada",
+  "state": "Chhattisgarh",
+  "lat": 18.8649,
+  "lon": 81.3961,
+  "elevation_m": 384.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "377_dhamtari",
+  "lgd": "377",
+  "name": "Dhamtari",
+  "state": "Chhattisgarh",
+  "lat": 20.6946,
+  "lon": 81.7383,
+  "elevation_m": 315.0,
+  "optimum_tilt_deg": 24.7
+ },
+ {
+  "id": "378_durg",
+  "lgd": "378",
+  "name": "Durg",
+  "state": "Chhattisgarh",
+  "lat": 21.216,
+  "lon": 81.3865,
+  "elevation_m": 304.0,
+  "optimum_tilt_deg": 24.1
+ },
+ {
+  "id": "645_gariyaband",
+  "lgd": "645",
+  "name": "Gariyaband",
+  "state": "Chhattisgarh",
+  "lat": 20.4854,
+  "lon": 82.237,
+  "elevation_m": 384.0,
+  "optimum_tilt_deg": 24.3
+ },
+ {
+  "id": "734_gaurella_pendra_marwahi",
+  "lgd": "734",
+  "name": "Gaurella Pendra Marwahi",
+  "state": "Chhattisgarh",
+  "lat": 22.8381,
+  "lon": 82.0004,
+  "elevation_m": 596.0,
+  "optimum_tilt_deg": 26.7
+ },
+ {
+  "id": "379_janjgir_champa",
+  "lgd": "379",
+  "name": "Janjgir-Champa",
+  "state": "Chhattisgarh",
+  "lat": 21.9265,
+  "lon": 82.338,
+  "elevation_m": 257.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "380_jashpur",
+  "lgd": "380",
+  "name": "Jashpur",
+  "state": "Chhattisgarh",
+  "lat": 22.7756,
+  "lon": 83.8411,
+  "elevation_m": 488.0,
+  "optimum_tilt_deg": 26.1
+ },
+ {
+  "id": "382_kabirdham",
+  "lgd": "382",
+  "name": "Kabirdham",
+  "state": "Chhattisgarh",
+  "lat": 22.0462,
+  "lon": 81.2811,
+  "elevation_m": 339.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "381_kanker",
+  "lgd": "381",
+  "name": "Kanker",
+  "state": "Chhattisgarh",
+  "lat": 20.2143,
+  "lon": 81.1577,
+  "elevation_m": 542.0,
+  "optimum_tilt_deg": 24.8
+ },
+ {
+  "id": "759_khairgarh_chhuikhadan_gandai",
+  "lgd": "759",
+  "name": "Khairgarh Chhuikhadan Gandai",
+  "state": "Chhattisgarh",
+  "lat": 21.4907,
+  "lon": 81.0045,
+  "elevation_m": 330.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "643_kondagaon",
+  "lgd": "643",
+  "name": "Kondagaon",
+  "state": "Chhattisgarh",
+  "lat": 19.7847,
+  "lon": 81.6755,
+  "elevation_m": 610.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "383_korba",
+  "lgd": "383",
+  "name": "Korba",
+  "state": "Chhattisgarh",
+  "lat": 22.4546,
+  "lon": 82.5665,
+  "elevation_m": 328.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "384_korea",
+  "lgd": "384",
+  "name": "Korea",
+  "state": "Chhattisgarh",
+  "lat": 23.3288,
+  "lon": 82.5656,
+  "elevation_m": 576.0,
+  "optimum_tilt_deg": 26.8
+ },
+ {
+  "id": "385_mahasamund",
+  "lgd": "385",
+  "name": "Mahasamund",
+  "state": "Chhattisgarh",
+  "lat": 21.2094,
+  "lon": 82.6105,
+  "elevation_m": 284.0,
+  "optimum_tilt_deg": 24.8
+ },
+ {
+  "id": "760_manendragarh_chirimiri_bharatpur",
+  "lgd": "760",
+  "name": "Manendragarh Chirimiri Bharatpur",
+  "state": "Chhattisgarh",
+  "lat": 23.344,
+  "lon": 82.1477,
+  "elevation_m": 593.0,
+  "optimum_tilt_deg": 26.1
+ },
+ {
+  "id": "761_mohla_manpur_ambagarh_chouki",
+  "lgd": "761",
+  "name": "Mohla Manpur Ambagarh Chouki",
+  "state": "Chhattisgarh",
+  "lat": 20.581,
+  "lon": 80.7358,
+  "elevation_m": 389.0,
+  "optimum_tilt_deg": 24.9
+ },
+ {
+  "id": "647_mungeli",
+  "lgd": "647",
+  "name": "Mungeli",
+  "state": "Chhattisgarh",
+  "lat": 22.1054,
+  "lon": 81.7294,
+  "elevation_m": 287.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "637_narayanpur",
+  "lgd": "637",
+  "name": "Narayanpur",
+  "state": "Chhattisgarh",
+  "lat": 19.6129,
+  "lon": 81.2937,
+  "elevation_m": 624.0,
+  "optimum_tilt_deg": 24.6
+ },
+ {
+  "id": "386_raigarh",
+  "lgd": "386",
+  "name": "Raigarh",
+  "state": "Chhattisgarh",
+  "lat": 22.1681,
+  "lon": 83.3352,
+  "elevation_m": 289.0,
+  "optimum_tilt_deg": 25.1
+ },
+ {
+  "id": "387_raipur",
+  "lgd": "387",
+  "name": "Raipur",
+  "state": "Chhattisgarh",
+  "lat": 21.2866,
+  "lon": 81.8346,
+  "elevation_m": 284.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "388_rajnandgaon",
+  "lgd": "388",
+  "name": "Rajnandgaon",
+  "state": "Chhattisgarh",
+  "lat": 21.0834,
+  "lon": 80.8578,
+  "elevation_m": 325.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "762_sakti",
+  "lgd": "762",
+  "name": "Sakti",
+  "state": "Chhattisgarh",
+  "lat": 21.8841,
+  "lon": 82.9735,
+  "elevation_m": 230.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "763_sarangarh_bilaigarh",
+  "lgd": "763",
+  "name": "Sarangarh Bilaigarh",
+  "state": "Chhattisgarh",
+  "lat": 21.6026,
+  "lon": 83.0512,
+  "elevation_m": 233.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "642_sukma",
+  "lgd": "642",
+  "name": "Sukma",
+  "state": "Chhattisgarh",
+  "lat": 18.3769,
+  "lon": 81.5396,
+  "elevation_m": 244.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "648_surajpur",
+  "lgd": "648",
+  "name": "Surajpur",
+  "state": "Chhattisgarh",
+  "lat": 23.3123,
+  "lon": 82.9336,
+  "elevation_m": 527.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "389_surguja",
+  "lgd": "389",
+  "name": "Surguja",
+  "state": "Chhattisgarh",
+  "lat": 22.9454,
+  "lon": 83.2753,
+  "elevation_m": 622.0,
+  "optimum_tilt_deg": 26.6
+ },
+ {
+  "id": "465_dadra_and_nagar_haveli",
+  "lgd": "465",
+  "name": "Dadra And Nagar Haveli",
+  "state": "Dadra, Nagar Haveli, Daman & Diu",
+  "lat": 20.1867,
+  "lon": 73.0696,
+  "elevation_m": 81.0,
+  "optimum_tilt_deg": 23.8
+ },
+ {
+  "id": "463_daman",
+  "lgd": "463",
+  "name": "Daman",
+  "state": "Dadra, Nagar Haveli, Daman & Diu",
+  "lat": 20.4179,
+  "lon": 72.8552,
+  "elevation_m": 4.0,
+  "optimum_tilt_deg": 23.6
+ },
+ {
+  "id": "464_diu",
+  "lgd": "464",
+  "name": "Diu",
+  "state": "Dadra, Nagar Haveli, Daman & Diu",
+  "lat": 20.7213,
+  "lon": 70.9259,
+  "elevation_m": 18.0,
+  "optimum_tilt_deg": 23.8
+ },
+ {
+  "id": "77_central",
+  "lgd": "77",
+  "name": "Central",
+  "state": "Delhi",
+  "lat": 28.7088,
+  "lon": 77.2334,
+  "elevation_m": 205.0,
+  "optimum_tilt_deg": 26.7
+ },
+ {
+  "id": "78_east",
+  "lgd": "78",
+  "name": "East",
+  "state": "Delhi",
+  "lat": 28.6181,
+  "lon": 77.3132,
+  "elevation_m": 208.0,
+  "optimum_tilt_deg": 26.6
+ },
+ {
+  "id": "79_new_delhi",
+  "lgd": "79",
+  "name": "New Delhi",
+  "state": "Delhi",
+  "lat": 28.5589,
+  "lon": 77.123,
+  "elevation_m": 237.0,
+  "optimum_tilt_deg": 26.7
+ },
+ {
+  "id": "80_north",
+  "lgd": "80",
+  "name": "North",
+  "state": "Delhi",
+  "lat": 28.8082,
+  "lon": 77.0962,
+  "elevation_m": 217.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "81_north_east",
+  "lgd": "81",
+  "name": "North East",
+  "state": "Delhi",
+  "lat": 28.7524,
+  "lon": 77.2372,
+  "elevation_m": 208.0,
+  "optimum_tilt_deg": 26.9
+ },
+ {
+  "id": "82_north_west",
+  "lgd": "82",
+  "name": "North West",
+  "state": "Delhi",
+  "lat": 28.7447,
+  "lon": 76.9923,
+  "elevation_m": 213.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "671_shahdara",
+  "lgd": "671",
+  "name": "Shahdara",
+  "state": "Delhi",
+  "lat": 28.6769,
+  "lon": 77.2972,
+  "elevation_m": 208.0,
+  "optimum_tilt_deg": 26.7
+ },
+ {
+  "id": "83_south",
+  "lgd": "83",
+  "name": "South",
+  "state": "Delhi",
+  "lat": 28.462,
+  "lon": 77.1772,
+  "elevation_m": 258.0,
+  "optimum_tilt_deg": 26.8
+ },
+ {
+  "id": "670_south_east",
+  "lgd": "670",
+  "name": "South East",
+  "state": "Delhi",
+  "lat": 28.5418,
+  "lon": 77.2923,
+  "elevation_m": 213.0,
+  "optimum_tilt_deg": 26.2
+ },
+ {
+  "id": "84_south_west",
+  "lgd": "84",
+  "name": "South West",
+  "state": "Delhi",
+  "lat": 28.5737,
+  "lon": 76.9377,
+  "elevation_m": 214.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "85_west",
+  "lgd": "85",
+  "name": "West",
+  "state": "Delhi",
+  "lat": 28.6674,
+  "lon": 77.0145,
+  "elevation_m": 211.0,
+  "optimum_tilt_deg": 26.8
+ },
+ {
+  "id": "551_north_goa",
+  "lgd": "551",
+  "name": "North Goa",
+  "state": "Goa",
+  "lat": 15.5641,
+  "lon": 73.8797,
+  "elevation_m": 18.0,
+  "optimum_tilt_deg": 20.1
+ },
+ {
+  "id": "552_south_goa",
+  "lgd": "552",
+  "name": "South Goa",
+  "state": "Goa",
+  "lat": 15.2385,
+  "lon": 74.0254,
+  "elevation_m": 12.0,
+  "optimum_tilt_deg": 20.0
+ },
+ {
+  "id": "438_ahmadabad",
+  "lgd": "438",
+  "name": "Ahmadabad",
+  "state": "Gujarat",
+  "lat": 22.793,
+  "lon": 72.2152,
+  "elevation_m": 16.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "439_amreli",
+  "lgd": "439",
+  "name": "Amreli",
+  "state": "Gujarat",
+  "lat": 21.4603,
+  "lon": 71.2444,
+  "elevation_m": 106.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "440_anand",
+  "lgd": "440",
+  "name": "Anand",
+  "state": "Gujarat",
+  "lat": 22.4581,
+  "lon": 72.7619,
+  "elevation_m": 27.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "672_arvalli",
+  "lgd": "672",
+  "name": "Arvalli",
+  "state": "Gujarat",
+  "lat": 23.4323,
+  "lon": 73.3241,
+  "elevation_m": 160.0,
+  "optimum_tilt_deg": 27.8
+ },
+ {
+  "id": "441_banas_kantha",
+  "lgd": "441",
+  "name": "Banas Kantha",
+  "state": "Gujarat",
+  "lat": 24.2919,
+  "lon": 71.9494,
+  "elevation_m": 108.0,
+  "optimum_tilt_deg": 28.9
+ },
+ {
+  "id": "442_bharuch",
+  "lgd": "442",
+  "name": "Bharuch",
+  "state": "Gujarat",
+  "lat": 21.7958,
+  "lon": 72.9435,
+  "elevation_m": 12.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "443_bhavnagar",
+  "lgd": "443",
+  "name": "Bhavnagar",
+  "state": "Gujarat",
+  "lat": 21.5564,
+  "lon": 71.8644,
+  "elevation_m": 69.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "676_botad",
+  "lgd": "676",
+  "name": "Botad",
+  "state": "Gujarat",
+  "lat": 22.1116,
+  "lon": 71.679,
+  "elevation_m": 75.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "668_chhotaudepur",
+  "lgd": "668",
+  "name": "Chhotaudepur",
+  "state": "Gujarat",
+  "lat": 22.2191,
+  "lon": 73.8586,
+  "elevation_m": 105.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "444_dang",
+  "lgd": "444",
+  "name": "Dang",
+  "state": "Gujarat",
+  "lat": 20.811,
+  "lon": 73.7402,
+  "elevation_m": 473.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "674_devbhumi_dwarka",
+  "lgd": "674",
+  "name": "Devbhumi Dwarka",
+  "state": "Gujarat",
+  "lat": 22.1016,
+  "lon": 69.4929,
+  "elevation_m": 25.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "445_dohad",
+  "lgd": "445",
+  "name": "Dohad",
+  "state": "Gujarat",
+  "lat": 22.8826,
+  "lon": 74.1243,
+  "elevation_m": 337.0,
+  "optimum_tilt_deg": 26.4
+ },
+ {
+  "id": "446_gandhinagar",
+  "lgd": "446",
+  "name": "Gandhinagar",
+  "state": "Gujarat",
+  "lat": 23.2628,
+  "lon": 72.6969,
+  "elevation_m": 81.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "675_gir_somnath",
+  "lgd": "675",
+  "name": "Gir Somnath",
+  "state": "Gujarat",
+  "lat": 20.8923,
+  "lon": 70.7773,
+  "elevation_m": 52.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "447_jamnagar",
+  "lgd": "447",
+  "name": "Jamnagar",
+  "state": "Gujarat",
+  "lat": 22.2888,
+  "lon": 70.216,
+  "elevation_m": 83.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "448_junagadh",
+  "lgd": "448",
+  "name": "Junagadh",
+  "state": "Gujarat",
+  "lat": 21.382,
+  "lon": 70.3895,
+  "elevation_m": 55.0,
+  "optimum_tilt_deg": 25.8
+ },
+ {
+  "id": "449_kachchh",
+  "lgd": "449",
+  "name": "Kachchh",
+  "state": "Gujarat",
+  "lat": 23.3698,
+  "lon": 69.8212,
+  "elevation_m": 238.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "450_kheda",
+  "lgd": "450",
+  "name": "Kheda",
+  "state": "Gujarat",
+  "lat": 22.8385,
+  "lon": 72.9403,
+  "elevation_m": 45.0,
+  "optimum_tilt_deg": 26.7
+ },
+ {
+  "id": "451_mahesana",
+  "lgd": "451",
+  "name": "Mahesana",
+  "state": "Gujarat",
+  "lat": 23.5991,
+  "lon": 72.4533,
+  "elevation_m": 102.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "669_mahisagar",
+  "lgd": "669",
+  "name": "Mahisagar",
+  "state": "Gujarat",
+  "lat": 23.1744,
+  "lon": 73.6237,
+  "elevation_m": 108.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "673_morbi",
+  "lgd": "673",
+  "name": "Morbi",
+  "state": "Gujarat",
+  "lat": 22.8438,
+  "lon": 70.8987,
+  "elevation_m": 69.0,
+  "optimum_tilt_deg": 26.2
+ },
+ {
+  "id": "452_narmada",
+  "lgd": "452",
+  "name": "Narmada",
+  "state": "Gujarat",
+  "lat": 21.7133,
+  "lon": 73.6309,
+  "elevation_m": 248.0,
+  "optimum_tilt_deg": 25.8
+ },
+ {
+  "id": "453_navsari",
+  "lgd": "453",
+  "name": "Navsari",
+  "state": "Gujarat",
+  "lat": 20.8465,
+  "lon": 73.061,
+  "elevation_m": 43.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "454_panch_mahals",
+  "lgd": "454",
+  "name": "Panch Mahals",
+  "state": "Gujarat",
+  "lat": 22.7395,
+  "lon": 73.6244,
+  "elevation_m": 133.0,
+  "optimum_tilt_deg": 26.4
+ },
+ {
+  "id": "455_patan",
+  "lgd": "455",
+  "name": "Patan",
+  "state": "Gujarat",
+  "lat": 23.7734,
+  "lon": 71.7999,
+  "elevation_m": 38.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "456_porbandar",
+  "lgd": "456",
+  "name": "Porbandar",
+  "state": "Gujarat",
+  "lat": 21.6451,
+  "lon": 69.786,
+  "elevation_m": 9.0,
+  "optimum_tilt_deg": 25.9
+ },
+ {
+  "id": "457_rajkot",
+  "lgd": "457",
+  "name": "Rajkot",
+  "state": "Gujarat",
+  "lat": 22.0111,
+  "lon": 70.737,
+  "elevation_m": 167.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "458_sabar_kantha",
+  "lgd": "458",
+  "name": "Sabar Kantha",
+  "state": "Gujarat",
+  "lat": 23.741,
+  "lon": 73.0083,
+  "elevation_m": 182.0,
+  "optimum_tilt_deg": 27.9
+ },
+ {
+  "id": "459_surat",
+  "lgd": "459",
+  "name": "Surat",
+  "state": "Gujarat",
+  "lat": 21.3004,
+  "lon": 73.069,
+  "elevation_m": 26.0,
+  "optimum_tilt_deg": 24.7
+ },
+ {
+  "id": "460_surendranagar",
+  "lgd": "460",
+  "name": "Surendranagar",
+  "state": "Gujarat",
+  "lat": 22.7784,
+  "lon": 71.613,
+  "elevation_m": 73.0,
+  "optimum_tilt_deg": 26.4
+ },
+ {
+  "id": "641_tapi",
+  "lgd": "641",
+  "name": "Tapi",
+  "state": "Gujarat",
+  "lat": 21.2079,
+  "lon": 73.6686,
+  "elevation_m": 96.0,
+  "optimum_tilt_deg": 23.3
+ },
+ {
+  "id": "461_vadodara",
+  "lgd": "461",
+  "name": "Vadodara",
+  "state": "Gujarat",
+  "lat": 22.2295,
+  "lon": 73.2454,
+  "elevation_m": 27.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "462_valsad",
+  "lgd": "462",
+  "name": "Valsad",
+  "state": "Gujarat",
+  "lat": 20.4018,
+  "lon": 73.1118,
+  "elevation_m": 61.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "58_ambala",
+  "lgd": "58",
+  "name": "Ambala",
+  "state": "Haryana",
+  "lat": 30.3211,
+  "lon": 76.9385,
+  "elevation_m": 280.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "59_bhiwani",
+  "lgd": "59",
+  "name": "Bhiwani",
+  "state": "Haryana",
+  "lat": 28.7788,
+  "lon": 75.8863,
+  "elevation_m": 230.0,
+  "optimum_tilt_deg": 28.7
+ },
+ {
+  "id": "701_charki_dadri",
+  "lgd": "701",
+  "name": "Charki Dadri",
+  "state": "Haryana",
+  "lat": 28.5782,
+  "lon": 76.1542,
+  "elevation_m": 218.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "60_faridabad",
+  "lgd": "60",
+  "name": "Faridabad",
+  "state": "Haryana",
+  "lat": 28.3305,
+  "lon": 77.3717,
+  "elevation_m": 203.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "61_fatehabad",
+  "lgd": "61",
+  "name": "Fatehabad",
+  "state": "Haryana",
+  "lat": 29.5676,
+  "lon": 75.5755,
+  "elevation_m": 215.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "62_gurugram",
+  "lgd": "62",
+  "name": "Gurugram",
+  "state": "Haryana",
+  "lat": 28.3545,
+  "lon": 76.8913,
+  "elevation_m": 255.0,
+  "optimum_tilt_deg": 27.8
+ },
+ {
+  "id": "63_hisar",
+  "lgd": "63",
+  "name": "Hisar",
+  "state": "Haryana",
+  "lat": 29.2152,
+  "lon": 75.8289,
+  "elevation_m": 215.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "64_jhajjar",
+  "lgd": "64",
+  "name": "Jhajjar",
+  "state": "Haryana",
+  "lat": 28.6021,
+  "lon": 76.6391,
+  "elevation_m": 217.0,
+  "optimum_tilt_deg": 27.6
+ },
+ {
+  "id": "65_jind",
+  "lgd": "65",
+  "name": "Jind",
+  "state": "Haryana",
+  "lat": 29.438,
+  "lon": 76.3025,
+  "elevation_m": 225.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "66_kaithal",
+  "lgd": "66",
+  "name": "Kaithal",
+  "state": "Haryana",
+  "lat": 29.8076,
+  "lon": 76.413,
+  "elevation_m": 236.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "67_karnal",
+  "lgd": "67",
+  "name": "Karnal",
+  "state": "Haryana",
+  "lat": 29.6871,
+  "lon": 76.8796,
+  "elevation_m": 249.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "68_kurukshetra",
+  "lgd": "68",
+  "name": "Kurukshetra",
+  "state": "Haryana",
+  "lat": 30.0396,
+  "lon": 76.7815,
+  "elevation_m": 255.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "69_mahendragarh",
+  "lgd": "69",
+  "name": "Mahendragarh",
+  "state": "Haryana",
+  "lat": 28.1758,
+  "lon": 76.1437,
+  "elevation_m": 285.0,
+  "optimum_tilt_deg": 28.3
+ },
+ {
+  "id": "604_nuh",
+  "lgd": "604",
+  "name": "Nuh",
+  "state": "Haryana",
+  "lat": 27.981,
+  "lon": 77.0564,
+  "elevation_m": 193.0,
+  "optimum_tilt_deg": 27.1
+ },
+ {
+  "id": "619_palwal",
+  "lgd": "619",
+  "name": "Palwal",
+  "state": "Haryana",
+  "lat": 28.0618,
+  "lon": 77.3369,
+  "elevation_m": 196.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "70_panchkula",
+  "lgd": "70",
+  "name": "Panchkula",
+  "state": "Haryana",
+  "lat": 30.6395,
+  "lon": 76.9738,
+  "elevation_m": 354.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "71_panipat",
+  "lgd": "71",
+  "name": "Panipat",
+  "state": "Haryana",
+  "lat": 29.3333,
+  "lon": 76.9228,
+  "elevation_m": 237.0,
+  "optimum_tilt_deg": 27.7
+ },
+ {
+  "id": "72_rewari",
+  "lgd": "72",
+  "name": "Rewari",
+  "state": "Haryana",
+  "lat": 28.2451,
+  "lon": 76.5342,
+  "elevation_m": 248.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "73_rohtak",
+  "lgd": "73",
+  "name": "Rohtak",
+  "state": "Haryana",
+  "lat": 28.9144,
+  "lon": 76.5236,
+  "elevation_m": 223.0,
+  "optimum_tilt_deg": 27.2
+ },
+ {
+  "id": "74_sirsa",
+  "lgd": "74",
+  "name": "Sirsa",
+  "state": "Haryana",
+  "lat": 29.6151,
+  "lon": 74.9018,
+  "elevation_m": 198.0,
+  "optimum_tilt_deg": 28.1
+ },
+ {
+  "id": "75_sonipat",
+  "lgd": "75",
+  "name": "Sonipat",
+  "state": "Haryana",
+  "lat": 29.0647,
+  "lon": 76.8633,
+  "elevation_m": 226.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "76_yamunanagar",
+  "lgd": "76",
+  "name": "Yamunanagar",
+  "state": "Haryana",
+  "lat": 30.2204,
+  "lon": 77.269,
+  "elevation_m": 286.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "15_bilaspur",
+  "lgd": "15",
+  "name": "Bilaspur",
+  "state": "Himachal Pradesh",
+  "lat": 31.3765,
+  "lon": 76.6792,
+  "elevation_m": 708.0,
+  "optimum_tilt_deg": 29.7
+ },
+ {
+  "id": "16_chamba",
+  "lgd": "16",
+  "name": "Chamba",
+  "state": "Himachal Pradesh",
+  "lat": 32.5231,
+  "lon": 76.09,
+  "elevation_m": 1375.0,
+  "optimum_tilt_deg": 31.4
+ },
+ {
+  "id": "17_hamirpur",
+  "lgd": "17",
+  "name": "Hamirpur",
+  "state": "Himachal Pradesh",
+  "lat": 31.6452,
+  "lon": 76.5144,
+  "elevation_m": 688.0,
+  "optimum_tilt_deg": 30.3
+ },
+ {
+  "id": "18_kangra",
+  "lgd": "18",
+  "name": "Kangra",
+  "state": "Himachal Pradesh",
+  "lat": 32.0971,
+  "lon": 76.0429,
+  "elevation_m": 442.0,
+  "optimum_tilt_deg": 29.2
+ },
+ {
+  "id": "19_kinnaur",
+  "lgd": "19",
+  "name": "Kinnaur",
+  "state": "Himachal Pradesh",
+  "lat": 31.6465,
+  "lon": 78.3332,
+  "elevation_m": 3669.0,
+  "optimum_tilt_deg": 32.3
+ },
+ {
+  "id": "20_kullu",
+  "lgd": "20",
+  "name": "Kullu",
+  "state": "Himachal Pradesh",
+  "lat": 31.653,
+  "lon": 77.3473,
+  "elevation_m": 1566.0,
+  "optimum_tilt_deg": 32.6
+ },
+ {
+  "id": "21_lahul_and_spiti",
+  "lgd": "21",
+  "name": "Lahul And Spiti",
+  "state": "Himachal Pradesh",
+  "lat": 32.4941,
+  "lon": 77.2348,
+  "elevation_m": 4568.0,
+  "optimum_tilt_deg": 32.7
+ },
+ {
+  "id": "22_mandi",
+  "lgd": "22",
+  "name": "Mandi",
+  "state": "Himachal Pradesh",
+  "lat": 31.6146,
+  "lon": 76.933,
+  "elevation_m": 775.0,
+  "optimum_tilt_deg": 31.0
+ },
+ {
+  "id": "23_shimla",
+  "lgd": "23",
+  "name": "Shimla",
+  "state": "Himachal Pradesh",
+  "lat": 31.1103,
+  "lon": 77.5187,
+  "elevation_m": 1740.0,
+  "optimum_tilt_deg": 32.0
+ },
+ {
+  "id": "24_sirmaur",
+  "lgd": "24",
+  "name": "Sirmaur",
+  "state": "Himachal Pradesh",
+  "lat": 30.5599,
+  "lon": 77.4991,
+  "elevation_m": 961.0,
+  "optimum_tilt_deg": 30.1
+ },
+ {
+  "id": "25_solan",
+  "lgd": "25",
+  "name": "Solan",
+  "state": "Himachal Pradesh",
+  "lat": 31.0565,
+  "lon": 76.7632,
+  "elevation_m": 543.0,
+  "optimum_tilt_deg": 29.4
+ },
+ {
+  "id": "26_una",
+  "lgd": "26",
+  "name": "Una",
+  "state": "Himachal Pradesh",
+  "lat": 31.538,
+  "lon": 76.2101,
+  "elevation_m": 400.0,
+  "optimum_tilt_deg": 29.2
+ },
+ {
+  "id": "1_anantnag",
+  "lgd": "1",
+  "name": "Anantnag",
+  "state": "Jammu & Kashmir",
+  "lat": 33.7141,
+  "lon": 75.2241,
+  "elevation_m": 1697.0,
+  "optimum_tilt_deg": 30.8
+ },
+ {
+  "id": "623_bandipora",
+  "lgd": "623",
+  "name": "Bandipora",
+  "state": "Jammu & Kashmir",
+  "lat": 34.3378,
+  "lon": 74.6305,
+  "elevation_m": 1579.0,
+  "optimum_tilt_deg": 30.0
+ },
+ {
+  "id": "3_baramulla",
+  "lgd": "3",
+  "name": "Baramulla",
+  "state": "Jammu & Kashmir",
+  "lat": 34.2048,
+  "lon": 74.4618,
+  "elevation_m": 1597.0,
+  "optimum_tilt_deg": 31.0
+ },
+ {
+  "id": "2_budgam",
+  "lgd": "2",
+  "name": "Budgam",
+  "state": "Jammu & Kashmir",
+  "lat": 33.9884,
+  "lon": 74.6979,
+  "elevation_m": 1801.0,
+  "optimum_tilt_deg": 31.0
+ },
+ {
+  "id": "4_doda",
+  "lgd": "4",
+  "name": "Doda",
+  "state": "Jammu & Kashmir",
+  "lat": 33.0831,
+  "lon": 75.6376,
+  "elevation_m": 2047.0,
+  "optimum_tilt_deg": 31.0
+ },
+ {
+  "id": "626_ganderbal",
+  "lgd": "626",
+  "name": "Ganderbal",
+  "state": "Jammu & Kashmir",
+  "lat": 34.2327,
+  "lon": 74.7982,
+  "elevation_m": 1697.0,
+  "optimum_tilt_deg": 30.1
+ },
+ {
+  "id": "5_jammu",
+  "lgd": "5",
+  "name": "Jammu",
+  "state": "Jammu & Kashmir",
+  "lat": 32.7184,
+  "lon": 74.737,
+  "elevation_m": 261.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "7_kathua",
+  "lgd": "7",
+  "name": "Kathua",
+  "state": "Jammu & Kashmir",
+  "lat": 32.4643,
+  "lon": 75.4575,
+  "elevation_m": 492.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "620_kishtwar",
+  "lgd": "620",
+  "name": "Kishtwar",
+  "state": "Jammu & Kashmir",
+  "lat": 33.4485,
+  "lon": 75.7648,
+  "elevation_m": 1399.0,
+  "optimum_tilt_deg": 31.4
+ },
+ {
+  "id": "622_kulgam",
+  "lgd": "622",
+  "name": "Kulgam",
+  "state": "Jammu & Kashmir",
+  "lat": 33.686,
+  "lon": 75.0426,
+  "elevation_m": 1673.0,
+  "optimum_tilt_deg": 31.0
+ },
+ {
+  "id": "8_kupwara",
+  "lgd": "8",
+  "name": "Kupwara",
+  "state": "Jammu & Kashmir",
+  "lat": 34.4546,
+  "lon": 74.2431,
+  "elevation_m": 1612.0,
+  "optimum_tilt_deg": 30.8
+ },
+ {
+  "id": "0_mirpur",
+  "lgd": "0",
+  "name": "Mirpur",
+  "state": "Jammu & Kashmir",
+  "lat": 33.1251,
+  "lon": 73.9857,
+  "elevation_m": 789.0,
+  "optimum_tilt_deg": 29.8
+ },
+ {
+  "id": "0_muzaffarabad",
+  "lgd": "0",
+  "name": "Muzaffarabad",
+  "state": "Jammu & Kashmir",
+  "lat": 34.3493,
+  "lon": 73.7639,
+  "elevation_m": 2244.0,
+  "optimum_tilt_deg": 30.4
+ },
+ {
+  "id": "10_poonch",
+  "lgd": "10",
+  "name": "Poonch",
+  "state": "Jammu & Kashmir",
+  "lat": 33.7212,
+  "lon": 74.0577,
+  "elevation_m": 1422.0,
+  "optimum_tilt_deg": 30.9
+ },
+ {
+  "id": "11_pulwama",
+  "lgd": "11",
+  "name": "Pulwama",
+  "state": "Jammu & Kashmir",
+  "lat": 33.9121,
+  "lon": 74.9709,
+  "elevation_m": 1588.0,
+  "optimum_tilt_deg": 30.7
+ },
+ {
+  "id": "12_rajouri",
+  "lgd": "12",
+  "name": "Rajouri",
+  "state": "Jammu & Kashmir",
+  "lat": 33.2363,
+  "lon": 74.3539,
+  "elevation_m": 808.0,
+  "optimum_tilt_deg": 30.7
+ },
+ {
+  "id": "621_ramban",
+  "lgd": "621",
+  "name": "Ramban",
+  "state": "Jammu & Kashmir",
+  "lat": 33.2556,
+  "lon": 75.1494,
+  "elevation_m": 950.0,
+  "optimum_tilt_deg": 30.6
+ },
+ {
+  "id": "627_reasi",
+  "lgd": "627",
+  "name": "Reasi",
+  "state": "Jammu & Kashmir",
+  "lat": 33.1407,
+  "lon": 74.7935,
+  "elevation_m": 625.0,
+  "optimum_tilt_deg": 30.3
+ },
+ {
+  "id": "624_samba",
+  "lgd": "624",
+  "name": "Samba",
+  "state": "Jammu & Kashmir",
+  "lat": 32.5315,
+  "lon": 75.0485,
+  "elevation_m": 320.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "625_shopian",
+  "lgd": "625",
+  "name": "Shopian",
+  "state": "Jammu & Kashmir",
+  "lat": 33.7581,
+  "lon": 74.8947,
+  "elevation_m": 1850.0,
+  "optimum_tilt_deg": 31.0
+ },
+ {
+  "id": "13_srinagar",
+  "lgd": "13",
+  "name": "Srinagar",
+  "state": "Jammu & Kashmir",
+  "lat": 34.1212,
+  "lon": 74.7897,
+  "elevation_m": 1580.0,
+  "optimum_tilt_deg": 30.1
+ },
+ {
+  "id": "14_udhampur",
+  "lgd": "14",
+  "name": "Udhampur",
+  "state": "Jammu & Kashmir",
+  "lat": 32.8702,
+  "lon": 75.2207,
+  "elevation_m": 688.0,
+  "optimum_tilt_deg": 30.4
+ },
+ {
+  "id": "322_bokaro",
+  "lgd": "322",
+  "name": "Bokaro",
+  "state": "Jharkhand",
+  "lat": 23.6637,
+  "lon": 86.0335,
+  "elevation_m": 277.0,
+  "optimum_tilt_deg": 24.7
+ },
+ {
+  "id": "323_chatra",
+  "lgd": "323",
+  "name": "Chatra",
+  "state": "Jharkhand",
+  "lat": 24.1935,
+  "lon": 84.9057,
+  "elevation_m": 431.0,
+  "optimum_tilt_deg": 25.2
+ },
+ {
+  "id": "324_deoghar",
+  "lgd": "324",
+  "name": "Deoghar",
+  "state": "Jharkhand",
+  "lat": 24.3191,
+  "lon": 86.7533,
+  "elevation_m": 237.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "325_dhanbad",
+  "lgd": "325",
+  "name": "Dhanbad",
+  "state": "Jharkhand",
+  "lat": 23.8449,
+  "lon": 86.4972,
+  "elevation_m": 207.0,
+  "optimum_tilt_deg": 24.6
+ },
+ {
+  "id": "326_dumka",
+  "lgd": "326",
+  "name": "Dumka",
+  "state": "Jharkhand",
+  "lat": 24.3211,
+  "lon": 87.2567,
+  "elevation_m": 143.0,
+  "optimum_tilt_deg": 24.2
+ },
+ {
+  "id": "327_east_singhbum",
+  "lgd": "327",
+  "name": "East Singhbum",
+  "state": "Jharkhand",
+  "lat": 22.5801,
+  "lon": 86.465,
+  "elevation_m": 90.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "328_garhwa",
+  "lgd": "328",
+  "name": "Garhwa",
+  "state": "Jharkhand",
+  "lat": 24.1712,
+  "lon": 83.687,
+  "elevation_m": 237.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "329_giridih",
+  "lgd": "329",
+  "name": "Giridih",
+  "state": "Jharkhand",
+  "lat": 24.2736,
+  "lon": 86.1221,
+  "elevation_m": 341.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "330_godda",
+  "lgd": "330",
+  "name": "Godda",
+  "state": "Jharkhand",
+  "lat": 24.9052,
+  "lon": 87.2835,
+  "elevation_m": 102.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "331_gumla",
+  "lgd": "331",
+  "name": "Gumla",
+  "state": "Jharkhand",
+  "lat": 23.0956,
+  "lon": 84.5716,
+  "elevation_m": 590.0,
+  "optimum_tilt_deg": 26.8
+ },
+ {
+  "id": "332_hazaribagh",
+  "lgd": "332",
+  "name": "Hazaribagh",
+  "state": "Jharkhand",
+  "lat": 24.0724,
+  "lon": 85.4406,
+  "elevation_m": 577.0,
+  "optimum_tilt_deg": 25.9
+ },
+ {
+  "id": "333_jamtara",
+  "lgd": "333",
+  "name": "Jamtara",
+  "state": "Jharkhand",
+  "lat": 23.9769,
+  "lon": 86.9211,
+  "elevation_m": 181.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "606_khunti",
+  "lgd": "606",
+  "name": "Khunti",
+  "state": "Jharkhand",
+  "lat": 23.0265,
+  "lon": 85.2099,
+  "elevation_m": 594.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "334_koderma",
+  "lgd": "334",
+  "name": "Koderma",
+  "state": "Jharkhand",
+  "lat": 24.4436,
+  "lon": 85.6702,
+  "elevation_m": 391.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "335_latehar",
+  "lgd": "335",
+  "name": "Latehar",
+  "state": "Jharkhand",
+  "lat": 23.7383,
+  "lon": 84.5093,
+  "elevation_m": 382.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "336_lohardaga",
+  "lgd": "336",
+  "name": "Lohardaga",
+  "state": "Jharkhand",
+  "lat": 23.4443,
+  "lon": 84.7302,
+  "elevation_m": 652.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "337_pakur",
+  "lgd": "337",
+  "name": "Pakur",
+  "state": "Jharkhand",
+  "lat": 24.538,
+  "lon": 87.6872,
+  "elevation_m": 86.0,
+  "optimum_tilt_deg": 24.2
+ },
+ {
+  "id": "338_palamu",
+  "lgd": "338",
+  "name": "Palamu",
+  "state": "Jharkhand",
+  "lat": 24.2252,
+  "lon": 84.1536,
+  "elevation_m": 266.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "607_ramgarh",
+  "lgd": "607",
+  "name": "Ramgarh",
+  "state": "Jharkhand",
+  "lat": 23.611,
+  "lon": 85.5872,
+  "elevation_m": 338.0,
+  "optimum_tilt_deg": 25.2
+ },
+ {
+  "id": "339_ranchi",
+  "lgd": "339",
+  "name": "Ranchi",
+  "state": "Jharkhand",
+  "lat": 23.3191,
+  "lon": 85.3338,
+  "elevation_m": 636.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "340_sahebganj",
+  "lgd": "340",
+  "name": "Sahebganj",
+  "state": "Jharkhand",
+  "lat": 24.992,
+  "lon": 87.6977,
+  "elevation_m": 142.0,
+  "optimum_tilt_deg": 24.3
+ },
+ {
+  "id": "341_saraikela_kharsawan",
+  "lgd": "341",
+  "name": "Saraikela Kharsawan",
+  "state": "Jharkhand",
+  "lat": 22.82,
+  "lon": 85.9636,
+  "elevation_m": 204.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "342_simdega",
+  "lgd": "342",
+  "name": "Simdega",
+  "state": "Jharkhand",
+  "lat": 22.5879,
+  "lon": 84.502,
+  "elevation_m": 414.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "343_west_singhbhum",
+  "lgd": "343",
+  "name": "West Singhbhum",
+  "state": "Jharkhand",
+  "lat": 22.4093,
+  "lon": 85.6722,
+  "elevation_m": 335.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "524_bagalkote",
+  "lgd": "524",
+  "name": "Bagalkote",
+  "state": "Karnataka",
+  "lat": 16.212,
+  "lon": 75.648,
+  "elevation_m": 516.0,
+  "optimum_tilt_deg": 20.2
+ },
+ {
+  "id": "528_ballari",
+  "lgd": "528",
+  "name": "Ballari",
+  "state": "Karnataka",
+  "lat": 15.319,
+  "lon": 76.8623,
+  "elevation_m": 439.0,
+  "optimum_tilt_deg": 19.3
+ },
+ {
+  "id": "527_belagavi",
+  "lgd": "527",
+  "name": "Belagavi",
+  "state": "Karnataka",
+  "lat": 16.1877,
+  "lon": 74.8759,
+  "elevation_m": 545.0,
+  "optimum_tilt_deg": 20.2
+ },
+ {
+  "id": "526_bengaluru_rural",
+  "lgd": "526",
+  "name": "Bengaluru Rural",
+  "state": "Karnataka",
+  "lat": 13.2324,
+  "lon": 77.571,
+  "elevation_m": 881.0,
+  "optimum_tilt_deg": 17.8
+ },
+ {
+  "id": "525_bengaluru_urban",
+  "lgd": "525",
+  "name": "Bengaluru Urban",
+  "state": "Karnataka",
+  "lat": 12.9714,
+  "lon": 77.5975,
+  "elevation_m": 913.0,
+  "optimum_tilt_deg": 17.0
+ },
+ {
+  "id": "529_bidar",
+  "lgd": "529",
+  "name": "Bidar",
+  "state": "Karnataka",
+  "lat": 17.9629,
+  "lon": 77.2146,
+  "elevation_m": 572.0,
+  "optimum_tilt_deg": 22.0
+ },
+ {
+  "id": "531_chamarajanagara",
+  "lgd": "531",
+  "name": "Chamarajanagara",
+  "state": "Karnataka",
+  "lat": 11.9458,
+  "lon": 76.9681,
+  "elevation_m": 693.0,
+  "optimum_tilt_deg": 16.4
+ },
+ {
+  "id": "630_chikkaballapura",
+  "lgd": "630",
+  "name": "Chikkaballapura",
+  "state": "Karnataka",
+  "lat": 13.5802,
+  "lon": 77.8403,
+  "elevation_m": 811.0,
+  "optimum_tilt_deg": 18.0
+ },
+ {
+  "id": "532_chikkamagaluru",
+  "lgd": "532",
+  "name": "Chikkamagaluru",
+  "state": "Karnataka",
+  "lat": 13.5564,
+  "lon": 76.0014,
+  "elevation_m": 769.0,
+  "optimum_tilt_deg": 19.0
+ },
+ {
+  "id": "533_chitradurga",
+  "lgd": "533",
+  "name": "Chitradurga",
+  "state": "Karnataka",
+  "lat": 14.2115,
+  "lon": 76.5281,
+  "elevation_m": 639.0,
+  "optimum_tilt_deg": 19.1
+ },
+ {
+  "id": "534_dakshina_kannada",
+  "lgd": "534",
+  "name": "Dakshina Kannada",
+  "state": "Karnataka",
+  "lat": 12.9893,
+  "lon": 74.9997,
+  "elevation_m": 50.0,
+  "optimum_tilt_deg": 19.0
+ },
+ {
+  "id": "535_davangere",
+  "lgd": "535",
+  "name": "Davangere",
+  "state": "Karnataka",
+  "lat": 14.3516,
+  "lon": 75.9677,
+  "elevation_m": 605.0,
+  "optimum_tilt_deg": 20.0
+ },
+ {
+  "id": "536_dharwad",
+  "lgd": "536",
+  "name": "Dharwad",
+  "state": "Karnataka",
+  "lat": 15.4028,
+  "lon": 75.1968,
+  "elevation_m": 623.0,
+  "optimum_tilt_deg": 20.0
+ },
+ {
+  "id": "537_gadag",
+  "lgd": "537",
+  "name": "Gadag",
+  "state": "Karnataka",
+  "lat": 15.4535,
+  "lon": 75.6568,
+  "elevation_m": 632.0,
+  "optimum_tilt_deg": 20.0
+ },
+ {
+  "id": "539_hassan",
+  "lgd": "539",
+  "name": "Hassan",
+  "state": "Karnataka",
+  "lat": 13.0168,
+  "lon": 76.1863,
+  "elevation_m": 966.0,
+  "optimum_tilt_deg": 18.0
+ },
+ {
+  "id": "540_haveri",
+  "lgd": "540",
+  "name": "Haveri",
+  "state": "Karnataka",
+  "lat": 14.748,
+  "lon": 75.4197,
+  "elevation_m": 587.0,
+  "optimum_tilt_deg": 20.0
+ },
+ {
+  "id": "538_kalaburagi",
+  "lgd": "538",
+  "name": "Kalaburagi",
+  "state": "Karnataka",
+  "lat": 17.2554,
+  "lon": 76.8448,
+  "elevation_m": 438.0,
+  "optimum_tilt_deg": 21.0
+ },
+ {
+  "id": "541_kodagu",
+  "lgd": "541",
+  "name": "Kodagu",
+  "state": "Karnataka",
+  "lat": 12.3907,
+  "lon": 75.9028,
+  "elevation_m": 869.0,
+  "optimum_tilt_deg": 17.0
+ },
+ {
+  "id": "542_kolar",
+  "lgd": "542",
+  "name": "Kolar",
+  "state": "Karnataka",
+  "lat": 13.1434,
+  "lon": 78.2208,
+  "elevation_m": 809.0,
+  "optimum_tilt_deg": 16.2
+ },
+ {
+  "id": "543_koppal",
+  "lgd": "543",
+  "name": "Koppal",
+  "state": "Karnataka",
+  "lat": 15.5722,
+  "lon": 76.2119,
+  "elevation_m": 603.0,
+  "optimum_tilt_deg": 21.0
+ },
+ {
+  "id": "544_mandya",
+  "lgd": "544",
+  "name": "Mandya",
+  "state": "Karnataka",
+  "lat": 12.6409,
+  "lon": 76.7714,
+  "elevation_m": 773.0,
+  "optimum_tilt_deg": 17.2
+ },
+ {
+  "id": "545_mysuru",
+  "lgd": "545",
+  "name": "Mysuru",
+  "state": "Karnataka",
+  "lat": 12.2455,
+  "lon": 76.4435,
+  "elevation_m": 771.0,
+  "optimum_tilt_deg": 17.0
+ },
+ {
+  "id": "546_raichur",
+  "lgd": "546",
+  "name": "Raichur",
+  "state": "Karnataka",
+  "lat": 16.0818,
+  "lon": 76.9095,
+  "elevation_m": 409.0,
+  "optimum_tilt_deg": 20.8
+ },
+ {
+  "id": "631_ramanagara",
+  "lgd": "631",
+  "name": "Ramanagara",
+  "state": "Karnataka",
+  "lat": 12.7649,
+  "lon": 77.3082,
+  "elevation_m": 762.0,
+  "optimum_tilt_deg": 17.0
+ },
+ {
+  "id": "547_shivamogga",
+  "lgd": "547",
+  "name": "Shivamogga",
+  "state": "Karnataka",
+  "lat": 14.2119,
+  "lon": 75.2983,
+  "elevation_m": 602.0,
+  "optimum_tilt_deg": 20.0
+ },
+ {
+  "id": "548_tumakuru",
+  "lgd": "548",
+  "name": "Tumakuru",
+  "state": "Karnataka",
+  "lat": 13.5978,
+  "lon": 77.0044,
+  "elevation_m": 724.0,
+  "optimum_tilt_deg": 18.7
+ },
+ {
+  "id": "549_udupi",
+  "lgd": "549",
+  "name": "Udupi",
+  "state": "Karnataka",
+  "lat": 13.5109,
+  "lon": 74.7815,
+  "elevation_m": 36.0,
+  "optimum_tilt_deg": 19.0
+ },
+ {
+  "id": "550_uttara_kannada",
+  "lgd": "550",
+  "name": "Uttara Kannada",
+  "state": "Karnataka",
+  "lat": 14.9005,
+  "lon": 74.7854,
+  "elevation_m": 450.0,
+  "optimum_tilt_deg": 20.9
+ },
+ {
+  "id": "738_vijayanagar",
+  "lgd": "738",
+  "name": "Vijayanagar",
+  "state": "Karnataka",
+  "lat": 14.872,
+  "lon": 76.1483,
+  "elevation_m": 558.0,
+  "optimum_tilt_deg": 20.0
+ },
+ {
+  "id": "530_vijayapura",
+  "lgd": "530",
+  "name": "Vijayapura",
+  "state": "Karnataka",
+  "lat": 16.796,
+  "lon": 75.9742,
+  "elevation_m": 592.0,
+  "optimum_tilt_deg": 21.0
+ },
+ {
+  "id": "635_yadgir",
+  "lgd": "635",
+  "name": "Yadgir",
+  "state": "Karnataka",
+  "lat": 16.6264,
+  "lon": 76.9132,
+  "elevation_m": 380.0,
+  "optimum_tilt_deg": 21.0
+ },
+ {
+  "id": "554_alappuzha",
+  "lgd": "554",
+  "name": "Alappuzha",
+  "state": "Kerala",
+  "lat": 9.4168,
+  "lon": 76.4406,
+  "elevation_m": 1.0,
+  "optimum_tilt_deg": 13.0
+ },
+ {
+  "id": "555_ernakulam",
+  "lgd": "555",
+  "name": "Ernakulam",
+  "state": "Kerala",
+  "lat": 10.0228,
+  "lon": 76.408,
+  "elevation_m": 5.0,
+  "optimum_tilt_deg": 14.7
+ },
+ {
+  "id": "556_idukki",
+  "lgd": "556",
+  "name": "Idukki",
+  "state": "Kerala",
+  "lat": 10.068,
+  "lon": 77.0787,
+  "elevation_m": 1461.0,
+  "optimum_tilt_deg": 15.1
+ },
+ {
+  "id": "557_kannur",
+  "lgd": "557",
+  "name": "Kannur",
+  "state": "Kerala",
+  "lat": 12.0422,
+  "lon": 75.343,
+  "elevation_m": 39.0,
+  "optimum_tilt_deg": 16.9
+ },
+ {
+  "id": "558_kasaragod",
+  "lgd": "558",
+  "name": "Kasaragod",
+  "state": "Kerala",
+  "lat": 12.3961,
+  "lon": 75.0929,
+  "elevation_m": 84.0,
+  "optimum_tilt_deg": 16.9
+ },
+ {
+  "id": "559_kollam",
+  "lgd": "559",
+  "name": "Kollam",
+  "state": "Kerala",
+  "lat": 8.9694,
+  "lon": 76.6596,
+  "elevation_m": 9.0,
+  "optimum_tilt_deg": 12.6
+ },
+ {
+  "id": "560_kottayam",
+  "lgd": "560",
+  "name": "Kottayam",
+  "state": "Kerala",
+  "lat": 9.6299,
+  "lon": 76.4789,
+  "elevation_m": 4.0,
+  "optimum_tilt_deg": 14.0
+ },
+ {
+  "id": "561_kozhikode",
+  "lgd": "561",
+  "name": "Kozhikode",
+  "state": "Kerala",
+  "lat": 11.4898,
+  "lon": 75.7669,
+  "elevation_m": 29.0,
+  "optimum_tilt_deg": 16.0
+ },
+ {
+  "id": "562_malappuram",
+  "lgd": "562",
+  "name": "Malappuram",
+  "state": "Kerala",
+  "lat": 10.9218,
+  "lon": 76.0224,
+  "elevation_m": 124.0,
+  "optimum_tilt_deg": 15.0
+ },
+ {
+  "id": "563_palakkad",
+  "lgd": "563",
+  "name": "Palakkad",
+  "state": "Kerala",
+  "lat": 10.7214,
+  "lon": 76.5411,
+  "elevation_m": 73.0,
+  "optimum_tilt_deg": 16.0
+ },
+ {
+  "id": "564_pathanamthitta",
+  "lgd": "564",
+  "name": "Pathanamthitta",
+  "state": "Kerala",
+  "lat": 9.3319,
+  "lon": 76.6077,
+  "elevation_m": 7.0,
+  "optimum_tilt_deg": 13.0
+ },
+ {
+  "id": "565_thiruvananthapuram",
+  "lgd": "565",
+  "name": "Thiruvananthapuram",
+  "state": "Kerala",
+  "lat": 8.6528,
+  "lon": 76.8539,
+  "elevation_m": 33.0,
+  "optimum_tilt_deg": 11.9
+ },
+ {
+  "id": "566_thrissur",
+  "lgd": "566",
+  "name": "Thrissur",
+  "state": "Kerala",
+  "lat": 10.5329,
+  "lon": 76.1899,
+  "elevation_m": 11.0,
+  "optimum_tilt_deg": 15.0
+ },
+ {
+  "id": "567_wayanad",
+  "lgd": "567",
+  "name": "Wayanad",
+  "state": "Kerala",
+  "lat": 11.7194,
+  "lon": 76.1453,
+  "elevation_m": 765.0,
+  "optimum_tilt_deg": 16.7
+ },
+ {
+  "id": "6_kargil",
+  "lgd": "6",
+  "name": "Kargil",
+  "state": "Ladakh",
+  "lat": 34.3447,
+  "lon": 76.0718,
+  "elevation_m": 4531.0,
+  "optimum_tilt_deg": 32.0
+ },
+ {
+  "id": "9_leh_ladakh",
+  "lgd": "9",
+  "name": "Leh Ladakh",
+  "state": "Ladakh",
+  "lat": 34.13,
+  "lon": 77.55,
+  "elevation_m": 3242.0,
+  "optimum_tilt_deg": 34.3
+ },
+ {
+  "id": "553_lakshadweep_district",
+  "lgd": "553",
+  "name": "Lakshadweep District",
+  "state": "Lakshadweep",
+  "lat": 10.815,
+  "lon": 73.665,
+  "elevation_m": 17.0,
+  "optimum_tilt_deg": 13.6
+ },
+ {
+  "id": "667_agar_malwa",
+  "lgd": "667",
+  "name": "Agar Malwa",
+  "state": "Madhya Pradesh",
+  "lat": 23.8236,
+  "lon": 76.0714,
+  "elevation_m": 492.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "639_alirajpur",
+  "lgd": "639",
+  "name": "Alirajpur",
+  "state": "Madhya Pradesh",
+  "lat": 22.3573,
+  "lon": 74.3986,
+  "elevation_m": 311.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "390_anuppur",
+  "lgd": "390",
+  "name": "Anuppur",
+  "state": "Madhya Pradesh",
+  "lat": 23.0562,
+  "lon": 81.7085,
+  "elevation_m": 526.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "391_ashoknagar",
+  "lgd": "391",
+  "name": "Ashoknagar",
+  "state": "Madhya Pradesh",
+  "lat": 24.5964,
+  "lon": 77.8298,
+  "elevation_m": 462.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "392_balaghat",
+  "lgd": "392",
+  "name": "Balaghat",
+  "state": "Madhya Pradesh",
+  "lat": 21.8237,
+  "lon": 80.2753,
+  "elevation_m": 336.0,
+  "optimum_tilt_deg": 25.4
+ },
+ {
+  "id": "393_barwani",
+  "lgd": "393",
+  "name": "Barwani",
+  "state": "Madhya Pradesh",
+  "lat": 21.7891,
+  "lon": 75.078,
+  "elevation_m": 396.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "394_betul",
+  "lgd": "394",
+  "name": "Betul",
+  "state": "Madhya Pradesh",
+  "lat": 21.8456,
+  "lon": 77.9296,
+  "elevation_m": 662.0,
+  "optimum_tilt_deg": 25.2
+ },
+ {
+  "id": "395_bhind",
+  "lgd": "395",
+  "name": "Bhind",
+  "state": "Madhya Pradesh",
+  "lat": 26.4125,
+  "lon": 78.702,
+  "elevation_m": 146.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "396_bhopal",
+  "lgd": "396",
+  "name": "Bhopal",
+  "state": "Madhya Pradesh",
+  "lat": 23.5018,
+  "lon": 77.3837,
+  "elevation_m": 474.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "397_burhanpur",
+  "lgd": "397",
+  "name": "Burhanpur",
+  "state": "Madhya Pradesh",
+  "lat": 21.3839,
+  "lon": 76.3766,
+  "elevation_m": 296.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "398_chhatarpur",
+  "lgd": "398",
+  "name": "Chhatarpur",
+  "state": "Madhya Pradesh",
+  "lat": 24.8718,
+  "lon": 79.7007,
+  "elevation_m": 281.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "399_chhindwara",
+  "lgd": "399",
+  "name": "Chhindwara",
+  "state": "Madhya Pradesh",
+  "lat": 22.0575,
+  "lon": 78.9211,
+  "elevation_m": 675.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "400_damoh",
+  "lgd": "400",
+  "name": "Damoh",
+  "state": "Madhya Pradesh",
+  "lat": 23.8843,
+  "lon": 79.5248,
+  "elevation_m": 358.0,
+  "optimum_tilt_deg": 26.3
+ },
+ {
+  "id": "401_datia",
+  "lgd": "401",
+  "name": "Datia",
+  "state": "Madhya Pradesh",
+  "lat": 25.799,
+  "lon": 78.6096,
+  "elevation_m": 178.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "402_dewas",
+  "lgd": "402",
+  "name": "Dewas",
+  "state": "Madhya Pradesh",
+  "lat": 22.7997,
+  "lon": 76.4565,
+  "elevation_m": 530.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "403_dhar",
+  "lgd": "403",
+  "name": "Dhar",
+  "state": "Madhya Pradesh",
+  "lat": 22.5292,
+  "lon": 75.1362,
+  "elevation_m": 494.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "404_dindori",
+  "lgd": "404",
+  "name": "Dindori",
+  "state": "Madhya Pradesh",
+  "lat": 22.8982,
+  "lon": 81.0482,
+  "elevation_m": 846.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "405_east_nimar",
+  "lgd": "405",
+  "name": "East Nimar",
+  "state": "Madhya Pradesh",
+  "lat": 21.8899,
+  "lon": 76.5041,
+  "elevation_m": 286.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "406_guna",
+  "lgd": "406",
+  "name": "Guna",
+  "state": "Madhya Pradesh",
+  "lat": 24.5351,
+  "lon": 77.2088,
+  "elevation_m": 446.0,
+  "optimum_tilt_deg": 26.9
+ },
+ {
+  "id": "407_gwalior",
+  "lgd": "407",
+  "name": "Gwalior",
+  "state": "Madhya Pradesh",
+  "lat": 26.0134,
+  "lon": 78.2047,
+  "elevation_m": 249.0,
+  "optimum_tilt_deg": 26.9
+ },
+ {
+  "id": "408_harda",
+  "lgd": "408",
+  "name": "Harda",
+  "state": "Madhya Pradesh",
+  "lat": 22.276,
+  "lon": 77.082,
+  "elevation_m": 303.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "410_indore",
+  "lgd": "410",
+  "name": "Indore",
+  "state": "Madhya Pradesh",
+  "lat": 22.7649,
+  "lon": 75.7557,
+  "elevation_m": 553.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "411_jabalpur",
+  "lgd": "411",
+  "name": "Jabalpur",
+  "state": "Madhya Pradesh",
+  "lat": 23.259,
+  "lon": 79.9298,
+  "elevation_m": 383.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "412_jhabua",
+  "lgd": "412",
+  "name": "Jhabua",
+  "state": "Madhya Pradesh",
+  "lat": 22.8928,
+  "lon": 74.6652,
+  "elevation_m": 329.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "413_katni",
+  "lgd": "413",
+  "name": "Katni",
+  "state": "Madhya Pradesh",
+  "lat": 23.7594,
+  "lon": 80.3987,
+  "elevation_m": 407.0,
+  "optimum_tilt_deg": 26.3
+ },
+ {
+  "id": "414_khargone",
+  "lgd": "414",
+  "name": "Khargone",
+  "state": "Madhya Pradesh",
+  "lat": 21.9332,
+  "lon": 75.7714,
+  "elevation_m": 229.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "415_mandla",
+  "lgd": "415",
+  "name": "Mandla",
+  "state": "Madhya Pradesh",
+  "lat": 22.651,
+  "lon": 80.4841,
+  "elevation_m": 461.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "416_mandsaur",
+  "lgd": "416",
+  "name": "Mandsaur",
+  "state": "Madhya Pradesh",
+  "lat": 24.1541,
+  "lon": 75.3605,
+  "elevation_m": 427.0,
+  "optimum_tilt_deg": 26.7
+ },
+ {
+  "id": "417_morena",
+  "lgd": "417",
+  "name": "Morena",
+  "state": "Madhya Pradesh",
+  "lat": 26.4616,
+  "lon": 77.9232,
+  "elevation_m": 179.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "409_narmadapuram",
+  "lgd": "409",
+  "name": "Narmadapuram",
+  "state": "Madhya Pradesh",
+  "lat": 22.6568,
+  "lon": 77.9367,
+  "elevation_m": 310.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "418_narsinghpur",
+  "lgd": "418",
+  "name": "Narsinghpur",
+  "state": "Madhya Pradesh",
+  "lat": 22.9581,
+  "lon": 79.0634,
+  "elevation_m": 353.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "419_neemuch",
+  "lgd": "419",
+  "name": "Neemuch",
+  "state": "Madhya Pradesh",
+  "lat": 24.5461,
+  "lon": 75.077,
+  "elevation_m": 484.0,
+  "optimum_tilt_deg": 27.1
+ },
+ {
+  "id": "722_niwari",
+  "lgd": "722",
+  "name": "Niwari",
+  "state": "Madhya Pradesh",
+  "lat": 25.2824,
+  "lon": 78.7587,
+  "elevation_m": 244.0,
+  "optimum_tilt_deg": 26.9
+ },
+ {
+  "id": "420_panna",
+  "lgd": "420",
+  "name": "Panna",
+  "state": "Madhya Pradesh",
+  "lat": 24.4353,
+  "lon": 80.1774,
+  "elevation_m": 329.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "421_raisen",
+  "lgd": "421",
+  "name": "Raisen",
+  "state": "Madhya Pradesh",
+  "lat": 23.2297,
+  "lon": 78.1742,
+  "elevation_m": 562.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "422_rajgarh",
+  "lgd": "422",
+  "name": "Rajgarh",
+  "state": "Madhya Pradesh",
+  "lat": 23.8429,
+  "lon": 76.7307,
+  "elevation_m": 419.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "423_ratlam",
+  "lgd": "423",
+  "name": "Ratlam",
+  "state": "Madhya Pradesh",
+  "lat": 23.527,
+  "lon": 75.1258,
+  "elevation_m": 469.0,
+  "optimum_tilt_deg": 26.3
+ },
+ {
+  "id": "424_rewa",
+  "lgd": "424",
+  "name": "Rewa",
+  "state": "Madhya Pradesh",
+  "lat": 24.7551,
+  "lon": 81.5876,
+  "elevation_m": 326.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "425_sagar",
+  "lgd": "425",
+  "name": "Sagar",
+  "state": "Madhya Pradesh",
+  "lat": 23.8774,
+  "lon": 78.7082,
+  "elevation_m": 507.0,
+  "optimum_tilt_deg": 26.9
+ },
+ {
+  "id": "426_satna",
+  "lgd": "426",
+  "name": "Satna",
+  "state": "Madhya Pradesh",
+  "lat": 24.5284,
+  "lon": 80.8439,
+  "elevation_m": 300.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "427_sehore",
+  "lgd": "427",
+  "name": "Sehore",
+  "state": "Madhya Pradesh",
+  "lat": 23.0089,
+  "lon": 77.0889,
+  "elevation_m": 505.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "428_seoni",
+  "lgd": "428",
+  "name": "Seoni",
+  "state": "Madhya Pradesh",
+  "lat": 22.3363,
+  "lon": 79.689,
+  "elevation_m": 519.0,
+  "optimum_tilt_deg": 25.9
+ },
+ {
+  "id": "429_shahdol",
+  "lgd": "429",
+  "name": "Shahdol",
+  "state": "Madhya Pradesh",
+  "lat": 23.5934,
+  "lon": 81.4891,
+  "elevation_m": 478.0,
+  "optimum_tilt_deg": 26.4
+ },
+ {
+  "id": "430_shajapur",
+  "lgd": "430",
+  "name": "Shajapur",
+  "state": "Madhya Pradesh",
+  "lat": 23.3822,
+  "lon": 76.5747,
+  "elevation_m": 467.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "431_sheopur",
+  "lgd": "431",
+  "name": "Sheopur",
+  "state": "Madhya Pradesh",
+  "lat": 25.7337,
+  "lon": 76.8871,
+  "elevation_m": 335.0,
+  "optimum_tilt_deg": 27.6
+ },
+ {
+  "id": "432_shivpuri",
+  "lgd": "432",
+  "name": "Shivpuri",
+  "state": "Madhya Pradesh",
+  "lat": 25.3372,
+  "lon": 77.8446,
+  "elevation_m": 408.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "433_sidhi",
+  "lgd": "433",
+  "name": "Sidhi",
+  "state": "Madhya Pradesh",
+  "lat": 24.3029,
+  "lon": 81.8199,
+  "elevation_m": 406.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "638_singrauli",
+  "lgd": "638",
+  "name": "Singrauli",
+  "state": "Madhya Pradesh",
+  "lat": 24.2353,
+  "lon": 82.418,
+  "elevation_m": 391.0,
+  "optimum_tilt_deg": 25.7
+ },
+ {
+  "id": "434_tikamgarh",
+  "lgd": "434",
+  "name": "Tikamgarh",
+  "state": "Madhya Pradesh",
+  "lat": 24.8837,
+  "lon": 79.0169,
+  "elevation_m": 269.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "435_ujjain",
+  "lgd": "435",
+  "name": "Ujjain",
+  "state": "Madhya Pradesh",
+  "lat": 23.3271,
+  "lon": 75.6612,
+  "elevation_m": 503.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "436_umaria",
+  "lgd": "436",
+  "name": "Umaria",
+  "state": "Madhya Pradesh",
+  "lat": 23.5873,
+  "lon": 80.9389,
+  "elevation_m": 466.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "437_vidisha",
+  "lgd": "437",
+  "name": "Vidisha",
+  "state": "Madhya Pradesh",
+  "lat": 23.8937,
+  "lon": 77.8271,
+  "elevation_m": 412.0,
+  "optimum_tilt_deg": 26.2
+ },
+ {
+  "id": "466_ahmednagar",
+  "lgd": "466",
+  "name": "Ahmednagar",
+  "state": "Maharashtra",
+  "lat": 19.1929,
+  "lon": 74.7616,
+  "elevation_m": 732.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "467_akola",
+  "lgd": "467",
+  "name": "Akola",
+  "state": "Maharashtra",
+  "lat": 20.7696,
+  "lon": 77.0657,
+  "elevation_m": 282.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "468_amravati",
+  "lgd": "468",
+  "name": "Amravati",
+  "state": "Maharashtra",
+  "lat": 21.0662,
+  "lon": 77.6878,
+  "elevation_m": 328.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "469_aurangabad",
+  "lgd": "469",
+  "name": "Aurangabad",
+  "state": "Maharashtra",
+  "lat": 20.0157,
+  "lon": 75.2706,
+  "elevation_m": 692.0,
+  "optimum_tilt_deg": 23.6
+ },
+ {
+  "id": "470_beed",
+  "lgd": "470",
+  "name": "Beed",
+  "state": "Maharashtra",
+  "lat": 18.9484,
+  "lon": 75.8471,
+  "elevation_m": 559.0,
+  "optimum_tilt_deg": 22.0
+ },
+ {
+  "id": "471_bhandara",
+  "lgd": "471",
+  "name": "Bhandara",
+  "state": "Maharashtra",
+  "lat": 21.0933,
+  "lon": 79.7623,
+  "elevation_m": 271.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "472_buldhana",
+  "lgd": "472",
+  "name": "Buldhana",
+  "state": "Maharashtra",
+  "lat": 20.5015,
+  "lon": 76.4027,
+  "elevation_m": 509.0,
+  "optimum_tilt_deg": 23.1
+ },
+ {
+  "id": "473_chandrapur",
+  "lgd": "473",
+  "name": "Chandrapur",
+  "state": "Maharashtra",
+  "lat": 20.1301,
+  "lon": 79.4115,
+  "elevation_m": 224.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "474_dhule",
+  "lgd": "474",
+  "name": "Dhule",
+  "state": "Maharashtra",
+  "lat": 21.1244,
+  "lon": 74.6347,
+  "elevation_m": 243.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "475_gadchiroli",
+  "lgd": "475",
+  "name": "Gadchiroli",
+  "state": "Maharashtra",
+  "lat": 19.9199,
+  "lon": 80.1316,
+  "elevation_m": 257.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "476_gondia",
+  "lgd": "476",
+  "name": "Gondia",
+  "state": "Maharashtra",
+  "lat": 21.2398,
+  "lon": 80.1953,
+  "elevation_m": 326.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "477_hingoli",
+  "lgd": "477",
+  "name": "Hingoli",
+  "state": "Maharashtra",
+  "lat": 19.6362,
+  "lon": 77.1045,
+  "elevation_m": 462.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "478_jalgaon",
+  "lgd": "478",
+  "name": "Jalgaon",
+  "state": "Maharashtra",
+  "lat": 20.8992,
+  "lon": 75.4515,
+  "elevation_m": 215.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "479_jalna",
+  "lgd": "479",
+  "name": "Jalna",
+  "state": "Maharashtra",
+  "lat": 19.8051,
+  "lon": 75.9801,
+  "elevation_m": 491.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "480_kolhapur",
+  "lgd": "480",
+  "name": "Kolhapur",
+  "state": "Maharashtra",
+  "lat": 16.5036,
+  "lon": 74.2734,
+  "elevation_m": 602.0,
+  "optimum_tilt_deg": 21.0
+ },
+ {
+  "id": "481_latur",
+  "lgd": "481",
+  "name": "Latur",
+  "state": "Maharashtra",
+  "lat": 18.3665,
+  "lon": 76.7492,
+  "elevation_m": 609.0,
+  "optimum_tilt_deg": 22.0
+ },
+ {
+  "id": "482_mumbai",
+  "lgd": "482",
+  "name": "Mumbai",
+  "state": "Maharashtra",
+  "lat": 18.9985,
+  "lon": 72.8475,
+  "elevation_m": 30.0,
+  "optimum_tilt_deg": 22.0
+ },
+ {
+  "id": "483_mumbai_suburban",
+  "lgd": "483",
+  "name": "Mumbai Suburban",
+  "state": "Maharashtra",
+  "lat": 19.139,
+  "lon": 72.8737,
+  "elevation_m": 49.0,
+  "optimum_tilt_deg": 22.9
+ },
+ {
+  "id": "484_nagpur",
+  "lgd": "484",
+  "name": "Nagpur",
+  "state": "Maharashtra",
+  "lat": 21.1453,
+  "lon": 79.092,
+  "elevation_m": 306.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "485_nanded",
+  "lgd": "485",
+  "name": "Nanded",
+  "state": "Maharashtra",
+  "lat": 19.0839,
+  "lon": 77.5961,
+  "elevation_m": 382.0,
+  "optimum_tilt_deg": 22.1
+ },
+ {
+  "id": "486_nandurbar",
+  "lgd": "486",
+  "name": "Nandurbar",
+  "state": "Maharashtra",
+  "lat": 21.4686,
+  "lon": 74.2349,
+  "elevation_m": 133.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "487_nashik",
+  "lgd": "487",
+  "name": "Nashik",
+  "state": "Maharashtra",
+  "lat": 20.2482,
+  "lon": 74.1214,
+  "elevation_m": 659.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "488_osmanabad",
+  "lgd": "488",
+  "name": "Osmanabad",
+  "state": "Maharashtra",
+  "lat": 18.1898,
+  "lon": 76.0456,
+  "elevation_m": 666.0,
+  "optimum_tilt_deg": 22.0
+ },
+ {
+  "id": "665_palghar",
+  "lgd": "665",
+  "name": "Palghar",
+  "state": "Maharashtra",
+  "lat": 19.8069,
+  "lon": 73.0063,
+  "elevation_m": 54.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "489_parbhani",
+  "lgd": "489",
+  "name": "Parbhani",
+  "state": "Maharashtra",
+  "lat": 19.2616,
+  "lon": 76.6876,
+  "elevation_m": 429.0,
+  "optimum_tilt_deg": 22.3
+ },
+ {
+  "id": "490_pune",
+  "lgd": "490",
+  "name": "Pune",
+  "state": "Maharashtra",
+  "lat": 18.5349,
+  "lon": 74.2466,
+  "elevation_m": 526.0,
+  "optimum_tilt_deg": 22.0
+ },
+ {
+  "id": "491_raigad",
+  "lgd": "491",
+  "name": "Raigad",
+  "state": "Maharashtra",
+  "lat": 18.5925,
+  "lon": 73.1921,
+  "elevation_m": 407.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "492_ratnagiri",
+  "lgd": "492",
+  "name": "Ratnagiri",
+  "state": "Maharashtra",
+  "lat": 17.3521,
+  "lon": 73.4212,
+  "elevation_m": 197.0,
+  "optimum_tilt_deg": 22.0
+ },
+ {
+  "id": "493_sangli",
+  "lgd": "493",
+  "name": "Sangli",
+  "state": "Maharashtra",
+  "lat": 17.0966,
+  "lon": 74.7946,
+  "elevation_m": 728.0,
+  "optimum_tilt_deg": 21.0
+ },
+ {
+  "id": "494_satara",
+  "lgd": "494",
+  "name": "Satara",
+  "state": "Maharashtra",
+  "lat": 17.6832,
+  "lon": 74.2564,
+  "elevation_m": 762.0,
+  "optimum_tilt_deg": 22.0
+ },
+ {
+  "id": "495_sindhudurg",
+  "lgd": "495",
+  "name": "Sindhudurg",
+  "state": "Maharashtra",
+  "lat": 16.1879,
+  "lon": 73.7034,
+  "elevation_m": 55.0,
+  "optimum_tilt_deg": 21.0
+ },
+ {
+  "id": "496_solapur",
+  "lgd": "496",
+  "name": "Solapur",
+  "state": "Maharashtra",
+  "lat": 17.7975,
+  "lon": 75.5171,
+  "elevation_m": 510.0,
+  "optimum_tilt_deg": 21.0
+ },
+ {
+  "id": "497_thane",
+  "lgd": "497",
+  "name": "Thane",
+  "state": "Maharashtra",
+  "lat": 19.3592,
+  "lon": 73.3144,
+  "elevation_m": 51.0,
+  "optimum_tilt_deg": 23.2
+ },
+ {
+  "id": "498_wardha",
+  "lgd": "498",
+  "name": "Wardha",
+  "state": "Maharashtra",
+  "lat": 20.7392,
+  "lon": 78.6254,
+  "elevation_m": 281.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "499_washim",
+  "lgd": "499",
+  "name": "Washim",
+  "state": "Maharashtra",
+  "lat": 20.2363,
+  "lon": 77.2087,
+  "elevation_m": 519.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "500_yavatmal",
+  "lgd": "500",
+  "name": "Yavatmal",
+  "state": "Maharashtra",
+  "lat": 20.1122,
+  "lon": 78.1737,
+  "elevation_m": 275.0,
+  "optimum_tilt_deg": 23.3
+ },
+ {
+  "id": "252_bishnupur",
+  "lgd": "252",
+  "name": "Bishnupur",
+  "state": "Manipur",
+  "lat": 24.5394,
+  "lon": 93.7877,
+  "elevation_m": 768.0,
+  "optimum_tilt_deg": 26.7
+ },
+ {
+  "id": "253_chandel",
+  "lgd": "253",
+  "name": "Chandel",
+  "state": "Manipur",
+  "lat": 24.2991,
+  "lon": 93.955,
+  "elevation_m": 930.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "254_churachandpur",
+  "lgd": "254",
+  "name": "Churachandpur",
+  "state": "Manipur",
+  "lat": 24.32,
+  "lon": 93.7135,
+  "elevation_m": 814.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "255_imphal_east",
+  "lgd": "255",
+  "name": "Imphal East",
+  "state": "Manipur",
+  "lat": 24.8356,
+  "lon": 94.012,
+  "elevation_m": 849.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "256_imphal_west",
+  "lgd": "256",
+  "name": "Imphal West",
+  "state": "Manipur",
+  "lat": 24.7975,
+  "lon": 93.8642,
+  "elevation_m": 782.0,
+  "optimum_tilt_deg": 28.4
+ },
+ {
+  "id": "713_jiribam",
+  "lgd": "713",
+  "name": "Jiribam",
+  "state": "Manipur",
+  "lat": 24.7158,
+  "lon": 93.1173,
+  "elevation_m": 75.0,
+  "optimum_tilt_deg": 27.7
+ },
+ {
+  "id": "711_kakching",
+  "lgd": "711",
+  "name": "Kakching",
+  "state": "Manipur",
+  "lat": 24.4404,
+  "lon": 93.9201,
+  "elevation_m": 769.0,
+  "optimum_tilt_deg": 26.9
+ },
+ {
+  "id": "717_kamjong",
+  "lgd": "717",
+  "name": "Kamjong",
+  "state": "Manipur",
+  "lat": 24.7966,
+  "lon": 94.3328,
+  "elevation_m": 798.0,
+  "optimum_tilt_deg": 28.8
+ },
+ {
+  "id": "712_kangpokpi",
+  "lgd": "712",
+  "name": "Kangpokpi",
+  "state": "Manipur",
+  "lat": 24.979,
+  "lon": 93.9893,
+  "elevation_m": 1175.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "714_noney",
+  "lgd": "714",
+  "name": "Noney",
+  "state": "Manipur",
+  "lat": 24.6828,
+  "lon": 93.552,
+  "elevation_m": 963.0,
+  "optimum_tilt_deg": 28.6
+ },
+ {
+  "id": "715_pherzawl",
+  "lgd": "715",
+  "name": "Pherzawl",
+  "state": "Manipur",
+  "lat": 24.32,
+  "lon": 93.2377,
+  "elevation_m": 341.0,
+  "optimum_tilt_deg": 27.9
+ },
+ {
+  "id": "257_senapati",
+  "lgd": "257",
+  "name": "Senapati",
+  "state": "Manipur",
+  "lat": 25.389,
+  "lon": 94.1613,
+  "elevation_m": 1286.0,
+  "optimum_tilt_deg": 29.3
+ },
+ {
+  "id": "258_tamenglong",
+  "lgd": "258",
+  "name": "Tamenglong",
+  "state": "Manipur",
+  "lat": 25.0795,
+  "lon": 93.6724,
+  "elevation_m": 1178.0,
+  "optimum_tilt_deg": 29.1
+ },
+ {
+  "id": "716_tengnoupal",
+  "lgd": "716",
+  "name": "Tengnoupal",
+  "state": "Manipur",
+  "lat": 24.5024,
+  "lon": 94.1303,
+  "elevation_m": 1239.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "259_thoubal",
+  "lgd": "259",
+  "name": "Thoubal",
+  "state": "Manipur",
+  "lat": 24.6122,
+  "lon": 94.0039,
+  "elevation_m": 778.0,
+  "optimum_tilt_deg": 27.2
+ },
+ {
+  "id": "260_ukhrul",
+  "lgd": "260",
+  "name": "Ukhrul",
+  "state": "Manipur",
+  "lat": 25.1891,
+  "lon": 94.3585,
+  "elevation_m": 1931.0,
+  "optimum_tilt_deg": 29.9
+ },
+ {
+  "id": "273_east_garo_hills",
+  "lgd": "273",
+  "name": "East Garo Hills",
+  "state": "Meghalaya",
+  "lat": 25.648,
+  "lon": 90.7337,
+  "elevation_m": 392.0,
+  "optimum_tilt_deg": 26.9
+ },
+ {
+  "id": "657_east_jaintia_hills",
+  "lgd": "657",
+  "name": "East Jaintia Hills",
+  "state": "Meghalaya",
+  "lat": 25.34,
+  "lon": 92.4314,
+  "elevation_m": 953.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "274_east_khasi_hills",
+  "lgd": "274",
+  "name": "East Khasi Hills",
+  "state": "Meghalaya",
+  "lat": 25.4599,
+  "lon": 91.8153,
+  "elevation_m": 1793.0,
+  "optimum_tilt_deg": 28.2
+ },
+ {
+  "id": "740_eastern_west_khasi_hills",
+  "lgd": "740",
+  "name": "Eastern West Khasi Hills",
+  "state": "Meghalaya",
+  "lat": 25.5703,
+  "lon": 91.5335,
+  "elevation_m": 1576.0,
+  "optimum_tilt_deg": 27.7
+ },
+ {
+  "id": "656_north_garo_hills",
+  "lgd": "656",
+  "name": "North Garo Hills",
+  "state": "Meghalaya",
+  "lat": 25.8792,
+  "lon": 90.6761,
+  "elevation_m": 147.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "276_ri_bhoi",
+  "lgd": "276",
+  "name": "Ri Bhoi",
+  "state": "Meghalaya",
+  "lat": 25.8024,
+  "lon": 91.9819,
+  "elevation_m": 906.0,
+  "optimum_tilt_deg": 27.1
+ },
+ {
+  "id": "277_south_garo_hills",
+  "lgd": "277",
+  "name": "South Garo Hills",
+  "state": "Meghalaya",
+  "lat": 25.242,
+  "lon": 90.4898,
+  "elevation_m": 66.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "663_south_west_garo_hills",
+  "lgd": "663",
+  "name": "South West Garo Hills",
+  "state": "Meghalaya",
+  "lat": 25.4598,
+  "lon": 89.9432,
+  "elevation_m": 69.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "658_south_west_khasi_hills",
+  "lgd": "658",
+  "name": "South West Khasi Hills",
+  "state": "Meghalaya",
+  "lat": 25.3293,
+  "lon": 91.3618,
+  "elevation_m": 1439.0,
+  "optimum_tilt_deg": 28.2
+ },
+ {
+  "id": "278_west_garo_hills",
+  "lgd": "278",
+  "name": "West Garo Hills",
+  "state": "Meghalaya",
+  "lat": 25.7411,
+  "lon": 90.1074,
+  "elevation_m": 193.0,
+  "optimum_tilt_deg": 26.3
+ },
+ {
+  "id": "275_west_jaintia_hills",
+  "lgd": "275",
+  "name": "West Jaintia Hills",
+  "state": "Meghalaya",
+  "lat": 25.5386,
+  "lon": 92.2975,
+  "elevation_m": 1294.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "279_west_khasi_hills",
+  "lgd": "279",
+  "name": "West Khasi Hills",
+  "state": "Meghalaya",
+  "lat": 25.5928,
+  "lon": 91.1867,
+  "elevation_m": 1147.0,
+  "optimum_tilt_deg": 27.6
+ },
+ {
+  "id": "261_aizawl",
+  "lgd": "261",
+  "name": "Aizawl",
+  "state": "Mizoram",
+  "lat": 23.6958,
+  "lon": 92.818,
+  "elevation_m": 422.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "262_champhai",
+  "lgd": "262",
+  "name": "Champhai",
+  "state": "Mizoram",
+  "lat": 23.4371,
+  "lon": 93.3453,
+  "elevation_m": 1410.0,
+  "optimum_tilt_deg": 28.2
+ },
+ {
+  "id": "726_hnahthial",
+  "lgd": "726",
+  "name": "Hnahthial",
+  "state": "Mizoram",
+  "lat": 22.8668,
+  "lon": 93.0099,
+  "elevation_m": 960.0,
+  "optimum_tilt_deg": 27.2
+ },
+ {
+  "id": "728_khawzawl",
+  "lgd": "728",
+  "name": "Khawzawl",
+  "state": "Mizoram",
+  "lat": 23.4701,
+  "lon": 93.1977,
+  "elevation_m": 1155.0,
+  "optimum_tilt_deg": 28.1
+ },
+ {
+  "id": "263_kolasib",
+  "lgd": "263",
+  "name": "Kolasib",
+  "state": "Mizoram",
+  "lat": 24.2956,
+  "lon": 92.717,
+  "elevation_m": 113.0,
+  "optimum_tilt_deg": 26.8
+ },
+ {
+  "id": "264_lawngtlai",
+  "lgd": "264",
+  "name": "Lawngtlai",
+  "state": "Mizoram",
+  "lat": 22.4544,
+  "lon": 92.6706,
+  "elevation_m": 288.0,
+  "optimum_tilt_deg": 26.4
+ },
+ {
+  "id": "265_lunglei",
+  "lgd": "265",
+  "name": "Lunglei",
+  "state": "Mizoram",
+  "lat": 22.9871,
+  "lon": 92.5588,
+  "elevation_m": 477.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "266_mamit",
+  "lgd": "266",
+  "name": "Mamit",
+  "state": "Mizoram",
+  "lat": 23.959,
+  "lon": 92.4375,
+  "elevation_m": 146.0,
+  "optimum_tilt_deg": 26.7
+ },
+ {
+  "id": "267_saiha",
+  "lgd": "267",
+  "name": "Saiha",
+  "state": "Mizoram",
+  "lat": 22.2469,
+  "lon": 92.9636,
+  "elevation_m": 1168.0,
+  "optimum_tilt_deg": 27.3
+ },
+ {
+  "id": "727_saitual",
+  "lgd": "727",
+  "name": "Saitual",
+  "state": "Mizoram",
+  "lat": 23.8941,
+  "lon": 93.2095,
+  "elevation_m": 1018.0,
+  "optimum_tilt_deg": 28.1
+ },
+ {
+  "id": "268_serchhip",
+  "lgd": "268",
+  "name": "Serchhip",
+  "state": "Mizoram",
+  "lat": 23.2396,
+  "lon": 92.9355,
+  "elevation_m": 490.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "758_chumoukedima",
+  "lgd": "758",
+  "name": "Chumoukedima",
+  "state": "Nagaland",
+  "lat": 25.7645,
+  "lon": 93.7197,
+  "elevation_m": 190.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "244_dimapur",
+  "lgd": "244",
+  "name": "Dimapur",
+  "state": "Nagaland",
+  "lat": 25.9112,
+  "lon": 93.7627,
+  "elevation_m": 144.0,
+  "optimum_tilt_deg": 27.6
+ },
+ {
+  "id": "614_kiphire",
+  "lgd": "614",
+  "name": "Kiphire",
+  "state": "Nagaland",
+  "lat": 25.8757,
+  "lon": 94.7966,
+  "elevation_m": 758.0,
+  "optimum_tilt_deg": 28.2
+ },
+ {
+  "id": "245_kohima",
+  "lgd": "245",
+  "name": "Kohima",
+  "state": "Nagaland",
+  "lat": 25.6943,
+  "lon": 94.1153,
+  "elevation_m": 1346.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "615_longleng",
+  "lgd": "615",
+  "name": "Longleng",
+  "state": "Nagaland",
+  "lat": 26.575,
+  "lon": 94.8195,
+  "elevation_m": 540.0,
+  "optimum_tilt_deg": 28.6
+ },
+ {
+  "id": "246_mokokchung",
+  "lgd": "246",
+  "name": "Mokokchung",
+  "state": "Nagaland",
+  "lat": 26.4749,
+  "lon": 94.4748,
+  "elevation_m": 445.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "247_mon",
+  "lgd": "247",
+  "name": "Mon",
+  "state": "Nagaland",
+  "lat": 26.7394,
+  "lon": 95.0248,
+  "elevation_m": 584.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "764_niuland",
+  "lgd": "764",
+  "name": "Niuland",
+  "state": "Nagaland",
+  "lat": 25.8574,
+  "lon": 93.8709,
+  "elevation_m": 166.0,
+  "optimum_tilt_deg": 28.1
+ },
+ {
+  "id": "736_noklak",
+  "lgd": "736",
+  "name": "Noklak",
+  "state": "Nagaland",
+  "lat": 26.1386,
+  "lon": 95.038,
+  "elevation_m": 1221.0,
+  "optimum_tilt_deg": 29.8
+ },
+ {
+  "id": "613_peren",
+  "lgd": "613",
+  "name": "Peren",
+  "state": "Nagaland",
+  "lat": 25.6136,
+  "lon": 93.652,
+  "elevation_m": 375.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "248_phek",
+  "lgd": "248",
+  "name": "Phek",
+  "state": "Nagaland",
+  "lat": 25.6373,
+  "lon": 94.4187,
+  "elevation_m": 1150.0,
+  "optimum_tilt_deg": 28.6
+ },
+ {
+  "id": "765_shamator",
+  "lgd": "765",
+  "name": "Shamator",
+  "state": "Nagaland",
+  "lat": 26.1445,
+  "lon": 94.9551,
+  "elevation_m": 1354.0,
+  "optimum_tilt_deg": 29.3
+ },
+ {
+  "id": "757_tseminyu",
+  "lgd": "757",
+  "name": "Tseminyu",
+  "state": "Nagaland",
+  "lat": 25.9354,
+  "lon": 94.1682,
+  "elevation_m": 1301.0,
+  "optimum_tilt_deg": 28.9
+ },
+ {
+  "id": "249_tuensang",
+  "lgd": "249",
+  "name": "Tuensang",
+  "state": "Nagaland",
+  "lat": 26.2225,
+  "lon": 94.776,
+  "elevation_m": 1599.0,
+  "optimum_tilt_deg": 28.7
+ },
+ {
+  "id": "250_wokha",
+  "lgd": "250",
+  "name": "Wokha",
+  "state": "Nagaland",
+  "lat": 26.2302,
+  "lon": 94.1499,
+  "elevation_m": 418.0,
+  "optimum_tilt_deg": 27.9
+ },
+ {
+  "id": "251_zunheboto",
+  "lgd": "251",
+  "name": "Zunheboto",
+  "state": "Nagaland",
+  "lat": 26.0079,
+  "lon": 94.5283,
+  "elevation_m": 1695.0,
+  "optimum_tilt_deg": 29.6
+ },
+ {
+  "id": "344_anugul",
+  "lgd": "344",
+  "name": "Anugul",
+  "state": "Odisha",
+  "lat": 21.0131,
+  "lon": 84.9128,
+  "elevation_m": 182.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "345_balangir",
+  "lgd": "345",
+  "name": "Balangir",
+  "state": "Odisha",
+  "lat": 20.5735,
+  "lon": 83.1796,
+  "elevation_m": 282.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "346_baleshwar",
+  "lgd": "346",
+  "name": "Baleshwar",
+  "state": "Odisha",
+  "lat": 21.4866,
+  "lon": 86.9086,
+  "elevation_m": 24.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "347_bargarh",
+  "lgd": "347",
+  "name": "Bargarh",
+  "state": "Odisha",
+  "lat": 21.2082,
+  "lon": 83.3822,
+  "elevation_m": 189.0,
+  "optimum_tilt_deg": 24.9
+ },
+ {
+  "id": "348_bhadrak",
+  "lgd": "348",
+  "name": "Bhadrak",
+  "state": "Odisha",
+  "lat": 20.983,
+  "lon": 86.6161,
+  "elevation_m": 10.0,
+  "optimum_tilt_deg": 22.7
+ },
+ {
+  "id": "349_boudh",
+  "lgd": "349",
+  "name": "Boudh",
+  "state": "Odisha",
+  "lat": 20.7028,
+  "lon": 84.0745,
+  "elevation_m": 136.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "350_cuttack",
+  "lgd": "350",
+  "name": "Cuttack",
+  "state": "Odisha",
+  "lat": 20.4374,
+  "lon": 85.7967,
+  "elevation_m": 39.0,
+  "optimum_tilt_deg": 22.4
+ },
+ {
+  "id": "351_deogarh",
+  "lgd": "351",
+  "name": "Deogarh",
+  "state": "Odisha",
+  "lat": 21.4631,
+  "lon": 84.8023,
+  "elevation_m": 140.0,
+  "optimum_tilt_deg": 24.2
+ },
+ {
+  "id": "352_dhenkanal",
+  "lgd": "352",
+  "name": "Dhenkanal",
+  "state": "Odisha",
+  "lat": 20.8326,
+  "lon": 85.5703,
+  "elevation_m": 334.0,
+  "optimum_tilt_deg": 23.1
+ },
+ {
+  "id": "353_gajapati",
+  "lgd": "353",
+  "name": "Gajapati",
+  "state": "Odisha",
+  "lat": 19.0746,
+  "lon": 84.1527,
+  "elevation_m": 517.0,
+  "optimum_tilt_deg": 22.9
+ },
+ {
+  "id": "354_ganjam",
+  "lgd": "354",
+  "name": "Ganjam",
+  "state": "Odisha",
+  "lat": 19.5686,
+  "lon": 84.7102,
+  "elevation_m": 36.0,
+  "optimum_tilt_deg": 22.3
+ },
+ {
+  "id": "355_jagatsinghapur",
+  "lgd": "355",
+  "name": "Jagatsinghapur",
+  "state": "Odisha",
+  "lat": 20.2174,
+  "lon": 86.3173,
+  "elevation_m": 7.0,
+  "optimum_tilt_deg": 22.0
+ },
+ {
+  "id": "356_jajapur",
+  "lgd": "356",
+  "name": "Jajapur",
+  "state": "Odisha",
+  "lat": 20.8361,
+  "lon": 86.1949,
+  "elevation_m": 19.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "357_jharsuguda",
+  "lgd": "357",
+  "name": "Jharsuguda",
+  "state": "Odisha",
+  "lat": 21.8329,
+  "lon": 84.0008,
+  "elevation_m": 221.0,
+  "optimum_tilt_deg": 24.6
+ },
+ {
+  "id": "358_kalahandi",
+  "lgd": "358",
+  "name": "Kalahandi",
+  "state": "Odisha",
+  "lat": 19.8983,
+  "lon": 83.042,
+  "elevation_m": 218.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "359_kandhamal",
+  "lgd": "359",
+  "name": "Kandhamal",
+  "state": "Odisha",
+  "lat": 20.1278,
+  "lon": 84.0932,
+  "elevation_m": 758.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "360_kendrapara",
+  "lgd": "360",
+  "name": "Kendrapara",
+  "state": "Odisha",
+  "lat": 20.5459,
+  "lon": 86.5868,
+  "elevation_m": 3.0,
+  "optimum_tilt_deg": 22.0
+ },
+ {
+  "id": "361_kendujhar",
+  "lgd": "361",
+  "name": "Kendujhar",
+  "state": "Odisha",
+  "lat": 21.5435,
+  "lon": 85.7694,
+  "elevation_m": 384.0,
+  "optimum_tilt_deg": 24.2
+ },
+ {
+  "id": "362_khordha",
+  "lgd": "362",
+  "name": "Khordha",
+  "state": "Odisha",
+  "lat": 20.1018,
+  "lon": 85.5516,
+  "elevation_m": 52.0,
+  "optimum_tilt_deg": 22.0
+ },
+ {
+  "id": "363_koraput",
+  "lgd": "363",
+  "name": "Koraput",
+  "state": "Odisha",
+  "lat": 18.8532,
+  "lon": 82.6386,
+  "elevation_m": 875.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "364_malkangiri",
+  "lgd": "364",
+  "name": "Malkangiri",
+  "state": "Odisha",
+  "lat": 18.3061,
+  "lon": 81.9438,
+  "elevation_m": 175.0,
+  "optimum_tilt_deg": 23.2
+ },
+ {
+  "id": "365_mayurbhanj",
+  "lgd": "365",
+  "name": "Mayurbhanj",
+  "state": "Odisha",
+  "lat": 21.9427,
+  "lon": 86.414,
+  "elevation_m": 784.0,
+  "optimum_tilt_deg": 24.1
+ },
+ {
+  "id": "366_nabarangpur",
+  "lgd": "366",
+  "name": "Nabarangpur",
+  "state": "Odisha",
+  "lat": 19.5735,
+  "lon": 82.32,
+  "elevation_m": 590.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "367_nayagarh",
+  "lgd": "367",
+  "name": "Nayagarh",
+  "state": "Odisha",
+  "lat": 20.1786,
+  "lon": 85.0794,
+  "elevation_m": 83.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "368_nuapada",
+  "lgd": "368",
+  "name": "Nuapada",
+  "state": "Odisha",
+  "lat": 20.5028,
+  "lon": 82.6118,
+  "elevation_m": 305.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "369_puri",
+  "lgd": "369",
+  "name": "Puri",
+  "state": "Odisha",
+  "lat": 19.9476,
+  "lon": 85.823,
+  "elevation_m": 13.0,
+  "optimum_tilt_deg": 21.9
+ },
+ {
+  "id": "370_rayagada",
+  "lgd": "370",
+  "name": "Rayagada",
+  "state": "Odisha",
+  "lat": 19.3575,
+  "lon": 83.5153,
+  "elevation_m": 374.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "371_sambalpur",
+  "lgd": "371",
+  "name": "Sambalpur",
+  "state": "Odisha",
+  "lat": 21.5375,
+  "lon": 84.2445,
+  "elevation_m": 304.0,
+  "optimum_tilt_deg": 24.1
+ },
+ {
+  "id": "372_sonepur",
+  "lgd": "372",
+  "name": "Sonepur",
+  "state": "Odisha",
+  "lat": 20.9186,
+  "lon": 83.8063,
+  "elevation_m": 126.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "373_sundargarh",
+  "lgd": "373",
+  "name": "Sundargarh",
+  "state": "Odisha",
+  "lat": 22.144,
+  "lon": 84.4618,
+  "elevation_m": 308.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "598_karaikal",
+  "lgd": "598",
+  "name": "Karaikal",
+  "state": "Puducherry",
+  "lat": 10.9459,
+  "lon": 79.7857,
+  "elevation_m": 6.0,
+  "optimum_tilt_deg": 11.3
+ },
+ {
+  "id": "599_mahe",
+  "lgd": "599",
+  "name": "Mahe",
+  "state": "Puducherry",
+  "lat": 11.735,
+  "lon": 75.5468,
+  "elevation_m": 24.0,
+  "optimum_tilt_deg": 15.9
+ },
+ {
+  "id": "600_pondicherry",
+  "lgd": "600",
+  "name": "Pondicherry",
+  "state": "Puducherry",
+  "lat": 11.9015,
+  "lon": 79.7041,
+  "elevation_m": 19.0,
+  "optimum_tilt_deg": 12.9
+ },
+ {
+  "id": "601_yanam",
+  "lgd": "601",
+  "name": "Yanam",
+  "state": "Puducherry",
+  "lat": 16.7298,
+  "lon": 82.2479,
+  "elevation_m": 6.0,
+  "optimum_tilt_deg": 18.3
+ },
+ {
+  "id": "27_amritsar",
+  "lgd": "27",
+  "name": "Amritsar",
+  "state": "Punjab",
+  "lat": 31.7079,
+  "lon": 74.8976,
+  "elevation_m": 231.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "605_barnala",
+  "lgd": "605",
+  "name": "Barnala",
+  "state": "Punjab",
+  "lat": 30.3881,
+  "lon": 75.4987,
+  "elevation_m": 227.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "28_bathinda",
+  "lgd": "28",
+  "name": "Bathinda",
+  "state": "Punjab",
+  "lat": 30.1826,
+  "lon": 75.0434,
+  "elevation_m": 210.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "29_faridkot",
+  "lgd": "29",
+  "name": "Faridkot",
+  "state": "Punjab",
+  "lat": 30.6121,
+  "lon": 74.7781,
+  "elevation_m": 207.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "30_fatehgarh_sahib",
+  "lgd": "30",
+  "name": "Fatehgarh Sahib",
+  "state": "Punjab",
+  "lat": 30.6419,
+  "lon": 76.3764,
+  "elevation_m": 266.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "651_fazilka",
+  "lgd": "651",
+  "name": "Fazilka",
+  "state": "Punjab",
+  "lat": 30.2862,
+  "lon": 74.1656,
+  "elevation_m": 186.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "31_ferozepur",
+  "lgd": "31",
+  "name": "Ferozepur",
+  "state": "Punjab",
+  "lat": 30.9109,
+  "lon": 74.7022,
+  "elevation_m": 194.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "32_gurdaspur",
+  "lgd": "32",
+  "name": "Gurdaspur",
+  "state": "Punjab",
+  "lat": 31.9135,
+  "lon": 75.2832,
+  "elevation_m": 253.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "33_hoshiarpur",
+  "lgd": "33",
+  "name": "Hoshiarpur",
+  "state": "Punjab",
+  "lat": 31.6097,
+  "lon": 75.8196,
+  "elevation_m": 284.0,
+  "optimum_tilt_deg": 28.3
+ },
+ {
+  "id": "34_jalandhar",
+  "lgd": "34",
+  "name": "Jalandhar",
+  "state": "Punjab",
+  "lat": 31.2034,
+  "lon": 75.5608,
+  "elevation_m": 230.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "35_kapurthala",
+  "lgd": "35",
+  "name": "Kapurthala",
+  "state": "Punjab",
+  "lat": 31.3567,
+  "lon": 75.3971,
+  "elevation_m": 226.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "36_ludhiana",
+  "lgd": "36",
+  "name": "Ludhiana",
+  "state": "Punjab",
+  "lat": 30.7964,
+  "lon": 75.8269,
+  "elevation_m": 250.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "737_malerkotla",
+  "lgd": "737",
+  "name": "Malerkotla",
+  "state": "Punjab",
+  "lat": 30.5391,
+  "lon": 75.8901,
+  "elevation_m": 249.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "37_mansa",
+  "lgd": "37",
+  "name": "Mansa",
+  "state": "Punjab",
+  "lat": 29.9066,
+  "lon": 75.4393,
+  "elevation_m": 214.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "38_moga",
+  "lgd": "38",
+  "name": "Moga",
+  "state": "Punjab",
+  "lat": 30.7601,
+  "lon": 75.1684,
+  "elevation_m": 221.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "662_pathankot",
+  "lgd": "662",
+  "name": "Pathankot",
+  "state": "Punjab",
+  "lat": 32.2599,
+  "lon": 75.5436,
+  "elevation_m": 289.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "41_patiala",
+  "lgd": "41",
+  "name": "Patiala",
+  "state": "Punjab",
+  "lat": 30.2736,
+  "lon": 76.3459,
+  "elevation_m": 246.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "42_rupnagar",
+  "lgd": "42",
+  "name": "Rupnagar",
+  "state": "Punjab",
+  "lat": 31.0278,
+  "lon": 76.4821,
+  "elevation_m": 386.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "608_s_a_s_nagar",
+  "lgd": "608",
+  "name": "S.A.S Nagar",
+  "state": "Punjab",
+  "lat": 30.655,
+  "lon": 76.733,
+  "elevation_m": 305.0,
+  "optimum_tilt_deg": 28.7
+ },
+ {
+  "id": "43_sangrur",
+  "lgd": "43",
+  "name": "Sangrur",
+  "state": "Punjab",
+  "lat": 30.1321,
+  "lon": 75.8648,
+  "elevation_m": 234.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "40_shahid_bhagat_singh_nagar",
+  "lgd": "40",
+  "name": "Shahid Bhagat Singh Nagar",
+  "state": "Punjab",
+  "lat": 31.1133,
+  "lon": 76.1048,
+  "elevation_m": 257.0,
+  "optimum_tilt_deg": 28.1
+ },
+ {
+  "id": "39_sri_muktsar_sahib",
+  "lgd": "39",
+  "name": "Sri Muktsar Sahib",
+  "state": "Punjab",
+  "lat": 30.2998,
+  "lon": 74.5375,
+  "elevation_m": 195.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "609_tarn_taran",
+  "lgd": "609",
+  "name": "Tarn Taran",
+  "state": "Punjab",
+  "lat": 31.3352,
+  "lon": 74.8363,
+  "elevation_m": 221.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "86_ajmer",
+  "lgd": "86",
+  "name": "Ajmer",
+  "state": "Rajasthan",
+  "lat": 26.482,
+  "lon": 74.7746,
+  "elevation_m": 512.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "87_alwar",
+  "lgd": "87",
+  "name": "Alwar",
+  "state": "Rajasthan",
+  "lat": 27.3924,
+  "lon": 76.7444,
+  "elevation_m": 256.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "776_anoopgarh",
+  "lgd": "776",
+  "name": "Anoopgarh",
+  "state": "Rajasthan",
+  "lat": 29.1326,
+  "lon": 73.1927,
+  "elevation_m": 154.0,
+  "optimum_tilt_deg": 29.4
+ },
+ {
+  "id": "775_balotra",
+  "lgd": "775",
+  "name": "Balotra",
+  "state": "Rajasthan",
+  "lat": 25.8469,
+  "lon": 72.1994,
+  "elevation_m": 107.0,
+  "optimum_tilt_deg": 29.6
+ },
+ {
+  "id": "88_banswara",
+  "lgd": "88",
+  "name": "Banswara",
+  "state": "Rajasthan",
+  "lat": 23.4558,
+  "lon": 74.3506,
+  "elevation_m": 208.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "89_baran",
+  "lgd": "89",
+  "name": "Baran",
+  "state": "Rajasthan",
+  "lat": 24.9918,
+  "lon": 76.6993,
+  "elevation_m": 272.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "90_barmer",
+  "lgd": "90",
+  "name": "Barmer",
+  "state": "Rajasthan",
+  "lat": 25.6563,
+  "lon": 71.2084,
+  "elevation_m": 353.0,
+  "optimum_tilt_deg": 28.8
+ },
+ {
+  "id": "774_beawar",
+  "lgd": "774",
+  "name": "Beawar",
+  "state": "Rajasthan",
+  "lat": 26.1537,
+  "lon": 74.1631,
+  "elevation_m": 377.0,
+  "optimum_tilt_deg": 29.3
+ },
+ {
+  "id": "91_bharatpur",
+  "lgd": "91",
+  "name": "Bharatpur",
+  "state": "Rajasthan",
+  "lat": 27.0715,
+  "lon": 77.3211,
+  "elevation_m": 195.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "92_bhilwara",
+  "lgd": "92",
+  "name": "Bhilwara",
+  "state": "Rajasthan",
+  "lat": 25.4306,
+  "lon": 74.5972,
+  "elevation_m": 429.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "93_bikaner",
+  "lgd": "93",
+  "name": "Bikaner",
+  "state": "Rajasthan",
+  "lat": 27.9612,
+  "lon": 73.3855,
+  "elevation_m": 219.0,
+  "optimum_tilt_deg": 30.9
+ },
+ {
+  "id": "94_bundi",
+  "lgd": "94",
+  "name": "Bundi",
+  "state": "Rajasthan",
+  "lat": 25.5283,
+  "lon": 75.8425,
+  "elevation_m": 283.0,
+  "optimum_tilt_deg": 27.4
+ },
+ {
+  "id": "95_chittorgarh",
+  "lgd": "95",
+  "name": "Chittorgarh",
+  "state": "Rajasthan",
+  "lat": 24.8053,
+  "lon": 74.635,
+  "elevation_m": 416.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "96_churu",
+  "lgd": "96",
+  "name": "Churu",
+  "state": "Rajasthan",
+  "lat": 28.3395,
+  "lon": 74.7163,
+  "elevation_m": 288.0,
+  "optimum_tilt_deg": 30.0
+ },
+ {
+  "id": "97_dausa",
+  "lgd": "97",
+  "name": "Dausa",
+  "state": "Rajasthan",
+  "lat": 26.8588,
+  "lon": 76.5242,
+  "elevation_m": 312.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "767_deeg",
+  "lgd": "767",
+  "name": "Deeg",
+  "state": "Rajasthan",
+  "lat": 27.5048,
+  "lon": 77.2223,
+  "elevation_m": 190.0,
+  "optimum_tilt_deg": 27.7
+ },
+ {
+  "id": "98_dholpur",
+  "lgd": "98",
+  "name": "Dholpur",
+  "state": "Rajasthan",
+  "lat": 26.7384,
+  "lon": 77.7581,
+  "elevation_m": 183.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "768_didwana_kuchaman",
+  "lgd": "768",
+  "name": "Didwana Kuchaman",
+  "state": "Rajasthan",
+  "lat": 27.2067,
+  "lon": 74.6462,
+  "elevation_m": 378.0,
+  "optimum_tilt_deg": 30.0
+ },
+ {
+  "id": "769_dudu",
+  "lgd": "769",
+  "name": "Dudu",
+  "state": "Rajasthan",
+  "lat": 26.6464,
+  "lon": 75.3882,
+  "elevation_m": 335.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "99_dungarpur",
+  "lgd": "99",
+  "name": "Dungarpur",
+  "state": "Rajasthan",
+  "lat": 23.6939,
+  "lon": 73.8784,
+  "elevation_m": 191.0,
+  "optimum_tilt_deg": 27.8
+ },
+ {
+  "id": "100_ganganagar",
+  "lgd": "100",
+  "name": "Ganganagar",
+  "state": "Rajasthan",
+  "lat": 29.6506,
+  "lon": 73.8022,
+  "elevation_m": 176.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "771_gangapurcity",
+  "lgd": "771",
+  "name": "Gangapurcity",
+  "state": "Rajasthan",
+  "lat": 26.6284,
+  "lon": 76.7093,
+  "elevation_m": 261.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "101_hanumangarh",
+  "lgd": "101",
+  "name": "Hanumangarh",
+  "state": "Rajasthan",
+  "lat": 29.2827,
+  "lon": 74.5881,
+  "elevation_m": 191.0,
+  "optimum_tilt_deg": 29.1
+ },
+ {
+  "id": "102_jaipur",
+  "lgd": "102",
+  "name": "Jaipur",
+  "state": "Rajasthan",
+  "lat": 26.9755,
+  "lon": 75.6975,
+  "elevation_m": 440.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "783_jaipur_gramin",
+  "lgd": "783",
+  "name": "Jaipur Gramin",
+  "state": "Rajasthan",
+  "lat": 26.9915,
+  "lon": 75.7215,
+  "elevation_m": 455.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "103_jaisalmer",
+  "lgd": "103",
+  "name": "Jaisalmer",
+  "state": "Rajasthan",
+  "lat": 26.9351,
+  "lon": 71.324,
+  "elevation_m": 201.0,
+  "optimum_tilt_deg": 29.4
+ },
+ {
+  "id": "104_jalore",
+  "lgd": "104",
+  "name": "Jalore",
+  "state": "Rajasthan",
+  "lat": 25.105,
+  "lon": 72.2169,
+  "elevation_m": 116.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "105_jhalawar",
+  "lgd": "105",
+  "name": "Jhalawar",
+  "state": "Rajasthan",
+  "lat": 24.3341,
+  "lon": 76.1659,
+  "elevation_m": 327.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "106_jhunjhunu",
+  "lgd": "106",
+  "name": "Jhunjhunu",
+  "state": "Rajasthan",
+  "lat": 28.1501,
+  "lon": 75.5147,
+  "elevation_m": 335.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "107_jodhpur",
+  "lgd": "107",
+  "name": "Jodhpur",
+  "state": "Rajasthan",
+  "lat": 26.3522,
+  "lon": 73.0996,
+  "elevation_m": 222.0,
+  "optimum_tilt_deg": 29.9
+ },
+ {
+  "id": "778_jodhpur_gramin",
+  "lgd": "778",
+  "name": "Jodhpur Gramin",
+  "state": "Rajasthan",
+  "lat": 26.4728,
+  "lon": 73.0885,
+  "elevation_m": 240.0,
+  "optimum_tilt_deg": 30.0
+ },
+ {
+  "id": "108_karauli",
+  "lgd": "108",
+  "name": "Karauli",
+  "state": "Rajasthan",
+  "lat": 26.5156,
+  "lon": 76.9865,
+  "elevation_m": 278.0,
+  "optimum_tilt_deg": 27.9
+ },
+ {
+  "id": "781_kekri",
+  "lgd": "781",
+  "name": "Kekri",
+  "state": "Rajasthan",
+  "lat": 26.0304,
+  "lon": 75.1433,
+  "elevation_m": 341.0,
+  "optimum_tilt_deg": 28.7
+ },
+ {
+  "id": "770_khairthal_tijara",
+  "lgd": "770",
+  "name": "Khairthal-Tijara",
+  "state": "Rajasthan",
+  "lat": 27.9237,
+  "lon": 76.6939,
+  "elevation_m": 284.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "109_kota",
+  "lgd": "109",
+  "name": "Kota",
+  "state": "Rajasthan",
+  "lat": 25.1451,
+  "lon": 76.1667,
+  "elevation_m": 250.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "782_kotputli_behror",
+  "lgd": "782",
+  "name": "Kotputli-Behror",
+  "state": "Rajasthan",
+  "lat": 27.7298,
+  "lon": 76.2492,
+  "elevation_m": 335.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "110_nagaur",
+  "lgd": "110",
+  "name": "Nagaur",
+  "state": "Rajasthan",
+  "lat": 26.9839,
+  "lon": 73.8847,
+  "elevation_m": 324.0,
+  "optimum_tilt_deg": 30.0
+ },
+ {
+  "id": "773_neem_ka_thana",
+  "lgd": "773",
+  "name": "Neem Ka Thana",
+  "state": "Rajasthan",
+  "lat": 27.6879,
+  "lon": 75.7376,
+  "elevation_m": 458.0,
+  "optimum_tilt_deg": 29.6
+ },
+ {
+  "id": "111_pali",
+  "lgd": "111",
+  "name": "Pali",
+  "state": "Rajasthan",
+  "lat": 25.6483,
+  "lon": 73.3681,
+  "elevation_m": 243.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "772_phalodi",
+  "lgd": "772",
+  "name": "Phalodi",
+  "state": "Rajasthan",
+  "lat": 27.1307,
+  "lon": 72.5022,
+  "elevation_m": 265.0,
+  "optimum_tilt_deg": 30.0
+ },
+ {
+  "id": "629_pratapgarh",
+  "lgd": "629",
+  "name": "Pratapgarh",
+  "state": "Rajasthan",
+  "lat": 24.0149,
+  "lon": 74.7009,
+  "elevation_m": 523.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "112_rajsamand",
+  "lgd": "112",
+  "name": "Rajsamand",
+  "state": "Rajasthan",
+  "lat": 25.2058,
+  "lon": 73.9641,
+  "elevation_m": 551.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "777_salumbar",
+  "lgd": "777",
+  "name": "Salumbar",
+  "state": "Rajasthan",
+  "lat": 24.1641,
+  "lon": 74.0375,
+  "elevation_m": 303.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "779_sanchor",
+  "lgd": "779",
+  "name": "Sanchor",
+  "state": "Rajasthan",
+  "lat": 25.0107,
+  "lon": 71.8252,
+  "elevation_m": 45.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "113_sawai_madhopur",
+  "lgd": "113",
+  "name": "Sawai Madhopur",
+  "state": "Rajasthan",
+  "lat": 26.1317,
+  "lon": 76.356,
+  "elevation_m": 248.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "780_shahpura",
+  "lgd": "780",
+  "name": "Shahpura",
+  "state": "Rajasthan",
+  "lat": 25.5768,
+  "lon": 74.9687,
+  "elevation_m": 381.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "114_sikar",
+  "lgd": "114",
+  "name": "Sikar",
+  "state": "Rajasthan",
+  "lat": 27.6384,
+  "lon": 75.111,
+  "elevation_m": 415.0,
+  "optimum_tilt_deg": 29.8
+ },
+ {
+  "id": "115_sirohi",
+  "lgd": "115",
+  "name": "Sirohi",
+  "state": "Rajasthan",
+  "lat": 24.7923,
+  "lon": 72.7193,
+  "elevation_m": 319.0,
+  "optimum_tilt_deg": 29.0
+ },
+ {
+  "id": "116_tonk",
+  "lgd": "116",
+  "name": "Tonk",
+  "state": "Rajasthan",
+  "lat": 26.1591,
+  "lon": 75.7094,
+  "elevation_m": 275.0,
+  "optimum_tilt_deg": 28.3
+ },
+ {
+  "id": "117_udaipur",
+  "lgd": "117",
+  "name": "Udaipur",
+  "state": "Rajasthan",
+  "lat": 24.5191,
+  "lon": 73.7347,
+  "elevation_m": 613.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "225_gangtok",
+  "lgd": "225",
+  "name": "Gangtok",
+  "state": "Sikkim",
+  "lat": 27.2737,
+  "lon": 88.5278,
+  "elevation_m": 1196.0,
+  "optimum_tilt_deg": 26.4
+ },
+ {
+  "id": "228_gyalshing",
+  "lgd": "228",
+  "name": "Gyalshing",
+  "state": "Sikkim",
+  "lat": 27.3284,
+  "lon": 88.2218,
+  "elevation_m": 1149.0,
+  "optimum_tilt_deg": 25.7
+ },
+ {
+  "id": "226_mangan",
+  "lgd": "226",
+  "name": "Mangan",
+  "state": "Sikkim",
+  "lat": 27.5943,
+  "lon": 88.4479,
+  "elevation_m": 1891.0,
+  "optimum_tilt_deg": 26.2
+ },
+ {
+  "id": "227_namchi",
+  "lgd": "227",
+  "name": "Namchi",
+  "state": "Sikkim",
+  "lat": 27.1967,
+  "lon": 88.4041,
+  "elevation_m": 2087.0,
+  "optimum_tilt_deg": 26.8
+ },
+ {
+  "id": "741_pakyong",
+  "lgd": "741",
+  "name": "Pakyong",
+  "state": "Sikkim",
+  "lat": 27.2298,
+  "lon": 88.6514,
+  "elevation_m": 1153.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "742_soreng",
+  "lgd": "742",
+  "name": "Soreng",
+  "state": "Sikkim",
+  "lat": 27.1463,
+  "lon": 88.1854,
+  "elevation_m": 862.0,
+  "optimum_tilt_deg": 25.9
+ },
+ {
+  "id": "610_ariyalur",
+  "lgd": "610",
+  "name": "Ariyalur",
+  "state": "Tamil Nadu",
+  "lat": 11.133,
+  "lon": 79.2134,
+  "elevation_m": 71.0,
+  "optimum_tilt_deg": 12.0
+ },
+ {
+  "id": "730_chengalpattu",
+  "lgd": "730",
+  "name": "Chengalpattu",
+  "state": "Tamil Nadu",
+  "lat": 12.5284,
+  "lon": 79.9634,
+  "elevation_m": 15.0,
+  "optimum_tilt_deg": 14.0
+ },
+ {
+  "id": "568_chennai",
+  "lgd": "568",
+  "name": "Chennai",
+  "state": "Tamil Nadu",
+  "lat": 13.1567,
+  "lon": 80.2354,
+  "elevation_m": 11.0,
+  "optimum_tilt_deg": 14.0
+ },
+ {
+  "id": "569_coimbatore",
+  "lgd": "569",
+  "name": "Coimbatore",
+  "state": "Tamil Nadu",
+  "lat": 11.0041,
+  "lon": 77.0471,
+  "elevation_m": 384.0,
+  "optimum_tilt_deg": 13.0
+ },
+ {
+  "id": "570_cuddalore",
+  "lgd": "570",
+  "name": "Cuddalore",
+  "state": "Tamil Nadu",
+  "lat": 11.5028,
+  "lon": 79.4086,
+  "elevation_m": 32.0,
+  "optimum_tilt_deg": 12.0
+ },
+ {
+  "id": "571_dharmapuri",
+  "lgd": "571",
+  "name": "Dharmapuri",
+  "state": "Tamil Nadu",
+  "lat": 12.1412,
+  "lon": 78.2103,
+  "elevation_m": 466.0,
+  "optimum_tilt_deg": 14.9
+ },
+ {
+  "id": "572_dindigul",
+  "lgd": "572",
+  "name": "Dindigul",
+  "state": "Tamil Nadu",
+  "lat": 10.4665,
+  "lon": 77.8273,
+  "elevation_m": 333.0,
+  "optimum_tilt_deg": 12.0
+ },
+ {
+  "id": "573_erode",
+  "lgd": "573",
+  "name": "Erode",
+  "state": "Tamil Nadu",
+  "lat": 11.4339,
+  "lon": 77.4636,
+  "elevation_m": 238.0,
+  "optimum_tilt_deg": 14.2
+ },
+ {
+  "id": "729_kallakurichi",
+  "lgd": "729",
+  "name": "Kallakurichi",
+  "state": "Tamil Nadu",
+  "lat": 11.7842,
+  "lon": 79.0815,
+  "elevation_m": 123.0,
+  "optimum_tilt_deg": 13.0
+ },
+ {
+  "id": "574_kanchipuram",
+  "lgd": "574",
+  "name": "Kanchipuram",
+  "state": "Tamil Nadu",
+  "lat": 12.8205,
+  "lon": 79.807,
+  "elevation_m": 58.0,
+  "optimum_tilt_deg": 14.0
+ },
+ {
+  "id": "575_kanniyakumari",
+  "lgd": "575",
+  "name": "Kanniyakumari",
+  "state": "Tamil Nadu",
+  "lat": 8.2064,
+  "lon": 77.4483,
+  "elevation_m": 22.0,
+  "optimum_tilt_deg": 11.0
+ },
+ {
+  "id": "576_karur",
+  "lgd": "576",
+  "name": "Karur",
+  "state": "Tamil Nadu",
+  "lat": 10.8276,
+  "lon": 78.2066,
+  "elevation_m": 164.0,
+  "optimum_tilt_deg": 12.0
+ },
+ {
+  "id": "577_krishnagiri",
+  "lgd": "577",
+  "name": "Krishnagiri",
+  "state": "Tamil Nadu",
+  "lat": 12.5335,
+  "lon": 78.0735,
+  "elevation_m": 610.0,
+  "optimum_tilt_deg": 15.1
+ },
+ {
+  "id": "578_madurai",
+  "lgd": "578",
+  "name": "Madurai",
+  "state": "Tamil Nadu",
+  "lat": 9.901,
+  "lon": 77.997,
+  "elevation_m": 157.0,
+  "optimum_tilt_deg": 11.9
+ },
+ {
+  "id": "735_mayiladuthurai",
+  "lgd": "735",
+  "name": "Mayiladuthurai",
+  "state": "Tamil Nadu",
+  "lat": 11.1398,
+  "lon": 79.6924,
+  "elevation_m": 9.0,
+  "optimum_tilt_deg": 11.8
+ },
+ {
+  "id": "579_nagapattinam",
+  "lgd": "579",
+  "name": "Nagapattinam",
+  "state": "Tamil Nadu",
+  "lat": 10.6467,
+  "lon": 79.7455,
+  "elevation_m": 3.0,
+  "optimum_tilt_deg": 11.0
+ },
+ {
+  "id": "580_namakkal",
+  "lgd": "580",
+  "name": "Namakkal",
+  "state": "Tamil Nadu",
+  "lat": 11.315,
+  "lon": 78.0969,
+  "elevation_m": 173.0,
+  "optimum_tilt_deg": 13.0
+ },
+ {
+  "id": "581_perambalur",
+  "lgd": "581",
+  "name": "Perambalur",
+  "state": "Tamil Nadu",
+  "lat": 11.2762,
+  "lon": 78.9105,
+  "elevation_m": 124.0,
+  "optimum_tilt_deg": 12.0
+ },
+ {
+  "id": "582_pudukkottai",
+  "lgd": "582",
+  "name": "Pudukkottai",
+  "state": "Tamil Nadu",
+  "lat": 10.3564,
+  "lon": 78.8886,
+  "elevation_m": 106.0,
+  "optimum_tilt_deg": 11.0
+ },
+ {
+  "id": "583_ramanathapuram",
+  "lgd": "583",
+  "name": "Ramanathapuram",
+  "state": "Tamil Nadu",
+  "lat": 9.4877,
+  "lon": 78.6834,
+  "elevation_m": 26.0,
+  "optimum_tilt_deg": 10.0
+ },
+ {
+  "id": "731_ranipet",
+  "lgd": "731",
+  "name": "Ranipet",
+  "state": "Tamil Nadu",
+  "lat": 12.9468,
+  "lon": 79.4793,
+  "elevation_m": 133.0,
+  "optimum_tilt_deg": 14.9
+ },
+ {
+  "id": "584_salem",
+  "lgd": "584",
+  "name": "Salem",
+  "state": "Tamil Nadu",
+  "lat": 11.6451,
+  "lon": 78.2438,
+  "elevation_m": 353.0,
+  "optimum_tilt_deg": 13.9
+ },
+ {
+  "id": "585_sivaganga",
+  "lgd": "585",
+  "name": "Sivaganga",
+  "state": "Tamil Nadu",
+  "lat": 9.8782,
+  "lon": 78.6138,
+  "elevation_m": 98.0,
+  "optimum_tilt_deg": 10.1
+ },
+ {
+  "id": "733_tenkasi",
+  "lgd": "733",
+  "name": "Tenkasi",
+  "state": "Tamil Nadu",
+  "lat": 9.0947,
+  "lon": 77.5092,
+  "elevation_m": 159.0,
+  "optimum_tilt_deg": 10.0
+ },
+ {
+  "id": "586_thanjavur",
+  "lgd": "586",
+  "name": "Thanjavur",
+  "state": "Tamil Nadu",
+  "lat": 10.7069,
+  "lon": 79.2375,
+  "elevation_m": 40.0,
+  "optimum_tilt_deg": 11.0
+ },
+ {
+  "id": "587_the_nilgiris",
+  "lgd": "587",
+  "name": "The Nilgiris",
+  "state": "Tamil Nadu",
+  "lat": 11.4262,
+  "lon": 76.6872,
+  "elevation_m": 2293.0,
+  "optimum_tilt_deg": 16.1
+ },
+ {
+  "id": "588_theni",
+  "lgd": "588",
+  "name": "Theni",
+  "state": "Tamil Nadu",
+  "lat": 9.9217,
+  "lon": 77.4593,
+  "elevation_m": 322.0,
+  "optimum_tilt_deg": 12.1
+ },
+ {
+  "id": "589_thiruvallur",
+  "lgd": "589",
+  "name": "Thiruvallur",
+  "state": "Tamil Nadu",
+  "lat": 13.2448,
+  "lon": 79.932,
+  "elevation_m": 31.0,
+  "optimum_tilt_deg": 15.0
+ },
+ {
+  "id": "590_thiruvarur",
+  "lgd": "590",
+  "name": "Thiruvarur",
+  "state": "Tamil Nadu",
+  "lat": 10.7048,
+  "lon": 79.5311,
+  "elevation_m": 12.0,
+  "optimum_tilt_deg": 11.0
+ },
+ {
+  "id": "591_tiruchirappalli",
+  "lgd": "591",
+  "name": "Tiruchirappalli",
+  "state": "Tamil Nadu",
+  "lat": 10.9123,
+  "lon": 78.5807,
+  "elevation_m": 83.0,
+  "optimum_tilt_deg": 11.9
+ },
+ {
+  "id": "592_tirunelveli",
+  "lgd": "592",
+  "name": "Tirunelveli",
+  "state": "Tamil Nadu",
+  "lat": 8.6032,
+  "lon": 77.6337,
+  "elevation_m": 71.0,
+  "optimum_tilt_deg": 9.0
+ },
+ {
+  "id": "732_tirupathur",
+  "lgd": "732",
+  "name": "Tirupathur",
+  "state": "Tamil Nadu",
+  "lat": 12.5674,
+  "lon": 78.5908,
+  "elevation_m": 410.0,
+  "optimum_tilt_deg": 15.1
+ },
+ {
+  "id": "634_tiruppur",
+  "lgd": "634",
+  "name": "Tiruppur",
+  "state": "Tamil Nadu",
+  "lat": 10.8977,
+  "lon": 77.4027,
+  "elevation_m": 349.0,
+  "optimum_tilt_deg": 12.0
+ },
+ {
+  "id": "593_tiruvannamalai",
+  "lgd": "593",
+  "name": "Tiruvannamalai",
+  "state": "Tamil Nadu",
+  "lat": 12.4464,
+  "lon": 79.233,
+  "elevation_m": 182.0,
+  "optimum_tilt_deg": 14.0
+ },
+ {
+  "id": "594_tuticorin",
+  "lgd": "594",
+  "name": "Tuticorin",
+  "state": "Tamil Nadu",
+  "lat": 9.0118,
+  "lon": 77.9955,
+  "elevation_m": 51.0,
+  "optimum_tilt_deg": 9.0
+ },
+ {
+  "id": "595_vellore",
+  "lgd": "595",
+  "name": "Vellore",
+  "state": "Tamil Nadu",
+  "lat": 12.9305,
+  "lon": 79.026,
+  "elevation_m": 238.0,
+  "optimum_tilt_deg": 15.0
+ },
+ {
+  "id": "596_villupuram",
+  "lgd": "596",
+  "name": "Villupuram",
+  "state": "Tamil Nadu",
+  "lat": 12.1479,
+  "lon": 79.518,
+  "elevation_m": 48.0,
+  "optimum_tilt_deg": 13.0
+ },
+ {
+  "id": "597_virudhunagar",
+  "lgd": "597",
+  "name": "Virudhunagar",
+  "state": "Tamil Nadu",
+  "lat": 9.4849,
+  "lon": 77.9507,
+  "elevation_m": 73.0,
+  "optimum_tilt_deg": 11.0
+ },
+ {
+  "id": "501_adilabad",
+  "lgd": "501",
+  "name": "Adilabad",
+  "state": "Telangana",
+  "lat": 19.5427,
+  "lon": 78.5606,
+  "elevation_m": 419.0,
+  "optimum_tilt_deg": 23.1
+ },
+ {
+  "id": "690_bhadradri_kothagudem",
+  "lgd": "690",
+  "name": "Bhadradri Kothagudem",
+  "state": "Telangana",
+  "lat": 17.6972,
+  "lon": 80.6856,
+  "elevation_m": 188.0,
+  "optimum_tilt_deg": 21.4
+ },
+ {
+  "id": "686_hanumakonda",
+  "lgd": "686",
+  "name": "Hanumakonda",
+  "state": "Telangana",
+  "lat": 18.0673,
+  "lon": 79.5344,
+  "elevation_m": 254.0,
+  "optimum_tilt_deg": 21.9
+ },
+ {
+  "id": "507_hyderabad",
+  "lgd": "507",
+  "name": "Hyderabad",
+  "state": "Telangana",
+  "lat": 17.3877,
+  "lon": 78.4583,
+  "elevation_m": 508.0,
+  "optimum_tilt_deg": 21.0
+ },
+ {
+  "id": "681_jagitial",
+  "lgd": "681",
+  "name": "Jagitial",
+  "state": "Telangana",
+  "lat": 18.8294,
+  "lon": 78.8745,
+  "elevation_m": 287.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "689_jangoan",
+  "lgd": "689",
+  "name": "Jangoan",
+  "state": "Telangana",
+  "lat": 17.7209,
+  "lon": 79.2851,
+  "elevation_m": 328.0,
+  "optimum_tilt_deg": 21.8
+ },
+ {
+  "id": "687_jayashankar_bhupalapally",
+  "lgd": "687",
+  "name": "Jayashankar Bhupalapally",
+  "state": "Telangana",
+  "lat": 18.4539,
+  "lon": 79.8466,
+  "elevation_m": 183.0,
+  "optimum_tilt_deg": 22.8
+ },
+ {
+  "id": "695_jogulamba_gadwal",
+  "lgd": "695",
+  "name": "Jogulamba Gadwal",
+  "state": "Telangana",
+  "lat": 16.0653,
+  "lon": 77.7787,
+  "elevation_m": 355.0,
+  "optimum_tilt_deg": 20.0
+ },
+ {
+  "id": "685_kamareddy",
+  "lgd": "685",
+  "name": "Kamareddy",
+  "state": "Telangana",
+  "lat": 18.3344,
+  "lon": 78.0449,
+  "elevation_m": 511.0,
+  "optimum_tilt_deg": 22.0
+ },
+ {
+  "id": "508_karimnagar",
+  "lgd": "508",
+  "name": "Karimnagar",
+  "state": "Telangana",
+  "lat": 18.3764,
+  "lon": 79.2562,
+  "elevation_m": 273.0,
+  "optimum_tilt_deg": 22.7
+ },
+ {
+  "id": "509_khammam",
+  "lgd": "509",
+  "name": "Khammam",
+  "state": "Telangana",
+  "lat": 17.198,
+  "lon": 80.3319,
+  "elevation_m": 101.0,
+  "optimum_tilt_deg": 20.0
+ },
+ {
+  "id": "699_kumuram_bheem_asifabad",
+  "lgd": "699",
+  "name": "Kumuram Bheem Asifabad",
+  "state": "Telangana",
+  "lat": 19.3729,
+  "lon": 79.4612,
+  "elevation_m": 258.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "688_mahabubabad",
+  "lgd": "688",
+  "name": "Mahabubabad",
+  "state": "Telangana",
+  "lat": 17.619,
+  "lon": 79.9558,
+  "elevation_m": 201.0,
+  "optimum_tilt_deg": 21.0
+ },
+ {
+  "id": "512_mahabubnagar",
+  "lgd": "512",
+  "name": "Mahabubnagar",
+  "state": "Telangana",
+  "lat": 16.7479,
+  "lon": 78.0238,
+  "elevation_m": 586.0,
+  "optimum_tilt_deg": 21.0
+ },
+ {
+  "id": "684_mancherial",
+  "lgd": "684",
+  "name": "Mancherial",
+  "state": "Telangana",
+  "lat": 18.9877,
+  "lon": 79.5265,
+  "elevation_m": 194.0,
+  "optimum_tilt_deg": 23.3
+ },
+ {
+  "id": "513_medak",
+  "lgd": "513",
+  "name": "Medak",
+  "state": "Telangana",
+  "lat": 17.953,
+  "lon": 78.2604,
+  "elevation_m": 477.0,
+  "optimum_tilt_deg": 22.0
+ },
+ {
+  "id": "700_medchal_malkajgiri",
+  "lgd": "700",
+  "name": "Medchal Malkajgiri",
+  "state": "Telangana",
+  "lat": 17.5836,
+  "lon": 78.5778,
+  "elevation_m": 560.0,
+  "optimum_tilt_deg": 21.4
+ },
+ {
+  "id": "720_mulugu",
+  "lgd": "720",
+  "name": "Mulugu",
+  "state": "Telangana",
+  "lat": 18.2576,
+  "lon": 80.2632,
+  "elevation_m": 216.0,
+  "optimum_tilt_deg": 22.0
+ },
+ {
+  "id": "694_nagarkurnool",
+  "lgd": "694",
+  "name": "Nagarkurnool",
+  "state": "Telangana",
+  "lat": 16.4663,
+  "lon": 78.471,
+  "elevation_m": 428.0,
+  "optimum_tilt_deg": 21.0
+ },
+ {
+  "id": "514_nalgonda",
+  "lgd": "514",
+  "name": "Nalgonda",
+  "state": "Telangana",
+  "lat": 16.9185,
+  "lon": 79.1993,
+  "elevation_m": 204.0,
+  "optimum_tilt_deg": 20.0
+ },
+ {
+  "id": "721_narayanpet",
+  "lgd": "721",
+  "name": "Narayanpet",
+  "state": "Telangana",
+  "lat": 16.6327,
+  "lon": 77.577,
+  "elevation_m": 409.0,
+  "optimum_tilt_deg": 21.0
+ },
+ {
+  "id": "680_nirmal",
+  "lgd": "680",
+  "name": "Nirmal",
+  "state": "Telangana",
+  "lat": 19.0931,
+  "lon": 78.1874,
+  "elevation_m": 347.0,
+  "optimum_tilt_deg": 22.9
+ },
+ {
+  "id": "516_nizamabad",
+  "lgd": "516",
+  "name": "Nizamabad",
+  "state": "Telangana",
+  "lat": 18.7168,
+  "lon": 78.1899,
+  "elevation_m": 431.0,
+  "optimum_tilt_deg": 22.8
+ },
+ {
+  "id": "682_peddapalli",
+  "lgd": "682",
+  "name": "Peddapalli",
+  "state": "Telangana",
+  "lat": 18.6007,
+  "lon": 79.4359,
+  "elevation_m": 312.0,
+  "optimum_tilt_deg": 22.9
+ },
+ {
+  "id": "683_rajanna_sircilla",
+  "lgd": "683",
+  "name": "Rajanna Sircilla",
+  "state": "Telangana",
+  "lat": 18.4094,
+  "lon": 78.7777,
+  "elevation_m": 350.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "518_ranga_reddy",
+  "lgd": "518",
+  "name": "Ranga Reddy",
+  "state": "Telangana",
+  "lat": 17.094,
+  "lon": 78.3662,
+  "elevation_m": 623.0,
+  "optimum_tilt_deg": 21.0
+ },
+ {
+  "id": "691_sangareddy",
+  "lgd": "691",
+  "name": "Sangareddy",
+  "state": "Telangana",
+  "lat": 17.7951,
+  "lon": 77.8507,
+  "elevation_m": 533.0,
+  "optimum_tilt_deg": 21.6
+ },
+ {
+  "id": "692_siddipet",
+  "lgd": "692",
+  "name": "Siddipet",
+  "state": "Telangana",
+  "lat": 18.0224,
+  "lon": 78.8585,
+  "elevation_m": 503.0,
+  "optimum_tilt_deg": 22.0
+ },
+ {
+  "id": "696_suryapet",
+  "lgd": "696",
+  "name": "Suryapet",
+  "state": "Telangana",
+  "lat": 17.0932,
+  "lon": 79.7492,
+  "elevation_m": 174.0,
+  "optimum_tilt_deg": 20.0
+ },
+ {
+  "id": "698_vikarabad",
+  "lgd": "698",
+  "name": "Vikarabad",
+  "state": "Telangana",
+  "lat": 17.2434,
+  "lon": 77.7439,
+  "elevation_m": 515.0,
+  "optimum_tilt_deg": 21.3
+ },
+ {
+  "id": "693_wanaparthy",
+  "lgd": "693",
+  "name": "Wanaparthy",
+  "state": "Telangana",
+  "lat": 16.2893,
+  "lon": 78.0398,
+  "elevation_m": 378.0,
+  "optimum_tilt_deg": 20.3
+ },
+ {
+  "id": "522_warangal",
+  "lgd": "522",
+  "name": "Warangal",
+  "state": "Telangana",
+  "lat": 17.8649,
+  "lon": 79.7559,
+  "elevation_m": 242.0,
+  "optimum_tilt_deg": 22.0
+ },
+ {
+  "id": "697_yadadri_bhuvanagiri",
+  "lgd": "697",
+  "name": "Yadadri Bhuvanagiri",
+  "state": "Telangana",
+  "lat": 17.4441,
+  "lon": 79.0117,
+  "elevation_m": 351.0,
+  "optimum_tilt_deg": 21.0
+ },
+ {
+  "id": "269_dhalai",
+  "lgd": "269",
+  "name": "Dhalai",
+  "state": "Tripura",
+  "lat": 23.9434,
+  "lon": 91.8743,
+  "elevation_m": 92.0,
+  "optimum_tilt_deg": 25.6
+ },
+ {
+  "id": "654_gomati",
+  "lgd": "654",
+  "name": "Gomati",
+  "state": "Tripura",
+  "lat": 23.4983,
+  "lon": 91.57,
+  "elevation_m": 32.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "652_khowai",
+  "lgd": "652",
+  "name": "Khowai",
+  "state": "Tripura",
+  "lat": 23.9755,
+  "lon": 91.6262,
+  "elevation_m": 42.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "270_north_tripura",
+  "lgd": "270",
+  "name": "North Tripura",
+  "state": "Tripura",
+  "lat": 24.2885,
+  "lon": 92.188,
+  "elevation_m": 51.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "653_sepahijala",
+  "lgd": "653",
+  "name": "Sepahijala",
+  "state": "Tripura",
+  "lat": 23.5749,
+  "lon": 91.3083,
+  "elevation_m": 34.0,
+  "optimum_tilt_deg": 24.6
+ },
+ {
+  "id": "271_south_tripura",
+  "lgd": "271",
+  "name": "South Tripura",
+  "state": "Tripura",
+  "lat": 23.1936,
+  "lon": 91.5443,
+  "elevation_m": 86.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "655_unakoti",
+  "lgd": "655",
+  "name": "Unakoti",
+  "state": "Tripura",
+  "lat": 24.2313,
+  "lon": 92.0181,
+  "elevation_m": 41.0,
+  "optimum_tilt_deg": 25.7
+ },
+ {
+  "id": "272_west_tripura",
+  "lgd": "272",
+  "name": "West Tripura",
+  "state": "Tripura",
+  "lat": 23.8862,
+  "lon": 91.3804,
+  "elevation_m": 61.0,
+  "optimum_tilt_deg": 24.9
+ },
+ {
+  "id": "118_agra",
+  "lgd": "118",
+  "name": "Agra",
+  "state": "Uttar Pradesh",
+  "lat": 27.0409,
+  "lon": 78.0512,
+  "elevation_m": 166.0,
+  "optimum_tilt_deg": 26.1
+ },
+ {
+  "id": "119_aligarh",
+  "lgd": "119",
+  "name": "Aligarh",
+  "state": "Uttar Pradesh",
+  "lat": 27.9257,
+  "lon": 78.0547,
+  "elevation_m": 185.0,
+  "optimum_tilt_deg": 26.1
+ },
+ {
+  "id": "121_ambedkar_nagar",
+  "lgd": "121",
+  "name": "Ambedkar Nagar",
+  "state": "Uttar Pradesh",
+  "lat": 26.4146,
+  "lon": 82.6687,
+  "elevation_m": 90.0,
+  "optimum_tilt_deg": 24.4
+ },
+ {
+  "id": "640_amethi",
+  "lgd": "640",
+  "name": "Amethi",
+  "state": "Uttar Pradesh",
+  "lat": 26.3191,
+  "lon": 81.6639,
+  "elevation_m": 107.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "154_amroha",
+  "lgd": "154",
+  "name": "Amroha",
+  "state": "Uttar Pradesh",
+  "lat": 28.8168,
+  "lon": 78.3631,
+  "elevation_m": 211.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "122_auraiya",
+  "lgd": "122",
+  "name": "Auraiya",
+  "state": "Uttar Pradesh",
+  "lat": 26.665,
+  "lon": 79.4834,
+  "elevation_m": 140.0,
+  "optimum_tilt_deg": 25.6
+ },
+ {
+  "id": "140_ayodhya",
+  "lgd": "140",
+  "name": "Ayodhya",
+  "state": "Uttar Pradesh",
+  "lat": 26.6512,
+  "lon": 82.0035,
+  "elevation_m": 107.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "123_azamgarh",
+  "lgd": "123",
+  "name": "Azamgarh",
+  "state": "Uttar Pradesh",
+  "lat": 26.0354,
+  "lon": 83.0652,
+  "elevation_m": 81.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "124_baghpat",
+  "lgd": "124",
+  "name": "Baghpat",
+  "state": "Uttar Pradesh",
+  "lat": 29.0493,
+  "lon": 77.3097,
+  "elevation_m": 227.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "125_bahraich",
+  "lgd": "125",
+  "name": "Bahraich",
+  "state": "Uttar Pradesh",
+  "lat": 27.639,
+  "lon": 81.5243,
+  "elevation_m": 118.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "126_ballia",
+  "lgd": "126",
+  "name": "Ballia",
+  "state": "Uttar Pradesh",
+  "lat": 25.8825,
+  "lon": 84.085,
+  "elevation_m": 66.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "127_balrampur",
+  "lgd": "127",
+  "name": "Balrampur",
+  "state": "Uttar Pradesh",
+  "lat": 27.4543,
+  "lon": 82.3671,
+  "elevation_m": 103.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "128_banda",
+  "lgd": "128",
+  "name": "Banda",
+  "state": "Uttar Pradesh",
+  "lat": 25.4696,
+  "lon": 80.5627,
+  "elevation_m": 121.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "129_barabanki",
+  "lgd": "129",
+  "name": "Barabanki",
+  "state": "Uttar Pradesh",
+  "lat": 26.9501,
+  "lon": 81.3213,
+  "elevation_m": 120.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "130_bareilly",
+  "lgd": "130",
+  "name": "Bareilly",
+  "state": "Uttar Pradesh",
+  "lat": 28.4447,
+  "lon": 79.4339,
+  "elevation_m": 176.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "131_basti",
+  "lgd": "131",
+  "name": "Basti",
+  "state": "Uttar Pradesh",
+  "lat": 26.8251,
+  "lon": 82.6352,
+  "elevation_m": 89.0,
+  "optimum_tilt_deg": 24.7
+ },
+ {
+  "id": "179_bhadohi",
+  "lgd": "179",
+  "name": "Bhadohi",
+  "state": "Uttar Pradesh",
+  "lat": 25.3529,
+  "lon": 82.4693,
+  "elevation_m": 87.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "132_bijnor",
+  "lgd": "132",
+  "name": "Bijnor",
+  "state": "Uttar Pradesh",
+  "lat": 29.381,
+  "lon": 78.378,
+  "elevation_m": 241.0,
+  "optimum_tilt_deg": 27.8
+ },
+ {
+  "id": "133_budaun",
+  "lgd": "133",
+  "name": "Budaun",
+  "state": "Uttar Pradesh",
+  "lat": 28.0836,
+  "lon": 79.0418,
+  "elevation_m": 173.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "134_bulandshahr",
+  "lgd": "134",
+  "name": "Bulandshahr",
+  "state": "Uttar Pradesh",
+  "lat": 28.3558,
+  "lon": 78.0087,
+  "elevation_m": 203.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "135_chandauli",
+  "lgd": "135",
+  "name": "Chandauli",
+  "state": "Uttar Pradesh",
+  "lat": 25.2101,
+  "lon": 83.2751,
+  "elevation_m": 78.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "136_chitrakoot",
+  "lgd": "136",
+  "name": "Chitrakoot",
+  "state": "Uttar Pradesh",
+  "lat": 25.249,
+  "lon": 81.0734,
+  "elevation_m": 122.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "137_deoria",
+  "lgd": "137",
+  "name": "Deoria",
+  "state": "Uttar Pradesh",
+  "lat": 26.4292,
+  "lon": 83.831,
+  "elevation_m": 74.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "138_etah",
+  "lgd": "138",
+  "name": "Etah",
+  "state": "Uttar Pradesh",
+  "lat": 27.513,
+  "lon": 78.7126,
+  "elevation_m": 167.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "139_etawah",
+  "lgd": "139",
+  "name": "Etawah",
+  "state": "Uttar Pradesh",
+  "lat": 26.7941,
+  "lon": 79.1055,
+  "elevation_m": 147.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "141_farrukhabad",
+  "lgd": "141",
+  "name": "Farrukhabad",
+  "state": "Uttar Pradesh",
+  "lat": 27.4297,
+  "lon": 79.4591,
+  "elevation_m": 152.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "142_fatehpur",
+  "lgd": "142",
+  "name": "Fatehpur",
+  "state": "Uttar Pradesh",
+  "lat": 25.8783,
+  "lon": 80.8064,
+  "elevation_m": 116.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "143_firozabad",
+  "lgd": "143",
+  "name": "Firozabad",
+  "state": "Uttar Pradesh",
+  "lat": 27.1966,
+  "lon": 78.53,
+  "elevation_m": 164.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "144_gautam_buddha_nagar",
+  "lgd": "144",
+  "name": "Gautam Buddha Nagar",
+  "state": "Uttar Pradesh",
+  "lat": 28.3469,
+  "lon": 77.5911,
+  "elevation_m": 202.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "145_ghaziabad",
+  "lgd": "145",
+  "name": "Ghaziabad",
+  "state": "Uttar Pradesh",
+  "lat": 28.789,
+  "lon": 77.5042,
+  "elevation_m": 219.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "146_ghazipur",
+  "lgd": "146",
+  "name": "Ghazipur",
+  "state": "Uttar Pradesh",
+  "lat": 25.6288,
+  "lon": 83.5574,
+  "elevation_m": 70.0,
+  "optimum_tilt_deg": 23.9
+ },
+ {
+  "id": "147_gonda",
+  "lgd": "147",
+  "name": "Gonda",
+  "state": "Uttar Pradesh",
+  "lat": 27.0852,
+  "lon": 82.0162,
+  "elevation_m": 103.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "148_gorakhpur",
+  "lgd": "148",
+  "name": "Gorakhpur",
+  "state": "Uttar Pradesh",
+  "lat": 26.6489,
+  "lon": 83.3586,
+  "elevation_m": 80.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "149_hamirpur",
+  "lgd": "149",
+  "name": "Hamirpur",
+  "state": "Uttar Pradesh",
+  "lat": 25.747,
+  "lon": 79.8762,
+  "elevation_m": 118.0,
+  "optimum_tilt_deg": 25.1
+ },
+ {
+  "id": "661_hapur",
+  "lgd": "661",
+  "name": "Hapur",
+  "state": "Uttar Pradesh",
+  "lat": 28.7199,
+  "lon": 77.8803,
+  "elevation_m": 213.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "150_hardoi",
+  "lgd": "150",
+  "name": "Hardoi",
+  "state": "Uttar Pradesh",
+  "lat": 27.3361,
+  "lon": 80.1435,
+  "elevation_m": 140.0,
+  "optimum_tilt_deg": 25.2
+ },
+ {
+  "id": "163_hathras",
+  "lgd": "163",
+  "name": "Hathras",
+  "state": "Uttar Pradesh",
+  "lat": 27.5789,
+  "lon": 78.1624,
+  "elevation_m": 173.0,
+  "optimum_tilt_deg": 26.2
+ },
+ {
+  "id": "151_jalaun",
+  "lgd": "151",
+  "name": "Jalaun",
+  "state": "Uttar Pradesh",
+  "lat": 26.0871,
+  "lon": 79.3802,
+  "elevation_m": 140.0,
+  "optimum_tilt_deg": 25.3
+ },
+ {
+  "id": "152_jaunpur",
+  "lgd": "152",
+  "name": "Jaunpur",
+  "state": "Uttar Pradesh",
+  "lat": 25.7466,
+  "lon": 82.5736,
+  "elevation_m": 87.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "153_jhansi",
+  "lgd": "153",
+  "name": "Jhansi",
+  "state": "Uttar Pradesh",
+  "lat": 25.5187,
+  "lon": 78.9707,
+  "elevation_m": 200.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "155_kannauj",
+  "lgd": "155",
+  "name": "Kannauj",
+  "state": "Uttar Pradesh",
+  "lat": 27.0136,
+  "lon": 79.6835,
+  "elevation_m": 142.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "156_kanpur_dehat",
+  "lgd": "156",
+  "name": "Kanpur Dehat",
+  "state": "Uttar Pradesh",
+  "lat": 26.4459,
+  "lon": 79.8538,
+  "elevation_m": 134.0,
+  "optimum_tilt_deg": 25.7
+ },
+ {
+  "id": "157_kanpur_nagar",
+  "lgd": "157",
+  "name": "Kanpur Nagar",
+  "state": "Uttar Pradesh",
+  "lat": 26.384,
+  "lon": 80.197,
+  "elevation_m": 128.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "633_kasganj",
+  "lgd": "633",
+  "name": "Kasganj",
+  "state": "Uttar Pradesh",
+  "lat": 27.7731,
+  "lon": 78.8433,
+  "elevation_m": 170.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "158_kaushambi",
+  "lgd": "158",
+  "name": "Kaushambi",
+  "state": "Uttar Pradesh",
+  "lat": 25.4964,
+  "lon": 81.4139,
+  "elevation_m": 104.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "159_kheri",
+  "lgd": "159",
+  "name": "Kheri",
+  "state": "Uttar Pradesh",
+  "lat": 28.0703,
+  "lon": 80.6496,
+  "elevation_m": 145.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "160_kushi_nagar",
+  "lgd": "160",
+  "name": "Kushi Nagar",
+  "state": "Uttar Pradesh",
+  "lat": 26.8523,
+  "lon": 83.9179,
+  "elevation_m": 86.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "161_lalitpur",
+  "lgd": "161",
+  "name": "Lalitpur",
+  "state": "Uttar Pradesh",
+  "lat": 24.655,
+  "lon": 78.5798,
+  "elevation_m": 359.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "162_lucknow",
+  "lgd": "162",
+  "name": "Lucknow",
+  "state": "Uttar Pradesh",
+  "lat": 26.8253,
+  "lon": 80.9266,
+  "elevation_m": 132.0,
+  "optimum_tilt_deg": 24.3
+ },
+ {
+  "id": "164_maharajganj",
+  "lgd": "164",
+  "name": "Maharajganj",
+  "state": "Uttar Pradesh",
+  "lat": 27.1924,
+  "lon": 83.526,
+  "elevation_m": 92.0,
+  "optimum_tilt_deg": 24.6
+ },
+ {
+  "id": "165_mahoba",
+  "lgd": "165",
+  "name": "Mahoba",
+  "state": "Uttar Pradesh",
+  "lat": 25.3682,
+  "lon": 79.7334,
+  "elevation_m": 192.0,
+  "optimum_tilt_deg": 25.9
+ },
+ {
+  "id": "166_mainpuri",
+  "lgd": "166",
+  "name": "Mainpuri",
+  "state": "Uttar Pradesh",
+  "lat": 27.1814,
+  "lon": 79.0512,
+  "elevation_m": 158.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "167_mathura",
+  "lgd": "167",
+  "name": "Mathura",
+  "state": "Uttar Pradesh",
+  "lat": 27.6013,
+  "lon": 77.6251,
+  "elevation_m": 183.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "168_mau",
+  "lgd": "168",
+  "name": "Mau",
+  "state": "Uttar Pradesh",
+  "lat": 26.0427,
+  "lon": 83.5613,
+  "elevation_m": 69.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "169_meerut",
+  "lgd": "169",
+  "name": "Meerut",
+  "state": "Uttar Pradesh",
+  "lat": 29.0311,
+  "lon": 77.7788,
+  "elevation_m": 228.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "170_mirzapur",
+  "lgd": "170",
+  "name": "Mirzapur",
+  "state": "Uttar Pradesh",
+  "lat": 24.9946,
+  "lon": 82.6151,
+  "elevation_m": 163.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "171_moradabad",
+  "lgd": "171",
+  "name": "Moradabad",
+  "state": "Uttar Pradesh",
+  "lat": 28.8717,
+  "lon": 78.8011,
+  "elevation_m": 191.0,
+  "optimum_tilt_deg": 26.9
+ },
+ {
+  "id": "172_muzaffarnagar",
+  "lgd": "172",
+  "name": "Muzaffarnagar",
+  "state": "Uttar Pradesh",
+  "lat": 29.4067,
+  "lon": 77.7186,
+  "elevation_m": 246.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "173_pilibhit",
+  "lgd": "173",
+  "name": "Pilibhit",
+  "state": "Uttar Pradesh",
+  "lat": 28.5081,
+  "lon": 79.9703,
+  "elevation_m": 184.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "174_pratapgarh",
+  "lgd": "174",
+  "name": "Pratapgarh",
+  "state": "Uttar Pradesh",
+  "lat": 25.8713,
+  "lon": 81.831,
+  "elevation_m": 98.0,
+  "optimum_tilt_deg": 24.8
+ },
+ {
+  "id": "120_prayagraj",
+  "lgd": "120",
+  "name": "Prayagraj",
+  "state": "Uttar Pradesh",
+  "lat": 25.302,
+  "lon": 81.9626,
+  "elevation_m": 94.0,
+  "optimum_tilt_deg": 24.6
+ },
+ {
+  "id": "175_rae_bareli",
+  "lgd": "175",
+  "name": "Rae Bareli",
+  "state": "Uttar Pradesh",
+  "lat": 26.2118,
+  "lon": 81.1923,
+  "elevation_m": 112.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "176_rampur",
+  "lgd": "176",
+  "name": "Rampur",
+  "state": "Uttar Pradesh",
+  "lat": 28.8065,
+  "lon": 79.1182,
+  "elevation_m": 190.0,
+  "optimum_tilt_deg": 26.8
+ },
+ {
+  "id": "177_saharanpur",
+  "lgd": "177",
+  "name": "Saharanpur",
+  "state": "Uttar Pradesh",
+  "lat": 29.9012,
+  "lon": 77.5034,
+  "elevation_m": 273.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "659_sambhal",
+  "lgd": "659",
+  "name": "Sambhal",
+  "state": "Uttar Pradesh",
+  "lat": 28.451,
+  "lon": 78.5581,
+  "elevation_m": 198.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "178_sant_kabeer_nagar",
+  "lgd": "178",
+  "name": "Sant Kabeer Nagar",
+  "state": "Uttar Pradesh",
+  "lat": 26.7784,
+  "lon": 83.0251,
+  "elevation_m": 82.0,
+  "optimum_tilt_deg": 24.6
+ },
+ {
+  "id": "180_shahjahanpur",
+  "lgd": "180",
+  "name": "Shahjahanpur",
+  "state": "Uttar Pradesh",
+  "lat": 27.9519,
+  "lon": 79.8196,
+  "elevation_m": 156.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "660_shamli",
+  "lgd": "660",
+  "name": "Shamli",
+  "state": "Uttar Pradesh",
+  "lat": 29.5025,
+  "lon": 77.2755,
+  "elevation_m": 245.0,
+  "optimum_tilt_deg": 27.1
+ },
+ {
+  "id": "181_shravasti",
+  "lgd": "181",
+  "name": "Shravasti",
+  "state": "Uttar Pradesh",
+  "lat": 27.7009,
+  "lon": 81.8823,
+  "elevation_m": 119.0,
+  "optimum_tilt_deg": 25.4
+ },
+ {
+  "id": "182_siddharth_nagar",
+  "lgd": "182",
+  "name": "Siddharth Nagar",
+  "state": "Uttar Pradesh",
+  "lat": 27.2686,
+  "lon": 82.8678,
+  "elevation_m": 86.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "183_sitapur",
+  "lgd": "183",
+  "name": "Sitapur",
+  "state": "Uttar Pradesh",
+  "lat": 27.5208,
+  "lon": 80.8511,
+  "elevation_m": 138.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "184_sonbhadra",
+  "lgd": "184",
+  "name": "Sonbhadra",
+  "state": "Uttar Pradesh",
+  "lat": 24.502,
+  "lon": 83.048,
+  "elevation_m": 160.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "185_sultanpur",
+  "lgd": "185",
+  "name": "Sultanpur",
+  "state": "Uttar Pradesh",
+  "lat": 26.2574,
+  "lon": 82.2063,
+  "elevation_m": 100.0,
+  "optimum_tilt_deg": 24.7
+ },
+ {
+  "id": "186_unnao",
+  "lgd": "186",
+  "name": "Unnao",
+  "state": "Uttar Pradesh",
+  "lat": 26.6009,
+  "lon": 80.5627,
+  "elevation_m": 126.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "187_varanasi",
+  "lgd": "187",
+  "name": "Varanasi",
+  "state": "Uttar Pradesh",
+  "lat": 25.3988,
+  "lon": 82.9004,
+  "elevation_m": 82.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "45_almora",
+  "lgd": "45",
+  "name": "Almora",
+  "state": "Uttarakhand",
+  "lat": 29.7044,
+  "lon": 79.4883,
+  "elevation_m": 1235.0,
+  "optimum_tilt_deg": 31.0
+ },
+ {
+  "id": "46_bageshwar",
+  "lgd": "46",
+  "name": "Bageshwar",
+  "state": "Uttarakhand",
+  "lat": 29.8688,
+  "lon": 79.7976,
+  "elevation_m": 943.0,
+  "optimum_tilt_deg": 32.0
+ },
+ {
+  "id": "47_chamoli",
+  "lgd": "47",
+  "name": "Chamoli",
+  "state": "Uttarakhand",
+  "lat": 30.1824,
+  "lon": 79.3426,
+  "elevation_m": 1363.0,
+  "optimum_tilt_deg": 32.8
+ },
+ {
+  "id": "48_champawat",
+  "lgd": "48",
+  "name": "Champawat",
+  "state": "Uttarakhand",
+  "lat": 29.2595,
+  "lon": 80.0709,
+  "elevation_m": 1289.0,
+  "optimum_tilt_deg": 30.7
+ },
+ {
+  "id": "49_dehradun",
+  "lgd": "49",
+  "name": "Dehradun",
+  "state": "Uttarakhand",
+  "lat": 30.3527,
+  "lon": 77.9587,
+  "elevation_m": 615.0,
+  "optimum_tilt_deg": 30.3
+ },
+ {
+  "id": "50_haridwar",
+  "lgd": "50",
+  "name": "Haridwar",
+  "state": "Uttarakhand",
+  "lat": 29.8343,
+  "lon": 77.9715,
+  "elevation_m": 247.0,
+  "optimum_tilt_deg": 28.0
+ },
+ {
+  "id": "51_nainital",
+  "lgd": "51",
+  "name": "Nainital",
+  "state": "Uttarakhand",
+  "lat": 29.2765,
+  "lon": 79.3394,
+  "elevation_m": 374.0,
+  "optimum_tilt_deg": 28.4
+ },
+ {
+  "id": "52_pauri_garhwal",
+  "lgd": "52",
+  "name": "Pauri Garhwal",
+  "state": "Uttarakhand",
+  "lat": 29.8844,
+  "lon": 78.7454,
+  "elevation_m": 999.0,
+  "optimum_tilt_deg": 31.0
+ },
+ {
+  "id": "53_pithoragarh",
+  "lgd": "53",
+  "name": "Pithoragarh",
+  "state": "Uttarakhand",
+  "lat": 29.6698,
+  "lon": 80.1702,
+  "elevation_m": 1270.0,
+  "optimum_tilt_deg": 31.6
+ },
+ {
+  "id": "54_rudra_prayag",
+  "lgd": "54",
+  "name": "Rudra Prayag",
+  "state": "Uttarakhand",
+  "lat": 30.3586,
+  "lon": 79.0171,
+  "elevation_m": 1327.0,
+  "optimum_tilt_deg": 32.3
+ },
+ {
+  "id": "55_tehri_garhwal",
+  "lgd": "55",
+  "name": "Tehri Garhwal",
+  "state": "Uttarakhand",
+  "lat": 30.3889,
+  "lon": 78.4397,
+  "elevation_m": 1316.0,
+  "optimum_tilt_deg": 31.8
+ },
+ {
+  "id": "56_udam_singh_nagar",
+  "lgd": "56",
+  "name": "Udam Singh Nagar",
+  "state": "Uttarakhand",
+  "lat": 29.0492,
+  "lon": 79.4276,
+  "elevation_m": 234.0,
+  "optimum_tilt_deg": 27.0
+ },
+ {
+  "id": "57_uttar_kashi",
+  "lgd": "57",
+  "name": "Uttar Kashi",
+  "state": "Uttarakhand",
+  "lat": 30.7778,
+  "lon": 78.2201,
+  "elevation_m": 2088.0,
+  "optimum_tilt_deg": 32.1
+ },
+ {
+  "id": "303_24_paraganas_north",
+  "lgd": "303",
+  "name": "24 Paraganas North",
+  "state": "West Bengal",
+  "lat": 22.7573,
+  "lon": 88.7651,
+  "elevation_m": 4.0,
+  "optimum_tilt_deg": 22.8
+ },
+ {
+  "id": "304_24_paraganas_south",
+  "lgd": "304",
+  "name": "24 Paraganas South",
+  "state": "West Bengal",
+  "lat": 22.1151,
+  "lon": 88.4574,
+  "elevation_m": 5.0,
+  "optimum_tilt_deg": 22.9
+ },
+ {
+  "id": "664_alipurduar",
+  "lgd": "664",
+  "name": "Alipurduar",
+  "state": "West Bengal",
+  "lat": 26.5798,
+  "lon": 89.4501,
+  "elevation_m": 70.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "305_bankura",
+  "lgd": "305",
+  "name": "Bankura",
+  "state": "West Bengal",
+  "lat": 23.1499,
+  "lon": 87.1612,
+  "elevation_m": 84.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "307_birbhum",
+  "lgd": "307",
+  "name": "Birbhum",
+  "state": "West Bengal",
+  "lat": 23.9548,
+  "lon": 87.6744,
+  "elevation_m": 43.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "308_coochbehar",
+  "lgd": "308",
+  "name": "Coochbehar",
+  "state": "West Bengal",
+  "lat": 26.29,
+  "lon": 89.3408,
+  "elevation_m": 52.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "309_darjeeling",
+  "lgd": "309",
+  "name": "Darjeeling",
+  "state": "West Bengal",
+  "lat": 26.6461,
+  "lon": 88.2714,
+  "elevation_m": 122.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "310_dinajpur_dakshin",
+  "lgd": "310",
+  "name": "Dinajpur Dakshin",
+  "state": "West Bengal",
+  "lat": 25.3672,
+  "lon": 88.5741,
+  "elevation_m": 33.0,
+  "optimum_tilt_deg": 24.9
+ },
+ {
+  "id": "311_dinajpur_uttar",
+  "lgd": "311",
+  "name": "Dinajpur Uttar",
+  "state": "West Bengal",
+  "lat": 25.851,
+  "lon": 88.1417,
+  "elevation_m": 40.0,
+  "optimum_tilt_deg": 24.0
+ },
+ {
+  "id": "312_hooghly",
+  "lgd": "312",
+  "name": "Hooghly",
+  "state": "West Bengal",
+  "lat": 22.8956,
+  "lon": 88.0499,
+  "elevation_m": 16.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "313_howrah",
+  "lgd": "313",
+  "name": "Howrah",
+  "state": "West Bengal",
+  "lat": 22.5323,
+  "lon": 88.0228,
+  "elevation_m": 6.0,
+  "optimum_tilt_deg": 22.6
+ },
+ {
+  "id": "314_jalpaiguri",
+  "lgd": "314",
+  "name": "Jalpaiguri",
+  "state": "West Bengal",
+  "lat": 26.6223,
+  "lon": 88.7636,
+  "elevation_m": 91.0,
+  "optimum_tilt_deg": 25.0
+ },
+ {
+  "id": "703_jhargram",
+  "lgd": "703",
+  "name": "Jhargram",
+  "state": "West Bengal",
+  "lat": 22.3635,
+  "lon": 86.9694,
+  "elevation_m": 83.0,
+  "optimum_tilt_deg": 23.3
+ },
+ {
+  "id": "702_kalimpong",
+  "lgd": "702",
+  "name": "Kalimpong",
+  "state": "West Bengal",
+  "lat": 26.9728,
+  "lon": 88.6248,
+  "elevation_m": 800.0,
+  "optimum_tilt_deg": 26.0
+ },
+ {
+  "id": "315_kolkata",
+  "lgd": "315",
+  "name": "Kolkata",
+  "state": "West Bengal",
+  "lat": 22.5256,
+  "lon": 88.4048,
+  "elevation_m": 0.0,
+  "optimum_tilt_deg": 22.0
+ },
+ {
+  "id": "316_maldah",
+  "lgd": "316",
+  "name": "Maldah",
+  "state": "West Bengal",
+  "lat": 25.1663,
+  "lon": 88.1152,
+  "elevation_m": 41.0,
+  "optimum_tilt_deg": 24.1
+ },
+ {
+  "id": "317_medinipur_east",
+  "lgd": "317",
+  "name": "Medinipur East",
+  "state": "West Bengal",
+  "lat": 22.0069,
+  "lon": 87.757,
+  "elevation_m": 3.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "318_medinipur_west",
+  "lgd": "318",
+  "name": "Medinipur West",
+  "state": "West Bengal",
+  "lat": 22.4323,
+  "lon": 87.4249,
+  "elevation_m": 25.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "319_murshidabad",
+  "lgd": "319",
+  "name": "Murshidabad",
+  "state": "West Bengal",
+  "lat": 24.1406,
+  "lon": 88.2238,
+  "elevation_m": 19.0,
+  "optimum_tilt_deg": 23.7
+ },
+ {
+  "id": "320_nadia",
+  "lgd": "320",
+  "name": "Nadia",
+  "state": "West Bengal",
+  "lat": 23.5008,
+  "lon": 88.5108,
+  "elevation_m": 15.0,
+  "optimum_tilt_deg": 23.0
+ },
+ {
+  "id": "704_paschim_bardhaman",
+  "lgd": "704",
+  "name": "Paschim Bardhaman",
+  "state": "West Bengal",
+  "lat": 23.6359,
+  "lon": 87.2134,
+  "elevation_m": 94.0,
+  "optimum_tilt_deg": 23.9
+ },
+ {
+  "id": "306_purba_bardhaman",
+  "lgd": "306",
+  "name": "Purba Bardhaman",
+  "state": "West Bengal",
+  "lat": 23.3535,
+  "lon": 87.964,
+  "elevation_m": 24.0,
+  "optimum_tilt_deg": 23.2
+ },
+ {
+  "id": "321_purulia",
+  "lgd": "321",
+  "name": "Purulia",
+  "state": "West Bengal",
+  "lat": 23.2887,
+  "lon": 86.4234,
+  "elevation_m": 200.0,
+  "optimum_tilt_deg": 24.8
+ }
+]

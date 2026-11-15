@@ -1,0 +1,552 @@
+[
+ {
+  "id": "rice",
+  "name": "Rice",
+  "seasons": [
+   "kharif",
+   "rabi",
+   "zaid"
+  ],
+  "tolerance": "neutral",
+  "l_t": {
+   "pessimistic": 1.0,
+   "central": 0.96,
+   "optimistic": 0.83
+  },
+  "k": {
+   "pessimistic": 1.24,
+   "central": 1.06,
+   "optimistic": 0.98
+  },
+  "grade": "B",
+  "n_studies": 4,
+  "n_indian_studies": 0,
+  "citations": [
+   "Jo, H., Asekova, S., Bayat, M.A., Ali, L., Song, J.T., Ha, Y.-S., Hong, D.-H., Lee, J.-D. (2022). Comparison of yield and yield components of several crops grown under agro-photovoltaic system in Korea. Agriculture 12(5), 619",
+   "Lee, H.J., Park, H.H., Kim, Y.O., Kuk, Y.I. (2022). Crop cultivation underneath agro-photovoltaic systems and its effects on crop growth, yield, and photosynthetic efficiency. Agronomy 12(8), 1842",
+   "Nasukawa, H., Kuwabara, Y., Tatsumi, K., Tajima, R. (2025). Rice yield and energy balance in an agrivoltaic system established in Shonai plain, northern Japan. Science of the Total Environment 959, 178315",
+   "Thum, C.H., Okada, K., Yamasaki, Y., Kato, Y. (2025). Impacts of agrivoltaic systems on microclimate, grain yield, and quality of lowland rice under a temperate climate. Field Crops Research 326, 109877"
+  ],
+  "notes": "",
+  "selectable": true,
+  "not_selectable_reason": null
+ },
+ {
+  "id": "wheat",
+  "name": "Wheat",
+  "seasons": [
+   "rabi"
+  ],
+  "tolerance": "neutral",
+  "l_t": {
+   "pessimistic": 0.93,
+   "central": 0.89,
+   "optimistic": 0.76
+  },
+  "k": {
+   "pessimistic": 1.36,
+   "central": 1.18,
+   "optimistic": 1.1
+  },
+  "grade": "A",
+  "n_studies": 13,
+  "n_indian_studies": 2,
+  "citations": [
+   "Laub, M., Pataczek, L., Feuerbacher, A., Zikeli, S., Högy, P. (2022). Contrasting yield responses at varying levels of shade suggest different suitability of crops for dual land-use systems: a meta-analysis. Agronomy for Sustainable Development 42, 51 (data set: ESM 2)",
+   "Mukherjee, J., Yadav, B., Sehgal, V.K., Krishnan, P., Dhakar, R.K. (2020). Radiation dimming induced modifications in radiation utilization of wheat (Triticum aestivum) crop. Journal of Agrometeorology 22(3)",
+   "Prakash, V., Lunagaria, M., Upadhyaya, A., Das, A., Gupta, A., Kumar, Y., Subash, N., Ghasal, P., Singh, A., Trivedi, A., et al. (2025). Influence of agrivoltaic system-induced microclimate modifications on wheat growth and yield. Agricultural and Forest Meteorology 373, 110775",
+   "Weselek, A., Bauerle, A., Hartung, J., Zikeli, S., Lewandowski, I., Högy, P. (2021). Agrivoltaic system impacts on microclimate and yield of different crops within an organic crop rotation in a temperate climate. Agronomy for Sustainable Development 41, 59"
+  ],
+  "notes": "",
+  "selectable": true,
+  "not_selectable_reason": null
+ },
+ {
+  "id": "soybean",
+  "name": "Soybean",
+  "seasons": [
+   "kharif"
+  ],
+  "tolerance": "neutral",
+  "l_t": {
+   "pessimistic": 1.0,
+   "central": 1.0,
+   "optimistic": 0.94
+  },
+  "k": {
+   "pessimistic": 1.3,
+   "central": 1.1,
+   "optimistic": 1.0
+  },
+  "grade": "A",
+  "n_studies": 13,
+  "n_indian_studies": 2,
+  "citations": [
+   "Jyothi Prakash, H.P., Umesh, M.R., Manjunatha, N., Kamble, A.S., Rajanna, B. (2025). Canopy characteristics, yield, radiation use efficiency and quality of oilseeds under reduced sunlight. Plant Archives 25(1), 2113-2119",
+   "Kim, S., Kim, S., Yoon, C.-Y. (2021). An efficient structure of an agrophotovoltaic system in a temperate climate region. Agronomy 11(8), 1584",
+   "Laub, M., Pataczek, L., Feuerbacher, A., Zikeli, S., Högy, P. (2022). Contrasting yield responses at varying levels of shade suggest different suitability of crops for dual land-use systems: a meta-analysis. Agronomy for Sustainable Development 42, 51 (data set: ESM 2)",
+   "Lee, H.J., Park, H.H., Kim, Y.O., Kuk, Y.I. (2022). Crop cultivation underneath agro-photovoltaic systems and its effects on crop growth, yield, and photosynthetic efficiency. Agronomy 12(8), 1842"
+  ],
+  "notes": "curve misses the observed points (RMSE 0.154); Indian trials report light differently (spot or nominal values), so check the light metric before refitting",
+  "selectable": true,
+  "not_selectable_reason": null
+ },
+ {
+  "id": "cotton",
+  "name": "Cotton",
+  "seasons": [
+   "kharif"
+  ],
+  "tolerance": "tolerant",
+  "l_t": {
+   "pessimistic": 1.0,
+   "central": 1.0,
+   "optimistic": 0.95
+  },
+  "k": {
+   "pessimistic": 1.0,
+   "central": 0.8,
+   "optimistic": 0.6
+  },
+  "grade": "B",
+  "n_studies": 2,
+  "n_indian_studies": 0,
+  "citations": [
+   "Chen, B.L., Yang, H.K., Ma, Y.N., Liu, J.R., Lv, F.J., Chen, J., Meng, Y.L., Wang, Y.H., Zhou, Z.G. (2017). Effect of shading on yield, fiber quality and physiological characteristics of cotton subtending leaves on different fruiting positions. Photosynthetica 55(2), 240-250",
+   "Pettigrew, W.T. (1994). Source-to-sink manipulation effects on cotton lint yield and yield components. Agronomy Journal 86, 731-735"
+  ],
+  "notes": "few studies: spread is assumed (threshold +/-0.05, slope +/-25%), not measured",
+  "selectable": true,
+  "not_selectable_reason": null
+ },
+ {
+  "id": "maize",
+  "name": "Maize",
+  "seasons": [
+   "kharif",
+   "rabi",
+   "zaid"
+  ],
+  "tolerance": "neutral",
+  "l_t": {
+   "pessimistic": 1.0,
+   "central": 1.0,
+   "optimistic": 0.97
+  },
+  "k": {
+   "pessimistic": 1.36,
+   "central": 1.18,
+   "optimistic": 1.02
+  },
+  "grade": "B",
+  "n_studies": 12,
+  "n_indian_studies": 0,
+  "citations": [
+   "Kim, S., Kim, S., Yoon, C.-Y. (2021). An efficient structure of an agrophotovoltaic system in a temperate climate region. Agronomy 11(8), 1584",
+   "Laub, M., Pataczek, L., Feuerbacher, A., Zikeli, S., Högy, P. (2022). Contrasting yield responses at varying levels of shade suggest different suitability of crops for dual land-use systems: a meta-analysis. Agronomy for Sustainable Development 42, 51 (data set: ESM 2)",
+   "Ramos-Fuentes, I.A., Elamri, Y., Cheviron, B., Dejean, C., Belaud, G., Fumey, D. (2023). Effects of shade and deficit irrigation on maize growth and development in fixed and dynamic AgriVoltaic systems. Agricultural Water Management 280, 108187"
+  ],
+  "notes": "curve misses the observed points (RMSE 0.185)",
+  "selectable": true,
+  "not_selectable_reason": null
+ },
+ {
+  "id": "gram",
+  "name": "Gram (chickpea)",
+  "seasons": [
+   "rabi"
+  ],
+  "tolerance": "neutral",
+  "l_t": {
+   "pessimistic": 1.0,
+   "central": 1.0,
+   "optimistic": 0.94
+  },
+  "k": {
+   "pessimistic": 1.42,
+   "central": 1.22,
+   "optimistic": 1.12
+  },
+  "grade": "B",
+  "n_studies": 2,
+  "n_indian_studies": 1,
+  "citations": [
+   "Laub, M., Pataczek, L., Feuerbacher, A., Zikeli, S., Högy, P. (2022). Contrasting yield responses at varying levels of shade suggest different suitability of crops for dual land-use systems: a meta-analysis. Agronomy for Sustainable Development 42, 51 (data set: ESM 2)",
+   "Poonia, S., Santra, P. (2024). Evaluation of agrivoltaic system in Thar Desert of India. AgriVoltaics Conference Proceedings 1 (AgriVoltaics World Conference 2022)"
+  ],
+  "notes": "",
+  "selectable": true,
+  "not_selectable_reason": null
+ },
+ {
+  "id": "mustard",
+  "name": "Rapeseed & mustard",
+  "seasons": [
+   "rabi"
+  ],
+  "tolerance": "sensitive",
+  "l_t": {
+   "pessimistic": 0.75,
+   "central": 0.7,
+   "optimistic": 0.65
+  },
+  "k": {
+   "pessimistic": 4.5,
+   "central": 3.6,
+   "optimistic": 2.7
+  },
+  "grade": "B",
+  "n_studies": 1,
+  "n_indian_studies": 1,
+  "citations": [
+   "Alam, B., Singh, R., Chaturvedi, M., Newaj, R., Chaturvedi, O.P. (2018). Determination of critical low light limit and adaptive physiological and biochemical traits regulating growth and yield of mustard (Brassica juncea Coss.). Physiology and Molecular Biology of Plants 24(5), 985 ff."
+  ],
+  "notes": "few studies: spread is assumed (threshold +/-0.05, slope +/-25%), not measured",
+  "selectable": true,
+  "not_selectable_reason": null
+ },
+ {
+  "id": "bajra",
+  "name": "Bajra (pearl millet)",
+  "seasons": [
+   "kharif",
+   "zaid"
+  ],
+  "tolerance": "sensitive",
+  "l_t": {
+   "pessimistic": 1.0,
+   "central": 1.0,
+   "optimistic": 0.97
+  },
+  "k": {
+   "pessimistic": 1.5,
+   "central": 1.32,
+   "optimistic": 1.16
+  },
+  "grade": "C",
+  "n_studies": 0,
+  "n_indian_studies": 0,
+  "citations": [],
+  "notes": "group curve borrowed from a related group: related (C4 cereal)",
+  "selectable": true,
+  "not_selectable_reason": null
+ },
+ {
+  "id": "sugarcane",
+  "name": "Sugarcane",
+  "seasons": [],
+  "tolerance": "sensitive",
+  "l_t": {
+   "pessimistic": 1.0,
+   "central": 1.0,
+   "optimistic": 0.97
+  },
+  "k": {
+   "pessimistic": 1.5,
+   "central": 1.32,
+   "optimistic": 1.16
+  },
+  "grade": "C",
+  "n_studies": 0,
+  "n_indian_studies": 0,
+  "citations": [],
+  "notes": "group curve borrowed from a related group: related (C4 grass of the same tribe as maize and sorghum; 10-18 months)",
+  "selectable": false,
+  "not_selectable_reason": "whole-year crop: the model works by season"
+ },
+ {
+  "id": "moong",
+  "name": "Moong (green gram)",
+  "seasons": [
+   "kharif",
+   "zaid"
+  ],
+  "tolerance": "neutral",
+  "l_t": {
+   "pessimistic": 1.0,
+   "central": 1.0,
+   "optimistic": 0.94
+  },
+  "k": {
+   "pessimistic": 1.42,
+   "central": 1.22,
+   "optimistic": 1.12
+  },
+  "grade": "B",
+  "n_studies": 3,
+  "n_indian_studies": 1,
+  "citations": [
+   "Kim, S., Kim, S., Yoon, C.-Y. (2021). An efficient structure of an agrophotovoltaic system in a temperate climate region. Agronomy 11(8), 1584",
+   "Poonia, S., Santra, P. (2024). Evaluation of agrivoltaic system in Thar Desert of India. AgriVoltaics Conference Proceedings 1 (AgriVoltaics World Conference 2022)",
+   "Ukwu, U.N., Muller, O., Meier-Gruell, M., Uguru, M.I. (2025). Yield sensitivity of mungbean (Vigna radiata L.) genotypes to different agrivoltaic environments in tropical Nigeria. Plants 14, 1326"
+  ],
+  "notes": "",
+  "selectable": true,
+  "not_selectable_reason": null
+ },
+ {
+  "id": "groundnut",
+  "name": "Groundnut",
+  "seasons": [
+   "kharif",
+   "rabi",
+   "zaid"
+  ],
+  "tolerance": "neutral",
+  "l_t": {
+   "pessimistic": 1.0,
+   "central": 1.0,
+   "optimistic": 0.94
+  },
+  "k": {
+   "pessimistic": 1.42,
+   "central": 1.22,
+   "optimistic": 1.12
+  },
+  "grade": "B",
+  "n_studies": 2,
+  "n_indian_studies": 1,
+  "citations": [
+   "Jyothi Prakash, H.P., Umesh, M.R., Manjunatha, N., Kamble, A.S., Rajanna, B. (2025). Canopy characteristics, yield, radiation use efficiency and quality of oilseeds under reduced sunlight. Plant Archives 25(1), 2113-2119",
+   "Laub, M., Pataczek, L., Feuerbacher, A., Zikeli, S., Högy, P. (2022). Contrasting yield responses at varying levels of shade suggest different suitability of crops for dual land-use systems: a meta-analysis. Agronomy for Sustainable Development 42, 51 (data set: ESM 2)"
+  ],
+  "notes": "",
+  "selectable": true,
+  "not_selectable_reason": null
+ },
+ {
+  "id": "tur",
+  "name": "Tur (pigeon pea)",
+  "seasons": [
+   "kharif"
+  ],
+  "tolerance": "neutral",
+  "l_t": {
+   "pessimistic": 1.0,
+   "central": 1.0,
+   "optimistic": 0.94
+  },
+  "k": {
+   "pessimistic": 1.42,
+   "central": 1.22,
+   "optimistic": 1.12
+  },
+  "grade": "C",
+  "n_studies": 0,
+  "n_indian_studies": 0,
+  "citations": [],
+  "notes": "",
+  "selectable": true,
+  "not_selectable_reason": null
+ },
+ {
+  "id": "jowar",
+  "name": "Jowar (sorghum)",
+  "seasons": [
+   "kharif",
+   "rabi"
+  ],
+  "tolerance": "sensitive",
+  "l_t": {
+   "pessimistic": 1.0,
+   "central": 1.0,
+   "optimistic": 0.97
+  },
+  "k": {
+   "pessimistic": 1.5,
+   "central": 1.32,
+   "optimistic": 1.16
+  },
+  "grade": "C",
+  "n_studies": 0,
+  "n_indian_studies": 0,
+  "citations": [],
+  "notes": "group curve borrowed from a related group: related (C4 cereal)",
+  "selectable": true,
+  "not_selectable_reason": null
+ },
+ {
+  "id": "urad",
+  "name": "Urad (black gram)",
+  "seasons": [
+   "kharif",
+   "rabi",
+   "zaid"
+  ],
+  "tolerance": "neutral",
+  "l_t": {
+   "pessimistic": 1.0,
+   "central": 1.0,
+   "optimistic": 0.94
+  },
+  "k": {
+   "pessimistic": 1.42,
+   "central": 1.22,
+   "optimistic": 1.12
+  },
+  "grade": "C",
+  "n_studies": 0,
+  "n_indian_studies": 0,
+  "citations": [],
+  "notes": "",
+  "selectable": true,
+  "not_selectable_reason": null
+ },
+ {
+  "id": "guar",
+  "name": "Guar (cluster bean)",
+  "seasons": [
+   "kharif"
+  ],
+  "tolerance": "neutral",
+  "l_t": {
+   "pessimistic": 1.0,
+   "central": 1.0,
+   "optimistic": 0.94
+  },
+  "k": {
+   "pessimistic": 1.42,
+   "central": 1.22,
+   "optimistic": 1.12
+  },
+  "grade": "B",
+  "n_studies": 1,
+  "n_indian_studies": 1,
+  "citations": [
+   "Poonia, S., Santra, P. (2024). Evaluation of agrivoltaic system in Thar Desert of India. AgriVoltaics Conference Proceedings 1 (AgriVoltaics World Conference 2022)"
+  ],
+  "notes": "",
+  "selectable": true,
+  "not_selectable_reason": null
+ },
+ {
+  "id": "potato",
+  "name": "Potato",
+  "seasons": [
+   "rabi"
+  ],
+  "tolerance": "tolerant",
+  "l_t": {
+   "pessimistic": 1.0,
+   "central": 1.0,
+   "optimistic": 0.66
+  },
+  "k": {
+   "pessimistic": 1.06,
+   "central": 0.68,
+   "optimistic": 0.56
+  },
+  "grade": "B",
+  "n_studies": 3,
+  "n_indian_studies": 0,
+  "citations": [
+   "Laub, M., Pataczek, L., Feuerbacher, A., Zikeli, S., Högy, P. (2022). Contrasting yield responses at varying levels of shade suggest different suitability of crops for dual land-use systems: a meta-analysis. Agronomy for Sustainable Development 42, 51 (data set: ESM 2)",
+   "Lee, H.J., Park, H.H., Kim, Y.O., Kuk, Y.I. (2022). Crop cultivation underneath agro-photovoltaic systems and its effects on crop growth, yield, and photosynthetic efficiency. Agronomy 12(8), 1842",
+   "Weselek, A., Bauerle, A., Hartung, J., Zikeli, S., Lewandowski, I., Högy, P. (2021). Agrivoltaic system impacts on microclimate and yield of different crops within an organic crop rotation in a temperate climate. Agronomy for Sustainable Development 41, 59"
+  ],
+  "notes": "curve misses the observed points (RMSE 0.203)",
+  "selectable": true,
+  "not_selectable_reason": null
+ },
+ {
+  "id": "onion",
+  "name": "Onion",
+  "seasons": [
+   "kharif",
+   "rabi"
+  ],
+  "tolerance": "neutral",
+  "l_t": {
+   "pessimistic": 1.0,
+   "central": 0.96,
+   "optimistic": 0.62
+  },
+  "k": {
+   "pessimistic": 1.48,
+   "central": 1.1,
+   "optimistic": 0.98
+  },
+  "grade": "C",
+  "n_studies": 1,
+  "n_indian_studies": 0,
+  "citations": [
+   "Jo, H., Asekova, S., Bayat, M.A., Ali, L., Song, J.T., Ha, Y.-S., Hong, D.-H., Lee, J.-D. (2022). Comparison of yield and yield components of several crops grown under agro-photovoltaic system in Korea. Agriculture 12(5), 619"
+  ],
+  "notes": "curve misses the observed points (RMSE 0.151); group curve borrowed from a related group: related (bulb vegetable)",
+  "selectable": true,
+  "not_selectable_reason": null
+ },
+ {
+  "id": "lentil",
+  "name": "Lentil",
+  "seasons": [
+   "rabi"
+  ],
+  "tolerance": "neutral",
+  "l_t": {
+   "pessimistic": 1.0,
+   "central": 1.0,
+   "optimistic": 0.94
+  },
+  "k": {
+   "pessimistic": 1.42,
+   "central": 1.22,
+   "optimistic": 1.12
+  },
+  "grade": "C",
+  "n_studies": 0,
+  "n_indian_studies": 0,
+  "citations": [],
+  "notes": "",
+  "selectable": true,
+  "not_selectable_reason": null
+ },
+ {
+  "id": "sesame",
+  "name": "Sesame (til)",
+  "seasons": [
+   "kharif",
+   "zaid"
+  ],
+  "tolerance": "sensitive",
+  "l_t": {
+   "pessimistic": 0.85,
+   "central": 0.8,
+   "optimistic": 0.75
+  },
+  "k": {
+   "pessimistic": 3.77,
+   "central": 3.02,
+   "optimistic": 2.27
+  },
+  "grade": "B",
+  "n_studies": 2,
+  "n_indian_studies": 0,
+  "citations": [
+   "Kim, S., Kim, S., Yoon, C.-Y. (2021). An efficient structure of an agrophotovoltaic system in a temperate climate region. Agronomy 11(8), 1584",
+   "Lee, H.J., Park, H.H., Kim, Y.O., Kuk, Y.I. (2022). Crop cultivation underneath agro-photovoltaic systems and its effects on crop growth, yield, and photosynthetic efficiency. Agronomy 12(8), 1842"
+  ],
+  "notes": "few studies: spread is assumed (threshold +/-0.05, slope +/-25%), not measured",
+  "selectable": true,
+  "not_selectable_reason": null
+ },
+ {
+  "id": "cumin",
+  "name": "Cumin",
+  "seasons": [
+   "rabi"
+  ],
+  "tolerance": "neutral",
+  "l_t": null,
+  "k": null,
+  "grade": "D",
+  "n_studies": 1,
+  "n_indian_studies": 1,
+  "citations": [
+   "Poonia, S., Santra, P. (2024). Evaluation of agrivoltaic system in Thar Desert of India. AgriVoltaics Conference Proceedings 1 (AgriVoltaics World Conference 2022)"
+  ],
+  "notes": "1 point(s) on file but no group curve to anchor a fit; no parameters yet: no close group (seed spice)",
+  "selectable": false,
+  "not_selectable_reason": "not enough evidence (grade D)"
+ }
+]

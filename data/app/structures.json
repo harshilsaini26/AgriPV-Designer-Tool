@@ -1,0 +1,216 @@
+{
+ "presets": [
+  {
+   "id": "elevated_fixed_2.5m",
+   "name": "Elevated fixed, 2.5 m",
+   "kind": "fixed",
+   "tilt_rule": "optimum_10_25",
+   "azimuth_deg": 180.0,
+   "height_m": 2.5,
+   "collector_width_m": 4.56,
+   "max_angle_deg": null,
+   "unfarmed_strip_m": 0.0,
+   "module": "bifacial",
+   "a_farm": {
+    "central": 0.92,
+    "low": 0.9,
+    "high": 0.95
+   },
+   "capex_multiplier": 1.19,
+   "om_multiplier": 1.1,
+   "machinery": "small tractors and manual work (assumption)",
+   "din_category": "I (overhead; clearance > 2.1 m)"
+  },
+  {
+   "id": "elevated_fixed_3m",
+   "name": "Elevated fixed, 3 m",
+   "kind": "fixed",
+   "tilt_rule": "optimum_10_25",
+   "azimuth_deg": 180.0,
+   "height_m": 3.0,
+   "collector_width_m": 4.56,
+   "max_angle_deg": null,
+   "unfarmed_strip_m": 0.0,
+   "module": "bifacial",
+   "a_farm": {
+    "central": 0.92,
+    "low": 0.9,
+    "high": 0.95
+   },
+   "capex_multiplier": 1.24,
+   "om_multiplier": 1.1,
+   "machinery": "standard tractors with implements (Fraunhofer ISE: a 3.2 m clearance with 3.5 x 4.2 m post spacing allows standard machinery)",
+   "din_category": "I (overhead; clearance > 2.1 m)"
+  },
+  {
+   "id": "elevated_fixed_4m",
+   "name": "Elevated fixed, 4 m",
+   "kind": "fixed",
+   "tilt_rule": "optimum_10_25",
+   "azimuth_deg": 180.0,
+   "height_m": 4.0,
+   "collector_width_m": 4.56,
+   "max_angle_deg": null,
+   "unfarmed_strip_m": 0.0,
+   "module": "bifacial",
+   "a_farm": {
+    "central": 0.92,
+    "low": 0.9,
+    "high": 0.95
+   },
+   "capex_multiplier": 1.33,
+   "om_multiplier": 1.1,
+   "machinery": "large tractors; combine harvesters need about 5 m (Heggelbach: 5 m clearance, rows 9.5 m apart, 3.4 m wide)",
+   "din_category": "I (overhead; clearance > 2.1 m)"
+  },
+  {
+   "id": "tracker_2.5m",
+   "name": "Single-axis tracker, 2.5 m",
+   "kind": "tracker",
+   "tilt_rule": null,
+   "azimuth_deg": null,
+   "height_m": 2.5,
+   "collector_width_m": 2.28,
+   "max_angle_deg": 55.0,
+   "unfarmed_strip_m": 0.0,
+   "module": "bifacial",
+   "a_farm": {
+    "central": 0.9,
+    "low": 0.88,
+    "high": 0.94
+   },
+   "capex_multiplier": 1.29,
+   "om_multiplier": 1.2,
+   "machinery": "small tractors between rows (assumption)",
+   "din_category": "I at flat / II at full tilt (2.5 m flat; 1.57 m at 55°)"
+  },
+  {
+   "id": "tracker_4m",
+   "name": "Single-axis tracker, 4 m",
+   "kind": "tracker",
+   "tilt_rule": null,
+   "azimuth_deg": null,
+   "height_m": 4.0,
+   "collector_width_m": 2.28,
+   "max_angle_deg": 55.0,
+   "unfarmed_strip_m": 0.0,
+   "module": "bifacial",
+   "a_farm": {
+    "central": 0.9,
+    "low": 0.88,
+    "high": 0.94
+   },
+   "capex_multiplier": 1.4,
+   "om_multiplier": 1.2,
+   "machinery": "standard tractors (assumption)",
+   "din_category": "I (overhead; 3.07 m even at 55°)"
+  },
+  {
+   "id": "vertical_bifacial_ew",
+   "name": "Vertical bifacial, east-west",
+   "kind": "vertical",
+   "tilt_rule": null,
+   "azimuth_deg": 90.0,
+   "height_m": 0.8,
+   "collector_width_m": 2.27,
+   "max_angle_deg": null,
+   "unfarmed_strip_m": 1.0,
+   "module": "bifacial",
+   "a_farm": {
+    "central": 0.88,
+    "low": 0.85,
+    "high": 0.92
+   },
+   "capex_multiplier": 1.2,
+   "om_multiplier": 1.0,
+   "machinery": "any machinery that fits the interspace (pitch minus about 1 m)",
+   "din_category": "II (interspace; clearance < 2.1 m)"
+  }
+ ],
+ "modules": {
+  "bifacial": {
+   "efficiency": 0.225,
+   "bifaciality": 0.8,
+   "temp_coeff_per_c": -0.003
+  },
+  "monofacial": {
+   "efficiency": 0.21,
+   "bifaciality": 0.0,
+   "temp_coeff_per_c": -0.0035
+  }
+ },
+ "cost_points": {
+  "fixed": [
+   [
+    2.5,
+    1.19
+   ],
+   [
+    3.0,
+    1.24
+   ],
+   [
+    4.0,
+    1.33
+   ]
+  ],
+  "tracker": [
+   [
+    2.5,
+    1.29
+   ],
+   [
+    4.0,
+    1.4
+   ]
+  ],
+  "vertical": [
+   [
+    0.8,
+    1.2
+   ]
+  ]
+ },
+ "limits": {
+  "tilt_deg": [
+   0.0,
+   40.0
+  ],
+  "azimuth_deg": [
+   90.0,
+   270.0
+  ],
+  "max_angle_deg": [
+   30.0,
+   60.0
+  ],
+  "height_m": [
+   0.5,
+   6.0
+  ],
+  "collector_width_m": [
+   0.5,
+   10.0
+  ],
+  "unfarmed_strip_m": [
+   0.0,
+   3.0
+  ],
+  "efficiency": [
+   0.15,
+   0.25
+  ],
+  "bifaciality": [
+   0.0,
+   0.95
+  ],
+  "temp_coeff_per_c": [
+   -0.005,
+   -0.002
+  ],
+  "a_farm": [
+   0.5,
+   1.0
+  ]
+ }
+}
