@@ -46,7 +46,9 @@ def test_duplicate_district_id_is_an_error():
 
 @pytest.fixture(scope="module")
 def crops():
-    built = build_crops(rows(SHADE / "parameters" / "crop_parameters_draft.csv"), rows(SHADE / "papers" / "bibliography.csv"))
+    built = build_crops(
+        rows(SHADE / "parameters" / "crop_parameters_draft.csv"), rows(SHADE / "papers" / "bibliography.csv")
+    )
     return {c["id"]: c for c in built}
 
 
@@ -71,7 +73,10 @@ def test_seasons_and_tolerance(crops):
 
 
 def test_crops_that_cannot_be_selected(crops):
-    assert crops["sugarcane"]["selectable"] is False and "whole-year" in crops["sugarcane"]["not_selectable_reason"]
+    assert (
+        crops["sugarcane"]["selectable"] is False
+        and "whole-year" in crops["sugarcane"]["not_selectable_reason"]
+    )
     assert crops["cumin"]["selectable"] is False and "grade D" in crops["cumin"]["not_selectable_reason"]
     assert crops["cumin"]["l_t"] is None and sum(c["selectable"] for c in crops.values()) == 18
 
