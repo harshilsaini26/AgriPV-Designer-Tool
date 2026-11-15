@@ -113,3 +113,9 @@ def test_non_finite_light_is_an_error_not_zero_energy(monkeypatch):
     monkeypatch.setattr(sim, "effective_irradiance", lambda parts, *a, **k: parts["front_direct"] * np.nan)
     with pytest.raises(FloatingPointError):
         simulate(JODHPUR, FIXED)
+
+
+def test_preset_vertical_light_falls_with_density():
+    # guards the documented claim: with a farmed band of 3.5 m or more, light never rises with density
+    light = simulate(JODHPUR, VERTICAL).table.light_fraction
+    assert (np.diff(light, axis=0) <= 1e-9).all()

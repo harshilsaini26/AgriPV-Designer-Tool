@@ -239,11 +239,27 @@ apv_physics/
 
 **Steps, per district**
 
-1. Read the hourly file. Use each time stamp as given: at zero offset the data satisfies (to three decimal places)
-   `DNI × cos(zenith) + DHI = GHI` (checked on Jodhpur).
-2. Compute apparent sun zenith and azimuth and extraterrestrial irradiance with pvlib.
-3. Keep the hours where `ghi > 0`.
-4. Write `data/weather/<stem>.npz` (numpy compressed), where `<stem>` is the existing file stem, such as
+1. Read the hourly file. Each PVGIS-ERA5 irradiance value is the mean of the hour **after** its time stamp
+   (`irradiance_time_offset` = 0.5 h in every PVGIS response).
+2. Compute the apparent sun zenith and azimuth with pvlib **half an hour after the stamp**. In an hour in
+   which the sun rises or sets, use the centre of the sunlit part of the hour. Compute extraterrestrial
+   irradiance.
+3. Re-derive direct normal irradiance as `(GHI − DHI) / cos(zenith)`, limited to the extraterrestrial value
+   and to a sun at least 2° up; what the limit removes is counted as sky light, so
+   `DNI × cos(zenith) + DHI = GHI` holds for every hour. The DNI that PVGIS publishes is not used: it is
+   normalised with the sun at the stamp, which inflates it in the morning and deflates it in the evening.
+4. Set negative wind speeds to zero and keep the hours where `ghi > 0`.
+5. Check the pack: values inside physical ranges; direct and sky light add up to the total; direct light
+   not above the extraterrestrial value; low-sun clearness alike in the morning and afternoon (ratio within
+   0.4–2.5), which fails if the sunlight is out of step with the sun.
+6. Write the pack (next step).
+
+   *Correction, 2026-11-15.* The first version of this section took the sun at the stamp, on the ground
+   that `DNI × cos(zenith) + DHI = GHI` held there. That only showed how PVGIS had normalised its DNI. The
+   whole-branch review found the half-hour error: south-facing results were unaffected, but east-facing
+   panels were overstated by up to 17%, west-facing understated by up to 13%, trackers overstated by about
+   2.5% and vertical bifacial rows by about 9%. The packs were rebuilt and the checks in step 5 added.
+7. Write `data/weather/<stem>.npz` (numpy compressed), where `<stem>` is the existing file stem, such as
    `107_jodhpur`. District code alone is not unique (the code-0 districts).
 
 **Pack contents**
@@ -277,7 +293,8 @@ change from keeping the hourly files local; the attribution in `SOURCE_pvgis_tmy
 | V1 | Engine against pvlib, same weather and settings. Three sample districts × layouts (fixed at tilt 10° and 25°, facing 180° and 135°, monofacial and bifacial; tracker at 45° and 55°; vertical) × GCR 0.05, 0.25, 0.50 | `apv_physics` tests (pvlib is a test dependency) | Annual energy within ±1%; each month within ±2%; mean ground light within ±0.01 |
 | V2 | Engine against the Global Solar Atlas at the 10 reference districts (`research/10_validation/energy_reference/energy_reference.csv`): monofacial, fixed, south, Atlas optimum tilt, GCR 0.05 | `pipeline` validation script (needs the local packs) | Annual energy within ±7% at every district |
 | V3 | Engine against PySAM (PVWatts v8), same 10 districts, weather, tilt and losses | Same script (PySAM is a pipeline dependency) | Annual energy within ±3% at every district |
-| V4 | Weather packs | Builder | 785 packs; annual GHI and DHI within 0.1% of `tmy_calibration.csv`; all values inside physical ranges |
+| V3b | Engine against PySAM for plants facing due east and due west at 25° tilt, same 10 districts. Added 2026-11-15: a south-facing plant cannot show an error in the timing of the sun | Same script | Annual energy within ±3% at every district, both directions |
+| V4 | Weather packs | Builder | 785 packs; annual GHI and DHI within 0.1% of `tmy_calibration.csv` (or 1 kWh/m², whichever is larger, because the table is rounded to whole kWh); the checks in §6 step 5 |
 | V5 | Speed (§5.5) | `apv_physics` tests | Under 2 s per layout |
 
 V2 and V3 results are written to `data/validation/physics_validation.csv` and committed. The measured plants
@@ -286,30 +303,34 @@ V2 and V3 results are written to `data/validation/physics_validation.csv` and co
 If V2 or V3 fails, the failure is reported with the numbers. The losses in §5.3 are changed only for a stated
 physical reason, never to make a check pass.
 
-### 7.1 Results (2026-11-15)
+### 7.1 Results (2026-11-15, after the sun-timing correction)
 
-Every check passed. The losses in §5.3 were not changed.
+Every check passes. The losses in §5.3 were not changed.
 
 | Check | Result |
 |---|---|
 | V1 engine against pvlib | 99 cases (3 districts × 11 layouts × 3 densities): annual and monthly energy agree to better than 0.001%; ground light within 0.001 |
-| V2 engine against the Global Solar Atlas | 10 of 10 districts within ±7%: from +0.6% (Ernakulam) to +4.4% (Lucknow). The engine is above the Atlas everywhere, by 2.7% on average |
-| V3 engine against PySAM (PVWatts v8) | 10 of 10 districts within ±3%: from −1.7% (Leh) to +0.1% (Ernakulam). The engine is below PySAM in sunny, clear districts, as expected from PySAM's Perez sky model against our Hay–Davies. PySAM's plane-of-array irradiation is within 1.3% of ours |
-| V4 weather packs | 785 packs, 40.2 MB; every pack's annual GHI and DHI matches the calibration table |
+| V2 engine against the Global Solar Atlas | 10 of 10 districts within ±7%: from +0.7% (Ernakulam) to +4.4% (Lucknow). The engine is above the Atlas everywhere, by 2.7% on average |
+| V3 engine against PySAM, south-facing | 10 of 10 districts within ±3%: from −1.8% (Leh) to −0.0% (Ernakulam) |
+| V3b engine against PySAM, east- and west-facing | 10 of 10 districts within ±3% in both directions: from −1.6% to −0.1%. East and west now differ by under 4% at every district (0.7% at Jodhpur); before the correction they differed by 36% at Jodhpur |
+| V4 weather packs | 785 packs, 40.2 MB. Every pack passes: annual GHI and DHI match the calibration table, light adds up, direct light is within the extraterrestrial value. Morning share of annual GHI: median 0.52 (it was 0.56 before the correction) |
 | V5 speed | 0.25–0.41 s for the preset layouts; 0.67 s for the most extreme allowed layout |
 
-| District | Tilt | Engine (kWh/kWp) | Atlas | vs Atlas | PySAM | vs PySAM |
-|---|---|---|---|---|---|---|
-| Jodhpur | 29.9° | 1,796 | 1,752 | +2.5% | 1,821 | −1.3% |
-| Kachchh | 27.0° | 1,783 | 1,729 | +3.1% | 1,810 | −1.5% |
-| Anantapur | 19.0° | 1,671 | 1,626 | +2.8% | 1,685 | −0.8% |
-| Tumakuru | 18.7° | 1,661 | 1,614 | +2.9% | 1,671 | −0.6% |
-| Ludhiana | 28.0° | 1,518 | 1,494 | +1.6% | 1,539 | −1.4% |
-| Lucknow | 24.3° | 1,515 | 1,451 | +4.4% | 1,534 | −1.2% |
-| Ernakulam | 14.7° | 1,527 | 1,518 | +0.6% | 1,526 | +0.1% |
-| Kamrup | 25.8° | 1,468 | 1,410 | +4.1% | 1,472 | −0.3% |
-| Rewa | 26.0° | 1,619 | 1,575 | +2.8% | 1,636 | −1.0% |
-| Leh Ladakh | 34.3° | 1,847 | 1,812 | +1.9% | 1,879 | −1.7% |
+The engine reads below PySAM by up to 1.8%. The two differ in sky model (Hay–Davies here, Perez in PVWatts),
+in cell-temperature model and in reflection model; which of these accounts for the gap was not separated.
+
+| District | Tilt | Engine (kWh/kWp) | vs Atlas | vs PySAM | East 25° | vs PySAM | West 25° | vs PySAM |
+|---|---|---|---|---|---|---|---|---|
+| Jodhpur | 29.9° | 1,795 | +2.4% | −1.7% | 1,555 | −1.6% | 1,544 | −1.5% |
+| Kachchh | 27.0° | 1,786 | +3.3% | −1.5% | 1,530 | −1.6% | 1,591 | −1.3% |
+| Anantapur | 19.0° | 1,676 | +3.1% | −0.8% | 1,542 | −0.8% | 1,527 | −0.9% |
+| Tumakuru | 18.7° | 1,663 | +3.0% | −0.7% | 1,527 | −0.8% | 1,524 | −0.9% |
+| Ludhiana | 28.0° | 1,520 | +1.7% | −1.6% | 1,327 | −0.6% | 1,318 | −0.7% |
+| Lucknow | 24.3° | 1,515 | +4.4% | −1.4% | 1,328 | −0.6% | 1,329 | −0.7% |
+| Ernakulam | 14.7° | 1,529 | +0.7% | −0.0% | 1,421 | −0.1% | 1,404 | −0.4% |
+| Kamrup | 25.8° | 1,462 | +3.7% | −1.0% | 1,272 | −0.4% | 1,259 | −0.7% |
+| Rewa | 26.0° | 1,620 | +2.9% | −1.3% | 1,426 | −0.7% | 1,416 | −0.9% |
+| Leh Ladakh | 34.3° | 1,848 | +2.0% | −1.8% | 1,540 | −1.0% | 1,533 | −1.4% |
 
 Full table: `data/validation/physics_validation.csv` (rebuilt by `python -m pipeline.validation.physics_validation .`).
 
@@ -327,9 +348,12 @@ Tests are written before the code they test.
 
 **Property tests** (Hypothesis, over random valid layouts on a sample pack)
 
-- Light over the whole ground never rises as density rises. (With an unfarmed strip under vertical rows, light
-  on the farmed band alone can rise slightly between two densities, 0.005 seen in one month, because row
-  shadows land on the unfarmed strip. Found by this test during the build.)
+- Light over the whole ground never rises as density rises. With an unfarmed strip under vertical rows, light
+  on the farmed band alone can rise between two densities, because row shadows land on the unfarmed strip.
+  The size depends on how narrow the farmed band is: none for the preset vertical layout (band 3.5 m or
+  more); up to 0.24 in a single month when the band is under about 0.5 m (1.13 m panels on a 3 m lower
+  edge with a 2 m strip, GCR 0.45 → 0.50). A band that narrow is not farmable; whether to reject such
+  layouts is an open decision for the owner.
 - Mean light does not change with `height_m` or `collector_width_m` (within 0.005).
 - `light_darkest_tenth` is never above `light_fraction`.
 - Energy per kWp never rises as density rises (fixed layouts).

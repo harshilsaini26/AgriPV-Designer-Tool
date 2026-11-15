@@ -66,7 +66,8 @@ any_layout = st.one_of(fixed_layouts, tracker_layouts(), vertical_layouts())
 @given(any_layout)
 def test_light_on_the_whole_ground_never_rises_with_gcr(layout):
     # A law only when all the ground counts. With an unfarmed strip under vertical rows the farmed band can
-    # gain a little between two densities (0.005 seen), because row shadows land on the unfarmed strip.
+    # gain light between two densities, because row shadows land on the unfarmed strip: up to 0.24 in one
+    # month when the band is under about 0.5 m wide, none for the preset layout (see test_simulate).
     if layout.kind is Kind.VERTICAL:
         layout = replace(layout, unfarmed_strip_m=0.0)
     light = simulate(WEATHER, layout).table.light_fraction

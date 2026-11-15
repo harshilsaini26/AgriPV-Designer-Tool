@@ -69,9 +69,12 @@ them. They change **where** the shade falls: taller or narrower rows spread it m
   plant. Both mean the model slightly understates light on the crop.
 - Posts and tracks: covered by the farmable fraction `a_farm` in `apv_core`.
 - Plant downtime and panel degradation: finance inputs in `apv_core`, not applied here.
-- With an unfarmed strip under vertical rows, light on the farmed band can rise slightly between two
-  densities (0.005 seen in one month), because row shadows land on the unfarmed strip. Light over the whole
-  ground never rises with density.
+- With an unfarmed strip under vertical rows, light on the farmed band can rise between two densities,
+  because row shadows land on the unfarmed strip. The preset vertical layout shows none. With a farmed band
+  under about 0.5 m the monthly figure can jump by up to 0.24. Light over the whole ground never rises with
+  density.
+- The weather is a typical year of hourly means. The sun is placed at the middle of each hour, so results
+  for east- and west-facing layouts rest on that timing (checked against PySAM in both directions).
 
 ## Losses
 
