@@ -51,13 +51,17 @@ def main(base: str) -> int:
     except json.JSONDecodeError:
         health = {}
     ok = status == 200 and health.get("status") == "ok" and health.get("weather_packs") == EXPECTED_PACKS
-    rows.append(("health", ok, f"HTTP {status}, {health.get('weather_packs')} packs, Python {health.get('python')}"))
+    rows.append(
+        ("health", ok, f"HTTP {status}, {health.get('weather_packs')} packs, Python {health.get('python')}")
+    )
 
     status, text, first = fetch(base + SWEEP_PATH, SWEEP_BODY)
     engine = ""
     if status == 200:
         engine = f", engine {json.loads(text).get('engine_ms')} ms"
-    rows.append(("sweep, first", status == 200 and first <= FIRST_LIMIT_S, f"HTTP {status}, {first:.2f} s{engine}"))
+    rows.append(
+        ("sweep, first", status == 200 and first <= FIRST_LIMIT_S, f"HTTP {status}, {first:.2f} s{engine}")
+    )
 
     times, statuses = [], set()
     for _ in range(WARM_RUNS):
