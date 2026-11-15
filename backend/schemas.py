@@ -2,7 +2,7 @@
 
 from typing import Literal
 
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel, ConfigDict, Field
 
 Season = Literal["kharif", "rabi", "zaid"]
 
@@ -154,3 +154,135 @@ class District(BaseModel):
     tariff: Tariff
     economics: dict[str, Economics]
     example_rotation: ExampleRotation
+
+
+# ---------------------------------------------------------------- the sweep (spec §6)
+
+
+class ModuleIn(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    efficiency: float
+    bifaciality: float
+    temp_coeff_per_c: float
+
+
+class LayoutIn(BaseModel):
+    """A structure: a preset to start from, and any fields the user changed."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    preset_id: str | None = None
+    kind: Literal["fixed", "tracker", "vertical"]
+    tilt_deg: float | None = None
+    azimuth_deg: float | None = None
+    height_m: float | None = None
+    collector_width_m: float | None = None
+    max_angle_deg: float | None = None
+    unfarmed_strip_m: float | None = None
+    module: ModuleIn | None = None
+
+
+class EconomicsIn(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    yield_q_per_acre: float
+    price_per_q: float
+    cost_per_acre: float
+
+
+class RotationIn(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    season: Season
+    crop_id: str
+    economics: EconomicsIn | None = None
+
+
+class FinanceIn(BaseModel):
+    """Overrides only; anything left out takes the state's, the structure's or the assumed default."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    capex_per_kwp: float | None = None
+    om_per_kwp_year: float | None = None
+    om_escalation: float | None = None
+    tariff_per_kwh: float | None = None
+    degradation: float | None = None
+    availability: float | None = None
+    debt_share: float | None = None
+    interest_rate: float | None = None
+    loan_years: int | None = None
+    discount_rate: float | None = None
+    crop_inflation: float | None = None
+    lease_per_acre_year: float | None = None
+    lease_escalation: float | None = None
+    target_irr: float | None = None
+
+
+class SweepRequest(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    district_id: str
+    business_model: Literal["kusum_a", "lease"]
+    layout: LayoutIn
+    a_farm: float | None = Field(default=None, ge=0.5, le=1.0)
+    rotation: list[RotationIn]
+    finance: FinanceIn = Field(default_factory=FinanceIn)
+    policy_limit: float = Field(default=0.8, ge=0.5, le=1.0)
+    retention_basis: Literal["per_acre_of_land", "per_cropped_area"] = "per_acre_of_land"
+    land_acres: float | None = Field(default=None, gt=0)
+
+
+class RangeOut(BaseModel):
+    """Pessimistic, central and optimistic case. Null where a value is undefined (e.g. no IRR)."""
+
+    low: float | None
+    central: float | None
+    high: float | None
+
+
+class SeasonLight(BaseModel):
+    mean: list[float]
+    darkest_tenth: list[float]
+
+
+class NoticeOut(BaseModel):
+    code: str
+    message: str
+    gcr: float | None
+    gcrs: list[float]
+
+
+class InputUsed(BaseModel):
+    name: str
+    value: float | int | str | None
+    flag: Literal[
+        "state",
+        "national_median",
+        "state_fallback",
+        "preset",
+        "interpolated",
+        "outside_benchmark_range",
+        "assumption",
+        "user",
+    ]
+    source: str
+    year: int | None
+
+
+class SweepResponse(BaseModel):
+    gcr: list[float]
+    metrics: dict[str, list[RangeOut]]
+    retention: dict[str, list[RangeOut]]
+    retention_basis: Literal["per_acre_of_land", "per_cropped_area"]
+    light: dict[str, SeasonLight]
+    clear_gap_m: list[float | None]
+    allowed_gcr: RangeOut
+    outside_policy: list[bool]
+    baseline_farm_income: float
+    notices: list[NoticeOut]
+    inputs_used: list[InputUsed]
+    custom_layout: bool
+    data_version: str
+    engine_ms: float

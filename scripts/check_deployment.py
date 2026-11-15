@@ -17,8 +17,13 @@ FIRST_LIMIT_S = 8.0
 WARM_P95_LIMIT_S = 1.5
 WARM_RUNS = 20
 EXPECTED_PACKS = 785
-SWEEP_PATH = "/api/_probe/sweep?district_id=107_jodhpur"
-SWEEP_BODY: dict | None = None  # set when the sweep is a POST (plan Task 6)
+SWEEP_PATH = "/api/sweep"
+SWEEP_BODY: dict | None = {
+    "district_id": "107_jodhpur",
+    "business_model": "kusum_a",
+    "layout": {"preset_id": "elevated_fixed_3m", "kind": "fixed"},
+    "rotation": [{"season": "kharif", "crop_id": "bajra"}, {"season": "rabi", "crop_id": "wheat"}],
+}
 
 
 def fetch(url: str, body: dict | None = None, timeout: float = 60.0) -> tuple[int, str, float]:

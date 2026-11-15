@@ -2,7 +2,8 @@
 
 import platform
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.responses import JSONResponse
 
 from backend._paths import REPO_ROOT
 from backend.data import (
@@ -14,7 +15,8 @@ from backend.data import (
     load_app_data,
     tariff_for,
 )
-from backend.schemas import District, DistrictListItem, Health, Meta
+from backend.schemas import District, DistrictListItem, Health, Meta, SweepRequest, SweepResponse
+from backend.service import InputError, run_sweep_request
 
 WEB_DIST = REPO_ROOT / "web" / "dist"
 SEASONS = ["kharif", "rabi", "zaid"]
@@ -84,14 +86,18 @@ def district(district_id: str) -> dict:
     }
 
 
-@app.get("/api/_probe/sweep")
-def probe_sweep(district_id: str) -> dict:
-    from backend._probe import run_probe
+@app.post("/api/sweep", response_model=SweepResponse)
+def sweep(req: SweepRequest) -> dict:
+    try:
+        return run_sweep_request(req)
+    except LookupError:
+        raise HTTPException(status_code=404, detail="unknown district") from None
 
-    pack = WEATHER_DIR / f"{district_id}.npz"
-    if "/" in district_id or "\\" in district_id or not pack.is_file():
-        raise HTTPException(status_code=404, detail="unknown district")
-    return {"district_id": district_id, **run_probe(pack)}
+
+@app.exception_handler(InputError)
+def input_error(_: Request, exc: InputError) -> JSONResponse:
+    detail = [{"loc": ["body", *exc.loc], "msg": exc.message, "type": "value_error"}]
+    return JSONResponse(status_code=422, content={"detail": detail})
 
 
 if WEB_DIST.is_dir():
