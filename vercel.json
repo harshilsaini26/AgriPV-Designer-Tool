@@ -1,16 +1,11 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "fastapi",
   "buildCommand": "cd web && npm ci && npm run build",
-  "outputDirectory": "web/dist",
   "functions": {
-    "api/index.py": {
+    "backend/app.py": {
       "maxDuration": 30,
-      "includeFiles": "{backend/**,apv_core/src/**,apv_physics/src/**,data/app/**,data/weather/**}",
-      "excludeFiles": "{**/tests/**,**/__pycache__/**}"
+      "excludeFiles": "{research/**,docs/**,pipeline/**,.github/**,web/node_modules/**,web/src/**,**/tests/**,**/__pycache__/**}"
     }
-  },
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/index" },
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
+  }
 }

@@ -1,0 +1,9 @@
+[project]
+name = "agripv-lab-api"
+version = "0.1.0"
+description = "AgriPV Lab API on Vercel (FastAPI); see docs/superpowers/specs/2026-11-15-model-slice-design.md"
+requires-python = ">=3.12"
+dependencies = ["fastapi>=0.163", "pydantic>=2", "numpy>=1.26"]
+
+[tool.vercel]
+entrypoint = "backend.app:app"

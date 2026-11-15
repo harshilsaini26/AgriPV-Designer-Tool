@@ -17,3 +17,6 @@ research/**/deep_research_*.md
 web/node_modules/
 web/dist/
 web/*.tsbuildinfo
+
+.vercel
+.env*

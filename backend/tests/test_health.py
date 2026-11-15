@@ -24,7 +24,10 @@ def test_deep_link_serves_the_page_when_the_frontend_is_built():
     assert client.get("/api/nope").status_code == 404
 
 
-def test_vercel_function_entrypoint_exposes_the_app():
-    from api.index import app as function_app
+def test_vercel_entrypoint_names_the_app():
+    import tomllib
+    from pathlib import Path
 
-    assert function_app is app
+    config = tomllib.loads((Path(__file__).resolve().parents[2] / "pyproject.toml").read_text(encoding="utf-8"))
+    module, attr = config["tool"]["vercel"]["entrypoint"].split(":")
+    assert (module, attr) == ("backend.app", "app")

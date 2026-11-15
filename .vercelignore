@@ -1,0 +1,16 @@
+# Upload only what the build and the API function need (vercel.json).
+research/
+docs/
+pipeline/
+.superpowers/
+.impeccable/
+.hypothesis/
+.ruff_cache/
+.pytest_cache/
+**/__pycache__/
+**/tests/
+apv_core/tests/
+apv_physics/tests/
+web/node_modules/
+web/dist/
+.env*
