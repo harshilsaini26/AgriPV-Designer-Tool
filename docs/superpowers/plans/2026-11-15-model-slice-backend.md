@@ -276,6 +276,7 @@ def test_every_selectable_crop_is_valid_for_the_model(crops):
     - `by_state`: `{state: {crop_id: {"yield_q_per_acre", "price_per_q", "cost_per_acre", "year", "basis": "state"}}}`
     - `national`: `{crop_id: {"yield_q_per_acre", "price_per_q", "cost_per_acre", "year", "basis": "national_median", "n_states"}}`
     - `source`: `"DES cost of cultivation (A2+FL), via India Data Portal"`
+  - `build_example_rotations(rows: list[dict], crops: list[dict]) -> dict`: `{"by_state": {state: [{"season": "kharif", "crop_id"}, {"season": "rabi", "crop_id"}]}, "national": [...]}`. `crops` is `build_crops` output. For each state, among crops that are selectable and have a `by_state` entry, the kharif pick is the crop grown in kharif with the largest `num_holdings_sample` (from its latest usable row; blank counts as 0), and the rabi pick is the same among crops grown in rabi, excluding the kharif pick. A state with no pick for a season omits that entry. `national` uses the samples summed across states.
   - Rules: use a row only if `derived_yield`, `main_product_value` and `cul_cost_a2fl` are all present and positive and `year >= OLDEST_YEAR`. For each state and crop take the latest such year. Yield = `derived_yield / 2.4711` (2 decimals); price = `main_product_value / derived_yield` (whole ₹); cost = `cul_cost_a2fl / 2.4711` (whole ₹). The national entry is the median of each value across that crop's states, with `year` the most common year among them.
 
 - [ ] **Step 1: Write the failing tests** `pipeline/tests/test_appdata_economics.py`
@@ -326,6 +327,23 @@ def test_national_median_and_state_names():
                                        "year": "2021-22", "basis": "national_median", "n_states": 3}  # fmt: skip
 
 
+def test_example_rotations_from_the_real_file():
+    from pipeline.appdata.crops import build_crops
+    from pipeline.appdata.economics import build_example_rotations
+
+    shade = REPO / "research" / "09_crop_shade_response"
+    with (shade / "parameters" / "crop_parameters_draft.csv").open(encoding="utf-8") as a, (
+        shade / "papers" / "bibliography.csv"
+    ).open(encoding="utf-8") as b, SOURCE.open(encoding="utf-8") as c:
+        out = build_example_rotations(list(csv.DictReader(c)), build_crops(list(csv.DictReader(a)), list(csv.DictReader(b))))
+    pair = lambda entries: [(e["season"], e["crop_id"]) for e in entries]  # noqa: E731
+    assert pair(out["by_state"]["Rajasthan"]) == [("kharif", "bajra"), ("rabi", "wheat")]
+    assert pair(out["by_state"]["Maharashtra"]) == [("kharif", "soybean"), ("rabi", "gram")]
+    assert pair(out["by_state"]["Punjab"]) == [("kharif", "rice"), ("rabi", "wheat")]
+    assert pair(out["national"]) == [("kharif", "rice"), ("rabi", "wheat")]
+    assert all(e["crop_id"] != "sugarcane" for entries in out["by_state"].values() for e in entries)
+
+
 def test_real_file_coverage():
     with SOURCE.open(encoding="utf-8") as fh:
         out = build_crop_economics(list(csv.DictReader(fh)))
@@ -364,7 +382,7 @@ def test_real_file_coverage():
     - `cost_points`: `{"fixed": [[2.5, 1.19], [3.0, 1.24], [4.0, 1.33]], "tracker": [[2.5, 1.29], [4.0, 1.4]], "vertical": [[0.8, 1.2]]}`
     - `limits`: the input limits of spec §5.1 of the physics design, as `{field: [low, high]}`
   - `finance.SOURCES: list[dict]`: `id`, `title`, `attribution`, `licence`, `url`, `used_for`, for: the weather packs (PVGIS, ERA5, Global Solar Atlas), crop shade parameters (Laub et al. 2022 and the papers in `bibliography.csv`), DES cost of cultivation, state tariff orders, MPERC 2024 cost norms, structure presets (DIN SPEC 91434 via Fraunhofer ISE), module datasheets, LGD district names, pvlib.
-  - `build_app_data.main(repo: Path) -> dict`: writes the seven files of spec §5 to `<repo>/data/app/` and returns the manifest: `{"data_version": "2026-11-15", "files": {name: {"sha256", "count"}}}`. CLI: `python -m pipeline.appdata.build_app_data <repo_root>`.
+  - `build_app_data.main(repo: Path) -> dict`: writes the seven files of spec §5 to `<repo>/data/app/` (`crop_economics.json` also carries `example_rotation`, from `build_example_rotations`) and returns the manifest: `{"data_version": "2026-11-15", "files": {name: {"sha256", "count"}}}`. CLI: `python -m pipeline.appdata.build_app_data <repo_root>`.
 
 - [ ] **Step 1: Write the failing tests** `pipeline/tests/test_appdata_finance.py`
 
@@ -437,6 +455,8 @@ def test_build_writes_all_files(tmp_path):
     assert manifest["files"]["districts.json"]["count"] == 785 and manifest["files"]["crops.json"]["count"] == 20
     assert json.loads((app / "manifest.json").read_text(encoding="utf-8")) == manifest
     assert b"\r\n" not in (app / "crops.json").read_bytes()
+    economics = json.loads((app / "crop_economics.json").read_text(encoding="utf-8"))
+    assert economics["example_rotation"]["by_state"]["Rajasthan"][0] == {"season": "kharif", "crop_id": "bajra"}
 ```
 
 - [ ] **Step 2: Run to verify they fail.** Expected: `ModuleNotFoundError`.
@@ -460,13 +480,14 @@ def test_build_writes_all_files(tmp_path):
   - `backend.data.load_app_data(root: Path | None = None) -> AppData`, cached for the default root. Raises `RuntimeError("app data is missing: <path>")` naming the first missing file.
   - `backend.data.economics_for(app: AppData, state: str, crop_id: str) -> dict | None`: the state entry, else the national entry, else `None`.
   - `backend.data.tariff_for(app: AppData, state: str) -> dict`: the state tariff entry or the national fallback.
+  - `backend.data.example_rotation_for(app: AppData, state: str) -> dict`: `{"basis": "state" | "national", "crops": [{"season", "crop_id"}, ...]}`; the state's pair when it has both seasons, otherwise the national pair.
   - `backend.data.weather_path(district_id: str) -> Path` under `data/weather/`.
   - `PREVIEW_NOTICE = "Preview: crop shade parameters are draft, crop economics are state-level figures for 2021-22, and loan terms are assumptions."`
   - Routes (response models in `schemas.py`):
     - `GET /api/health` → adds `"data_version"`.
     - `GET /api/meta` → `data_version`, `preview_notice`, `presets`, `modules`, `limits`, `crops`, `seasons` (`["kharif", "rabi", "zaid"]`), `policy` (`{"default": 0.8, "min": 0.5, "max": 1.0, "step": 0.05}`), `retention_bases` (`["per_acre_of_land", "per_cropped_area"]`), `business_models` (`["kusum_a", "lease"]`), `assumptions`, `sources`.
     - `GET /api/districts` → list of `{id, name, state}`, in the stored order.
-    - `GET /api/district/{district_id}` → the district entry plus `default_tilt_deg` (optimum tilt limited to 10–25), `tariff` (from `tariff_for`), `economics` (`{crop_id: entry}` for every crop with one, through `economics_for`). 404 `{"detail": "unknown district"}`.
+    - `GET /api/district/{district_id}` → the district entry plus `default_tilt_deg` (optimum tilt limited to 10–25), `tariff` (from `tariff_for`), `economics` (`{crop_id: entry}` for every crop with one, through `economics_for`), `example_rotation` (from `example_rotation_for`). 404 `{"detail": "unknown district"}`.
 
 - [ ] **Step 1: Write the failing tests** `backend/tests/test_read_endpoints.py`
 
@@ -500,12 +521,16 @@ def test_district_with_a_state_tariff():
     assert d["name"] == "Jodhpur" and d["state"] == "Rajasthan" and d["default_tilt_deg"] == 25.0
     assert d["tariff"]["tariff_per_kwh"] == 3.04 and d["tariff"]["flag"] == "state"
     assert d["economics"]["bajra"]["basis"] == "state" and "guar" not in d["economics"]
+    assert d["example_rotation"] == {"basis": "state", "crops": [{"season": "kharif", "crop_id": "bajra"},
+                                                              {"season": "rabi", "crop_id": "wheat"}]}  # fmt: skip
 
 
 def test_district_with_fallbacks():
     d = client.get("/api/district/9_leh_ladakh").json()
     assert d["tariff"] == {"tariff_per_kwh": 3.11, "flag": "state_fallback"}
     assert d["economics"]["wheat"]["basis"] == "national_median"
+    assert d["example_rotation"]["basis"] == "national"
+    assert [c["crop_id"] for c in d["example_rotation"]["crops"]] == ["rice", "wheat"]
 
 
 def test_unknown_district_is_404():
