@@ -1,10 +1,16 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "cd web && npm ci && npm run build",
+  "outputDirectory": "web/dist",
   "functions": {
-    "app.py": {
+    "api/index.py": {
       "maxDuration": 30,
-      "excludeFiles": "{research/**,docs/**,.github/**,web/node_modules/**,web/src/**,**/tests/**,pipeline/**}"
+      "includeFiles": "{backend/**,apv_core/src/**,apv_physics/src/**,data/app/**,data/weather/**}",
+      "excludeFiles": "{**/tests/**,**/__pycache__/**}"
     }
-  }
+  },
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/index" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }

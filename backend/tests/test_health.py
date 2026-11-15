@@ -35,3 +35,9 @@ def test_deep_link_serves_the_page_when_the_frontend_is_built():
     r = client.get("/model/107_jodhpur", headers={"Accept": "text/html"})  # as a browser navigation sends
     assert r.status_code == 200 and "AgriPV Lab" in r.text
     assert client.get("/api/nope").status_code == 404
+
+
+def test_vercel_function_entrypoint_exposes_the_app():
+    from api.index import app as function_app
+
+    assert function_app is app
