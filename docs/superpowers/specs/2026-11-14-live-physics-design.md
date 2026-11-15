@@ -286,6 +286,33 @@ V2 and V3 results are written to `data/validation/physics_validation.csv` and co
 If V2 or V3 fails, the failure is reported with the numbers. The losses in §5.3 are changed only for a stated
 physical reason, never to make a check pass.
 
+### 7.1 Results (2026-11-15)
+
+Every check passed. The losses in §5.3 were not changed.
+
+| Check | Result |
+|---|---|
+| V1 engine against pvlib | 99 cases (3 districts × 11 layouts × 3 densities): annual and monthly energy agree to better than 0.001%; ground light within 0.001 |
+| V2 engine against the Global Solar Atlas | 10 of 10 districts within ±7%: from +0.6% (Ernakulam) to +4.4% (Lucknow). The engine is above the Atlas everywhere, by 2.7% on average |
+| V3 engine against PySAM (PVWatts v8) | 10 of 10 districts within ±3%: from −1.7% (Leh) to +0.1% (Ernakulam). The engine is below PySAM in sunny, clear districts, as expected from PySAM's Perez sky model against our Hay–Davies. PySAM's plane-of-array irradiation is within 1.3% of ours |
+| V4 weather packs | 785 packs, 40.2 MB; every pack's annual GHI and DHI matches the calibration table |
+| V5 speed | 0.25–0.41 s for the preset layouts; 0.67 s for the most extreme allowed layout |
+
+| District | Tilt | Engine (kWh/kWp) | Atlas | vs Atlas | PySAM | vs PySAM |
+|---|---|---|---|---|---|---|
+| Jodhpur | 29.9° | 1,796 | 1,752 | +2.5% | 1,821 | −1.3% |
+| Kachchh | 27.0° | 1,783 | 1,729 | +3.1% | 1,810 | −1.5% |
+| Anantapur | 19.0° | 1,671 | 1,626 | +2.8% | 1,685 | −0.8% |
+| Tumakuru | 18.7° | 1,661 | 1,614 | +2.9% | 1,671 | −0.6% |
+| Ludhiana | 28.0° | 1,518 | 1,494 | +1.6% | 1,539 | −1.4% |
+| Lucknow | 24.3° | 1,515 | 1,451 | +4.4% | 1,534 | −1.2% |
+| Ernakulam | 14.7° | 1,527 | 1,518 | +0.6% | 1,526 | +0.1% |
+| Kamrup | 25.8° | 1,468 | 1,410 | +4.1% | 1,472 | −0.3% |
+| Rewa | 26.0° | 1,619 | 1,575 | +2.8% | 1,636 | −1.0% |
+| Leh Ladakh | 34.3° | 1,847 | 1,812 | +1.9% | 1,879 | −1.7% |
+
+Full table: `data/validation/physics_validation.csv` (rebuilt by `python -m pipeline.validation.physics_validation .`).
+
 ## 8. Testing
 
 Tests are written before the code they test.

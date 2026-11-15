@@ -1,0 +1,15 @@
+ref_id,kind,district,tilt_deg,engine_kwh_per_kwp,gsa_pvout_kwh_per_kwp,engine_vs_gsa_pct,pysam_kwh_per_kwp,engine_vs_pysam_pct,pass_gsa,pass_pysam,note
+D01,district_reference,Jodhpur,29.9,1796.1,1752,2.52,1820.5,-1.34,True,True,hot desert (BWh)
+D02,district_reference,Kachchh,27.0,1782.8,1729,3.11,1809.5,-1.47,True,True,dry coast (BWh/BSh)
+D03,district_reference,Anantapur,19.0,1671.3,1626,2.79,1684.7,-0.79,True,True,semi-arid south (BSh)
+D04,district_reference,Tumakuru,18.7,1660.8,1614,2.9,1671.4,-0.63,True,True,semi-arid plateau (BSh)
+D05,district_reference,Ludhiana,28.0,1517.8,1494,1.59,1538.8,-1.36,True,True,"north-west plains, winter fog (Cwa)"
+D06,district_reference,Lucknow,24.3,1515.3,1451,4.43,1533.7,-1.2,True,True,"central plains, winter haze (Cwa)"
+D07,district_reference,Ernakulam,14.7,1527.1,1518,0.6,1526.2,0.06,True,True,"humid tropics, long monsoon (Am)"
+D08,district_reference,Kamrup,25.8,1468.1,1410,4.12,1472.4,-0.29,True,True,wet north-east (Cwa)
+D09,district_reference,Rewa,26.0,1619.0,1575,2.8,1636.1,-1.04,True,True,central plateau (Cwa)
+D10,district_reference,Leh Ladakh,34.3,1847.1,1812,1.94,1879.3,-1.72,True,True,high-altitude cold desert (BWk)
+M01,measured_plant,Jodhpur,,,1740,,,,,,"for information: measured 1248 kWh per kWp_dc (0.72 x GSA); ICAR-CAZRI agrivoltaic system, Jodhpur"
+M02,measured_plant,Tumakuru,,,1630,,,,,,"for information: measured 2174 kWh per kw_ac (0.95-1.07 x GSA (for DC/AC 1.25-1.4)); Pavagada Solar Park (2,050 MW AC)"
+M03,measured_plant,Banaskantha,,,1714,,,,,,"for information: measured 2028 kWh per kw_ac (0.84-0.95 x GSA (for DC/AC 1.25-1.4)); GIPCL solar fleet, Gujarat (262 MW)"
+M04,measured_plant,Ernakulam,,,1514,,,,,,for information: measured 1460 kWh per kWp_dc (0.96 x GSA); Cochin International Airport solar plants (about 40 MWp)
