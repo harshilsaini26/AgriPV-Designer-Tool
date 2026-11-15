@@ -71,6 +71,12 @@ class InputError(ValueError):
         self.message = message
 
 
+def _named(loc: tuple, exc: ValueError) -> InputError:
+    """An engine or model ValueError, located by the field name its message starts with."""
+    message = str(exc)
+    return InputError((*loc, message.split(" ", 1)[0]), message)
+
+
 def _used(name: str, value, flag: str, source: str, year: int | None = None) -> dict:
     return {"name": name, "value": value, "flag": flag, "source": source, "year": year}
 
@@ -145,16 +151,23 @@ def resolve_layout(layout: LayoutIn, district: dict, app: AppData) -> tuple[Layo
     for name, value in module_values.items():
         used.append(_used(f"layout.module.{name}", value, flag, src))
 
-    physics_layout = Layout(
-        kind=Kind(kind),
-        module=Module(**module_values),
-        height_m=values["height_m"],
-        collector_width_m=values["collector_width_m"],
-        tilt_deg=values.get("tilt_deg", 0.0),
-        azimuth_deg=values.get("azimuth_deg"),
-        max_angle_deg=values.get("max_angle_deg", 55.0),
-        unfarmed_strip_m=values.get("unfarmed_strip_m", 1.0),
-    )
+    try:
+        module = Module(**module_values)
+    except ValueError as exc:
+        raise _named(("layout", "module"), exc) from None
+    try:
+        physics_layout = Layout(
+            kind=Kind(kind),
+            module=module,
+            height_m=values["height_m"],
+            collector_width_m=values["collector_width_m"],
+            tilt_deg=values.get("tilt_deg", 0.0),
+            azimuth_deg=values.get("azimuth_deg"),
+            max_angle_deg=values.get("max_angle_deg", 55.0),
+            unfarmed_strip_m=values.get("unfarmed_strip_m", 1.0),
+        )
+    except ValueError as exc:
+        raise _named(("layout",), exc) from None
     return physics_layout, used, custom
 
 
@@ -187,7 +200,10 @@ def resolve_finance(
         values[name] = value
         used.append(_used(f"finance.{name}", value, flag, source, year))
     values["loan_years"] = int(values["loan_years"])
-    return FinanceInputs(**values), used
+    try:
+        return FinanceInputs(**values), used
+    except ValueError as exc:
+        raise _named(("finance",), exc) from None
 
 
 def _crop_params(crop: dict) -> CropParams:
@@ -239,9 +255,11 @@ def resolve_rotation(
             flag, source, year, user = found["basis"], SRC_ECONOMICS, _year(found["year"]), False
         for name, value in figures.items():
             used.append(_used(f"{prefix}.{name}", value, flag, source, year))
-        out.append(
-            SeasonCrop(Season(entry.season), _crop_params(crop), CropEconomics(**figures, user_entered=user))
-        )
+        try:
+            economics = CropEconomics(**figures, user_entered=user)
+        except ValueError as exc:
+            raise InputError(("rotation", i, "economics"), str(exc)) from None
+        out.append(SeasonCrop(Season(entry.season), _crop_params(crop), economics))
     return tuple(out), used
 
 
@@ -276,7 +294,10 @@ def build_sweep_inputs(req: SweepRequest) -> tuple[SweepInputs, PhysicsResult, l
             )
         )
 
-    physics = physics_for(req.district_id, layout)
+    try:
+        physics = physics_for(req.district_id, layout)
+    except ValueError as exc:  # e.g. an unfarmed strip that leaves no farmed ground at some density
+        raise _named(("layout",), exc) from None
     inputs = SweepInputs(
         physics=physics.table,
         structure=Structure(

@@ -603,6 +603,7 @@ Vercel (Hobby now; **Pro before any commercial use**). Static frontend and data 
 | Method & path | Request | Response |
 |---|---|---|
 | `GET /api/meta` | — | data_version, build date, coverage, structure presets and layout limits, crops (id, name, seasons, grade), policy-limit default |
+| `GET /api/districts` | — | the search list: id, name, state for every district (added 2026-11-15) |
 | `GET /api/district/{lgd}` | — | context row, flags, insights, default rotation, finance defaults |
 | `POST /api/sweep` | district, business model, layout (preset id or the layout fields of REQ-MOD-02), rotation (+ overrides), finance inputs, policy limit, retention basis (`per_acre_of_land` default, or `per_cropped_area`) | `gcr[]` (11) × {low, central, high} for every headline metric; allowed GCR range; per-season retention; cash-flow summary at the default GCR; `warnings[]`; `data_version` |
 | `POST /api/export/xlsx` (P1) | same as sweep + selected GCR | xlsx file |

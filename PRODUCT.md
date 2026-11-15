@@ -32,7 +32,7 @@ Existing tools are either US-centric techno-economic calculators (NREL's ADAM: U
 
 - Unit of analysis is the **district** (~780, keyed by LGD codes). Finer resolution is out of scope because the data doesn't support it.
 - Workflow: pick a district → review its context → choose business model (KUSUM-A or lease) → structure preset → crop rotation → finance inputs (pre-filled with state defaults) → explore GCR 0–50% against the draft 80% retention line → read the ranges → share an Indicative Estimate Sheet.
-- Physics (energy per kWp, ground light fraction) is pre-computed per district for preset structure configurations. Crop response and finance run live in the API.
+- Physics (energy per kWp, ground light on the crop) is calculated live in the API for the layout the user enters, on each district's committed weather pack; crop response and finance also run live.
 - Estimates inform early conversations, such as FPO discussions, lease talks, opportunity scoping and policy briefs. Not DPRs or financing decisions.
 
 ## Capabilities and Constraints

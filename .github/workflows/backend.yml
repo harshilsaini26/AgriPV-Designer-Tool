@@ -1,0 +1,19 @@
+name: backend
+
+on:
+  push:
+    paths: ["backend/**", "api/**", "apv_core/**", "apv_physics/**", "data/app/**", "requirements.txt", "scripts/**", ".github/workflows/backend.yml"]
+  pull_request:
+    paths: ["backend/**", "api/**", "apv_core/**", "apv_physics/**", "data/app/**", "requirements.txt", "scripts/**", ".github/workflows/backend.yml"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt pytest httpx ruff
+      - run: ruff check backend api scripts
+      - run: pytest backend/tests

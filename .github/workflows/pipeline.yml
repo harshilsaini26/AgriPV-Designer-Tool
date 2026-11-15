@@ -1,0 +1,19 @@
+name: pipeline
+
+on:
+  push:
+    paths: ["pipeline/**", "research/**/*.csv", "data/weather/index.json", ".github/workflows/pipeline.yml"]
+  pull_request:
+    paths: ["pipeline/**", "research/**/*.csv", "data/weather/index.json", ".github/workflows/pipeline.yml"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e apv_core -e apv_physics -e "pipeline[dev]"
+      - run: ruff check pipeline
+      - run: pytest pipeline

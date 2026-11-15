@@ -113,6 +113,7 @@ FastAPI app, entrypoint `api/index.py` (`app`). All routes are under `/api`.
 | `GET /api/districts` | The search list | 785 entries: id, name, state |
 | `GET /api/district/{id}` | One district's defaults | District details, optimum tilt, state tariff with source and flag, crop economics available in its state, the example crops |
 | `POST /api/sweep` | Run the model | See below |
+| `GET /api/health` | Liveness and data version | Status, number of weather packs, Python version, data version |
 
 **`POST /api/sweep` request**
 

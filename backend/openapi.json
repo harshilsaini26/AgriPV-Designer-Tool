@@ -1,0 +1,1668 @@
+{
+ "components": {
+  "schemas": {
+   "Assumption": {
+    "properties": {
+     "flag": {
+      "const": "assumption",
+      "title": "Flag",
+      "type": "string"
+     },
+     "value": {
+      "title": "Value",
+      "type": "number"
+     }
+    },
+    "required": [
+     "value",
+     "flag"
+    ],
+    "title": "Assumption",
+    "type": "object"
+   },
+   "Band": {
+    "description": "A value with its low-high range.",
+    "properties": {
+     "central": {
+      "title": "Central",
+      "type": "number"
+     },
+     "high": {
+      "title": "High",
+      "type": "number"
+     },
+     "low": {
+      "title": "Low",
+      "type": "number"
+     }
+    },
+    "required": [
+     "central",
+     "low",
+     "high"
+    ],
+    "title": "Band",
+    "type": "object"
+   },
+   "CaseValues": {
+    "description": "Shade-response parameter for the three cases.",
+    "properties": {
+     "central": {
+      "title": "Central",
+      "type": "number"
+     },
+     "optimistic": {
+      "title": "Optimistic",
+      "type": "number"
+     },
+     "pessimistic": {
+      "title": "Pessimistic",
+      "type": "number"
+     }
+    },
+    "required": [
+     "pessimistic",
+     "central",
+     "optimistic"
+    ],
+    "title": "CaseValues",
+    "type": "object"
+   },
+   "Crop": {
+    "properties": {
+     "citations": {
+      "items": {
+       "type": "string"
+      },
+      "title": "Citations",
+      "type": "array"
+     },
+     "grade": {
+      "title": "Grade",
+      "type": "string"
+     },
+     "id": {
+      "title": "Id",
+      "type": "string"
+     },
+     "k": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/CaseValues"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "l_t": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/CaseValues"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "n_indian_studies": {
+      "title": "N Indian Studies",
+      "type": "integer"
+     },
+     "n_studies": {
+      "title": "N Studies",
+      "type": "integer"
+     },
+     "name": {
+      "title": "Name",
+      "type": "string"
+     },
+     "not_selectable_reason": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Not Selectable Reason"
+     },
+     "notes": {
+      "title": "Notes",
+      "type": "string"
+     },
+     "seasons": {
+      "items": {
+       "enum": [
+        "kharif",
+        "rabi",
+        "zaid"
+       ],
+       "type": "string"
+      },
+      "title": "Seasons",
+      "type": "array"
+     },
+     "selectable": {
+      "title": "Selectable",
+      "type": "boolean"
+     },
+     "tolerance": {
+      "title": "Tolerance",
+      "type": "string"
+     }
+    },
+    "required": [
+     "id",
+     "name",
+     "seasons",
+     "tolerance",
+     "l_t",
+     "k",
+     "grade",
+     "n_studies",
+     "n_indian_studies",
+     "citations",
+     "notes",
+     "selectable",
+     "not_selectable_reason"
+    ],
+    "title": "Crop",
+    "type": "object"
+   },
+   "District": {
+    "properties": {
+     "default_tilt_deg": {
+      "title": "Default Tilt Deg",
+      "type": "number"
+     },
+     "economics": {
+      "additionalProperties": {
+       "$ref": "#/components/schemas/Economics"
+      },
+      "title": "Economics",
+      "type": "object"
+     },
+     "elevation_m": {
+      "title": "Elevation M",
+      "type": "number"
+     },
+     "example_rotation": {
+      "$ref": "#/components/schemas/ExampleRotation"
+     },
+     "id": {
+      "title": "Id",
+      "type": "string"
+     },
+     "lat": {
+      "title": "Lat",
+      "type": "number"
+     },
+     "lgd": {
+      "title": "Lgd",
+      "type": "string"
+     },
+     "lon": {
+      "title": "Lon",
+      "type": "number"
+     },
+     "name": {
+      "title": "Name",
+      "type": "string"
+     },
+     "optimum_tilt_deg": {
+      "title": "Optimum Tilt Deg",
+      "type": "number"
+     },
+     "state": {
+      "title": "State",
+      "type": "string"
+     },
+     "tariff": {
+      "$ref": "#/components/schemas/Tariff"
+     }
+    },
+    "required": [
+     "id",
+     "lgd",
+     "name",
+     "state",
+     "lat",
+     "lon",
+     "elevation_m",
+     "optimum_tilt_deg",
+     "default_tilt_deg",
+     "tariff",
+     "economics",
+     "example_rotation"
+    ],
+    "title": "District",
+    "type": "object"
+   },
+   "DistrictListItem": {
+    "properties": {
+     "id": {
+      "title": "Id",
+      "type": "string"
+     },
+     "name": {
+      "title": "Name",
+      "type": "string"
+     },
+     "state": {
+      "title": "State",
+      "type": "string"
+     }
+    },
+    "required": [
+     "id",
+     "name",
+     "state"
+    ],
+    "title": "DistrictListItem",
+    "type": "object"
+   },
+   "Economics": {
+    "properties": {
+     "basis": {
+      "enum": [
+       "state",
+       "national_median"
+      ],
+      "title": "Basis",
+      "type": "string"
+     },
+     "cost_per_acre": {
+      "title": "Cost Per Acre",
+      "type": "number"
+     },
+     "n_states": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "N States"
+     },
+     "price_per_q": {
+      "title": "Price Per Q",
+      "type": "number"
+     },
+     "year": {
+      "title": "Year",
+      "type": "string"
+     },
+     "yield_q_per_acre": {
+      "title": "Yield Q Per Acre",
+      "type": "number"
+     }
+    },
+    "required": [
+     "yield_q_per_acre",
+     "price_per_q",
+     "cost_per_acre",
+     "year",
+     "basis"
+    ],
+    "title": "Economics",
+    "type": "object"
+   },
+   "EconomicsIn": {
+    "additionalProperties": false,
+    "properties": {
+     "cost_per_acre": {
+      "title": "Cost Per Acre",
+      "type": "number"
+     },
+     "price_per_q": {
+      "title": "Price Per Q",
+      "type": "number"
+     },
+     "yield_q_per_acre": {
+      "title": "Yield Q Per Acre",
+      "type": "number"
+     }
+    },
+    "required": [
+     "yield_q_per_acre",
+     "price_per_q",
+     "cost_per_acre"
+    ],
+    "title": "EconomicsIn",
+    "type": "object"
+   },
+   "ExampleRotation": {
+    "properties": {
+     "basis": {
+      "enum": [
+       "state",
+       "national"
+      ],
+      "title": "Basis",
+      "type": "string"
+     },
+     "crops": {
+      "items": {
+       "$ref": "#/components/schemas/RotationEntry"
+      },
+      "title": "Crops",
+      "type": "array"
+     }
+    },
+    "required": [
+     "basis",
+     "crops"
+    ],
+    "title": "ExampleRotation",
+    "type": "object"
+   },
+   "FinanceIn": {
+    "additionalProperties": false,
+    "description": "Overrides only; anything left out takes the state's, the structure's or the assumed default.",
+    "properties": {
+     "availability": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Availability"
+     },
+     "capex_per_kwp": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Capex Per Kwp"
+     },
+     "crop_inflation": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Crop Inflation"
+     },
+     "debt_share": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Debt Share"
+     },
+     "degradation": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Degradation"
+     },
+     "discount_rate": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Discount Rate"
+     },
+     "interest_rate": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Interest Rate"
+     },
+     "lease_escalation": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Lease Escalation"
+     },
+     "lease_per_acre_year": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Lease Per Acre Year"
+     },
+     "loan_years": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Loan Years"
+     },
+     "om_escalation": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Om Escalation"
+     },
+     "om_per_kwp_year": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Om Per Kwp Year"
+     },
+     "target_irr": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Target Irr"
+     },
+     "tariff_per_kwh": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Tariff Per Kwh"
+     }
+    },
+    "title": "FinanceIn",
+    "type": "object"
+   },
+   "HTTPValidationError": {
+    "properties": {
+     "detail": {
+      "items": {
+       "$ref": "#/components/schemas/ValidationError"
+      },
+      "title": "Detail",
+      "type": "array"
+     }
+    },
+    "title": "HTTPValidationError",
+    "type": "object"
+   },
+   "Health": {
+    "properties": {
+     "data_version": {
+      "title": "Data Version",
+      "type": "string"
+     },
+     "python": {
+      "title": "Python",
+      "type": "string"
+     },
+     "status": {
+      "title": "Status",
+      "type": "string"
+     },
+     "weather_packs": {
+      "title": "Weather Packs",
+      "type": "integer"
+     }
+    },
+    "required": [
+     "status",
+     "weather_packs",
+     "python",
+     "data_version"
+    ],
+    "title": "Health",
+    "type": "object"
+   },
+   "InputUsed": {
+    "properties": {
+     "flag": {
+      "enum": [
+       "state",
+       "national_median",
+       "state_fallback",
+       "preset",
+       "interpolated",
+       "outside_benchmark_range",
+       "assumption",
+       "user"
+      ],
+      "title": "Flag",
+      "type": "string"
+     },
+     "name": {
+      "title": "Name",
+      "type": "string"
+     },
+     "source": {
+      "title": "Source",
+      "type": "string"
+     },
+     "value": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "integer"
+       },
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Value"
+     },
+     "year": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Year"
+     }
+    },
+    "required": [
+     "name",
+     "value",
+     "flag",
+     "source",
+     "year"
+    ],
+    "title": "InputUsed",
+    "type": "object"
+   },
+   "LayoutIn": {
+    "additionalProperties": false,
+    "description": "A structure: a preset to start from, and any fields the user changed.",
+    "properties": {
+     "azimuth_deg": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Azimuth Deg"
+     },
+     "collector_width_m": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Collector Width M"
+     },
+     "height_m": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Height M"
+     },
+     "kind": {
+      "enum": [
+       "fixed",
+       "tracker",
+       "vertical"
+      ],
+      "title": "Kind",
+      "type": "string"
+     },
+     "max_angle_deg": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Max Angle Deg"
+     },
+     "module": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/ModuleIn"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "preset_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Preset Id"
+     },
+     "tilt_deg": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Tilt Deg"
+     },
+     "unfarmed_strip_m": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Unfarmed Strip M"
+     }
+    },
+    "required": [
+     "kind"
+    ],
+    "title": "LayoutIn",
+    "type": "object"
+   },
+   "Meta": {
+    "properties": {
+     "assumptions": {
+      "additionalProperties": {
+       "$ref": "#/components/schemas/Assumption"
+      },
+      "title": "Assumptions",
+      "type": "object"
+     },
+     "business_models": {
+      "items": {
+       "enum": [
+        "kusum_a",
+        "lease"
+       ],
+       "type": "string"
+      },
+      "title": "Business Models",
+      "type": "array"
+     },
+     "crops": {
+      "items": {
+       "$ref": "#/components/schemas/Crop"
+      },
+      "title": "Crops",
+      "type": "array"
+     },
+     "data_version": {
+      "title": "Data Version",
+      "type": "string"
+     },
+     "limits": {
+      "additionalProperties": {
+       "items": {
+        "type": "number"
+       },
+       "type": "array"
+      },
+      "title": "Limits",
+      "type": "object"
+     },
+     "modules": {
+      "additionalProperties": {
+       "$ref": "#/components/schemas/ModuleSpec"
+      },
+      "title": "Modules",
+      "type": "object"
+     },
+     "policy": {
+      "$ref": "#/components/schemas/Policy"
+     },
+     "presets": {
+      "items": {
+       "$ref": "#/components/schemas/Preset"
+      },
+      "title": "Presets",
+      "type": "array"
+     },
+     "preview_notice": {
+      "title": "Preview Notice",
+      "type": "string"
+     },
+     "retention_bases": {
+      "items": {
+       "enum": [
+        "per_acre_of_land",
+        "per_cropped_area"
+       ],
+       "type": "string"
+      },
+      "title": "Retention Bases",
+      "type": "array"
+     },
+     "seasons": {
+      "items": {
+       "enum": [
+        "kharif",
+        "rabi",
+        "zaid"
+       ],
+       "type": "string"
+      },
+      "title": "Seasons",
+      "type": "array"
+     },
+     "sources": {
+      "items": {
+       "$ref": "#/components/schemas/Source"
+      },
+      "title": "Sources",
+      "type": "array"
+     }
+    },
+    "required": [
+     "data_version",
+     "preview_notice",
+     "presets",
+     "modules",
+     "limits",
+     "crops",
+     "seasons",
+     "policy",
+     "retention_bases",
+     "business_models",
+     "assumptions",
+     "sources"
+    ],
+    "title": "Meta",
+    "type": "object"
+   },
+   "ModuleIn": {
+    "additionalProperties": false,
+    "properties": {
+     "bifaciality": {
+      "title": "Bifaciality",
+      "type": "number"
+     },
+     "efficiency": {
+      "title": "Efficiency",
+      "type": "number"
+     },
+     "temp_coeff_per_c": {
+      "title": "Temp Coeff Per C",
+      "type": "number"
+     }
+    },
+    "required": [
+     "efficiency",
+     "bifaciality",
+     "temp_coeff_per_c"
+    ],
+    "title": "ModuleIn",
+    "type": "object"
+   },
+   "ModuleSpec": {
+    "properties": {
+     "bifaciality": {
+      "title": "Bifaciality",
+      "type": "number"
+     },
+     "efficiency": {
+      "title": "Efficiency",
+      "type": "number"
+     },
+     "temp_coeff_per_c": {
+      "title": "Temp Coeff Per C",
+      "type": "number"
+     }
+    },
+    "required": [
+     "efficiency",
+     "bifaciality",
+     "temp_coeff_per_c"
+    ],
+    "title": "ModuleSpec",
+    "type": "object"
+   },
+   "NoticeOut": {
+    "properties": {
+     "code": {
+      "title": "Code",
+      "type": "string"
+     },
+     "gcr": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Gcr"
+     },
+     "gcrs": {
+      "items": {
+       "type": "number"
+      },
+      "title": "Gcrs",
+      "type": "array"
+     },
+     "message": {
+      "title": "Message",
+      "type": "string"
+     }
+    },
+    "required": [
+     "code",
+     "message",
+     "gcr",
+     "gcrs"
+    ],
+    "title": "NoticeOut",
+    "type": "object"
+   },
+   "Policy": {
+    "properties": {
+     "default": {
+      "title": "Default",
+      "type": "number"
+     },
+     "max": {
+      "title": "Max",
+      "type": "number"
+     },
+     "min": {
+      "title": "Min",
+      "type": "number"
+     },
+     "step": {
+      "title": "Step",
+      "type": "number"
+     }
+    },
+    "required": [
+     "default",
+     "min",
+     "max",
+     "step"
+    ],
+    "title": "Policy",
+    "type": "object"
+   },
+   "Preset": {
+    "properties": {
+     "a_farm": {
+      "$ref": "#/components/schemas/Band"
+     },
+     "azimuth_deg": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Azimuth Deg"
+     },
+     "capex_multiplier": {
+      "title": "Capex Multiplier",
+      "type": "number"
+     },
+     "collector_width_m": {
+      "title": "Collector Width M",
+      "type": "number"
+     },
+     "din_category": {
+      "title": "Din Category",
+      "type": "string"
+     },
+     "height_m": {
+      "title": "Height M",
+      "type": "number"
+     },
+     "id": {
+      "title": "Id",
+      "type": "string"
+     },
+     "kind": {
+      "enum": [
+       "fixed",
+       "tracker",
+       "vertical"
+      ],
+      "title": "Kind",
+      "type": "string"
+     },
+     "machinery": {
+      "title": "Machinery",
+      "type": "string"
+     },
+     "max_angle_deg": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Max Angle Deg"
+     },
+     "module": {
+      "title": "Module",
+      "type": "string"
+     },
+     "name": {
+      "title": "Name",
+      "type": "string"
+     },
+     "om_multiplier": {
+      "title": "Om Multiplier",
+      "type": "number"
+     },
+     "tilt_rule": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Tilt Rule"
+     },
+     "unfarmed_strip_m": {
+      "title": "Unfarmed Strip M",
+      "type": "number"
+     }
+    },
+    "required": [
+     "id",
+     "name",
+     "kind",
+     "tilt_rule",
+     "azimuth_deg",
+     "height_m",
+     "collector_width_m",
+     "max_angle_deg",
+     "unfarmed_strip_m",
+     "module",
+     "a_farm",
+     "capex_multiplier",
+     "om_multiplier",
+     "machinery",
+     "din_category"
+    ],
+    "title": "Preset",
+    "type": "object"
+   },
+   "RangeOut": {
+    "description": "Pessimistic, central and optimistic case. Null where a value is undefined (e.g. no IRR).",
+    "properties": {
+     "central": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Central"
+     },
+     "high": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "High"
+     },
+     "low": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Low"
+     }
+    },
+    "required": [
+     "low",
+     "central",
+     "high"
+    ],
+    "title": "RangeOut",
+    "type": "object"
+   },
+   "RotationEntry": {
+    "properties": {
+     "crop_id": {
+      "title": "Crop Id",
+      "type": "string"
+     },
+     "season": {
+      "enum": [
+       "kharif",
+       "rabi",
+       "zaid"
+      ],
+      "title": "Season",
+      "type": "string"
+     }
+    },
+    "required": [
+     "season",
+     "crop_id"
+    ],
+    "title": "RotationEntry",
+    "type": "object"
+   },
+   "RotationIn": {
+    "additionalProperties": false,
+    "properties": {
+     "crop_id": {
+      "title": "Crop Id",
+      "type": "string"
+     },
+     "economics": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/EconomicsIn"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "season": {
+      "enum": [
+       "kharif",
+       "rabi",
+       "zaid"
+      ],
+      "title": "Season",
+      "type": "string"
+     }
+    },
+    "required": [
+     "season",
+     "crop_id"
+    ],
+    "title": "RotationIn",
+    "type": "object"
+   },
+   "SeasonLight": {
+    "properties": {
+     "darkest_tenth": {
+      "items": {
+       "type": "number"
+      },
+      "title": "Darkest Tenth",
+      "type": "array"
+     },
+     "mean": {
+      "items": {
+       "type": "number"
+      },
+      "title": "Mean",
+      "type": "array"
+     }
+    },
+    "required": [
+     "mean",
+     "darkest_tenth"
+    ],
+    "title": "SeasonLight",
+    "type": "object"
+   },
+   "Source": {
+    "properties": {
+     "attribution": {
+      "title": "Attribution",
+      "type": "string"
+     },
+     "id": {
+      "title": "Id",
+      "type": "string"
+     },
+     "licence": {
+      "title": "Licence",
+      "type": "string"
+     },
+     "title": {
+      "title": "Title",
+      "type": "string"
+     },
+     "url": {
+      "title": "Url",
+      "type": "string"
+     },
+     "used_for": {
+      "title": "Used For",
+      "type": "string"
+     }
+    },
+    "required": [
+     "id",
+     "title",
+     "attribution",
+     "licence",
+     "url",
+     "used_for"
+    ],
+    "title": "Source",
+    "type": "object"
+   },
+   "SweepRequest": {
+    "additionalProperties": false,
+    "properties": {
+     "a_farm": {
+      "anyOf": [
+       {
+        "maximum": 1.0,
+        "minimum": 0.5,
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "A Farm"
+     },
+     "business_model": {
+      "enum": [
+       "kusum_a",
+       "lease"
+      ],
+      "title": "Business Model",
+      "type": "string"
+     },
+     "district_id": {
+      "title": "District Id",
+      "type": "string"
+     },
+     "finance": {
+      "$ref": "#/components/schemas/FinanceIn"
+     },
+     "land_acres": {
+      "anyOf": [
+       {
+        "exclusiveMinimum": 0.0,
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Land Acres"
+     },
+     "layout": {
+      "$ref": "#/components/schemas/LayoutIn"
+     },
+     "policy_limit": {
+      "default": 0.8,
+      "maximum": 1.0,
+      "minimum": 0.5,
+      "title": "Policy Limit",
+      "type": "number"
+     },
+     "retention_basis": {
+      "default": "per_acre_of_land",
+      "enum": [
+       "per_acre_of_land",
+       "per_cropped_area"
+      ],
+      "title": "Retention Basis",
+      "type": "string"
+     },
+     "rotation": {
+      "items": {
+       "$ref": "#/components/schemas/RotationIn"
+      },
+      "title": "Rotation",
+      "type": "array"
+     }
+    },
+    "required": [
+     "district_id",
+     "business_model",
+     "layout",
+     "rotation"
+    ],
+    "title": "SweepRequest",
+    "type": "object"
+   },
+   "SweepResponse": {
+    "properties": {
+     "allowed_gcr": {
+      "$ref": "#/components/schemas/RangeOut"
+     },
+     "baseline_farm_income": {
+      "title": "Baseline Farm Income",
+      "type": "number"
+     },
+     "clear_gap_m": {
+      "items": {
+       "anyOf": [
+        {
+         "type": "number"
+        },
+        {
+         "type": "null"
+        }
+       ]
+      },
+      "title": "Clear Gap M",
+      "type": "array"
+     },
+     "custom_layout": {
+      "title": "Custom Layout",
+      "type": "boolean"
+     },
+     "data_version": {
+      "title": "Data Version",
+      "type": "string"
+     },
+     "engine_ms": {
+      "title": "Engine Ms",
+      "type": "number"
+     },
+     "gcr": {
+      "items": {
+       "type": "number"
+      },
+      "title": "Gcr",
+      "type": "array"
+     },
+     "inputs_used": {
+      "items": {
+       "$ref": "#/components/schemas/InputUsed"
+      },
+      "title": "Inputs Used",
+      "type": "array"
+     },
+     "light": {
+      "additionalProperties": {
+       "$ref": "#/components/schemas/SeasonLight"
+      },
+      "title": "Light",
+      "type": "object"
+     },
+     "metrics": {
+      "additionalProperties": {
+       "items": {
+        "$ref": "#/components/schemas/RangeOut"
+       },
+       "type": "array"
+      },
+      "title": "Metrics",
+      "type": "object"
+     },
+     "notices": {
+      "items": {
+       "$ref": "#/components/schemas/NoticeOut"
+      },
+      "title": "Notices",
+      "type": "array"
+     },
+     "outside_policy": {
+      "items": {
+       "type": "boolean"
+      },
+      "title": "Outside Policy",
+      "type": "array"
+     },
+     "retention": {
+      "additionalProperties": {
+       "items": {
+        "$ref": "#/components/schemas/RangeOut"
+       },
+       "type": "array"
+      },
+      "title": "Retention",
+      "type": "object"
+     },
+     "retention_basis": {
+      "enum": [
+       "per_acre_of_land",
+       "per_cropped_area"
+      ],
+      "title": "Retention Basis",
+      "type": "string"
+     }
+    },
+    "required": [
+     "gcr",
+     "metrics",
+     "retention",
+     "retention_basis",
+     "light",
+     "clear_gap_m",
+     "allowed_gcr",
+     "outside_policy",
+     "baseline_farm_income",
+     "notices",
+     "inputs_used",
+     "custom_layout",
+     "data_version",
+     "engine_ms"
+    ],
+    "title": "SweepResponse",
+    "type": "object"
+   },
+   "Tariff": {
+    "additionalProperties": false,
+    "properties": {
+     "flag": {
+      "enum": [
+       "state",
+       "state_fallback"
+      ],
+      "title": "Flag",
+      "type": "string"
+     },
+     "order": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Order"
+     },
+     "order_date": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Order Date"
+     },
+     "status": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Status"
+     },
+     "tariff_per_kwh": {
+      "title": "Tariff Per Kwh",
+      "type": "number"
+     }
+    },
+    "required": [
+     "tariff_per_kwh",
+     "flag"
+    ],
+    "title": "Tariff",
+    "type": "object"
+   },
+   "ValidationError": {
+    "properties": {
+     "ctx": {
+      "title": "Context",
+      "type": "object"
+     },
+     "input": {
+      "title": "Input"
+     },
+     "loc": {
+      "items": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "integer"
+        }
+       ]
+      },
+      "title": "Location",
+      "type": "array"
+     },
+     "msg": {
+      "title": "Message",
+      "type": "string"
+     },
+     "type": {
+      "title": "Error Type",
+      "type": "string"
+     }
+    },
+    "required": [
+     "loc",
+     "msg",
+     "type"
+    ],
+    "title": "ValidationError",
+    "type": "object"
+   }
+  }
+ },
+ "info": {
+  "title": "AgriPV Lab API",
+  "version": "0.1.0"
+ },
+ "openapi": "3.1.0",
+ "paths": {
+  "/api/district/{district_id}": {
+   "get": {
+    "operationId": "district_api_district__district_id__get",
+    "parameters": [
+     {
+      "in": "path",
+      "name": "district_id",
+      "required": true,
+      "schema": {
+       "title": "District Id",
+       "type": "string"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/District"
+        }
+       }
+      },
+      "description": "Successful Response"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "District"
+   }
+  },
+  "/api/districts": {
+   "get": {
+    "operationId": "districts_api_districts_get",
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "items": {
+          "$ref": "#/components/schemas/DistrictListItem"
+         },
+         "title": "Response Districts Api Districts Get",
+         "type": "array"
+        }
+       }
+      },
+      "description": "Successful Response"
+     }
+    },
+    "summary": "Districts"
+   }
+  },
+  "/api/health": {
+   "get": {
+    "operationId": "health_api_health_get",
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Health"
+        }
+       }
+      },
+      "description": "Successful Response"
+     }
+    },
+    "summary": "Health"
+   }
+  },
+  "/api/meta": {
+   "get": {
+    "operationId": "meta_api_meta_get",
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Meta"
+        }
+       }
+      },
+      "description": "Successful Response"
+     }
+    },
+    "summary": "Meta"
+   }
+  },
+  "/api/sweep": {
+   "post": {
+    "operationId": "sweep_api_sweep_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/SweepRequest"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/SweepResponse"
+        }
+       }
+      },
+      "description": "Successful Response"
+     },
+     "422": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      },
+      "description": "Validation Error"
+     }
+    },
+    "summary": "Sweep"
+   }
+  }
+ }
+}

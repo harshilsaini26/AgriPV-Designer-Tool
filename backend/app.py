@@ -1,5 +1,6 @@
 """The AgriPV Lab API (model-slice spec §6)."""
 
+import logging
 import platform
 
 from fastapi import FastAPI, HTTPException, Request
@@ -21,6 +22,8 @@ from backend.service import InputError, run_sweep_request
 WEB_DIST = REPO_ROOT / "web" / "dist"
 SEASONS = ["kharif", "rabi", "zaid"]
 POLICY = {"default": 0.8, "min": 0.5, "max": 1.0, "step": 0.05}
+
+logger = logging.getLogger("agripv_lab.api")
 
 app = FastAPI(title="AgriPV Lab API", version="0.1.0")
 
@@ -98,6 +101,13 @@ def sweep(req: SweepRequest) -> dict:
 def input_error(_: Request, exc: InputError) -> JSONResponse:
     detail = [{"loc": ["body", *exc.loc], "msg": exc.message, "type": "value_error"}]
     return JSONResponse(status_code=422, content={"detail": detail})
+
+
+@app.exception_handler(Exception)
+def internal_error(request: Request, exc: Exception) -> JSONResponse:
+    """Anything unexpected: logged with its traceback, never returned to the client (REQ-ERR-04)."""
+    logger.error("unhandled error on %s %s", request.method, request.url.path, exc_info=exc)
+    return JSONResponse(status_code=500, content={"detail": "internal error"})
 
 
 if WEB_DIST.is_dir():
