@@ -107,3 +107,27 @@ def test_weather_arrays_are_readonly_float():
 def test_weather_validation(kw):
     with pytest.raises(ValueError):
         weather(**kw)
+
+
+@pytest.mark.parametrize(
+    "field, values",
+    [
+        ("dni_extra", [1360.0, 0.0, 1360.0]),
+        ("zenith", [40.0, 95.0, 40.0]),
+        ("zenith", [40.0, -1.0, 40.0]),
+        ("azimuth", [180.0, -90.0, 180.0]),
+        ("azimuth", [180.0, 400.0, 180.0]),
+        ("wind_speed", [2.0, -10.0, 2.0]),
+        ("temp_air", [25.0, 80.0, 25.0]),
+        ("ghi", [500.0, 2500.0, 500.0]),
+    ],
+)
+def test_weather_rejects_values_outside_physical_ranges(field, values):
+    with pytest.raises(ValueError, match=f"^{field}"):
+        weather(**{field: np.array(values)})
+
+
+def test_default_direction_depends_on_the_structure():
+    assert fixed().azimuth_deg == 180.0  # fixed rows face south
+    assert Layout(Kind.VERTICAL, BIFACIAL, 0.8, 2.27).azimuth_deg == 90.0  # vertical rows face east and west
+    assert Layout(Kind.VERTICAL, BIFACIAL, 0.8, 2.27, azimuth_deg=180.0).azimuth_deg == 180.0

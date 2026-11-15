@@ -41,7 +41,8 @@ class Layout:
     """A panel layout. Only the fields that apply to `kind` are validated and used.
 
     `height_m` is the lower panel edge above the ground for fixed and vertical layouts, and the axis height
-    for trackers. `collector_width_m` is the panel surface width across the row.
+    for trackers. `collector_width_m` is the panel surface width across the row. `azimuth_deg` left as None
+    means south (180) for fixed rows and east (90) for vertical rows, which then face east and west.
     """
 
     kind: Kind
@@ -49,12 +50,14 @@ class Layout:
     height_m: float
     collector_width_m: float
     tilt_deg: float = 0.0
-    azimuth_deg: float = 180.0
+    azimuth_deg: float | None = None
     max_angle_deg: float = 55.0
     unfarmed_strip_m: float = 1.0
 
     def __post_init__(self) -> None:
         object.__setattr__(self, "kind", Kind(self.kind))
+        if self.azimuth_deg is None:
+            object.__setattr__(self, "azimuth_deg", 90.0 if self.kind is Kind.VERTICAL else 180.0)
         _check("height_m", self.height_m, 0.5, 6.0)
         _check("collector_width_m", self.collector_width_m, 0.5, 10.0)
         if self.kind is Kind.FIXED:
@@ -112,7 +115,17 @@ class Losses:
         return 1 - self.ac_wiring
 
 
-_ARRAYS = ("ghi", "dni", "dhi", "temp_air", "wind_speed", "zenith", "azimuth", "dni_extra")
+# physical range of each hourly array; a value outside it means a corrupt or mislabelled weather file
+_ARRAY_RANGES: dict[str, tuple[float, float]] = {
+    "ghi": (0.0, 2000.0),  # W/m2
+    "dni": (0.0, 2000.0),
+    "dhi": (0.0, 2000.0),
+    "temp_air": (-90.0, 70.0),  # deg C
+    "wind_speed": (0.0, 100.0),  # m/s
+    "zenith": (0.0, 90.0),  # degrees: daylight hours only
+    "azimuth": (0.0, 360.0),
+    "dni_extra": (1200.0, 1500.0),  # W/m2: the solar constant through the year
+}
 
 
 @dataclass(frozen=True)
@@ -147,14 +160,14 @@ class Weather:
         month = month.astype(np.int8)
         month.setflags(write=False)
         object.__setattr__(self, "month", month)
-        for name in _ARRAYS:
+        for name, (lo, hi) in _ARRAY_RANGES.items():
             arr = np.array(getattr(self, name), dtype=float)
             if arr.shape != month.shape:
                 raise ValueError(f"{name} must have the same length as month ({month.size})")
             if not np.all(np.isfinite(arr)):
                 raise ValueError(f"{name} must be finite")
-            if name in ("ghi", "dni", "dhi") and np.any(arr < 0):
-                raise ValueError(f"{name} must be >= 0")
+            if np.any(arr < lo) or np.any(arr > hi):
+                raise ValueError(f"{name} must be within [{lo}, {hi}]")
             arr.setflags(write=False)
             object.__setattr__(self, name, arr)
         for name in ("latitude", "longitude", "elevation_m", "optimum_tilt_deg"):

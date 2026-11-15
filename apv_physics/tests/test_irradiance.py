@@ -85,3 +85,12 @@ def test_iam_diffuse_is_finite_for_nearly_flat_panels():
     assert np.isfinite(sky).all() and np.isfinite(ground).all()
     np.testing.assert_allclose([sky[0], ground[1]], 0.951460, atol=1e-6)
     np.testing.assert_allclose([ground[0], sky[1]], 0.0, atol=1e-6)
+
+
+def test_bad_input_is_not_cleaned_into_zero_light():
+    one = np.ones(3)
+    with np.errstate(divide="ignore", invalid="ignore"):
+        p = panel_irradiance(20.0, 180.0, 40 * one, 150 * one, 0.4, 3.0, 11.4, 700 * one, 150 * one,
+                             720 * one, np.array([1360.0, 0.0, 1360.0]), 0.2)  # fmt: skip
+    assert not np.isfinite(p["front_direct"][1])
+    assert np.isfinite(p["front_direct"][[0, 2]]).all()

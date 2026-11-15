@@ -84,10 +84,9 @@ def _one_side(surface_tilt, surface_azimuth, zenith, azimuth, gcr, height, pitch
     sky = dhi * vf_row_sky
     ground = albedo * (f_gnd_beam * (ghi - dhi) + vf_gnd_sky * dhi) * vf_row_gnd
     direct = np.maximum(dni * projection, 0) * (1 - f_x)
-    clean = [
-        np.maximum(np.nan_to_num(v, nan=0.0, posinf=0.0, neginf=0.0), 0.0) for v in (direct, sky, ground)
-    ]
-    return (*clean, aoi)
+    # No cleaning of NaN or infinity here: with valid weather none arises, and one that did must reach the
+    # caller's check, not turn into zero light.
+    return np.maximum(direct, 0.0), np.maximum(sky, 0.0), np.maximum(ground, 0.0), aoi
 
 
 def panel_irradiance(
