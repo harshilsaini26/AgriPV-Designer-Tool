@@ -5,7 +5,7 @@ import numpy as np
 import pytest
 from helpers import weather
 
-from apv_physics.weather_io import load_meta, load_weather, save_weather
+from apv_physics.weather_io import load_weather, save_weather
 
 
 def test_round_trip_within_quantisation():
@@ -27,7 +27,7 @@ def test_meta_is_kept_and_extended():
     buf = io.BytesIO()
     save_weather(weather(), {"district": "Test"}, buf)
     buf.seek(0)
-    meta = load_meta(buf)
+    meta = json.loads(str(np.load(buf)["meta"]))
     assert meta["district"] == "Test" and meta["pack_version"] == 1 and meta["elevation_m"] == 220.0
 
 

@@ -2,9 +2,9 @@ name: backend
 
 on:
   push:
-    paths: ["backend/**", "api/**", "apv_core/**", "apv_physics/**", "data/app/**", "requirements.txt", "scripts/**", ".github/workflows/backend.yml"]
+    paths: ["backend/**", "apv_core/**", "apv_physics/**", "data/app/**", "pyproject.toml", "vercel.json", ".github/workflows/backend.yml"]
   pull_request:
-    paths: ["backend/**", "api/**", "apv_core/**", "apv_physics/**", "data/app/**", "requirements.txt", "scripts/**", ".github/workflows/backend.yml"]
+    paths: ["backend/**", "apv_core/**", "apv_physics/**", "data/app/**", "pyproject.toml", "vercel.json", ".github/workflows/backend.yml"]
 
 jobs:
   test:
@@ -14,6 +14,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install -r requirements.txt pytest httpx ruff
-      - run: ruff check backend api scripts
+      - run: pip install uv && uv pip install --system -r pyproject.toml pytest httpx ruff
+      - run: ruff check backend
       - run: pytest backend/tests

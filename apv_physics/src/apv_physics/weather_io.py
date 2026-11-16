@@ -42,12 +42,6 @@ def save_weather(weather: Weather, meta: dict[str, Any], file: Any) -> None:
     np.savez_compressed(file, meta=np.array(json.dumps(full_meta)), **arrays)
 
 
-def load_meta(file: Any) -> dict[str, Any]:
-    """Read only the metadata of a weather pack."""
-    with np.load(file) as pack:
-        return json.loads(str(pack["meta"]))
-
-
 def load_weather(file: Any) -> Weather:
     """Read a weather pack. `file` is a path or a binary file object."""
     with np.load(file) as pack:

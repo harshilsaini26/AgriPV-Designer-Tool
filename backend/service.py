@@ -3,7 +3,6 @@
 Every default the service applies is reported in `inputs_used` with where it came from.
 """
 
-import bisect
 import math
 import time
 from functools import lru_cache
@@ -47,14 +46,6 @@ SRC_FALLBACK_TARIFF = "national fallback: median of the state PM-KUSUM A tariffs
 SRC_ASSUMPTION = "assumption"
 COSTS_YEAR = 2024
 
-# Defaults when no preset is named (spec §6)
-KIND_DEFAULTS = {
-    "fixed": {"height_m": 3.0, "collector_width_m": 4.56, "azimuth_deg": 180.0},
-    "tracker": {"height_m": 2.5, "collector_width_m": 2.28, "max_angle_deg": 55.0},
-    "vertical": {"height_m": 0.8, "collector_width_m": 2.27, "azimuth_deg": 90.0, "unfarmed_strip_m": 1.0},
-}
-KIND_A_FARM = {"fixed": 0.92, "tracker": 0.90, "vertical": 0.88}
-KIND_OM_MULTIPLIER = {"fixed": 1.1, "tracker": 1.2, "vertical": 1.0}
 LAYOUT_FIELDS = {
     "fixed": ("tilt_deg", "azimuth_deg", "height_m", "collector_width_m"),
     "tracker": ("max_angle_deg", "height_m", "collector_width_m"),
@@ -88,48 +79,29 @@ def _year(text: str | None) -> int | None:
 
 def cost_multiplier(kind: str, height_m: float, cost_points: dict) -> tuple[float, str]:
     """Capital cost multiplier for a structure kind at a height, from the benchmark points (spec §5)."""
-    points = sorted(cost_points[kind])
-    heights = [h for h, _ in points]
-    for h, m in points:
-        if math.isclose(h, height_m):
-            return m, "preset"
-    if height_m < heights[0]:
-        return points[0][1], "outside_benchmark_range"
-    if height_m > heights[-1]:
-        return points[-1][1], "outside_benchmark_range"
-    i = bisect.bisect_left(heights, height_m)
-    (h0, m0), (h1, m1) = points[i - 1], points[i]
-    return m0 + (m1 - m0) * (height_m - h0) / (h1 - h0), "interpolated"
+    heights, multipliers = zip(*sorted(cost_points[kind]), strict=True)
+    value = float(np.interp(height_m, heights, multipliers))  # held at the end values outside the range
+    if any(math.isclose(h, height_m) for h in heights):
+        return value, "preset"
+    if heights[0] < height_m < heights[-1]:
+        return value, "interpolated"
+    return value, "outside_benchmark_range"
 
 
-def _preset(app: AppData, layout: LayoutIn) -> dict | None:
-    if layout.preset_id is None:
-        return None
+def resolve_layout(layout: LayoutIn, district: dict, app: AppData) -> tuple[Layout, dict, list[dict], bool]:
+    """The physics layout, its preset, the layout entries of `inputs_used`, and whether the user changed it."""
     preset = next((p for p in app.structures["presets"] if p["id"] == layout.preset_id), None)
     if preset is None:
         raise InputError(("layout", "preset_id"), f"unknown structure preset {layout.preset_id!r}")
-    if preset["kind"] != layout.kind:
-        raise InputError(("layout", "kind"), f"preset {layout.preset_id!r} is a {preset['kind']} structure")
-    return preset
-
-
-def resolve_layout(layout: LayoutIn, district: dict, app: AppData) -> tuple[Layout, list[dict], bool]:
-    """The physics layout, the layout entries of `inputs_used`, and whether the user changed the preset."""
-    preset = _preset(app, layout)
-    kind = layout.kind
-    base = dict(KIND_DEFAULTS[kind])
-    if preset is not None:
-        base.update({k: preset[k] for k in ("height_m", "collector_width_m") if preset[k] is not None})
-        for k in ("azimuth_deg", "max_angle_deg"):
-            if preset[k] is not None:
-                base[k] = preset[k]
-        if kind == "vertical":
-            base["unfarmed_strip_m"] = preset["unfarmed_strip_m"]
+    kind = preset["kind"]
+    base = {
+        k: preset[k]
+        for k in ("height_m", "collector_width_m", "azimuth_deg", "max_angle_deg", "unfarmed_strip_m")
+    }
     if kind == "fixed":
         base["tilt_deg"] = default_tilt_deg(district)
-    source = SRC_PRESET if preset is not None else f"default for a {kind} structure"
 
-    used, values, custom = [], {}, preset is None
+    used, values, custom = [], {}, False
     for name in LAYOUT_FIELDS[kind]:
         requested = getattr(layout, name)
         if requested is not None:
@@ -138,16 +110,14 @@ def resolve_layout(layout: LayoutIn, district: dict, app: AppData) -> tuple[Layo
             custom = custom or not math.isclose(requested, base[name])
         else:
             values[name] = base[name]
-            src = SRC_TILT if name == "tilt_deg" else source
-            used.append(_used(f"layout.{name}", base[name], "preset", src))
+            used.append(
+                _used(f"layout.{name}", base[name], "preset", SRC_TILT if name == "tilt_deg" else SRC_PRESET)
+            )
 
-    module_defaults = app.structures["modules"][preset["module"] if preset else "bifacial"]
     if layout.module is not None:
-        module_values = layout.module.model_dump()
-        custom = True
-        flag, src = "user", SRC_USER
+        module_values, flag, src, custom = layout.module.model_dump(), "user", SRC_USER, True
     else:
-        module_values, flag, src = module_defaults, "preset", SRC_PRESET
+        module_values, flag, src = app.structures["modules"][preset["module"]], "preset", SRC_PRESET
     for name, value in module_values.items():
         used.append(_used(f"layout.module.{name}", value, flag, src))
 
@@ -163,20 +133,20 @@ def resolve_layout(layout: LayoutIn, district: dict, app: AppData) -> tuple[Layo
             collector_width_m=values["collector_width_m"],
             tilt_deg=values.get("tilt_deg", 0.0),
             azimuth_deg=values.get("azimuth_deg"),
-            max_angle_deg=values.get("max_angle_deg", 55.0),
+            max_angle_deg=values.get("max_angle_deg") or 55.0,
             unfarmed_strip_m=values.get("unfarmed_strip_m", 1.0),
         )
     except ValueError as exc:
         raise _named(("layout",), exc) from None
-    return physics_layout, used, custom
+    return physics_layout, preset, used, custom
 
 
 def resolve_finance(
-    finance: FinanceIn, district: dict, layout: Layout, preset: dict | None, app: AppData
+    finance: FinanceIn, district: dict, layout: Layout, preset: dict, app: AppData
 ) -> tuple[FinanceInputs, list[dict]]:
     defaults = app.finance
     multiplier, cost_flag = cost_multiplier(layout.kind.value, layout.height_m, app.structures["cost_points"])
-    om_multiplier = preset["om_multiplier"] if preset else KIND_OM_MULTIPLIER[layout.kind.value]
+    om_multiplier = preset["om_multiplier"]
     tariff = tariff_for(app, district["state"])
     if tariff["flag"] == "state":
         tariff_source, tariff_year = tariff["order"], _year(tariff.get("order_date"))
@@ -279,24 +249,15 @@ def build_sweep_inputs(req: SweepRequest) -> tuple[SweepInputs, PhysicsResult, l
     district = app.districts.get(req.district_id)
     if district is None:
         raise LookupError(req.district_id)
-    layout, used, custom = resolve_layout(req.layout, district, app)
-    preset = _preset(app, req.layout)
+    layout, preset, used, custom = resolve_layout(req.layout, district, app)
     rotation, rotation_used = resolve_rotation(req.rotation, district, app)
     finance, finance_used = resolve_finance(req.finance, district, layout, preset, app)
-
     if req.a_farm is not None:
         a_farm = req.a_farm
         used.append(_used("a_farm", a_farm, "user", SRC_USER))
     else:
-        a_farm = preset["a_farm"]["central"] if preset else KIND_A_FARM[req.layout.kind]
-        used.append(
-            _used(
-                "a_farm",
-                a_farm,
-                "preset",
-                SRC_PRESET if preset else f"default for a {req.layout.kind} structure",
-            )
-        )
+        a_farm = preset["a_farm"]["central"]
+        used.append(_used("a_farm", a_farm, "preset", SRC_PRESET))
 
     try:
         physics = physics_for(req.district_id, layout)
@@ -304,9 +265,7 @@ def build_sweep_inputs(req: SweepRequest) -> tuple[SweepInputs, PhysicsResult, l
         raise _named(("layout",), exc) from None
     inputs = SweepInputs(
         physics=physics.table,
-        structure=Structure(
-            req.layout.preset_id or "custom", a_farm=a_farm, module_efficiency=layout.module.efficiency
-        ),
+        structure=Structure(preset["id"], a_farm=a_farm, module_efficiency=layout.module.efficiency),
         rotation=rotation,
         finance=finance,
         business_model=BusinessModel(req.business_model),

@@ -53,13 +53,9 @@ def _read(directory: Path) -> AppData:
 
 
 @lru_cache(maxsize=1)
-def _default() -> AppData:
+def load_app_data() -> AppData:
+    """The app data, read once. Raises RuntimeError naming the first missing file."""
     return _read(APP_DATA_DIR)
-
-
-def load_app_data(root: Path | None = None) -> AppData:
-    """The app data; read once and kept for the default folder. Raises RuntimeError naming a missing file."""
-    return _default() if root is None else _read(Path(root))
 
 
 def economics_for(app: AppData, state: str, crop_id: str) -> dict | None:

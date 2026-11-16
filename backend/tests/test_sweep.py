@@ -11,7 +11,7 @@ client = TestClient(app)
 BASE = {
     "district_id": "107_jodhpur",
     "business_model": "kusum_a",
-    "layout": {"preset_id": "elevated_fixed_3m", "kind": "fixed"},
+    "layout": {"preset_id": "elevated_fixed_3m"},
     "rotation": [{"season": "kharif", "crop_id": "bajra"}, {"season": "rabi", "crop_id": "wheat"}],
 }
 

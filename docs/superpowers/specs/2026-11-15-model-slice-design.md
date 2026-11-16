@@ -123,7 +123,7 @@ FastAPI app, entrypoint `api/index.py` (`app`). All routes are under `/api`.
   "business_model": "kusum_a",
   "layout": {
     "preset_id": "elevated_fixed_3m",
-    "kind": "fixed", "tilt_deg": 25.0, "azimuth_deg": 180.0, "height_m": 3.0,
+    "tilt_deg": 25.0, "azimuth_deg": 180.0, "height_m": 3.0,
     "collector_width_m": 4.56, "max_angle_deg": 55.0, "unfarmed_strip_m": 1.0,
     "module": {"efficiency": 0.225, "bifaciality": 0.8, "temp_coeff_per_c": -0.003}
   },
@@ -140,8 +140,9 @@ FastAPI app, entrypoint `api/index.py` (`app`). All routes are under `/api`.
 }
 ```
 
-- Only `district_id`, `business_model`, `layout.kind` and `rotation` are required. Anything left out takes the
-  preset's or the state's default.
+- Only `district_id`, `business_model`, `layout.preset_id` and `rotation` are required. The preset fixes the
+  structure type and supplies every layout default; anything else left out takes the state's default. (A request
+  without a preset was dropped on 2026-11-16: the web app always starts from one.)
 - `economics: null` means "use the state default"; the request fails with a clear message if there is none.
 - `finance` holds overrides only.
 

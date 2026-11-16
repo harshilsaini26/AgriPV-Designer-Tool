@@ -631,7 +631,7 @@
    },
    "LayoutIn": {
     "additionalProperties": false,
-    "description": "A structure: a preset to start from, and any fields the user changed.",
+    "description": "A structure: the preset it starts from (which fixes its kind), and any fields the user changed.",
     "properties": {
      "azimuth_deg": {
       "anyOf": [
@@ -666,15 +666,6 @@
       ],
       "title": "Height M"
      },
-     "kind": {
-      "enum": [
-       "fixed",
-       "tracker",
-       "vertical"
-      ],
-      "title": "Kind",
-      "type": "string"
-     },
      "max_angle_deg": {
       "anyOf": [
        {
@@ -697,15 +688,8 @@
       ]
      },
      "preset_id": {
-      "anyOf": [
-       {
-        "type": "string"
-       },
-       {
-        "type": "null"
-       }
-      ],
-      "title": "Preset Id"
+      "title": "Preset Id",
+      "type": "string"
      },
      "tilt_deg": {
       "anyOf": [
@@ -731,7 +715,7 @@
      }
     },
     "required": [
-     "kind"
+     "preset_id"
     ],
     "title": "LayoutIn",
     "type": "object"

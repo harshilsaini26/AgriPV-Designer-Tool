@@ -53,5 +53,7 @@ def test_health_reports_the_data_version():
 
 
 def test_missing_data_names_the_path(tmp_path):
+    from backend.data import _read
+
     with pytest.raises(RuntimeError, match="districts.json"):
-        load_app_data(tmp_path)
+        _read(tmp_path)

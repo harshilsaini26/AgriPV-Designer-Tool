@@ -168,12 +168,11 @@ class ModuleIn(BaseModel):
 
 
 class LayoutIn(BaseModel):
-    """A structure: a preset to start from, and any fields the user changed."""
+    """A structure: the preset it starts from (which fixes its kind), and any fields the user changed."""
 
     model_config = ConfigDict(extra="forbid", allow_inf_nan=False)
 
-    preset_id: str | None = None
-    kind: Literal["fixed", "tracker", "vertical"]
+    preset_id: str
     tilt_deg: float | None = None
     azimuth_deg: float | None = None
     height_m: float | None = None
