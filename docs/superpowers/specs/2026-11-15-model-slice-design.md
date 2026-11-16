@@ -148,11 +148,13 @@ FastAPI app, entrypoint `api/index.py` (`app`). All routes are under `/api`.
 **`POST /api/sweep` response**
 
 - `gcr`: the 11 densities.
-- `metrics`: for each headline metric, 11 values of `{low, central, high}`.
-- `retention`: per season, 11 values of `{low, central, high}`; `retention_basis`.
+- `metrics`: for each headline metric, 11 values of `{pessimistic, central, optimistic}`.
+  Ranges are named by case, not by size: for a cost-like figure such as payback the pessimistic value is
+  the larger one. (Renamed from `low`/`high` on 2026-11-16, after review.)
+- `retention`: per season, 11 values of `{pessimistic, central, optimistic}`; `retention_basis`.
 - `light`: per season, mean light and light on the darkest tenth of the farmed ground, 11 values each.
 - `clear_gap_m`: 11 values.
-- `allowed_gcr`: `{low, central, high}`; `outside_policy`: 11 booleans.
+- `allowed_gcr`: `{pessimistic, central, optimistic}`; `outside_policy`: 11 booleans.
 - `baseline_farm_income`.
 - `notices`: code, message, and the densities each applies to.
 - `inputs_used`: every resolved input with its value, source label, year and flag, so the page can show
@@ -281,7 +283,8 @@ scenario. Defaults are left out to keep it short.
 ### 7.6 Interaction and layout rules
 
 - Numbers: Indian digit grouping and lakh / crore for large rupee amounts, through one formatting function.
-  Ranges are written with the central value first, then "low – high".
+  Ranges are written with the central value first, then the smaller and larger of the pessimistic and
+  optimistic values ("smaller – larger"), whichever case each is.
 - Motion is restrained: chart lines ease to a new result in about 200 ms; nothing else animates; reduced
   motion is honoured.
 - Below 1200 px: one column, in the order results, chart, inputs; the density slider stays pinned at the

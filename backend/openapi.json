@@ -315,14 +315,17 @@
     "additionalProperties": false,
     "properties": {
      "cost_per_acre": {
+      "minimum": 0.0,
       "title": "Cost Per Acre",
       "type": "number"
      },
      "price_per_q": {
+      "minimum": 0.0,
       "title": "Price Per Q",
       "type": "number"
      },
      "yield_q_per_acre": {
+      "minimum": 0.0,
       "title": "Yield Q Per Acre",
       "type": "number"
      }
@@ -1065,7 +1068,7 @@
     "type": "object"
    },
    "RangeOut": {
-    "description": "Pessimistic, central and optimistic case. Null where a value is undefined (e.g. no IRR).",
+    "description": "A result for the three cases. Named by case, not by size: for a cost-like figure such as payback the\npessimistic value is the larger one. Null where a value is undefined (e.g. no IRR).",
     "properties": {
      "central": {
       "anyOf": [
@@ -1078,7 +1081,7 @@
       ],
       "title": "Central"
      },
-     "high": {
+     "optimistic": {
       "anyOf": [
        {
         "type": "number"
@@ -1087,9 +1090,9 @@
         "type": "null"
        }
       ],
-      "title": "High"
+      "title": "Optimistic"
      },
-     "low": {
+     "pessimistic": {
       "anyOf": [
        {
         "type": "number"
@@ -1098,13 +1101,13 @@
         "type": "null"
        }
       ],
-      "title": "Low"
+      "title": "Pessimistic"
      }
     },
     "required": [
-     "low",
+     "pessimistic",
      "central",
-     "high"
+     "optimistic"
     ],
     "title": "RangeOut",
     "type": "object"
@@ -1603,6 +1606,16 @@
        }
       },
       "description": "Successful Response"
+     },
+     "503": {
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/Health"
+        }
+       }
+      },
+      "description": "Service Unavailable"
      }
     },
     "summary": "Health"

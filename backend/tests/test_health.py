@@ -28,6 +28,29 @@ def test_vercel_entrypoint_names_the_app():
     import tomllib
     from pathlib import Path
 
-    config = tomllib.loads((Path(__file__).resolve().parents[2] / "pyproject.toml").read_text(encoding="utf-8"))
+    config = tomllib.loads(
+        (Path(__file__).resolve().parents[2] / "pyproject.toml").read_text(encoding="utf-8")
+    )
     module, attr = config["tool"]["vercel"]["entrypoint"].split(":")
     assert (module, attr) == ("backend.app", "app")
+
+
+def test_health_is_not_ok_without_weather_packs(tmp_path, monkeypatch):
+    import backend.app as module
+
+    monkeypatch.setattr(module, "WEATHER_DIR", tmp_path)
+    r = client.get("/api/health")
+    assert r.status_code == 503 and r.json()["status"] == "missing weather packs"
+
+
+def test_missing_app_data_stops_the_app_at_start(tmp_path):
+    import subprocess
+    import sys
+    from pathlib import Path
+
+    root = Path(__file__).resolve().parents[2]
+    code = (
+        f"import pathlib, backend.data as d; d.APP_DATA_DIR = pathlib.Path(r'{tmp_path}'); import backend.app"
+    )
+    r = subprocess.run([sys.executable, "-c", code], cwd=root, capture_output=True, text=True, check=False)
+    assert r.returncode != 0 and "app data is missing" in r.stderr and "districts.json" in r.stderr

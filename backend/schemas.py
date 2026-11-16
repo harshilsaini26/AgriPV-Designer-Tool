@@ -113,7 +113,7 @@ class DistrictListItem(BaseModel):
 
 
 class Tariff(BaseModel):
-    model_config = ConfigDict(extra="forbid")
+    model_config = ConfigDict(extra="forbid", allow_inf_nan=False)
 
     tariff_per_kwh: float
     flag: Literal["state", "state_fallback"]
@@ -160,7 +160,7 @@ class District(BaseModel):
 
 
 class ModuleIn(BaseModel):
-    model_config = ConfigDict(extra="forbid")
+    model_config = ConfigDict(extra="forbid", allow_inf_nan=False)
 
     efficiency: float
     bifaciality: float
@@ -170,7 +170,7 @@ class ModuleIn(BaseModel):
 class LayoutIn(BaseModel):
     """A structure: a preset to start from, and any fields the user changed."""
 
-    model_config = ConfigDict(extra="forbid")
+    model_config = ConfigDict(extra="forbid", allow_inf_nan=False)
 
     preset_id: str | None = None
     kind: Literal["fixed", "tracker", "vertical"]
@@ -184,15 +184,15 @@ class LayoutIn(BaseModel):
 
 
 class EconomicsIn(BaseModel):
-    model_config = ConfigDict(extra="forbid")
+    model_config = ConfigDict(extra="forbid", allow_inf_nan=False)
 
-    yield_q_per_acre: float
-    price_per_q: float
-    cost_per_acre: float
+    yield_q_per_acre: float = Field(ge=0)
+    price_per_q: float = Field(ge=0)
+    cost_per_acre: float = Field(ge=0)
 
 
 class RotationIn(BaseModel):
-    model_config = ConfigDict(extra="forbid")
+    model_config = ConfigDict(extra="forbid", allow_inf_nan=False)
 
     season: Season
     crop_id: str
@@ -202,7 +202,7 @@ class RotationIn(BaseModel):
 class FinanceIn(BaseModel):
     """Overrides only; anything left out takes the state's, the structure's or the assumed default."""
 
-    model_config = ConfigDict(extra="forbid")
+    model_config = ConfigDict(extra="forbid", allow_inf_nan=False)
 
     capex_per_kwp: float | None = None
     om_per_kwp_year: float | None = None
@@ -221,7 +221,7 @@ class FinanceIn(BaseModel):
 
 
 class SweepRequest(BaseModel):
-    model_config = ConfigDict(extra="forbid")
+    model_config = ConfigDict(extra="forbid", allow_inf_nan=False)
 
     district_id: str
     business_model: Literal["kusum_a", "lease"]
@@ -235,11 +235,12 @@ class SweepRequest(BaseModel):
 
 
 class RangeOut(BaseModel):
-    """Pessimistic, central and optimistic case. Null where a value is undefined (e.g. no IRR)."""
+    """A result for the three cases. Named by case, not by size: for a cost-like figure such as payback the
+    pessimistic value is the larger one. Null where a value is undefined (e.g. no IRR)."""
 
-    low: float | None
+    pessimistic: float | None
     central: float | None
-    high: float | None
+    optimistic: float | None
 
 
 class SeasonLight(BaseModel):

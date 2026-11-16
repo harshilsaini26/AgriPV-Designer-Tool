@@ -260,6 +260,10 @@ def resolve_rotation(
         except ValueError as exc:
             raise InputError(("rotation", i, "economics"), str(exc)) from None
         out.append(SeasonCrop(Season(entry.season), _crop_params(crop), economics))
+    if sum(sc.economics.yield_q_per_acre * sc.economics.price_per_q for sc in out) <= 0:
+        raise InputError(
+            ("rotation",), "the crops have no value at today's yield and price: enter a yield and price"
+        )
     return tuple(out), used
 
 
@@ -321,7 +325,11 @@ def _finite(x) -> float | None:
 
 
 def _range(r: Range) -> dict:
-    return {"low": _finite(r.pessimistic), "central": _finite(r.central), "high": _finite(r.optimistic)}
+    return {
+        "pessimistic": _finite(r.pessimistic),
+        "central": _finite(r.central),
+        "optimistic": _finite(r.optimistic),
+    }
 
 
 def run_sweep_request(req: SweepRequest) -> dict:

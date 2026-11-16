@@ -1,3 +1,4 @@
+import pytest
 from fastapi.testclient import TestClient
 
 from backend.app import app
@@ -40,3 +41,27 @@ def test_unexpected_failure_is_a_plain_500(monkeypatch):
     monkeypatch.setattr(service, "physics_for", lambda *a, **k: (_ for _ in ()).throw(RuntimeError("boom")))
     r = client.post("/api/sweep", json=BASE)
     assert r.status_code == 500 and r.json() == {"detail": "internal error"} and "boom" not in r.text
+
+
+def test_zero_revenue_rotation_is_a_422_not_a_500():
+    zero = {"yield_q_per_acre": 0, "price_per_q": 0, "cost_per_acre": 0}
+    assert loc_of(rotation=[{"season": "kharif", "crop_id": "bajra", "economics": zero}]) == [
+        "body",
+        "rotation",
+    ]
+
+
+def test_negative_economics_name_the_field():
+    bad = {"yield_q_per_acre": 4.0, "price_per_q": -1, "cost_per_acre": 8000}
+    loc = loc_of(rotation=[{"season": "kharif", "crop_id": "bajra", "economics": bad}])
+    assert loc == ["body", "rotation", 0, "economics", "price_per_q"]
+
+
+@pytest.mark.parametrize("raw", ['"a_farm": NaN', '"policy_limit": Infinity', '"land_acres": 1e400'])
+def test_non_finite_numbers_are_a_422_not_a_500(raw):
+    import json
+
+    body = json.dumps(BASE)[:-1] + ", " + raw + "}"
+    r = client.post("/api/sweep", content=body, headers={"Content-Type": "application/json"})
+    assert r.status_code == 422, r.text
+    json.loads(r.text)  # the error body itself is valid JSON

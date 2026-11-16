@@ -32,7 +32,7 @@ def test_default_sweep_shape():
     assert {"farm_income", "energy_income", "ler", "project_irr", "kwp_per_acre"} <= set(b["metrics"])
     assert all(len(v) == 11 for v in b["metrics"].values())
     assert set(b["retention"]) == {"kharif", "rabi"} == set(b["light"])
-    assert b["metrics"]["ler"][0] == {"low": 1.0, "central": 1.0, "high": 1.0}
+    assert b["metrics"]["ler"][0] == {"pessimistic": 1.0, "central": 1.0, "optimistic": 1.0}
     assert b["metrics"]["farm_income"][0]["central"] == pytest.approx(b["baseline_farm_income"])
     assert b["light"]["rabi"]["mean"][0] == 1.0 and b["clear_gap_m"][0] is None
     assert b["light"]["rabi"]["darkest_tenth"][5] <= b["light"]["rabi"]["mean"][5] < 1.0
@@ -135,3 +135,12 @@ def test_cost_multiplier():
     assert cost_multiplier("fixed", 3.5, points) == (pytest.approx(1.285), "interpolated")
     assert cost_multiplier("fixed", 5.0, points) == (1.33, "outside_benchmark_range")
     assert cost_multiplier("vertical", 2.0, points) == (1.2, "outside_benchmark_range")
+
+
+def test_ranges_are_named_by_case_not_by_size():
+    # for a cost-like figure the pessimistic case is the larger number, so "low"/"high" would mislead
+    b = post(district_id="9_leh_ladakh", business_model="lease", rotation=[{"season": "rabi", "crop_id": "wheat"}],
+             finance={"tariff_per_kwh": 4.0}).json()  # fmt: skip
+    payback = b["metrics"]["payback_years"][5]
+    assert set(payback) == {"pessimistic", "central", "optimistic"}
+    assert payback["pessimistic"] >= payback["central"] >= payback["optimistic"]

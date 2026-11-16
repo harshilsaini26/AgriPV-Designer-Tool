@@ -4,6 +4,7 @@ import logging
 import platform
 
 from fastapi import FastAPI, HTTPException, Request
+from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 
 from backend._paths import REPO_ROOT
@@ -28,14 +29,19 @@ logger = logging.getLogger("agripv_lab.api")
 app = FastAPI(title="AgriPV Lab API", version="0.1.0")
 
 
-@app.get("/api/health", response_model=Health)
-def health() -> dict:
-    return {
-        "status": "ok",
-        "weather_packs": len(list(WEATHER_DIR.glob("*.npz"))),
+load_app_data()  # read at start, so a deployment without data/app/ fails with the missing path in its log
+
+
+@app.get("/api/health", response_model=Health, responses={503: {"model": Health}})
+def health() -> JSONResponse:
+    packs = len(list(WEATHER_DIR.glob("*.npz")))
+    body = {
+        "status": "ok" if packs else "missing weather packs",
+        "weather_packs": packs,
         "python": platform.python_version(),
         "data_version": load_app_data().manifest["data_version"],
     }
+    return JSONResponse(status_code=200 if packs else 503, content=body)
 
 
 @app.get("/api/meta", response_model=Meta)
@@ -100,6 +106,13 @@ def sweep(req: SweepRequest) -> dict:
 @app.exception_handler(InputError)
 def input_error(_: Request, exc: InputError) -> JSONResponse:
     detail = [{"loc": ["body", *exc.loc], "msg": exc.message, "type": "value_error"}]
+    return JSONResponse(status_code=422, content={"detail": detail})
+
+
+@app.exception_handler(RequestValidationError)
+def validation_error(_: Request, exc: RequestValidationError) -> JSONResponse:
+    """Like FastAPI's own 422, without echoing the input (a NaN or Infinity there would break the JSON)."""
+    detail = [{"loc": list(e["loc"]), "msg": e["msg"], "type": e["type"]} for e in exc.errors()]
     return JSONResponse(status_code=422, content={"detail": detail})
 
 
